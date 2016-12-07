@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    @aui_color_test_open@ -->
+    <color name="title_color">#00c2c2</color>
+    <color name="activity_header_text_color">#FFFFFFFF</color>
+    <color name="people_title_txt_color_normal">#FFFFFFFF</color>
+    <color name="people_title_txt_color_disable">#7FFFFFFF</color>
+    <color name="dialpad_digtal_field_pressed_bg_color">#ff01cc99</color>
+    <color name="match_contacts_hilite_color">#FF01cc99</color>
+    <color name="contact_editor_listview_divider_selected">#01cc99</color>
+    <color name="fish_eye_bg_color">#00000000</color>
+    <color name="fish_eye_press_color">#019973</color>
+    <color name="contact_create_image_color">#00000000</color>
+    <color name="contact_create_image_press_color">#00000000</color>
+    <color name="button_txt_normal_color">#FFFFFFFF</color>
+    <color name="button_txt_press_color">#FFFFFFFF</color>
+    <color name="button_txt_disable_color">#7FFFFFFF</color>
+    <color name="header_widget_color_normal">#fffffe</color>
+    <color name="header_widget_color_disable">#fffffe</color>
+    <color name="header_widget_color_pressed">#d9d9d9</color>
+    <bool name="contact_dark_mode">false</bool>
+    <color name="edge_effect_color">#bdbdbd</color>
+    <color name="appwidget_text_normal">#ffffff</color>
+    <color name="appwidget_text_normal_with_alpha_80">#80ffffff</color>
+    <color name="appwidget_btn_bg_color_normal">#fc4746</color>
+    <color name="appwidget_bg">#00c2c2</color>
+<!-- @aui_color_test_open@
+    -->
+    <!-- @aui_color_test_open@
+    <color name="title_color">#fc11ff</color>
+    <color name="activity_header_text_color">#f1ff0b</color>
+    <color name="people_title_txt_color_normal">#FFF1FF0B</color>
+    <color name="people_title_txt_color_disable">#7FF9FF9D</color>
+    <color name="dialpad_digtal_field_pressed_bg_color">#fffc11ff</color>
+    <color name="match_contacts_hilite_color">#FFF1FF0B</color>
+    <color name="contact_editor_listview_divider_selected">#fc11ff</color>
+    <color name="fish_eye_bg_color">#FFFC11FF</color>
+    <color name="fish_eye_press_color">#bd0dbf</color>
+    <color name="contact_create_image_color">#00000000</color>
+    <color name="contact_create_image_press_color">#00000000</color>
+    <color name="button_txt_normal_color">#2ee9ff</color>
+    <color name="button_txt_press_color">#27c6d9</color>
+    <color name="button_txt_disable_color">#75b9dd</color>
+    <color name="header_widget_color_normal">#f1ff0b</color>
+    <color name="header_widget_color_disable">#f9ff9d</color>
+    <color name="header_widget_color_pressed">#cdd909</color>
+    <bool name="contact_dark_mode">false</bool>
+    <color name="edge_effect_color">#bdbdbd</color>
+    <color name="appwidget_text_normal">#f1ff0b</color>
+    <color name="appwidget_text_normal_with_alpha_80">#80ffffff</color>
+    <color name="appwidget_btn_bg_color_normal">#f1ff0b</color>
+    <color name="appwidget_bg">#fc11ff</color>
+    @aui_color_test_open@ -->
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.alicontacts.dialpad.DialpadView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpad_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialpad_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dial_prompt_field_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/dialpad_info_text_height"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/aui_secondary_txt_color_grey"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/dialpad_digital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/dialpad" />
+
+    <include
+        android:id="@+id/dialpad_btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialpad_footer_height"
+        layout="@layout/dialpad_footer_view" />
+
+</com.yunos.alicontacts.dialpad.DialpadView>

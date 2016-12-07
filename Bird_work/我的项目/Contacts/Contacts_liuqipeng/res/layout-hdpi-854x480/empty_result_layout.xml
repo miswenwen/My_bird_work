@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="116dp" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/empty_result_text_top_margin"
+        android:drawableTop="@drawable/ic_arrange_empty"
+        android:textSize="@dimen/aui_text_n_size"
+        android:textColor="@color/dup_remove_check_result_clean_text"
+        android:text="@string/empty_result_text" />
+
+</LinearLayout>

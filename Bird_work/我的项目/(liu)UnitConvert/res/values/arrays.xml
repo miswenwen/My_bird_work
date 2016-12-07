@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string-array name="unit_convert_buttons">
+        <item>@+id/digit_0</item>
+        <item>@+id/digit_1</item>
+        <item>@+id/digit_2</item>
+        <item>@+id/digit_3</item>
+        <item>@+id/digit_4</item>
+        <item>@+id/digit_5</item>
+        <item>@+id/digit_6</item>
+        <item>@+id/digit_7</item>
+        <item>@+id/digit_8</item>
+        <item>@+id/digit_9</item>
+        <item>@+id/digit_dot</item>
+        <item>@+id/func_del</item>
+        <item>@+id/func_clear</item>
+    </string-array>
+<!--   加不加加号都可以，实测      <string-array name="unit_convert_buttons">
+        <item>@id/digit_0</item>
+        <item>@id/digit_1</item>
+        <item>@id/digit_2</item>
+        <item>@id/digit_3</item>
+        <item>@id/digit_4</item>
+        <item>@id/digit_5</item>
+        <item>@id/digit_6</item>
+        <item>@id/digit_7</item>
+        <item>@id/digit_8</item>
+        <item>@id/digit_9</item>
+        <item>@id/digit_dot</item>
+        <item>@id/func_del</item>
+        <item>@id/func_clear</item>
+    </string-array> -->
+
+</resources>

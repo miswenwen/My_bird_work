@@ -1,0 +1,19 @@
+package tutorial;
+option java_package = "com.android.alicontacts.dialpad.smartsearch";
+option java_outer_classname = "Person4Phone";
+message PersonItem {
+required string name = 1;
+optional string email = 2;
+optional int32 contactedNumber = 3;
+required string phonenumber = 4;
+required string area = 5;
+enum PhoneType {
+MOBILE = 0;
+HOME = 1;
+WORK = 2;
+}
+optional PhoneType type = 6 [default = HOME];
+}
+message AddressBook {
+  repeated PersonItem personItem = 1;
+}

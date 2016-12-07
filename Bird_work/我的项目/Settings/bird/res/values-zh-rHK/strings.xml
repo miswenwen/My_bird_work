@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- BIRD_A200_CUSTOM add by qinzhifeng 20160415 begin -->
+    <string name="arrange_show_settings">查看方式</string>
+    <string name="arrange_show_grid">網格視圖</string>
+    <string name="arrange_show_list">列表視圖</string>
+    <!-- BIRD_A200_CUSTOM add by qinzhifeng 20160415 end -->
+</resources>

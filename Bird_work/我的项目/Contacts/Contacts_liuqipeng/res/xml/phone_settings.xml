@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- general settings -->
+    <header
+        android:id="@+id/general_setting"
+        android:title="@string/general_settings_label" >
+        <intent
+            android:targetClass="com.yunos.alicontacts.preference.DialerSettingActivity"
+            android:targetPackage="com.yunos.alicontacts" >
+        </intent>
+    </header>
+
+    <!-- Call settings -->
+    <header
+        android:id="@+id/phone_settings"
+        android:title="@string/call_settings_label" />
+
+</preference-headers>

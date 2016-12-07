@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    @aui_color_test_open@ -->
+    <color name="alarm_clock_bg">#357ece</color>
+    <color name="world_clock_bg">#38ba78</color>
+    <color name="header_title_color">#ffffff</color>
+    <color name="back_btn_color_normal">#ffffff</color>
+    <color name="back_btn_color_pressed">#d9d9d9</color>
+<!-- @aui_color_test_open@
+    -->
+    <!-- @aui_color_test_open@
+    <color name="alarm_clock_bg">#fc11ff</color>
+    <color name="world_clock_bg">#fc11ff</color>
+    <color name="header_title_color">#f1ff0b</color>
+    <color name="back_btn_color_normal">#f1ff0b</color>
+    <color name="back_btn_color_pressed">#cdd909</color>
+    @aui_color_test_open@ -->
+</resources>

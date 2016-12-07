@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/header_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#009a96">
+        <ImageView
+            android:id="@+id/menu_id"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_actionbar_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/add_worldclock"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/header_title_color" />
+    </RelativeLayout>
+    <hwdroid.widget.searchview.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/cities_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:clipToPadding="false"/>
+</LinearLayout>

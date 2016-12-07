@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_background"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/listview_divider" />
+
+    <TextView
+        android:id="@+id/footer_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/add_selector"
+        android:ellipsize="end"
+        android:padding="9dp"
+        android:singleLine="true"
+        android:text="@string/addquickCall"
+        android:textSize="12dp"
+        android:textColor="@color/setting_item_text_dark"/>
+
+</LinearLayout>

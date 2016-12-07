@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.deskclock"
+    android:versionCode="150"
+    android:versionName="1.5.0" >
+
+    <original-package android:name="com.android.alarmclock" />
+    <original-package android:name="com.android.deskclock" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+    <!-- M: add for power off alarm to shut down the devices @{ -->
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <!--YUNOS BEGIN-->
+    <!--##module:DeskClock##author:xingwei.lxw@alibaba-inc.com-->
+    <!--BugID:(8401243) ##date:2016-6-21-->
+    <!--description:add reboot permission in QCOM platform for shutdown function in alarm-->
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <!--YUNOS END-->
+    <!-- @} -->
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.PREVENT_POWER_KEY"/>
+    <uses-permission android:name="com.yunos.permission.ALARM_REMIND"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <permission android:name="android.permission.READ_DESKCLOCK"
+                android:protectionLevel="normal">
+    </permission>
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" ></uses-sdk>
+
+    <application
+        android:name=".AliDeskClockApp"
+        android:icon="@mipmap/ic_launcher_alarmclock"
+        android:label="@string/app_label"
+        android:requiredForAllUsers="true"
+        android:supportsRtl="true"
+        android:theme="@style/DeskClock"
+        android:allowBackup="true"
+        android:backupAgent="AlarmBackupAgent" android:killAfterRestore="true">
+        <meta-data
+            android:name="AuiColor"
+            android:value="false" />
+        <provider
+            android:name="com.android.deskclock.provider.ClockProvider"
+            android:authorities="com.android.deskclock"
+            android:permission="android.permission.READ_DESKCLOCK"
+            android:exported="true" />
+
+        <activity
+            android:name="com.android.deskclock.DeskClock"
+            android:configChanges="mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|uiMode|orientation|screenSize|smallestScreenSize"
+            android:icon="@mipmap/ic_launcher_alarmclock"
+            android:label="@string/app_label"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="com.android.deskclock.DockClock"
+            android:enabled="@bool/config_dockAppEnabled"
+            android:icon="@mipmap/ic_launcher_alarmclock"
+            android:label="@string/app_label"
+            android:launchMode="singleTask"
+            android:targetActivity="DeskClock"
+            android:theme="@style/DeskClock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DESK_DOCK" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="com.android.deskclock.SettingsActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@style/SettingsTheme"
+            android:permission="com.aliyun.ams.permission.manager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.deskclock.worldclock.CitiesActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/cities_activity_title"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@style/SettingsTheme"
+            android:permission="com.aliyun.ams.permission.manager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.deskclock.alarms.AlarmActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:showOnLockScreen="true"
+            android:taskAffinity=""
+            android:theme="@style/AlarmAlertFullScreenTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.android.deskclock.ScreensaverActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@style/ScreensaverActivityTheme" />
+
+        <receiver
+            android:name="com.android.deskclock.alarms.AlarmStateManager"
+            android:exported="false" >
+        </receiver>
+
+        <!-- M: add receiver to clear #unread message# when package manager cleared data @{ -->
+        <receiver android:name=".PackageDataClearedReceiver"
+            android:exported="false">
+            <intent-filter>
+               <action android:name="com.mediatek.intent.action.SETTINGS_PACKAGE_DATA_CLEARED" />
+               <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <!-- @} -->
+
+        <!-- M: add intent action for power off alarm to start AlarmService @{ -->
+        <service android:name="com.android.deskclock.alarms.AlarmService">
+            <intent-filter>
+                <action android:name="com.android.deskclock.START_ALARM" />
+            </intent-filter>
+        </service>
+        <!-- @} -->
+
+        <activity
+            android:name="com.android.deskclock.HandleApiCalls"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:permission="com.android.alarm.permission.SET_ALARM">
+            <intent-filter>
+                <action android:name="com.android.deskclock.ENABLE_AlARMS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.deskclock.DISABLE_AlARMS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.deskclock.DELETE_AlARMS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SHOW_ALARMS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SET_TIMER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="com.android.deskclock.HandleSetAlarm"
+            android:exported="true"
+            android:permission="com.aliyun.ams.permission.manager"
+            android:targetActivity=".HandleApiCalls" >
+        </activity-alias>
+
+        <receiver android:name="com.android.deskclock.AlarmInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="com.yunos.provider.calendar.HOLIDAY_CHANGED" />
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.ACTION_BOOT_IPO" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Dream (screensaver) implementation -->
+        <service
+            android:name="com.android.deskclock.Screensaver"
+            android:exported="true"
+            android:permission="com.aliyun.ams.permission.manager"
+            android:label="@string/app_label" >
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.dream"
+                android:resource="@xml/dream_info" />
+        </service>
+
+        <!-- Settings activity for screensaver -->
+        <activity
+            android:name="com.android.deskclock.ScreensaverSettingsActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:permission="com.aliyun.ams.permission.manager"
+            android:label="@string/screensaver_settings"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!--
+         This activity is basically like the TimerFragment in DeskClock
+         but only during lock screen
+         so that is only has the fired timers
+        -->
+        <activity
+            android:name="com.android.deskclock.timer.TimerAlertFullScreen"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:taskAffinity=""
+            android:theme="@style/AlarmAlertFullScreenTheme" />
+
+        <service
+            android:name="com.android.deskclock.TimerRingService"
+            android:description="@string/timer_ring_service_desc"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.deskclock.TIMER_ALERT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.android.deskclock.timer.TimerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="start_timer" />
+                <action android:name="delete_timer" />
+                <action android:name="times_up" />
+                <action android:name="timer_stop" />
+                <action android:name="timer_reset" />
+                <action android:name="timer_done" />
+                <action android:name="timer_update" />
+                <action android:name="notif_in_use_show" />
+                <action android:name="notif_in_use_cancel" />
+                <action android:name="notif_times_up_stop" />
+                <action android:name="notif_times_up_plus_one" />
+                <action android:name="notif_times_up_show" />
+                <action android:name="notif_times_up_cancel" />
+                <action android:name="android.intent.action.ACTION_PRE_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.deskclock.stopwatch.StopwatchService"
+            android:description="@string/stopwatch_service_desc"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="start_stopwatch" />
+                <action android:name="lap_stopwatch" />
+                <action android:name="stop_stopwatch" />
+                <action android:name="reset_stopwatch" />
+                <action android:name="share_stopwatch" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name="com.android.deskclock.DeleteAlarmActivity"
+            android:label="@string/title_activity_delete_alarm"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hwdroid.app.HWListActivity" />
+        </activity>
+        <activity
+            android:name="com.android.deskclock.DeleteClockActivity"
+            android:label="@string/title_activity_delete_clock" >
+        </activity>
+        <activity
+            android:name="com.android.deskclock.SetAlarmActivity"
+            android:label="@string/set_alarm_title"
+            android:theme="@style/AlarmClockTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.android.deskclock.AlarmsSettingsActivity"
+            android:label="@string/title_activity_alarms_settings" >
+        </activity>
+    </application>
+
+</manifest>

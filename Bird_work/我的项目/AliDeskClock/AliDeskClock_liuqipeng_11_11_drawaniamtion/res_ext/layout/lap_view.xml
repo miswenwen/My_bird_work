@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layoutDirection="ltr"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:paddingTop="@dimen/body_font_padding"
+        android:paddingBottom="@dimen/body_font_padding"
+        android:background="@drawable/stopwatch_item_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginRight="@dimen/sw_item_space"
+            android:layout_marginEnd="@dimen/sw_item_space"
+            android:layout_marginStart="@dimen/lap_view_number_margin_start"
+            android:gravity="left"
+            style="@style/body"
+            android:id="@+id/lap_number"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/lap_view_total_margin_start"
+            android:textColor="#000000"
+            android:gravity="center"
+            style="@style/body"
+            android:id="@+id/lap_total"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/lap_view_time_margin_right"
+            android:textColor="#000000"
+            android:layout_gravity="right|center_vertical"
+            style="@style/body"
+            android:id="@+id/lap_time" />
+    </FrameLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom"
+        android:background="#cbcbcb"/>
+</FrameLayout>

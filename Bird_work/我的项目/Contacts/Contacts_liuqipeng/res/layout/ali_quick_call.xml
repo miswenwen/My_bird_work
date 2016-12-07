@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quick_call_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="@string/quick_call_instruction"
+        android:textColor="@color/quick_call_tip"
+        android:textSize="12sp" />
+
+    <GridView
+        android:id="@+id/quick_call_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="12dp"
+        android:numColumns="3"
+        android:verticalSpacing="9dp" >
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <nine-patch android:src="@drawable/fisheye_data_child_item_pressed" android:tint="@color/fish_eye_press_color" />
+    </item>
+
+</selector>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="@drawable/bg_quickdail_photos" >
+
+        <TextView
+            android:id="@+id/quick_contact_label"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:background="@drawable/bg_quickdail_nub"
+            android:textColor="#808080"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/quick_contact_sim_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/quick_contact_label" />
+
+        <ImageView
+            android:id="@+id/quick_contact_portrait"
+            android:layout_width="@dimen/portrait_widget_size_large"
+            android:layout_height="@dimen/portrait_widget_size_large"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/quick_contact_portrait_txt"
+            android:layout_width="@dimen/portrait_widget_size_large"
+            android:layout_height="@dimen/portrait_widget_size_large"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/aui_primary_txt_color_white"
+            android:textSize="@dimen/portrait_text_size_large"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/quick_keyboard_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_quickdail_name"
+        android:gravity="center"
+        android:minHeight="32dp"
+        android:textColor="@color/quick_call_txt_color"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

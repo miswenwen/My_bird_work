@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_item_height"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/detail_item_side_margin"
+    android:paddingStart="@dimen/detail_item_side_margin" >
+
+    <TextView
+        android:id="@+id/group_text_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_height"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/group_text_color_normal" />
+
+</LinearLayout>

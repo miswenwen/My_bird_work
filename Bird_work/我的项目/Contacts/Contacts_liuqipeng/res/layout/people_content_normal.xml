@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/people_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/header_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_view_height"
+            android:background="@color/title_color" >
+
+            <ViewStub
+                android:id="@+id/cloud_call_btn_red_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout="@layout/cloud_call_btn_red_dot_layout"/>
+
+            <ViewStub
+                android:id="@+id/cloud_call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout="@layout/cloud_call_btn_layout"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dialpad_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/contactsDialpadLabel"
+                    android:textSize="@dimen/contact_title_font_size"
+                    android:textColor="@color/people_title_txt_color_normal" />
+
+                <TextView
+                    android:id="@+id/contact_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/contactsAllLabel"
+                    android:textSize="@dimen/contact_title_font_size"
+                    android:textColor="@color/people_title_txt_color_disable" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/menu_id"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="@dimen/content_right_padding"
+                android:paddingTop="8dp"
+                android:scaleType="center"
+                android:src="@drawable/pop_menu_selector" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="@color/header_line_color" />
+        </FrameLayout>
+
+        <com.yunos.yundroid.widget.CustomViewPager
+            android:id="@+id/tab_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialpad_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/dialpad_button" />
+
+</FrameLayout>

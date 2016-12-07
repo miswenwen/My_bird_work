@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic Color For AUI -->
+    <color name="aui_midgray">#FF808080</color>
+
+    <!-- AUI2.0 begin -->
+    <color name="aui_bg_color_dark">#FF333333</color>
+
+    <!-- Header -->
+    <color name="aui_action_color_grey">#FFdadbdc</color>
+    <color name="aui_delete_button_color">#FFFF0000</color>
+    <!-- AUI2.0 end -->
+
+</resources>

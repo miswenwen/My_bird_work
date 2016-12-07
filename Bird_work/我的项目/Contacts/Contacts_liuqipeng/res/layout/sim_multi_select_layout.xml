@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- SIM Card1 List -->
+
+    <header
+        android:id="@+id/sim_card1"
+        android:title="@string/xxsim_sim_card_1" >
+
+        <intent android:action="android.intent.action.SHOW_SIM_CONTACTS" >
+
+            <extra
+                android:name="subscription_id"
+                android:value="0" />
+        </intent>
+    </header>
+
+    <!-- SIM Card2 List -->
+
+    <header
+        android:id="@+id/sim_card2"
+        android:title="@string/xxsim_sim_card_2" >
+
+        <intent android:action="android.intent.action.SHOW_SIM_CONTACTS" >
+            <extra
+                android:name="subscription_id"
+                android:value="1" />
+        </intent>
+    </header>
+
+    <!-- Import Vcard -->
+
+    <header
+        android:id="@+id/import_vcard"
+        android:title="@string/contacts_settings_read_from_vcard" >
+
+        <intent
+            android:targetClass="com.yunos.alicontacts.vcard.ImportVCardActivity"
+            android:targetPackage="com.yunos.alicontacts" >
+        </intent>
+    </header>
+
+    <!-- Export Vcard -->
+
+    <header
+        android:id="@+id/export_vcard"
+        android:title="@string/contacts_settings_put_info_in_vcard" >
+<!--YunOS BEGIN PB -->
+<!--##module:##author:xingnuan.cxn@alibaba-inc.com -->
+<!--##BugID:(8466294) ##date:2016-7-22 09:00-->
+<!--##description:suppot export some contacts to vcard -->
+     <!--     <intent
+            android:targetClass="com.yunos.alicontacts.vcard.ExportVCardActivity"
+            android:targetPackage="com.yunos.alicontacts" >
+        </intent>
+        -->
+        <intent
+            android:targetClass="com.yunos.alicontacts.activities.ContactSelectionActivity"
+            android:action="android.intent.action.PICK_MULTIPLE"
+            android:targetPackage="com.yunos.alicontacts" >
+            <extra
+                android:name="pick_content"
+                android:value="pick_contact_to_export" />
+        </intent>
+    </header>
+<!--YUNOS END PB-->
+</preference-headers>

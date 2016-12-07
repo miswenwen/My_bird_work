@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal">
+    <RelativeLayout android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_gravity="start|center_vertical"
+    android:id="@+id/alarmicon"
+    >
+        <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/label"
+        android:layout_centerInParent="true"
+        android:background="@drawable/clock_alarm_notification"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+        <TextView android:id="@+id/alarmclock_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/add_alarm_button_text"
+            android:textColor="#ffffff"
+            android:textSize="16dp"/>
+        <TextView android:id="@+id/alarmtime_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="@string/alarm_alert_dismiss_text"
+            android:textColor="#66FFFFFF"
+            android:textSize="12dp"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical|end"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/status_bar_notification_row_background_color"/>
+    
+    <RelativeLayout android:id="@+id/offalarm"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="right|center_vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/label"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clock_closed"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/alarm_alert_dismiss_text"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#66FFFFFF"
+                    android:textSize="10dp"/>
+        </LinearLayout>
+    
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false" >
+        <bitmap android:src="@drawable/ic_actionbar_back_disable"/>
+    </item>
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/ic_actionbar_back_pressed"/>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_actionbar_back_normal"/>
+    </item>
+
+</selector>

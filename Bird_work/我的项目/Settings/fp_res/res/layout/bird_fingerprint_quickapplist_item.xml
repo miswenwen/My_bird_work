@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_app_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/id_item_appicon_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/id_item_appname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/id_item_appicon_iv"
+        android:gravity="center_vertical"
+        android:text="@string/ali_fingerprint_settings"
+        android:textColor="#898989"
+        android:textSize="16sp" >
+    </TextView>
+	
+</RelativeLayout>

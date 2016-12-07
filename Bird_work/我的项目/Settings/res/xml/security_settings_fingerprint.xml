@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/security_settings_fingerprint_preference_title">
+	
+	 <Preference android:layout="@layout/ali_fingerprint_header"
+        android:key="fingerprint_header"/>
+
+    <SwitchPreference android:key="fingerprint_lockscreen"
+        android:summary="@string/fingerprint_settings_unlock_summary"
+        android:title="@string/fingerprint_settings_unlock" />
+		
+    <Preference android:key="finger_print_privacy_space_app_lock"
+        android:summary="@string/finger_print_privacy_space_app_lock_summary"
+        android:title="@string/finger_print_privacy_space_app_lock" />
+
+    <PreferenceCategory android:key="fingerrpint_list">
+    </PreferenceCategory>
+	
+</PreferenceScreen>	
+

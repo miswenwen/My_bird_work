@@ -1,0 +1,405 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/timer_clock_bg">
+
+    <!-- <FrameLayout
+        android:id="@+id/dustWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dust_wallpaper"
+        android:clickable="false"
+        android:visibility="gone" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <!-- <FrameLayout
+            android:id="@+id/clock_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp" > -->
+
+            <!-- <ImageView
+                android:id="@+id/image_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/clock_stopwatches_bg" /> -->
+
+            <!--
+                 <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/clock_timer_minute"/>
+            -->
+        <TextView
+            android:id="@+id/timer_text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="77dp"
+            android:text="@string/time_text_60"
+            android:layout_centerHorizontal="true"
+            android:textSize="10sp"
+            android:textColor="@color/timer_text_color"/>
+        <RelativeLayout
+            android:id="@+id/timer_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timer_text_top"
+            android:layout_marginTop="6dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/clock_alarm_view2_day_bg"/>
+                <com.android.deskclock.timer.TimerClockView
+                    android:id="@+id/timer_circle"
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/timer_textClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_clock_start"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="@color/timer_textClock_color"
+                    android:layout_gravity="center"
+                    android:textSize="26sp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/time_text_15"
+                android:layout_marginRight="54dp"
+                android:layout_centerVertical="true"
+                android:textSize="10sp"
+                android:textColor="@color/timer_text_color"/>
+        </RelativeLayout>
+
+        <!--</FrameLayout>-->
+
+        <!-- <TextView
+            android:id="@+id/timer_done_textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/aui_green"
+            android:textStyle="bold" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="380dp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@anim/clock_boiled_egg"
+                    android:contentDescription="@string/label"
+                    android:scaleType="centerInside" />
+                <TextView
+                    android:id="@+id/minutes_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/timer_10minutes"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="26dp"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/image_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@anim/clock_mask"
+                    android:contentDescription="@string/label"
+                    android:scaleType="centerInside" />
+                <TextView
+                    android:id="@+id/minutes_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/timer_15minutes"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="26dp"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/image_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@anim/clock_nap"
+                    android:contentDescription="@string/label"
+                    android:scaleType="centerInside" />
+                <TextView
+                    android:id="@+id/minutes_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/timer_30minutes"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="26dp"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/image_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@anim/clock_exercise"
+                    android:contentDescription="@string/label"
+                    android:scaleType="centerInside" />
+                <TextView
+                    android:id="@+id/minutes_45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/timer_45minutes"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/footer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_height"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/footer_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aui_footer_divider"
+                android:background="@color/footer_header_line" /> 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/footer_button_margin_top"
+                android:paddingTop="@dimen/footer_button_margin_top" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/footer_button_and_text_width"
+                    android:layout_height="@dimen/footer_button_and_text_height"
+                    android:layout_marginLeft="@dimen/footer_margin_between"
+                    android:layout_marginRight="@dimen/footer_margin_between"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/timer_stop_btn"
+                        android:layout_width="@dimen/footer_image_width"
+                        android:layout_height="@dimen/footer_image_width"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/aui_btn_stop" />
+
+                    <TextView
+                        android:id="@+id/timer_stop_title"
+                        style="@style/footer_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/footer_button_text_height"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="@string/timer_stop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/footer_button_and_text_width"
+                    android:layout_height="@dimen/footer_button_and_text_height"
+                    android:layout_marginLeft="@dimen/footer_margin_between"
+                    android:layout_marginRight="@dimen/footer_margin_between"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/timer_cancel_btn"
+                        android:layout_width="@dimen/footer_image_width"
+                        android:layout_height="@dimen/footer_image_width"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/aui_btn_cancel" />
+
+                    <TextView
+                        android:id="@+id/timer_cancel_title"
+                        style="@style/footer_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/footer_button_text_height"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="@string/timer_cancel" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="24dp">
+                <RelativeLayout
+                    android:id= "@+id/timer_stop_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clock_stop_bg">
+                    <ImageView
+                        android:id="@+id/timer_stop_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/clock_stop"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id= "@+id/timer_cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="81dp"
+                    android:background="@drawable/clock_cancel_bg">
+                    <ImageView
+                        android:id="@+id/timer_cancel_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/clock_cancel"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/footer_button_margin_top"
+            android:paddingTop="@dimen/footer_button_margin_top" >
+
+             <LinearLayout
+                android:layout_width="@dimen/footer_button_and_text_width"
+                android:layout_height="@dimen/footer_button_and_text_height"
+                android:layout_marginLeft="@dimen/footer_margin_between"
+                android:layout_marginRight="@dimen/footer_margin_between"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/add_second_btn2"
+                    android:layout_width="@dimen/footer_image_width"
+                    android:layout_height="@dimen/footer_image_width"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/aui_btn_add_time_alert" />
+
+                <TextView
+                    android:id="@+id/add_second_title2"
+                    style="@style/footer_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/footer_button_text_height"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/timer_add_seconds"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/footer_button_and_text_width"
+                android:layout_height="@dimen/footer_button_and_text_height"
+                android:layout_marginLeft="@dimen/footer_margin_between"
+                android:layout_marginRight="@dimen/footer_margin_between"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/timer_stop_btn2"
+                    android:layout_width="@dimen/footer_image_width"
+                    android:layout_height="@dimen/footer_image_width"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/aui_btn_stop_alert" />
+
+                <TextView
+                    android:id="@+id/timer_stop_title2"
+                    style="@style/footer_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/footer_button_text_height"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/timer_stop"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="24dp">
+                <ImageView
+                    android:id="@+id/timer_start_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clock_star_bg"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"/>
+                <ImageView
+                    android:id="@+id/timer_start_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clock_star"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

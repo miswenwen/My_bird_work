@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/id_enablelock_apps_sw_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F4F4F4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/id_manage_applock_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginLeft="6dp"
+            android:text="@string/fingerprint_app_unlock" />
+			
+<!--            style="@hwdroid:style/Widget.Ali.CompoundButton.Switch" -->
+        <Switch
+            android:id="@+id/id_manage_applock_off_on_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_below="@id/id_enablelock_apps_sw_ll"
+        android:id="@+id/id_enablelock_apps_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp" />
+
+    <ListView
+        android:id="@+id/id_lv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/id_enablelock_apps_pb" />
+
+</RelativeLayout>

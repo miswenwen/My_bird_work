@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/top_input_field"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ali_dialpad_edit_field_height"
+            android:background="@color/title_color"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/back_dialpad_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/calllog_item_padding"
+                android:src="@drawable/actionbar_back_selector" />
+
+            <TextView
+                android:id="@+id/top_number_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:gravity="center"
+                android:maxLength="100"
+                android:singleLine="true"
+                android:textAppearance="@style/DialtactsDigitsTextAppearance"
+                android:textColor="@color/activity_header_text_color"
+                android:textSize="@dimen/ali_dialpad_edit_text_size" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/list_layout"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialpad_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/dialpad_button" />
+
+    <LinearLayout
+        android:id="@+id/dialpad_container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/listview_divider" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ali_dialpad_edit_field_height"
+            layout="@layout/dialpad_input_field" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dialpadview" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.yundroid.widget.itemview.SeparatorItemView2 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gd_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/gd_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:textColor="@color/title_text_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</com.yunos.yundroid.widget.itemview.SeparatorItemView2>

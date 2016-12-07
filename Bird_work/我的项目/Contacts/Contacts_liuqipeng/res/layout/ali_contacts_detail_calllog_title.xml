@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/dial_prompt_bg"
+    android:paddingBottom="8dp"
+    android:paddingEnd="@dimen/detail_item_side_margin"
+    android:paddingStart="@dimen/detail_item_side_margin"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="@string/recentCallsIconLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/call_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/title_id"
+        android:paddingStart="@dimen/detail_item_side_margin"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#808080" />
+
+</RelativeLayout>

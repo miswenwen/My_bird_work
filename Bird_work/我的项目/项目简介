@@ -1,0 +1,11 @@
+apk文件都在项目下的bin目录里。可以取出直接安装
+1.(liu)UnitConvert:单位转换 长度，面积，体积，温度，速度，事件，重量
+2.MyTetris:写的一个简单的俄罗斯方块
+3.Settings:
+(1)Android原生设置基础上用ViewPager实现了两页滑动（全部设置与常用设置）
+(2)可以与原来一页的界面相互切换。中间解决了加载Fragment导致的白屏问题（原因是之前的Fragment对象未能及时移除）。
+4.Contacts：优化陌生人来电弹框
+(1)自定义AlertDialog,自定义Button,自定义CheckBox,BaseAdapter,GridView配对6个自定义Button.
+5.AliDeskClock:增加大量滑动页面时的动画
+(1)Drawable对象以及Bitmap对象加载的图片在自定义view中位置的改变，大小的改变，以及裁剪。旋转canvas坐标轴。
+

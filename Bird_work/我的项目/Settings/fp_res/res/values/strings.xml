@@ -1,0 +1,2538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="uninstall_apps">uninstall apps</string>
+    <string name="format_internal_storage">format internal storage</string>
+    <string name="essential_category">Will remove</string>
+    <string name="optional_category">Optionally remove</string>
+    <string name="detailed_essential_steps">Restore factory settings, will remove your contacts, call, SMS, sticky notes, accounts and other privacy data, as well as in the use of process other personal settings and data information.</string>
+    <string name="format_internal_storage_summary">remove photos, music and other downloaded contents.</string>
+    <string name="restore_button">Factory restore</string>
+    <string name="restore_confirm_description">system restore is irreversible, make sure your important data have been backed up.\n\
+your encrypted contents in private space will also been removed.
+    </string>
+    <string name="restore_confirm_button">Confirm and reboot</string>
+    <string name="remove_category">System will remove the following</string>
+    <string name="retain_category">The following contents will been retained.</string>
+    <string name="installed_apps">- Installed apps</string>
+	<string name="retain_installed_apps_with_warnings">- Apps in system space. (Apps in internal/external storage will be uninstalled)</string>
+	<string name="internal_contents">- Photos, music and downloaded contents in internal storage.</string>
+    <string name="system_restore">system restore</string>
+    <string name="system_restore_confirm">confirm factory restore</string>
+    <string name="system_restore_verify_account_title">Verify account</string>
+    <string name="system_restore_verify_account_message">Please verify YunOS account password</string>
+
+    <string name="battery_percent">Battery Percentage</string>
+    <!-- Representation of a numerical percentage. [CHAR LIMIT=8] -->
+    <string name="percentage"><xliff:g id="number" example="30">%d</xliff:g>%%</string>
+
+    <string name="location_mode_high_accuracy_title">Use GPS, WLAN, and cellular networks</string>
+    <string name="location_mode_high_accuracy_description">High accuracy</string>
+    <string name="location_mode_battery_saving_title">Use WLAN and cellular networks</string>
+    <string name="location_mode_battery_saving_description">Battery saving</string>
+    <string name="location_mode_sensors_only_title">Use GPS only</string>
+    <string name="location_mode_sensors_only_description">No consumption of network traffic</string>
+
+	<string name="ali_credentials_not_erased">Credential storage couldn\'t be erased.</string>
+	<string name="ali_credentials_configure_lock_screen_hint_title">Installation Tips</string>
+	<string name="ali_credentials_configure_lock_screen_hint">Please set a screen unlock password before using credential storage</string>
+	<string name="ali_credentials_configure_lock_screen_hint_set">Set</string>
+
+
+
+	<string name="ali_memory_card_management">Storage</string>
+
+	<string name="ali_memory_card_total_size">Capacity</string>
+
+	<string name="ali_memory_card_free_size">"Available space: "</string>
+	<string name="ali_memory_card_format">"Format "</string>
+	<string name="ali_memory_card_format_summary">Clear all data on SD card</string>
+	<string name="ali_memory_card_format_confirm_title">Format confirmation</string>
+	<string name="ali_memory_card_format_confirm_content">"This will clear all data in the SD card. Are you sure to format it?"</string>
+	<string name="ali_memory_card_unmount_user_accessing">SD card is in use</string>
+	<string name="ali_memory_card_format_init">Initializing SD card formatting&#8230;</string>
+	<string name="ali_memory_card_formatting">Formatting&#8230;</string>
+	<string name="ali_memory_card_format_done">Formatted successfully</string>
+	<string name="ali_memory_card_format_failed_title">Failed to format</string>
+	<string name="ali_memory_card_format_failed_content">Failed to format. Try again later. </string>
+	<string name="ali_usb_management">USB connection</string>
+
+
+
+	<string name="ali_usb_notification_title">Connected via USB cable</string>
+	<string name="ali_usb_notification_text_click_to_open">Tap to turn on USB drive mode</string>
+	<string name="ali_usb_notification_text_click_to_close">Tap to turn off USB drive mode</string>
+
+
+
+
+
+
+
+
+
+	<string name="ali_network_state_label" translatable="false">Network state :</string>
+	<string name="ali_phone_battery_full" translatable="false">100%</string>
+	<string name="ali_default_date_format" translatable="false"><xliff:g id="default_date_format">MM/dd/yyyy</xliff:g></string>
+	<string name="ali_subscription_01_title" translatable="false">SUB 1</string>
+	<string name="ali_subscription_02_title" translatable="false">SUB 2</string>
+	<string name="ali_verifier_device_identifier">Development device ID</string>
+	<string name="ali_verifier_device_identifier_not_available">Device information not available</string>
+	<string name="ali_debug_ui_category">User interface</string>
+
+
+	<string name="ali_stk">SIM card app</string>
+
+	<string name="ali_security_setting">Security management</string>
+
+	<string name="ali_lock_on">On</string>
+	<string name="ali_lock_off">Off</string>
+	<string name="ali_lock_phone">Screen lock</string>
+	<string name="ali_lock_phone_enable">Enable screen lock</string>
+	<string name="ali_lock_phone_disable">Disable screen lock</string>
+	<string name="ali_set_new_code">New password</string>
+	<string name="ali_enter_code_again">Enter password</string>
+	<string name="ali_enter_code">password</string>
+	<string name="ali_code_error">Wrong password</string>
+	<string name="ali_code_error_form">Please input valid password with 4 characters</string>
+	<string name="ali_code_error_pin">PIN code must consist of 4 to 8 digits</string>
+	<string name="ali_code_conflict">The two passwords you entered do not match</string>
+	<string name="ali_kgd_passwd_input_error_wait">Incorrect password, disable for %ds</string>
+
+
+	<string name="ali_phone_code_modify">Change password </string>
+
+	<string name="ali_old_code">Old password</string>
+	<string name="ali_old_code_error">Old password is wrong</string>
+	<string name="ali_new_code">New password</string>
+
+	<string name="ali_lock_sim">Lock SIM card with PIN</string>
+	<string name="ali_lock_sim_enable">Enable</string>
+	<string name="ali_lock_sim_disable">Disable</string>
+	<string name="ali_pin_code_error_header">Wrong pin code, you have only\u0020</string>
+	<string name="ali_pin_code_modify">Change PIN code</string>
+
+	<string name="ali_enter_pin_code">PIN code</string>
+	<string name="ali_pin_code_error_header_normal">You have only\u0020</string>
+	<string name="ali_pin_code_error_modify_header">Wrong old PIN code, you have only\u0020</string>
+	<string name="ali_pin_code_error_tail">\u0020attempts</string>
+	<string name="ali_pin_code_error_tip">SIM card will be locked after 3 incorrect attempts</string>
+	<string name="ali_puk_code_error_tip">SIM card will be locked after 10 incorrect attempts</string>
+	<string name="ali_code_pin_conflict">The two PIN you entered do not match</string>
+	<string name="ali_code_puk_conflict">The two PUK you entered do not match</string>
+
+
+	<string name="ali_old_pin_code">Old PIN</string>
+	<string name="ali_new_pin_code">New PIN</string>
+	<string name="ali_enter_pin_code_again">Enter PIN code</string>
+
+	<string name="ali_sim_locked">SIM card locked</string>
+	<string name="ali_pin_lock_puk">\t\tYour SIM card is locked. Enter PUK code to unlock it.</string>
+	<string name="ali_puk_enter_title">Enter PUK code</string>
+	<string name="ali_puk_enter">PUK code</string>
+	<string name="ali_puk_code_error_header">You have\u0020</string>
+	<string name="ali_puk_code_error_tail">\u0020attempts</string>
+
+	<string name="ali_sim_invalid">SIM card invalidated</string>
+	<string name="ali_sim_invalid_text">You have entered 10 incorrect PUK codes consecutively, SIM card is invalidated</string>
+	<string name="ali_lock_sim1">SIM card 1 lock</string>
+	<string name="ali_lock_sim2">SIM card 2 lock</string>
+	<string name="ali_about_phone">About phone</string>
+
+	<string name ="ali_desktop_theme_setting">Themes</string>
+    <string name="ali_not_remain" msgid="4676390750360727396">"Don't keep"</string>
+    <string name="ali_remain" msgid="4676390750360727396">"Keep"</string>
+	<string name="ali_yes" msgid="4676390750360727396">"Yes"</string>
+	<string name="ali_no" msgid="6731231425810196216">"No"</string>
+	<string name="ali_device_info_default" msgid="7847265875578739287">"Unknown"</string>
+
+
+
+
+
+
+	<string name="ali_radioInfo_service_in" msgid="1915416319177520020">"In service"</string>
+	<string name="ali_radioInfo_service_out" msgid="5238736759641916278">"Out of service"</string>
+
+	<string name="ali_radioInfo_service_off" msgid="1434084741785525415">"Turn off radio communication"</string>
+	<string name="ali_radioInfo_roaming_in" msgid="9045363884600341051">"International roaming"</string>
+	<string name="ali_radioInfo_roaming_not" msgid="2851853244069662307">"Non-international roaming"</string>
+
+
+
+
+
+
+
+
+
+	<string name="ali_radioInfo_display_dbm" msgid="3621221793699882781">"dBm"</string>
+	<string name="ali_radioInfo_display_asu" msgid="1422248392727818082">"asu"</string>
+
+
+	<string name="ali_battery_info_status_charging" msgid="1705179948350365604">"Charging"</string>
+	<string name="ali_battery_info_status_charging_ac" msgid="5874340256342956252">"(AC)"</string>
+	<string name="ali_battery_info_status_charging_usb" msgid="4059070156126770959">"(USB tethering option)"</string>
+	<string name="ali_battery_info_status_discharging" msgid="6222697503392774475">"Discharging"</string>
+	<string name="ali_battery_info_status_not_charging" msgid="2820070506621483576">"Not charging"</string>
+	<string name="ali_battery_info_status_full" msgid="2824614753861462808">"Full"</string>
+	<string name="ali_bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
+
+
+
+	<string name="ali_bluetooth_is_discoverable_always">Visible to all nearby Bluetooth devices</string>
+
+
+
+
+	<string name="ali_bluetooth_connected" msgid="6038755206916626419">"Connected"</string>
+	<string name="ali_bluetooth_disconnected" msgid="6557104142667339895">"Disconnected"</string>
+	<string name="ali_bluetooth_disconnecting" msgid="8913264760027764974">"Disconnecting&#8230;"</string>
+	<string name="ali_bluetooth_connecting" msgid="8555009514614320497">"Connecting&#8230;"</string>
+
+
+	<string name="ali_bluetooth_pairing" msgid="1426882272690346242">"Pairing&#8230;"</string>
+
+	<string name="ali_bluetooth_device" msgid="6873461446424952003">"Unnamed Bluetooth device"</string>
+	<string name="ali_progress_scanning" msgid="3760897655335759141">"Scanning&#8230;"</string>
+	<string name="ali_bluetooth_no_devices_found">No nearby Bluetooth devices were found</string>
+	<string name="ali_bluetooth_notif_ticker" msgid="4726721390078512173">"Bluetooth pairing request"</string>
+	<string name="ali_bluetooth_notif_title" msgid="2485175521845371514">"Pairing request"</string>
+	<string name="ali_bluetooth_notif_message" msgid="5381418499788668724">"Choose pairing device"</string>
+        <string name="ali_bluetooth_show_received_files">Show received files</string>
+	<string name="ali_device_picker" msgid="8721012448931226323">"Bluetooth device selector"</string>
+	<string name="ali_bluetooth_permission_request" msgid="1523129741266262748">"Bluetooth authorization request"</string>
+	<string name="ali_bluetooth_ask_enablement" msgid="2342558978033892004">"One application in your phone is requesting authorization to turn on Bluetooth. Do you agree?"</string>
+	<string name="ali_bluetooth_ask_discovery" msgid="669870705606180872">"One application in your phone is requesting authorization to turn on Bluetooth so that other devices can detect your phone within <xliff:g id="TIMEOUT">%1$d</xliff:g> seconds. Do you agree?"</string>
+	<string name="ali_bluetooth_ask_enablement_and_discovery" msgid="7220210326619399542">"One application in your phone is requesting authorization to turn on Bluetooth so that other devices can detect your phone within <xliff:g id="TIMEOUT">%1$d</xliff:g> seconds. Do you agree?"</string>
+	<string name="ali_bluetooth_turning_on" msgid="3107102168379705771">"Turning on Bluetooth&#8230;"</string>
+	<string name="ali_bluetooth_empty_list_bluetooth_off">Turn on Bluetooth, to see devices</string>
+	<string name="ali_date_and_time" msgid="4114084177056654663">"Date and time"</string>
+	<string name="ali_choose_timezone" msgid="7762866468013985022">"Select time zone"</string>
+	<string name="ali_normal_date_format" msgid="1982904221918374153">"Common (<xliff:g id="DATE">%s</xliff:g>)"</string>
+	<skip />
+
+
+
+
+
+	<string name="ali_language_picker_title" msgid="4034157617842965844">"Locale"</string>
+	<string name="ali_select_your_language" msgid="1146235168951906084">"Select your language"</string>
+	<string name="ali_activity_picker_label" msgid="4910700713930693329">"Select activity"</string>
+	<string name="ali_cancel" msgid="6859253417269739139">"Cancel"</string>
+	<string name="ali_settings_label" msgid="1626402585530130914">"Settings"</string>
+	<string name="ali_settings_shortcut" msgid="3672145147925639262">"Settings"</string>
+	<string name="ali_airplane_mode" msgid="8837269988154128601">"Airplane mode"</string>
+
+
+
+	<string name="ali_radio_controls_title" msgid="5868688473587168882">"Wireless network"</string>
+	<string name="ali_date_time_auto" msgid="3086083265745944725">"Auto-update"</string>
+	<string name="ali_date_time_24hour" msgid="1193032284921000063">"24-hour format"</string>
+	<string name="ali_date_time_set_time" msgid="5716856602742530696">"Time"</string>
+	<string name="ali_date_time_set_timezone" msgid="5045627174274377814">"Time zone"</string>
+	<string name="ali_date_time_set_date" msgid="7021491668550232105">"Date"</string>
+	<string name="ali_date_time_date_format" msgid="436706100255870967">"Date format"</string>
+
+	<string name="ali_header_button_confirm">OK</string>
+
+
+	<string name="ali_change_language">Switching languages&#8230;</string>
+	<string name="ali_date_time_settings_timezone_null">No relevant search results</string>
+
+	<string name="ali_manage_device_admin" msgid="3864120111085199551">"Select device manager"</string>
+	<string name="ali_manage_device_admin_summary" msgid="915390201809231575">"Add/remove device manager"</string>
+
+	<string name="ali_bluetooth_settings" msgid="2725796451253089609">"Bluetooth"</string>
+	<string name="ali_bluetooth_settings_title" msgid="2824020086246268296">"Bluetooth"</string>
+
+        <string name="ali_bluetooth_open_discovery">"Open discovery"</string>
+        <string name="ali_bluetooth_rename_my_device">"Click to rename device"</string>
+        <string name="ali_bluetooth_my_device_name">"My device name"</string>
+	<string name="ali_bluetooth_pairing_request" msgid="6385750334766370310">"Bluetooth pairing request"</string>
+	<string name="ali_bluetooth_enter_pin_msg" msgid="856962526754150334">\n"Enter PIN to pair "<xliff:g id="DEVICE_NAME">%1$s</xliff:g>"(Try to enter 0000 or 1234.)"</string>
+	<string name="ali_bluetooth_enter_passkey_msg" msgid="8121515818772179228">\n"Enter matching password to pair "<xliff:g id="DEVICE_NAME">%1$s</xliff:g>""</string>
+	<string name="ali_bluetooth_confirm_passkey_msg" msgid="1205362283945104263">"To pair "<xliff:g id="DEVICE_NAME">%1$s</xliff:g>", check to see if there is a matching key displayed: <xliff:g id="PASSKEY">%2$s</xliff:g>"</string>
+	<string name="ali_bluetooth_incoming_pairing_msg" msgid="1076613564387784476">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> requests to pair with your device, whether to pair with it?"</string>
+	<string name="ali_bluetooth_pairing_accept" msgid="6163520056536604875">"Pair"</string>
+	<string name="ali_bluetooth_pairing_decline" msgid="930951069988011471">"Do not pair"</string>
+	<string name="ali_bluetooth_error_title" msgid="538287072376677166">"Warning"</string>
+	<string name="ali_bluetooth_pairing_error_message" msgid="2852744547246910349">"Problem occurred while pairing with <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
+	<string name="ali_bluetooth_pairing_pin_error_message" msgid="6065697229258906937">"Problem occurred while pairing with <xliff:g id="DEVICE_NAME">%1$s</xliff:g> as PIN or password is not correct"</string>
+	<string name="ali_bluetooth_pairing_device_down_error_message" msgid="6688215193824686741">"Failed to connect to <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
+	<string name="ali_bluetooth_pairing_rejected_error_message" msgid="1648157108520832454">"Pairing rejected by <xliff:g id="DEVICE_NAME">%1$s</xliff:g> "</string>
+	<string name="ali_bluetooth_connecting_error_message" msgid="1779660510084746802">"Error connecting to <xliff:g id="DEVICE_NAME">%1$s</xliff:g> "</string>
+	<string name="ali_bluetooth_preference_scan_title" msgid="2277464653118896016">"Scan for device"</string>
+        <string name="ali_bluetooth_searching_for_devices">Search</string>
+        <string name="ali_bluetooth_search_for_devices">Search</string>
+        <string name="ali_bluetooth_stop_searching">Stop</string>
+        <string name="ali_bluetooth_preference_my_device">My device</string>
+        <string name="ali_bluetooth_preference_paired_devices">Paired devices</string>
+        <string name="ali_bluetooth_preference_found_devices">Available devices</string>
+
+
+
+	<string name="ali_bluetooth_device_context_unpair" msgid="662992425948536144">"Unpair"</string>
+
+
+	<string name="ali_bluetooth_profile_a2dp" msgid="3259633293424539529">"Media"</string>
+	<string name="ali_bluetooth_profile_headset" msgid="1874975688666658946">"Phone"</string>
+	<string name="ali_bluetooth_profile_opp" msgid="3799470046565284440">"Transfer"</string>
+
+
+
+	<string name="ali_bluetooth_device_advanced_title" msgid="528816860793581131">"Paired Bluetooth device"</string>
+
+
+        <string name="ali_bluetooth_device_advanced_profile_header_title">Profiles</string>
+	<string name="ali_bluetooth_device_advanced_rename_device">Rename</string>
+	<string name="ali_bluetooth_a2dp_profile_summary_connected" msgid="963376081347721598">"Connected to media audio"</string>
+	<string name="ali_bluetooth_headset_profile_summary_connected" msgid="7661070206715520671">"Connected to phone audio"</string>
+	<string name="ali_bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"For media audio"</string>
+	<string name="ali_bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"For phone audio"</string>
+	<string name="ali_bluetooth_dock_settings_title" msgid="5543069893044375188">"Dock is used for audio"</string>
+	<string name="ali_bluetooth_dock_settings_headset" msgid="1001821426078644650">"Dock used as handfree phone"</string>
+	<string name="ali_bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"For music and media"</string>
+	<string name="ali_bluetooth_dock_settings_remember" msgid="5551459057010609115">"Remember settings"</string>
+	<string name="ali_bluetooth_device_details">Device settings</string>
+
+
+
+
+
+	<string name="ali_vibrate_title" msgid="6045820877942801599">"Vibrate"</string>
+	<string name="disconnect_vibrate_title">"Disconnect Vibrate"</string>
+
+
+	<string name="ali_haptic_feedback_enable_title" msgid="6311736559245411290">"Haptic feedback"</string>
+
+
+	<string name="ali_display_settings" msgid="3912042046350078328">"Display"</string>
+
+	<string name="ali_accelerometer_title" msgid="7854608399547349157">"Auto-rotate screen"</string>
+    <string name="ali_screen_timeout_summary" msgid="2905757633140605334">"<xliff:g id="TIMEOUT_DESCRIPTION">%1$s</xliff:g>"</string>
+
+	<string name="ali_system_update_settings_list_item_title" msgid="3342887311059985961">"System updating"</string>
+	<string name="ali_system_update_settings_list_item_summary" msgid="3853057315907710747" />
+	<string name="ali_firmware_version" msgid="4801135784886859972">"Android version"</string>
+	<string name="ali_model_number" msgid="3765737700545384794">"Type"</string>
+	<string name="ali_baseband_version" msgid="1848990160763524801">"Baseband version"</string>
+	<string name="ali_kernel_version" msgid="9192574954196167602">"Kernel version"</string>
+	<string name="ali_build_number" msgid="3075795840572241758">"Version number"</string>
+	<string name="ali_device_info_not_available" msgid="8062521887156825182">"Unavailable"</string>
+	<string name="ali_device_status" msgid="607405385799807324">"Status info"</string>
+	<string name="ali_device_status_summary" msgid="2599162787451519618">"Phone number and signal, etc."</string>
+	<string name="ali_memory_available" msgid="418542433817289474">"Available space"</string>
+	<string name="ali_memory_size" msgid="6629067715017232195">"Total capacity"</string>
+	<string name="ali_sd_eject" msgid="6915293408836853020">"Unmount SD card"</string>
+	<string name="ali_sd_eject_summary" msgid="3315557796211542962">"Unmount SD card before removing it"</string>
+	<string name="ali_sd_insert_summary" msgid="2048640010381803841">"Insert SD to proceed installation"</string>
+	<string name="ali_sd_mount" msgid="5940523765187704135">"Mount SD card"</string>
+	<string name="ali_sd_mount_summary" msgid="4936591681679097699">"Mount SD card"</string>
+	<string name="ali_sd_format" msgid="5448738337382712203">"Format SD card"</string>
+	<string name="ali_sd_format_summary" msgid="6616491027883134004">"Format (erase) SD card"</string>
+	<string name="ali_read_only" msgid="6702420168629076340">"(Read-only)"</string>
+	<string name="ali_dlg_confirm_unmount_title" msgid="8612140627310646730">"Unmount SD card"</string>
+	<string name="ali_dlg_confirm_unmount_text" msgid="5851214273718817727">"If you unmount the SD card, some applications will terminate and not work until you remount the SD card. "</string>
+	<string name="ali_dlg_error_unmount_title" msgid="4004106918266783081">"SD card cannot be unmounted"</string>
+	<string name="ali_dlg_error_unmount_text" msgid="9188972789897713180">"SD card cannot be unmounted, try again later."</string>
+	<string name="ali_apn_settings" msgid="3743170484827528406">"APN"</string>
+	<string name="ali_apn_edit" msgid="1354715499708424718">"Change APN"</string>
+	<string name="ali_apn_not_set" msgid="7422262558097875757">"Not configured"</string>
+	<string name="ali_apn_name" msgid="4115580098369824123">"Name"</string>
+	<string name="ali_apn_apn" msgid="2479425126733513353">"APN"</string>
+	<string name="ali_apn_http_proxy" msgid="1826885957243696354">"Proxy"</string>
+	<string name="ali_apn_http_port" msgid="3763259523984976226">"Port"</string>
+	<string name="ali_apn_user" msgid="455637547356117761">"Username"</string>
+	<string name="ali_apn_password" msgid="5412301994998250968">"Password"</string>
+	<string name="ali_apn_server" msgid="2436185314756372858">"Server"</string>
+	<string name="ali_apn_mmsc" msgid="3670124402105585737">"MMSC"</string>
+	<string name="ali_apn_mms_proxy" msgid="5374082621073999275">"MMS proxy"</string>
+	<string name="ali_apn_mms_port" msgid="4074188088199243040">"MMS port"</string>
+	<string name="ali_apn_mcc" msgid="4258628382260674636">"MCC"</string>
+	<string name="ali_apn_mnc" msgid="8629374076888809874">"MNC"</string>
+	<string name="ali_apn_auth_type" msgid="6167205395676037015">"Authentication type"</string>
+	<string name="ali_apn_type" msgid="469613123902220544">"APN type"</string>
+	<string name="ali_error_title" msgid="1319225301794168762">"Warning"</string>
+	<string name="ali_error_name_empty" msgid="1498238337687930558">"Please fill in "Name" field"</string>
+	<string name="ali_error_apn_empty" msgid="1513892291812404310">"Please fill out "APN" field"</string>
+	<string name="ali_error_mcc_not3" msgid="4560171714156251661">"MCC field must be in 3 digits"</string>
+	<string name="ali_error_mnc_not23" msgid="8418177072458379439">"MNC field must be in 2 or 3 digits"</string>
+	<string name="ali_restore_default_apn" msgid="2724583218635739913">"Resetting access point to default&#8230;"</string>
+	<string name="ali_restore_default_apn_completed" msgid="3990449939234957281">"Reset to defaults already"</string>
+	<string name="ali_apn_cmnet">"中国移动NET"</string>
+	<string name="ali_apn_cmwap">"中国移动WAP"</string>
+
+	<string name="ali_master_clear_button_text" msgid="7550632653343157971">"Reset phone"</string>
+	<string name="ali_master_clear_gesture_prompt" msgid="1428645764883536750">"Draw your unlock pattern"</string>
+	<string name="ali_master_clear_gesture_explanation" msgid="8901714274312707918">"You have to draw your unlock pattern to reset your phone"</string>
+	<string name="ali_tether_settings_title_usb" msgid="4315031513434087777">"Tethering"</string>
+
+
+
+
+
+
+
+	<string name="ali_network_settings_title" msgid="7967552516440151852">"Mobile data"</string>
+
+
+
+
+
+
+
+
+	<string name="ali_location_wireless_network">"Network location"</string>
+
+	<string name="ali_location_GPS">"GPS location"</string>
+
+
+	<string name="ali_wireless_settings_apn_title">Access point</string>
+	<string name="ali_wireless_settings_apn_add">Add access point</string>
+	<string name="ali_wireless_settings_empty">Cannot be blank!</string>
+	<string name="ali_wireless_settings_apn_default">Reset to default</string>
+	<string name="ali_bn_preference">Delete the access point</string>
+	<string name="ali_wireless_settings_apn_delete_confirm_desc">Are you sure you want to delete this access point?</string>
+
+	<string name="ali_wireless_settings_apn_reset_title">Reset access point</string>
+
+
+
+	<string name="ali_about_settings" msgid="1743378368185371685">"About the phone"</string>
+	<string name="ali_legal_information" msgid="5769301644270604095">"Legal info"</string>
+
+	<string name="ali_copyright_title" msgid="865906688917260647">"Copyright"</string>
+	<string name="ali_license_title" msgid="1990487604356037871">"License"</string>
+	<string name="ali_terms_title" msgid="7697580845616764642">"Terms and conditions"</string>
+
+
+	<string name="ali_settings_safetylegal_title" msgid="1289483965535937431">"Security info"</string>
+
+        <string name="ali_lockpassword_input_new_password_header">"Enter a new password"</string>
+        <string name="ali_lockpassword_input_new_pin_header">"Enter a new password"</string>
+        <string name="ali_lockpassword_confirm_new_password_header">"Confirm the new password"</string>
+        <string name="ali_lockpassword_confirm_new_pin_header">"Confirm the new password"</string>
+        <string name="ali_lockpassword_confirm_saved_password_header">"Please enter the unlock password"</string>
+        <string name="ali_lockpassword_confirm_saved_pin_header">"Please enter the unlock password"</string>
+        <string name="ali_lockpassword_ok_label" msgid="313822574062553672">"OK"</string>
+        <string name="ali_lockpassword_cancel_label" msgid="8818529276331121899">"Cancel"</string>
+	<string name="lockpassword_pin_too_short">Password must be at least %d digits</string>
+	<string name="lockpassword_pin_too_long">Password must be fewer than <xliff:g id="number" example="17">%d</xliff:g> digits.</string>
+	<string name="lockpassword_pin_recently_used">Device administrator doesn\'t allow using a recent Password.</string>
+	<string name="lockpassword_confirm_pins_dont_match">Password don\'t match</string>
+
+        <string name="ali_lockpattern_recording_intro_header" msgid="308287052221942814">"Draw a new unlock pattern"</string>
+        <string name="ali_lockpattern_need_to_confirm">"Confirm the new unlock pattern"</string>
+        <string name="ali_lockpattern_need_to_unlock" msgid="757935356911054465">"Please draw the unlock pattern"</string>
+	<string name="ali_lockpattern_settings_enable_visible_pattern_title">Display pattern</string>
+	<string name="ali_lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"Too many incorrect attempts!"</string>
+	<string name="ali_lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"Try again <xliff:g id="NUMBER">%d</xliff:g> seconds later"</string>
+
+	<string name="ali_lock_sounds_enable_title" msgid="1575990840389107141">Screen lock sounds</string>
+	<string name="ali_dtmf_tone_enable_title" msgid="1453831168789523185">"Audible touch tones"</string>
+
+	<string name="ali_manageapplications_name">"App management"</string>
+	<string name="ali_battery_info_status_unknown" msgid="196130600938058547">"Unknown"</string>
+
+    <string name="ali_lock_power_button_instantly">"Power button instantly locks"</string>
+    <string name="ali_lock_power_button_instantly_summary">"Lock screen immediately after press power button"</string>
+
+	<string name="ali_application_info_label" msgid="1150486628158409543">"App info"</string>
+	<string name="ali_storage_label" msgid="8700867073480107253">"Storage"</string>
+	<string name="ali_auto_launch_label" msgid="3012617472833815382">"Start by default"</string>
+	<string name="ali_permissions_label" msgid="2605296874922726203">"Authorization"</string>
+	<string name="ali_cache_header_label" msgid="1877197634162461830">"Cache"</string>
+	<string name="ali_clear_cache_btn_text" msgid="5756314834291116325">"Clear cache"</string>
+	<string name="ali_cache_size_label" msgid="7505481393108282913">"Cache"</string>
+	<string name="ali_force_stop" msgid="7435006169872876756">"Stop task"</string>
+	<string name="ali_total_size_label" msgid="1048676419552557254">"Total"</string>
+	<string name="ali_application_size_label" msgid="5055196275624686382">"Applications"</string>
+	<string name="ali_data_size_label" msgid="8679376373625710107">"Data"</string>
+	<string name="ali_uninstall_text" msgid="3644892466144802466">"Uninstall"</string>
+	<string name="ali_clear_user_data_text" msgid="5597622864770098388">"Clear data"</string>
+	<string name="ali_app_factory_reset" msgid="6635744722502563022">"Uninstall update"</string>
+	<string name="ali_auto_launch_enable_text" msgid="2630656657744196691">"You have chosen to start this application for certain operations by default "</string>
+	<string name="ali_auto_launch_disable_text" msgid="7800385822185540166">"No default settings"</string>
+	<string name="ali_clear_activities" msgid="7408923511535174430">"Clear default settings"</string>
+	<string name="ali_unknown" msgid="1592123443519355854">"Unknown"</string>
+	<string name="ali_sort_order_alpha" msgid="8622029358896599842">"Sort by A-Z"</string>
+	<string name="ali_sort_order_size" msgid="7024513286636502362">"Sort by size"</string>
+	<string name="ali_manage_space_text" msgid="8852711522447794676">"Manage space"</string>
+	<string name="ali_filter_apps_all" msgid="5142129378749391876">"All"</string>
+	<string name="ali_filter_apps_third_party" msgid="7786348047690140979">"Download"</string>
+	<string name="ali_filter_apps_running" msgid="7767071454371350486">"Running"</string>
+	<string name="ali_filter_apps_onsdcard" msgid="1477351142334784771">"Memory card"</string>
+	<string name="ali_recompute_size" msgid="7722567982831691718">"Recalculating size&#8230;"</string>
+
+	<string name="ali_clear_data_dlg_text" msgid="8368035073300828451">"Are you sure to permanently clear all the data of this app? It includes all files, settings, accounts, databases, etc."</string>
+	<string name="ali_dlg_ok" msgid="2402639055725653590">"OK"</string>
+	<string name="ali_dlg_confirm_delete">"Clear"</string>
+	<string name="ali_dlg_cancel" msgid="1674753358972975911">"Cancel"</string>
+	<string name="ali_app_not_found_dlg_title" msgid="8458335716378083713">"Applications not found"</string>
+
+	<string name="ali_app_factory_reset_dlg_text" msgid="438395129140568893">"Do you want to uninstall all updates of the system applications?"</string>
+
+	<string name="ali_clear_failed_dlg_text" msgid="7943411157007320290">"Cannot clear application data"</string>
+	<string name="ali_security_settings_desc" msgid="3116027624526915561">"This application has rights to access the following phone contents:"</string>
+	<string name="ali_computing_size" msgid="1599186977475211186">"Processing&#8230;"</string>
+	<string name="ali_invalid_size_value" msgid="1901940003700269523">"Cannot calculate the packet size"</string>
+	<string name="ali_version_text" msgid="9189073826278676425">"Version <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+
+
+
+
+	<string name="ali_insufficient_storage" msgid="8566913062094452962">"Inadequate storage space"</string>
+	<string name="ali_does_not_exist" msgid="837163572898468245">"No such application exists"</string>
+	<string name="ali_app_forward_locked" msgid="5747805144210389585">"This application is protected by copyright"</string>
+	<string name="ali_invalid_location" msgid="4934491353200240499">"Invalid installation location"</string>
+	<string name="ali_system_package" msgid="1030561474413022831">"Cannot install system upgrades in external media"</string>
+	<string name="ali_force_stop_dlg_title" msgid="4289453224368188476">"Confirm stop"</string>
+	<string name="ali_force_stop_dlg_text" msgid="3381302041569982075">"To speed up the system, the task will stop running, and free memory, are you sure you want to stop it?"</string>
+
+	<string name="ali_move_app_failed_dlg_text" msgid="8824246817947643697">"Cannot transfer the application <xliff:g id="REASON">%1$s</xliff:g>"</string>
+
+
+
+	<string name="ali_confirm_stop_stop" msgid="7382363913280993331">"Stop"</string>
+	<string name="ali_language_keyboard_settings_title" msgid="3455826933385341107">"Input settings"</string>
+
+
+	<string name="ali_ime_security_warning" msgid="812267421486877917">"The input method may collect all words you enter, including private data such as passwords and credit card numbers. It comes from application <xliff:g id="IME_APPLICATION_NAME">%1$s</xliff:g>. Do you want to use this input method?"</string>
+
+
+
+
+
+
+
+
+
+
+
+
+	<string name="ali_input_methods_settings_label_format" msgid="6002887604815693322">"<xliff:g id="IME_NAME">%1$s</xliff:g> settings"</string>
+
+
+
+	<string name="ali_development_settings_title" msgid="6719732334835420989">"Develop"</string>
+
+	<string name="ali_enable_adb" msgid="7982306934419797485">"USB test"</string>
+	<string name="ali_enable_adb_summary" msgid="4881186971746056635">"Enable test mode after USB is connected"</string>
+	<string name="ali_keep_screen_on" msgid="1146389631208760344">"Keep awake status"</string>
+	<string name="ali_keep_screen_on_summary" msgid="2173114350754293009">"The screen will not sleep when charging"</string>
+	<string name="ali_allow_mock_location" msgid="2787962564578664888">"Allow mock location"</string>
+	<string name="ali_allow_mock_location_summary" msgid="317615105156345626">"Allow mock location"</string>
+	<string name="ali_adb_warning_title" msgid="6234463310896563253">"Allow USB test?"</string>
+	<string name="ali_adb_warning_message" msgid="5352555112049663033">"USB test is only used for development. This function can copy data between computer and mobile devices, install applications on mobile devices without notification, and access log data. "</string>
+
+	<string name="ali_battery_history_days" msgid="7110262897769622564">"<xliff:g id="DAYS">%1$d</xliff:g>dats <xliff:g id="HOURS">%2$d</xliff:g> hours <xliff:g id="MINUTES">%3$d</xliff:g> minutes <xliff:g id="SECONDS">%4$d</xliff:g> seconds"</string>
+	<string name="ali_battery_history_hours" msgid="7525170329826274999">"<xliff:g id="HOURS">%1$d</xliff:g> hours <xliff:g id="MINUTES">%2$d</xliff:g> minutes <xliff:g id="SECONDS">%3$d</xliff:g> seconds"</string>
+	<string name="ali_battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g> minutes <xliff:g id="SECONDS">%2$d</xliff:g> seconds"</string>
+	<string name="ali_battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> seconds"</string>
+
+
+	<string name="ali_power_usage_summary_title" msgid="5180282911164282324">"Power usage"</string>
+	<string name="ali_power_usage_summary" msgid="7237084831082848168">"Power consumption"</string>
+	<string name="ali_battery_since_unplugged" msgid="338073389740738437">"Power consumption after the power supply is cut off"</string>
+	<skip />
+	<string name="ali_details_title" msgid="7564809986329021063">"Power consumption details"</string>
+	<string name="ali_details_subtitle" msgid="32593908269911734">"Consumption details"</string>
+	<string name="ali_controls_subtitle" msgid="390468421138288702">"Allocated power"</string>
+	<string name="ali_packages_subtitle" msgid="4736416171658062768">"Software packet included"</string>
+	<string name="ali_power_data_connection" msgid="3115486941253159785">"Mobile data"</string>
+	<string name="ali_power_screen" msgid="2353149143338929583">"Display screen"</string>
+	<string name="ali_power_bluetooth" msgid="4373329044379008289">"Bluetooth"</string>
+	<string name="ali_power_cell" msgid="6596471490976003056">"Mobile network standby"</string>
+	<string name="ali_power_phone" msgid="5392641106474567277">"Voice call"</string>
+	<string name="ali_power_idle" msgid="9055659695602194990">"Mobile standby"</string>
+	<string name="ali_usage_type_cpu" msgid="715162150698338714">"Total CPU working time"</string>
+	<string name="ali_usage_type_cpu_foreground" msgid="6500579611933211831">"CPU (foreground)"</string>
+	<string name="ali_usage_type_gps" msgid="7989688715128160790">"GPS"</string>
+	<string name="ali_usage_type_data_send" msgid="2857401966985425427">"Data has been sent"</string>
+	<string name="ali_usage_type_data_recv" msgid="7251090882025234185">"Data has been received"</string>
+	<string name="ali_usage_type_audio" msgid="6957269406840886290">"Audio"</string>
+	<string name="ali_usage_type_video" msgid="4295357792078579944">"Video"</string>
+	<string name="ali_usage_type_on_time" msgid="3351200096173733159">"Time elapsed"</string>
+	<string name="ali_usage_type_no_coverage" msgid="3797004252954385053">"Time without signal"</string>
+	<string name="ali_battery_action_app_details" msgid="3275013531871113681">"App info"</string>
+	<string name="ali_battery_desc_voice" msgid="8980322055722959211">"Power consumed by voice calls"</string>
+	<string name="ali_battery_desc_standby" msgid="3009080001948091424">"Power consumed by phone in standby"</string>
+	<string name="ali_battery_desc_radio" msgid="5479196477223185367">"Power consumed by phone RF"</string>
+	<string name="ali_battery_sugg_radio" msgid="8211336978326295047">"Switch to airplane mode when out of signal coverage area to save power"</string>
+	<string name="ali_battery_desc_display" msgid="5432795282958076557">"Power consumed by display and backlight"</string>
+	<string name="ali_battery_sugg_display" msgid="3370202402045141760">"Reduce screen brightness and/or shorten screen overtime"</string>
+	<string name="ali_battery_desc_bluetooth" msgid="7535520658674621902">"Power consumed by Bluetooth"</string>
+	<string name="ali_battery_sugg_bluetooth_basic" msgid="817276933922157788">"Stop when Bluetooth is not used."</string>
+	<string name="ali_battery_desc_apps" msgid="8123202939321333639">"Power consumed by running applications"</string>
+	<string name="ali_battery_sugg_apps_info" msgid="6065882899391322442">"Stop or uninstall applications"</string>
+	<string name="ali_battery_sugg_apps_gps" msgid="4145005297393800223">"Stop when GPS is not used"</string>
+	<string name="ali_menu_stats_total" msgid="8973377864854807854">"Total consumption"</string>
+	<string name="ali_menu_stats_refresh" msgid="1676215433344981075">"Refresh"</string>
+	<string name="ali_process_systemui_label">"System UI"</string>
+	<string name="ali_process_kernel_label" msgid="3916858646836739323">"YunOS core components"</string>
+	<string name="ali_process_mediaserver_label" msgid="6500382062945689285">"YunOS media server components"</string>
+	<string name="ali_credentials_unlock" msgid="1463040326264133844">"Password for the credential storage"</string>
+	<!--<string name="ali_credentials_unlock_hint" msgid="594679530407918031">"Current password for credential storage(at least 8 characters):"</string>-->
+	<string name="ali_credentials_unlock_hint" msgid="594679530407918031">"Current password for credential storage:"</string>
+	<string name="ali_credentials_install_certificates" msgid="177337517568022236">"Install from SD card"</string>
+
+	<string name="ali_credentials_set_password" msgid="9104473585811899989">"Set password"</string>
+	<string name="ali_credentials_reset" msgid="9170150870552453457">"Clear storage"</string>
+
+	<string name="ali_credentials_reset_hint" msgid="819990295796804516">"Are you sure to clear all credentials?"</string>
+	<!--<string name="ali_credentials_old_password" msgid="7553393815538684028">"Current password for credential storage(at least 8 characters):"</string>-->
+	<string name="ali_credentials_old_password" msgid="7553393815538684028">"Current password for credential storage:"</string>
+	<string name="ali_credentials_new_password" msgid="267487774686796938">"New password"</string>
+	<string name="ali_credentials_confirm_password" msgid="4732250000633424345">"Re-enter"</string>
+	<string name="ali_credentials_first_time_hint" msgid="1567821077545346039">"New password for credential storage(at least 8 characters)"</string>
+	<string name="ali_credentials_wrong_password" msgid="7525192410790152041">"Please enter correct password"</string>
+	<string name="ali_credentials_reset_warning" msgid="6392481296673345268">"Please enter correct password. You have another opportunity to enter the correct password before the system deletes this credential storage. "</string>
+	<string name="ali_credentials_reset_warning_plural" msgid="454828369803055270">"Please enter the correct password. You have <xliff:g id="number" example="5">%1$d</xliff:g> more tries to enter the correct password before the credential storage is erased."</string>
+	<string name="ali_credentials_passwords_mismatch" msgid="5288565139590031733">"Two passwords you entered do not match"</string>
+	<string name="ali_credentials_passwords_empty" msgid="8647631321684363549">"You need to enter and confirm password"</string>
+	<string name="ali_credentials_password_empty" msgid="8292138152983330473">"Please enter password"</string>
+	<string name="ali_credentials_erased" msgid="7700309135582200849">"This credential storage has been deleted"</string>
+	<string name="ali_credentials_enabled" msgid="7588607413349978930">"Credential storage enabled"</string>
+	<string name="ali_credentials_disabled" msgid="7453188089059045380">"Credential storage disabled"</string>
+	<string name="ali_credentials_setnew_ps_ok" >"Set password successfully, credential storage enabled"</string>
+	<string name="ali_credentials_change_ps_ok" >"Set password successfully"</string>
+
+	<string name="ali_active_device_admin_msg" msgid="6930903262612422111">"Device manager"</string>
+	<string name="ali_remove_device_admin" msgid="3596845261596451437">"Cancel activation"</string>
+	<string name="ali_no_device_admins" msgid="702695100241728775">"No device manager that can be displayed"</string>
+	<string name="ali_add_device_admin_msg" msgid="6246742476064507965">"Do you want to activate the device manager?"</string>
+	<string name="ali_add_device_admin" msgid="7133327675884827091">"Activate"</string>
+	<string name="ali_device_admin_warning" msgid="1149471041373876923">"Activating the device manager will allow application <xliff:g id="APP_NAME">%1$s</xliff:g> to perform the following operations: "</string>
+	<string name="ali_device_admin_status" msgid="7169948053970923035">"The device manager has been activated to allow application <xliff:g id="APP_NAME">%1$s</xliff:g> to perform the following operations: "</string>
+
+
+
+
+
+	<string name="ali_lock">Weather</string>
+	<string name="ali_wallpaper">Wallpaper</string>
+	<string name="ali_wallpaper_selected">Current selection</string>
+	<string name="ali_select_new_wallpaper">Select new wallpaper</string>
+	<string name="ali_lock_screen">Lock screen</string>
+	<string name="ali_home_screen">Home screen</string>
+
+	<string name="ali_screenautolock">Screen timeout</string>
+
+	<string name="ali_screenlightautochange">Auto brightness</string>
+
+
+
+	<string name="ali_wallpapersetsucess">Wallpaper applied</string>
+	<string name="ali_callringsetting">Phone ringtones</string>
+	<string name="ali_smsringsetting">Message ringtones</string>
+	<string name="ali_notificationringsetting">Other notification ringtones</string>
+	<string name="ali_card1_call_ring_setting">SIM 1 call ringtones</string>
+	<string name="ali_card1_sms_ring_setting">SIM 1 message ringtones</string>
+	<string name="ali_card2_call_ring_setting">SIM 2 call ringtones </string>
+	<string name="ali_card2_sms_ring_setting">SIM 2 message ringtones </string>
+	<string name="ali_card1_picker_Ringtone">SIM 1 ringtone settings</string>
+	<string name="ali_card1_picker_Notificationtone">SIM 1 ringtone settings</string>
+	<string name="ali_card2_picker_Ringtone">SIM 2 ringtone settings </string>
+	<string name="ali_card2_picker_Notificationtone">SIM 2 ringtone settings </string>
+	<string name="ali_poweronmusic">Power-on/off tones</string>
+
+    <string name="ali_dial_pad_touch_tone_summary">Play tone when dialing keypad is tapped</string>
+    <string name="ali_touch_sounds_summary">Play sound when making screen selection</string>
+    <string name="ali_screen_lock_sound_summary">Play sound when locking/unlocking screen</string>
+    <string name="ali_power_on_off_sound_summary">Play sound when power on/off device</string>
+    <string name="ali_vibrate_on_touch_summary">Vibrate when soft-keys are tapped</string>
+    <string name="ali_bes_aud_enh_summary">Headphone BesAudEnh</string>
+    <string name="ali_call_tone_hint_summary">Vibrate every minute during calls</string>
+
+    <string name="ali_call_tone_hint">Calling tone hint</string>
+
+	<string name="ali_suretoon">Confirm opening</string>
+	<string name="ali_lockscreenoninfo">Show weather info on lock screen. Location service needs to be opened first</string>
+
+
+
+
+	<string name="ali_cancel_dialog">"Cancel"</string>
+	<string name="ali_packmove_tocard">"Moved to SD card"</string>
+	<string name="ali_packmove_tophone">"Moved to phone"</string>
+	<string name="ali_defaultisclear">"Default settings cleared"</string>
+	<string name="ali_cacheisfree">"Cache freed"</string>
+
+	<string name="ali_staticipsettings">"Static IP settings"</string>
+
+
+
+	<string name="ali_credentials_settings">"Secure credential storage"</string>
+	<string name="ali_credentials_settingssum">"Setting for using secure credentials and certificates installation, etc."</string>
+	<string name="ali_credentials_clear">"Confirm clearance"</string>
+	<string name="ali_clear_space">"Clean phone garbage"</string>
+	<string name="ali_clear_space_status">"Release space:"</string>
+	<string name="ali_clear_space_status_start">"Calculating&#8230;"</string>
+	<string name="ali_onebutton_clear">"One touch clean"</string>
+	<string name="ali_clear_space_warntext">"System space will be cleaned by one touch clean. Below applications occupy most of the data space. Please click to check the details."</string>
+	<string name="ali_onebutton_clear_finish">"Clean finished"</string>
+
+	<string name="ali_display_settings_des">Set wallpaper, screen brightness, etc. </string>
+
+	<string name="ali_date_and_time_des">Set date, time, time zone and formats</string>
+	<string name="ali_language_keyboard_settings_des">Set system language and translation</string>
+	<string name="ali_phone_settings_title">Call</string>
+	<string name="ali_phone_set_title">Call Settings</string>
+	<string name="ali_contact_settings_title">Contacts</string>
+	<string name="ali_camera_settings_title">Camera</string>
+	<string name="ali_sms_settings_title">Messages</string>
+
+	<string name="date_picker_dialog_title">Set date</string>
+	<string name="time_picker_dialog_title">Set time</string>
+	<string name="diag_ok">OK</string>
+
+	<string name="ali_mail_settings_title">Mail</string>
+
+
+
+	<string name="ali_ime_settings_title">Input</string>
+
+	<string name="ali_location">Location </string>
+	<string name="ali_location_des">GPS satellite settings, etc.</string>
+	<string name="ali_language">Language</string>
+	<string name="ali_system_language">Language</string>
+	<string name="ali_language_input">Language and input</string>
+	<string name="ali_add_other_input">Add input</string>
+
+	<string name="ali_phone_battery">Battery level</string>
+	<string name="ali_phone_main_battery">Main Battery level</string>
+	<!-- YUNOS BEGIN -->
+	<!-- ##modules(Settings)
+	##date:2013.05.03 ##author:aihua.shenah@aliyun-inc.com-->
+	<string name="ali_phone_vice_battery">Extra Battery level</string>
+	<!-- YUNOS END-->
+
+	<string name="ali_phone_state_network">Network</string>
+
+
+
+
+
+	<string name="ali_phone_firmware">System upgrades</string>
+
+
+	<string name="ali_phone_lawright">Copyright info</string>
+	<string name="ali_os_version">AliyunOS <xliff:g id="VALUE">%s</xliff:g></string>
+
+
+	<string name="ali_operator">Operator name</string>
+	<string name="ali_signal_strength">Signal strength</string>
+	<string name="ali_network">Mobile network type</string>
+	<string name="ali_service_state">Service state</string>
+	<string name="ali_roam">Roaming</string>
+
+
+
+
+
+
+	<string name="ali_phone_identify_1">Model number</string>
+	<!-- YUNOS BEGIN-->
+	<!-- BugID:5922168 author:jinjiang.wjj date:2015.4.18-->
+	<string name="ali_phone_identify_2">IMEI 1</string>
+	<string name="ali_phone_identify_3">IMEI SV 1</string>
+	<string name="ali_phone_identify_2_SIM2">IMEI 2</string>
+	<string name="ali_phone_identify_3_SIM2">IMEI SV 2</string>
+	<!-- YUNOS END-->
+	<string name="ali_phone_device_serialno">Device Serial No.</string>
+       <string name="ali_phone_identify_imsi_single">IMSI</string>
+       <string name="ali_phone_identify_6">SIM1_IMSI</string>
+       <string name="ali_phone_identify_7">SIM2_IMSI</string>
+
+	<string name="ali_phone_law_info">Legal Information</string>
+	<string name="ali_phone_privacy">Yunos Privacy Policy</string>
+	<string name="ali_phone_terms">Yunos Terms of Services</string>
+	<string name="ali_phone_privacy_url"> "http://my.yunos.com/os/program-privacy-en.html"</string>
+	<string name="ali_phone_terms_url">"http://my.yunos.com/os/program-terms-en.html"</string>
+	<string name="ali_phone_law_disconnected">Failed to connect to the network.</string>
+
+	<string name="ali_phone_hardware">Hardware</string>
+	<string name="ali_phone_hardware_cpu">CPU</string>
+
+	<string name="ali_phone_hardware_memory">Runtime memory</string>
+
+	<string name="ali_phone_memory_summary"><xliff:g id="VALUE">%s</xliff:g>, <xliff:g id="VALUE"> %s</xliff:g> available</string>
+
+
+	<string name="ali_phone_hardware_5">WLAN MAC address</string>
+	<string name="ali_phone_hardware_6">Bluetooth address</string>
+
+    <string name="ali_phone_software_version">Software version</string>
+    <string name="ali_phone_hardware_version">HardWare version</string>
+    <string name="ali_phone_release_date">Release date</string>
+    <string name="ali_phone_software_system_version">YunOS version</string>
+	<string name="ali_phone_software_firmware_version">Firmware</string>
+	<string name="ali_phone_software_update_version">OS Update</string>
+	<string name="ali_phone_software_android_version">Compatible with Android</string>
+	<!-- <string name="ali_phone_software_android_version">Compatible with Android <xliff:g id="VALUE">%s</xliff:g></string>-->
+	<string name="ali_phone_software_2">Baseband</string>
+	<string name="ali_phone_software_3">Kernel</string>
+	<string name="ali_phone_software_4">Build number</string>
+	<string name="ali_phone_restore">Reset</string>
+	<string name="ali_phone_restore_1">Reset system settings</string>
+
+	<string name="ali_phone_restore_2">Factory data reset</string>
+	<string name="ali_phone_restore_psw">Please enter 1122 to reset:</string>
+
+	<string name="ali_phone_restore_1_des">"Please note that this will reset all settings."</string>
+	<string name="ali_phone_power_warning_desc">Power is too low, in order to ensure system security, please charge to 10% and then perform the operation. </string>
+	<string name="ali_phone_warning_title">Warning</string>
+	<string name="ali_phone_restore_progress_text">Resetting settings&#8230;</string>
+
+	<string name="ali_phone_restore_2_desc1">"Before resetting, you can back up your data, such as contacts, messages and photos, to cloud to prevent data loss."</string>
+	<string name="ali_phone_restore_to_aliyunhost">Backup to Cloud</string>
+    <string name="ali_phone_restore_2_desc2">"Please note that you can no longer open the files or pictures locked with password in Security-Privacy when phone is reset. Please unlock and backup them before resetting.
+This will erase all data on your phone, including account info, downloaded apps.
+Except system and apps info, files in internal storage, such as music and photos, etc.
+</string>
+	<string name="ali_phone_reset_to_factory">Reset phone</string>
+	<string name="ali_phone_reset_to_factory_psw">Please enter 1122 to reset:</string>
+	<string name="ali_password_error">Wrong password, please re-enter</string>
+    <string name="ali_yunos_no_network_connection">No network connection, please connect network first</string>
+    <string name="ali_yunos_validate_password_error">Wrong password, please re-enter</string>
+    <string name="ali_yunos_validate_password_error_times">Wrong password, you have <xliff:g id="try_times">%d</xliff:g> attempts</string>
+    <string name="ali_freeze_five_time_tip">Your account has been locked for you reached the wrong password limit. Please check your message or email to unlock or retry 3 hours later.</string>
+    <string name="ali_ssl_time_error">Certificate authentication failed, please check the system time.</string>
+	<string name="ali_phone_reset_progress_text">Resetting phone&#8230;</string>
+	<string name="ali_phone_reboot_text">The phone will restart automatically&#8230;</string>
+
+
+	<string name="ali_apn_mms_protocal">MMS</string>
+
+
+
+	<string name="ali_pickerRingtone">Incoming call ringtones</string>
+	<string name="ali_pickerNotificationtone">Message ringtones</string>
+
+
+
+
+
+
+
+
+
+
+
+	<string name="ali_userapptitle">User tasks</string>
+	<string name="ali_systemapptile">General task</string>
+	<string name="ali_force_stop_all_user_app">One-key to accelerate</string>
+	<string name="ali_force_stop_all_user_app_confirm">Confirm acceleration</string>
+	<string name="ali_force_stop_all_user_app_confirm_msg">To speed up the system, part of the running task will be closed, and clear the cache, are you sure you want to accelerate it?</string>
+	<string name="ali_force_stop_all_user_app_ok">OK</string>
+	<string name="ali_force_stop_all_user_app_cancel">Cancel</string>
+	<string name="ali_force_stop_all_user_app_title">One-key to accelerate</string>
+	<string name="ali_force_stop_all_user_app_msg">Speeding up system&#8230;</string>
+	<string name="ali_force_stop_all_user_app_result">%1$d task(s) stopped and %2$s memory released</string>
+	<string name="ali_clear_data">Data cleared</string>
+
+
+
+
+
+
+
+
+	<string name="ali_zairuzhong">Loading lists&#8230;</string>
+
+	<string name="ali_app_manage_header_title">Options</string>
+	<string name="ali_blanklist">No application</string>
+
+	<string name="ali_unableview">Unable to view application list in USB drive mode</string>
+	<string name="ali_notification">Notification</string>
+
+
+
+
+
+
+
+
+
+	<string name="ali_choose_one_sim_card">Select one SIM card</string>
+	<string name="ali_sim_card_1">SIM1</string>
+	<string name="ali_sim_card_2">SIM2</string>
+        <string name="ali_sim_1">SIM 1:</string>
+        <string name="ali_sim_2">SIM 2:</string>
+	<string name="ali_sim_1_network">SIM 1 Network</string>
+	<string name="ali_sim_2_network">SIM 2 Network</string>
+	<string name="ali_contacts_settings_read_from_sim">Import from SIM card</string>
+	<string name="ali_contacts_settings_read_from_sim1">Import from SIM card1</string>
+	<string name="ali_contacts_settings_read_from_sim2">Import from SIM card2</string>
+	<string name="ali_contacts_settings_put_info_in_sim">Export to SIM card</string>
+	<string name="ali_contacts_settings_put_info_in_sim1">Export to SIM card1</string>
+	<string name="ali_contacts_settings_put_info_in_sim2">Export to SIM card2</string>
+	<string name="ali_choose_sim_callset">Call settings</string>
+	<string name="ali_stk_sim_card1">SIM card 1 app</string>
+	<string name="ali_stk_sim_card2">SIM card 2 app</string>
+	<string name="ali_dualcard_settings_title">Dual SIM settings</string>
+	<string name="ali_singlecard_settings_title">SIM Settings</string>
+
+	<string name="ali_mms_settings_read_from_sim">Import from SIM card</string>
+	<string name="ali_mms_settings_read_from_sim1">Import from SIM card1</string>
+	<string name="ali_mms_settings_read_from_sim2">Import from SIM card2</string>
+	<string name="ali_dialog_apn_disabled">APN disabled!</string>
+	<string name="ali_dialog_apn_disabled_msg">Please turn off Airplane mode to enable APN Settings.</string>
+	<string name="ali_callset_sim_card1">Call settings of SIM 1</string>
+	<string name="ali_callset_sim_card2">Call settings of SIM 2</string>
+	<string name="ali_lock_sim_disable1">Disable SIM 1 Lock</string>
+	<string name="ali_lock_sim_disable2">Disable SIM 2 Lock</string>
+	<string name="ali_lock_sim_enable1">Enable SIM 1 Lock</string>
+	<string name="ali_lock_sim_enable2">Enable SIM 2 Lock</string>
+	<string name="ali_credentials_enable_confirm">Confirm to enable </string>
+	<string name="ali_credentials_disable_confirm">Confirm to stop</string>
+	<string name="ali_credentials_remove_confirm">Confirm to remove</string>
+
+
+
+	<string name="ali_appliction_center">App market</string>
+
+
+
+
+
+
+
+
+
+	<string name="ali_close_dialog">OK</string>
+
+	<string name="ali_clear_cache_dlg_text">"To speed up the system, clear the cache, are you sure you want to clear it?"</string>
+
+	<string name="ali_law_company">All rights are reserved by YunOS</string>
+	<string name="ali_power_managemant">"Battery"</string>
+
+	<string name="ali_power_percent_show">"Show battery percentage"</string>
+
+	<string name="ali_power_saving">Power saving</string>
+	<string name="ali_power_save_mode">"Power-saving mode"</string>
+
+	<string name="ali_power_save_mode_open">"Turn on power-saving mode"</string>
+	<string name="ali_power_save_mode_close">"Turn off power-saving mode"</string>
+	<string name="ali_power_save_mode_opening">"Turning on&#8230;"</string>
+	<string name="ali_power_save_mode_closing">"Turning off&#8230;"</string>
+	<string name="ali_power_save_mode_auto">"Auto"</string>
+	<string name="ali_screen_brightness_str">"Screen brightness"</string>
+	<string name="ali_power_save_title_str">"Current settings state"</string>
+	<string name="ali_power_save_location_GPS">"GPS satellites"</string>
+	<string name="ali_power_save_brightness_min">Min</string>
+	<string name="ali_power_save_brightness_max">Max</string>
+	<string name="ali_power_save_camera_preview_quality">"Preview camera quality"</string>
+	<string name="ali_power_save_camera_preview_quality_high">"High"</string>
+	<string name="ali_power_save_camera_preview_quality_low">"Low"</string>
+	<string name="ali_development_mode">"Development mode"</string>
+	<string name="ali_development_mode_summary">"only for ENG"</string>
+    <string name="ali_bluetooth_pb_remember_choice">Don\'t ask again</string>
+    <string name="ali_bluetooth_pin_values_hint">Usually 0000 or 1234</string>
+    <string name="ali_bluetooth_enable_alphanumeric_pin">PIN contains letters or symbols</string>
+    <string name="ali_crypt_keeper_final_desc" product="tablet">
+    Encrypt tablet? This operation is irreversible and if you interrupt it, you will lose data.
+    Encryption takes an hour or more, during which the tablet will restart several times.
+    </string>
+    <string name="ali_crypt_keeper_final_desc" product="default">
+    Encrypt phone? This operation is irreversible and if you interrupt it, you will lose data.
+    Encryption takes an hour or more, during which the phone will restart several times.
+    </string>
+    <string name="ali_crypt_keeper_button_text" product="tablet">Encrypt tablet</string>
+    <string name="ali_crypt_keeper_button_text" product="default">Encrypt phone</string>
+    <string name="ali_enter_password">Type password to decrypt storage</string>
+    <string name="ali_crypt_keeper_setup_title">Encrypting</string>
+    <string name="ali_crypt_keeper_desc" product="tablet">
+    You can encrypt your accounts, settings, downloaded apps and their data,
+    media, and other files. Once you encrypt your tablet, you must enter a numeric PIN
+    or password to decrypt it each time you power it on: you can\'t unencrypt your tablet
+    except by performing a factory data reset, erasing all your data.\n\nEncryption takes
+    an hour or more. You must start with a charged battery and keep your tablet plugged in
+    until encryption is complete. If you interrupt the encryption process, you will lose
+    some or all of your data.</string>
+    <string name="ali_crypt_keeper_desc" product="default">
+    You can encrypt your accounts, settings, downloaded apps and their data,
+    media, and other files. Once you encrypt your phone, you must enter a numeric PIN or
+    password to decrypt it each time you power it on: you can\'t unencrypt your phone
+    except by performing a factory data reset, erasing all your data.\n\nEncryption takes
+    an hour or more. You must start with a charged battery and keep your phone plugged in
+    until encryption is complete. If you interrupt the encryption process, you will lose
+    some or all of your data.</string>
+    <string name="ali_crypt_keeper_low_charge_text">Charge your battery and try again.</string>
+    <string name="ali_crypt_keeper_unplugged_text">Plug in your charger and try again.</string>
+    <string name="ali_power_wifi" msgid="2382791137776486974">"WLAN"</string>
+    <string name="ali_trusted_credentials">Trusted credentials</string>
+
+    <string name="ali_hdcp_checking_title">HDCP checking</string>
+    <string name="ali_hdcp_checking_dialog_title">Set HDCP checking behavior</string>
+    <string name="ali_local_backup_password_title">Desktop backup password</string>
+    <string name="ali_local_backup_password_summary_none">Desktop full backups aren\'t currently protected.</string>
+    <string name="ali_strict_mode">Strict mode enabled</string>
+    <string name="ali_strict_mode_summary">Flash screen when apps do long operations on main thread</string>
+    <string name="ali_pointer_location">Pointer location</string>
+    <string name="ali_pointer_location_summary">Screen overlay showing current touch data</string>
+    <string name="ali_show_touches">Show touches</string>
+    <string name="ali_show_touches_summary">Show visual feedback for touches</string>
+    <string name="ali_show_screen_updates">Show screen updates</string>
+    <string name="ali_show_screen_updates_summary">Flash areas of screen when they update</string>
+    <string name="ali_show_cpu_usage">Show CPU usage</string>
+    <string name="ali_show_cpu_usage_summary">Screen overlay showing current CPU usage</string>
+    <string name="ali_force_hw_ui">Force GPU rendering</string>
+    <string name="ali_force_hw_ui_summary">Use 2D hardware acceleration in applications</string>
+    <string name="ali_window_animation_scale_title">Window animation scale</string>
+    <string name="ali_transition_animation_scale_title">Transition animation scale</string>
+    <string name="ali_debug_applications_category">Apps</string>
+    <string name="ali_immediately_destroy_activities">Don\'t keep activities</string>
+    <string name="ali_immediately_destroy_activities_summary">Destroy every activity as soon as the user leaves it</string>
+    <string name="ali_app_process_limit_title">Background process limit</string>
+    <string name="ali_show_all_anrs">Show all ANRs</string>
+    <string name="ali_show_all_anrs_summary">Show App Not Responding dialog for background apps</string>
+
+    <string name="ali_crypt_keeper_encrypt_title" product="tablet">Encrypt tablet</string>
+    <string name="ali_crypt_keeper_encrypt_title" product="default">Encrypt phone</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="ali_location_settings_title">Location services</string>
+
+
+
+
+
+
+
+
+
+    <string name="ali_bluetooth_connection_permission_request">"Bluetooth connection request"</string>
+    <string name="ali_bluetooth_profile_hid">Input device</string>
+    <string name="ali_bluetooth_hid_profile_summary_use_for">Use for input</string>
+    <string name="ali_bluetooth_hid_profile_summary_connected">Connected to input device</string>
+    <string name="ali_bluetooth_profile_pan_nap">Internet connection sharing</string>
+    <string name="ali_bluetooth_profile_pan">Internet access</string>
+    <string name="ali_bluetooth_pan_profile_summary_use_for">Use for Internet access</string>
+    <string name="ali_bluetooth_pan_nap_profile_summary_connected">Sharing local Internet connection with device</string>
+    <string name="ali_bluetooth_pan_user_profile_summary_connected">Connected to device for Internet access</string>
+    <string name="ali_bluetooth_disconnect_all_profiles">This will end your connection with:&lt;br&gt;&lt;b&gt;<xliff:g id="device_name">%1$s</xliff:g>&lt;/b&gt;</string>
+    <string name="ali_bluetooth_disconnect_title">Disconnect?</string>
+    <string name="ali_bluetooth_connected_no_headset_no_a2dp">Connected (no phone or media)</string>
+    <string name="ali_bluetooth_connected_no_a2dp">Connected (no media)</string>
+    <string name="ali_bluetooth_connected_no_headset">Connected (no phone)</string>
+    <string name="ali_bluetooth_only_visible_to_paired_devices">Only visible to paired devices</string>
+    <string name="ali_bluetooth_not_visible_to_other_devices">Not visible to other Bluetooth devices</string>
+    <string name="ali_bluetooth_rename_button">Rename</string>
+    <string name="ali_bluetooth_rename_device" product="tablet">Rename tablet</string>
+    <string name="ali_bluetooth_rename_device" product="default">Rename phone</string>
+    <string name="ali_bluetooth_enter_pin_other_device">You may also need to enter this PIN on the other device.</string>
+    <string name="ali_bluetooth_enter_passkey_other_device">You may also need to enter this passkey on the other device.</string>
+    <string name="ali_bluetooth_display_passkey_pin_msg">To pair with:<xliff:g id="bold1">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="device_name">%1$s</xliff:g><xliff:g id="end_bold1">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Type on it:<xliff:g id="bold2">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="passkey">%2$s</xliff:g><xliff:g id="end_bold2">&lt;/b&gt;</xliff:g>, then press Enter.</string>
+    <string name="ali_bluetooth_phonebook_request">"Phone book request"</string>
+    <string name="ali_bluetooth_connection_dialog_text">"Do you want to connect to \u0022<xliff:g id="device_name">%1$s</xliff:g>\u0022?"</string>
+    <string name="ali_bluetooth_pb_acceptance_dialog_text">%1$s would like to access your contacts and call history. Give access to %2$s?</string>
+    <string name="ali_bluetooth_connection_notif_message">"Touch to connect to \u0022<xliff:g id="device_name">%1$s</xliff:g>\u0022."</string>
+
+
+    <string name="ali_bluetooth_visibility_timeout">Visibility timeout</string>
+    <string name="ali_bluetooth_disable_profile_title">Disable profile?</string>
+    <string name="ali_bluetooth_disable_profile_message">This will disable:&lt;br&gt;&lt;b&gt;<xliff:g id="profile_name">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;From:&lt;br&gt;&lt;b&gt;<xliff:g id="device_name">%2$s</xliff:g>&lt;/b&gt;</string>
+    <string name="ali_bluetooth_ask_lasting_discovery" product="tablet">"An app on your tablet wants to make your tablet \u201calways discoverable\u201d by other Bluetooth devices. Allow?"</string>
+    <string name="ali_bluetooth_ask_lasting_discovery" product="default">"An app on your phone wants to make your phone \u201calways discoverable\u201d by other Bluetooth devices. Allow?"</string>
+    <string name="ali_bluetooth_ask_enablement_and_lasting_discovery" product="tablet">"An app on your tablet wants to turn on Bluetooth and make your tablet discoverable by other devices. Allow?"</string>
+    <string name="ali_bluetooth_ask_enablement_and_lasting_discovery" product="default">"An app on your phone wants to turn on Bluetooth and make your phone discoverable by other devices. Allow?"</string>
+
+    <string name="ali_try_again">Try again.</string>
+    <string name="ali_crypt_keeper_failed_title">Encryption unsuccessful</string>
+    <string name="ali_crypt_keeper_failed_summary" product="tablet">
+      Encryption was interrupted and can\'t complete. As a result, the data on
+      your tablet is no longer accessible.
+      \n\n
+      To resume using your tablet, you must perform a factory reset.
+      When you set up your tablet after the reset, you\'ll have an opportunity
+      to restore any data that was backed up to your Cloud Account.
+    </string>
+    <string name="ali_crypt_keeper_failed_summary" product="default">
+      Encryption was interrupted and can\'t complete. As a result, the data on
+      your phone is no longer accessible.
+      \n\nTo resume using your phone, you must perform a factory reset.
+      When you set up your phone after the reset, you\'ll have an opportunity
+      to restore any data that was backed up to your Cloud Account.
+    </string>
+    <string name="ali_crypt_keeper_setup_description" product="tablet">Wait while your tablet
+    is being encrypted. <xliff:g example="50" id="percent">^1</xliff:g>% complete.</string>
+    <string name="ali_crypt_keeper_setup_description" product="default">Wait while your phone
+    is being encrypted. <xliff:g example="50" id="percent">^1</xliff:g>% complete.</string>
+    <string name="ali_crypt_keeper_cooldown">Try again in <xliff:g example="15" id="delay">^1</xliff:g> seconds.</string>
+    <string name="ali_cryptkeeper_return_to_call">Return to call</string>
+    <string name="ali_cryptkeeper_emergency_call">Emergency call</string>
+    <string name="ali_crypt_keeper_dialog_need_password_message">You must set a lock screen PIN or
+    password before you can start encryption.</string>
+    <string name="ali_crypt_keeper_dialog_need_password_title">No lock screen PIN or password</string>
+    <string name="ali_crypt_keeper_confirm_title">Confirm encryption</string>
+    <string name="ali_local_backup_password_summary_change">Select to change or remove the password for desktop full backups</string>
+    <string name="ali_misc_files">Misc files</string>
+    <string name="ali_misc_files_selected_count">selected <xliff:g example="3" id="number">%1$d</xliff:g> out of <xliff:g example="15" id="total">%2$d</xliff:g></string>
+    <string name="ali_misc_files_selected_count_bytes"><xliff:g example="3.25MB" id="number">%1$s</xliff:g> out of <xliff:g example="15.25MB" id="total">%2$s</xliff:g></string>
+    <string name="ali_memory_apps_usage">Apps</string>
+    <string name="ali_memory_dcim_usage">Pictures, videos</string>
+    <string name="ali_memory_music_usage">Audio (music, ringtones, podcasts, etc.)</string>
+    <string name="ali_memory_downloads_usage">Downloads</string>
+    <string name="ali_memory_media_misc_usage">Misc.</string>
+    <string name="ali_internal_storage">System storage</string>
+    <string name="ali_memory_calculating_size">Calculating…</string>
+    <string name="ali_battery_stats_on_battery"><xliff:g id="time">%1$s</xliff:g> on battery</string>
+    <string name="ali_battery_stats_charging_label">Charging</string>
+    <string name="ali_battery_stats_screen_on_label">Screen on</string>
+    <string name="ali_battery_stats_gps_on_label">GPS on</string>
+    <string name="ali_battery_stats_wifi_running_label">WLAN</string>
+    <string name="ali_battery_stats_wake_lock_label">Awake</string>
+    <string name="ali_battery_stats_phone_signal_label">Mobile network signal</string>
+    <string name="ali_battery_desc_wifi" msgid="1702486494565080431">"Power consumed by WLAN"</string>
+    <string name="ali_battery_sugg_wifi" msgid="7542345142282261691">"Stop when WLAN is not working or unavailable"</string>
+    <string name="ali_percentage"><xliff:g example="30" id="number">%d</xliff:g>%%</string>
+    <string name="ali_power_usage_level_and_status"><xliff:g id="level">%1$s</xliff:g> - <xliff:g id="status">%2$s</xliff:g></string>
+    <string name="ali_history_details_title">History details</string>
+    <string name="ali_usage_type_wake_lock">Keep awake</string>
+    <string name="ali_usage_type_wifi_running">WLAN running</string>
+
+    <string name="ali_trusted_credentials_system_tab">System</string>
+    <string name="ali_trusted_credentials_user_tab">User</string>
+    <string name="ali_trusted_credentials_enable_label">Enable</string>
+    <string name="ali_trusted_credentials_disable_label">Disable</string>
+    <string name="ali_trusted_credentials_remove_label">Remove</string>
+    <string name="ali_trusted_credentials_enable_confirmation">Enable the system CA certificate?</string>
+    <string name="ali_trusted_credentials_disable_confirmation">Disable the system CA certificate?</string>
+    <string name="ali_trusted_credentials_remove_confirmation">Permanently remove the user CA certificate?</string>
+    <string name="ali_tether_settings_title_all">Tethering &amp; portable hotspot</string>
+    <string name="ali_tether_settings_title_usb_bluetooth">Tethering</string>
+    <string name="ali_tether_settings_title_bluetooth">Bluetooth tethering</string>
+    <string name="ali_tether_settings_title_wifi" msgid="3277144155960302049">"Portable hotspot"</string>
+    <string name="ali_wifi_tether_enabled_subtext">"Name： <xliff:g id="NETWORK_SSID">%1$s</xliff:g>\nPassword： <xliff:g id="NETWORK_PASSWORD">%2$s</xliff:g>"</string>
+    <string name="ali_no_password">Nothing</string>
+    <string name="ali_delete">Delete</string>
+    <string name="ali_select_all">Select all</string>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--WIFI BEGIN  -->
+		<string name="ali_wifi_more">More settings</string>
+		<string name="ali_wifi_list_category_title" translatable="false">WLAN list</string>
+		<string name="ali_wifi_setting_sleep_policy_error" msgid="5103670439972135148">"Problem with sleep policy settings"</string>
+		<string name="ali_status_unavailable" msgid="7862009036663793314">"Unavailable"</string>
+		<string name="ali_wifi_state_disabling" translatable="false">Disabling</string>
+		<string name="ali_wifi_state_disabled" translatable="false">Disabled</string>
+		<string name="ali_wifi_state_enabling" translatable="false">Enabling</string>
+		<string name="ali_wifi_state_enabled" translatable="false">Enabled</string>
+		<string name="ali_wifi_state_unknown" translatable="false">Unknown</string>
+		<string name="ali_radioInfo_unknown" msgid="737385314432468266">"Unknown"</string>
+		<string name="ali_wifi_add_network" msgid="1671334951296205616">"Add"</string>
+		<string name="ali_wifi_add_network_existed">"already existed"</string>
+		<string name="ali_wifi_save" msgid="3331121567988522826">"Save"</string>
+		<string name="ali_connect_to_blank">"%1$s"</string>
+
+		<string name="ali_wifi_security" msgid="6603611185592956936">"Security:\t"</string>
+		<string name="ali_wifi_signal" msgid="5514120261628065287">"Signal strength:\t"</string>
+		<string name="ali_wifi_speed" msgid="3526198708812322037">"Connection speed:\t"</string>
+		<string name="ali_wifi_ip_address" msgid="1440054061044402918">"IP address:\t"</string>
+
+		<string name="ali_wifi_connect" msgid="1076622875777072845">"Connect"</string>
+		<string name="ali_wifi_cancel" msgid="6763568902542968964">"Cancel"</string>
+		<string name="ali_wifi_details">"Details"</string>
+		<string name="ali_wifi_wapi_unsupport">WAPI not support.</string>
+		<string name="ali_wifi_wapi_cert_error">WAPI Cert NULL.</string>
+		<string name="ali_wifi_ap_password_error">"Password format error"</string>
+		<string name="ali_wifi_ap_password_error_wep">"The password must be 5 or 13 ASCII characters ,or 10 or 26 hexadecimal characters"</string>
+		<string name="ali_wifi_ap_password_error_wapi_hex">The password must be 8 to 64 hexadecimal characters</string>
+		<string name="ali_wifi_ap_password_error_wpa">"The password must be 8 to 63 ASCII characters or 64 hexadecimal characters"</string>
+		<string name="ali_wifi_ap_password_error_wapi">"The password must be 8 to 63 ASCII characters"</string>
+		<string name="ali_proxy_error_invalid_port" msgid="1816315605424943626">"The port you have entered is invalid"</string>
+		<string name="ali_wifi_ip_settings">IP settings</string>
+		<string name="ali_wifi_ip_settings_invalid_ip_address">Type a valid IP address.</string>
+		<string name="ali_wifi_ip_settings_invalid_gateway">Type a valid gateway address.</string>
+		<string name="ali_wifi_ip_settings_invalid_network_prefix_length">Type a network prefix length between 0 and 32.</string>
+
+		<string name="ali_wifi_ip_settings_invalid_dns1">"Type a valid DNS1 address."</string>
+		<string name="ali_wifi_ip_settings_invalid_dns2">"Type a valid DNS2 address."</string>
+
+		<string name="ali_proxy_error_invalid_host" msgid="9120776460063182119">"You entered an invalid host name"</string>
+		<string name="ali_proxy_error_invalid_exclusion_list">The exclusion list you typed isn\'t properly formatted. Type a comma-separated list of excluded domains.</string>
+		<string name="ali_proxy_error_empty_port" msgid="3525734169948795417">"Port field must be entered"</string>
+		<string name="ali_proxy_error_empty_host_set_port" msgid="2451694104858226781">"If host field is blank, port field must be blank too."</string>
+		<string name="ali_wifi_unchanged" msgid="3410422020930397102">"(Unchanged)"</string>
+		<string name="ali_wifi_unspecified" msgid="5431501214192991253">"(Unspecified)"</string>
+		<string name="ali_wifi_settings_wifi_connect">"Connect"</string>
+		<string name="ali_wifi_ap_ssid_error">"SSID cannot be empty"</string>
+		<string name="ali_wifi_open_conneced">Connected</string>
+		<string name="ali_wifi_status_conneced">Connected</string>
+		<string name="ali_wifi_error" msgid="3207971103917128179">"Error"</string>
+		<string name="ali_wlanapsum">"Share mobile data connection via hotspot"</string>
+
+		<string name="ali_wifi_starting" msgid="6710266609710860129">"Turning on&#8230;"</string>
+		<string name="ali_wifi_stopping" msgid="5952909472548218348">"Turning off&#8230;"</string>
+		<string name="ali_start_done">"On"</string>
+		<string name="ali_stop_done">"Off"</string>
+		<string name="ali_wlanapsettingplus">"Set Portable hotspot"</string>
+		<string name="ali_wifi_apsetting_confirm">"OK"</string>
+		<string name="ali_wifi_empty_list_wifi_off">Turn on WLAN, to see available networks.</string>
+		<string name="ali_wifi_empty_list_wifi_on">No available networks</string>
+
+		<string name="ali_wifi_wps_overlap_error">Another WLAN protected session was detected. Try again in a few minutes.</string>
+		<string name="ali_wifi_fail_to_scan" msgid="6194542252808587669">"Cannot find network by scanning"</string>
+		<string name="ali_wifi_wps_setup_title">WPS setup</string>
+		<string name="ali_wifi_wps_failed">Couldn\'t start WPS, try again.</string>
+		<string name="ali_wifi_wps_in_progress">WPS is already in progress and can take up to two minutes to complete</string>
+		<string name="ali_wifi_wps_pin_output">Type the PIN <xliff:g id="wps_pin">%1$s</xliff:g> on the access point</string>
+		<string name="ali_wifi_wps_complete">WPS succeeded. Connecting to the network\u2026</string>
+		<string name="ali_wifi_wps_failed_generic">WPS failed. Please try again in a few minutes.</string>
+		<string name="ali_wifi_wps_onstart_pin">Enter pin <xliff:g id="number">%1$s</xliff:g> on your WLAN router. The setup can take up to two minutes to complete.</string>
+		<string name="ali_wifi_wps_onstart_pbc">Press the WLAN Protected Setup button on your router. It may be called \"WPS\" or contain this symbol:</string>
+		<string name="ali_wifi_wps_failed_wep">The wireless router security setting (WEP) is not supported</string>
+		<string name="ali_wifi_wps_failed_tkip">The wireless router security setting (TKIP) is not supported</string>
+		<string name="ali_wifi_wps_connected">Connected to WLAN network <xliff:g id="network_name">%s</xliff:g></string>
+		<string name="ali_wifi_wps_failed_overlap">Another WPS session was detected. Please try again in a few minutes.</string>
+		<string name="ali_wifi_wps_setup_msg">Starting WPS\u2026</string>
+		<string name="ali_wifi_wps_onstart_pad">Sending pin request to router\u2026</string>
+		<string name="ali_wifi_security_short_eap">802.1x</string>
+		<string name="ali_wifi_security_short_eap2">WPA2 Enterprise</string>
+		<string name="ali_wifi_security_eap">802.1x EAP</string>
+		<string name="ali_wifi_security_eap2">WPA2 Enterprise</string>
+		<string name="ali_wifi_security_short_wpa">WPA</string>
+		<string name="ali_wifi_security_short_wpa2">WPA2</string>
+		<string name="ali_wifi_security_wep">WEP</string>
+		<string name="ali_wifi_security_short_wep">WEP</string>
+		<string name="ali_wifi_security_wpa">WPA PSK</string>
+		<string name="ali_wifi_security_wpa2">WPA2 PSK</string>
+		<string name="ali_wifi_security_wapi_psk">WAPI PSK</string>
+		<string name="ali_wifi_security_wapi_cert">WAPI CERT</string>
+		<string name="ali_wifi_security_none">"Open"</string>
+		<string name="ali_wifi_not_in_range" msgid="1136191511238508967">"Out of range"</string>
+		<string name="ali_wifi_disabled_valid_failure">"Validation fails"</string>
+		<string name="ali_wifi_disabled_password_failure">Authentication problem</string>
+		<string name="ali_wifi_disabled_network_failure">Avoided poor Internet connection</string>
+		<string name="ali_wifi_disabled_generic">Disabled</string>
+		<string name="ali_wifi_remembered" msgid="8426719916135950136">"Saved"</string>
+		<string name="ali_wifi_secured_first_item">Secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+		<string name="ali_wifi_secured_second_item">, secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+		<string name="ali_wifi_wps_available_first_item">Protected network available</string>
+		<string name="ali_wifi_wps_available_second_item">\u0020(protected network available)</string>
+
+		<string name="ali_wifi_quick_toggle_title" msgid="874495178395350104">"WLAN"</string>
+
+		<string name="ali_wifi_ssid" msgid="641393708309146745">"Network SSID:"</string>
+
+		<string name="ali_wifi_password" msgid="5948219759936151048">"Password:"</string>
+		<string name="ali_credentials_password_too_short" msgid="7502749986405522663">"Password must contain at least 8 characters"</string>
+		<string name="ali_wifi_show_password" msgid="4235237470701732009">"Show password"</string>
+		<string name="ali_wifi_settings_category" msgid="2810363951104753710">"WLAN settings"</string>
+		<string name="ali_disableNetwork" translatable="false">disableNetwork</string>
+		<string name="ali_disconnect" translatable="false">disconnect</string>
+		<string name="ali_enableNetwork" translatable="false">enableNetwork</string>
+		<string name="ali_getConfiguredNetworks" translatable="false">getConfiguredNetworks</string>
+		<string name="ali_getConnectionInfo" translatable="false">getConnectionInfo</string>
+		<string name="ali_testing_wifi_info" translatable="false">WLAN information</string>
+		<string name="ali_wifi_api_test" translatable="false">WLAN API</string>
+		<string name="ali_wifi_status_test" translatable="false">WLAN status</string>
+		<string name="ali_wifi_update" translatable="false">Refresh stats</string>
+		<string name="ali_wifi_state_label" translatable="false">WLAN state :</string>
+		<string name="ali_supplicant_state_label" translatable="false">Supplicant state :</string>
+		<string name="ali_rssi_label" translatable="false">RSSI :</string>
+		<string name="ali_bssid_label" translatable="false">BSSID :</string>
+		<string name="ali_ssid_label" translatable="false">SSID :</string>
+		<string name="ali_hidden_ssid_label" translatable="false">Hidden SSID :</string>
+		<string name="ali_ipaddr_label" translatable="false">IPaddr :</string>
+		<string name="ali_macaddr_label" translatable="false">MAC addr :</string>
+		<string name="ali_networkid_label" translatable="false">Network ID :</string>
+		<string name="ali_link_speed_label" translatable="false">Link speed :</string>
+		<string name="ali_scan_list_label" translatable="false">Scan results :</string>
+		<string name="ali_wifi_config_info" translatable="false">WLAN config</string>
+		<string name="ali_config_list_label" translatable="false">Configured networks</string>
+		<string name="ali_wifi_security_title" >"Security"</string>
+
+
+		<string name="ali_wifi_eap_method_title">"EAP method"</string>
+
+		<string name="ali_wifi_hex_password">Hexadecimal password</string>
+
+		<string name="ali_please_select_phase2_title">"Phase 2 authentification"</string>
+
+		<string name="ali_wifi_eap_ca_cert_title">"Root certificate"</string>
+
+		<string name="ali_wifi_eap_user_cert_title">"Customer certificate"</string>
+		<string name="ali_wifi_eap_identity" msgid="4359453783379679103">"Identity:"</string>
+		<string name="ali_wifi_eap_anonymous" msgid="2989469344116577955">"Anon. identity:"</string>
+		<string name="ali_wifi_wapi_as_cert">"AS certificate: "</string>
+		<string name="ali_wifi_wapi_user_cert">"User certificate: "</string>
+		<string name="ali_wifi_show_advanced">Show advanced options</string>
+		<string name="ali_wifi_network_setup">WPS:</string>
+
+		<string name="ali_proxy_settings_title">Proxy settings</string>
+		<string name="ali_proxy_warning_limited_support">The HTTP proxy is used by the browser but may not be used by the other apps.</string>
+		<string name="ali_proxy_hostname_label" msgid="7531298584350977540">"Host name:"</string>
+
+		<string name="ali_proxy_port_label" msgid="2623639656638472491">"Port:"</string>
+
+		<string name="ali_proxy_exclusionlist_label">Bypass proxy for</string>
+
+		<string name="ali_wifi_ip_settings_titlebar" msgid="4345739031248760326">"IP settings"</string>
+
+		<string name="ali_wifi_gateway" msgid="163914742461092086">"Gateway:"</string>
+
+		<string name="ali_wifi_network_prefix_length">Network prefix length</string>
+
+		<string name="ali_wifi_netmask" msgid="4520635321425529085">"Net mask:"</string>
+		<string name="ali_wifi_dns1" msgid="7344118050720080045">"Domain name 1:"</string>
+		<string name="ali_wifi_dns2" msgid="1368601006824882659">"Domain name 2:"</string>
+
+
+		<string name="ali_wifi_ap_disconnect">"Disconnect"</string>
+		<string name="ali_wifi_ap_forget">"Clear settings"</string>
+		<string name="ali_wifi_ap_update_titile">"Change relevant settings"</string>
+		<string name="ali_ping_test_label" msgid="7255376471490860631">"Run ping test"</string>
+		<string name="ali_radio_info_ping_ipaddr" msgid="498747917793263530">"Ping IP address:"</string>
+		<string name="ali_radio_info_ping_hostname" msgid="3054888474808217853">"Ping host name (www.aliyun.com):"</string>
+		<string name="ali_radio_info_http_client_test" msgid="5733604021077701555">"HTTP client test:"</string>
+		<string name="ali_wifi_advanced_titlebar" msgid="5419052271935350999">"Advanced"</string>
+		<string name="ali_wifi_setting_sleep_policy_title" msgid="1367731352485585528">"Sleep policy"</string>
+		<string name="ali_wifi_enable_watchdog_service">Avoid poor connections</string>
+		<string name="ali_wifi_enable_watchdog_service_summary">Don\'t use a WLAN network unless it has a good Internet connection</string>
+        <string name="ali_wifi_advanced_mac_address_title" msgid="6571335466330978393">"MAC address"</string>
+        <string name="ali_wifi_advanced_ip_address_title">IP address</string>
+        <string name="ali_wifi_advanced_gateway_title">Gateway</string>
+		<string name="ali_wifi_tether_settings_title" msgid="3749063216348284432">"Hotspot settings"</string>
+        <string name="ali_wifi_tether_settings_share">"To connect using WLAN"</string>
+        <string name="ali_usb_tether_settings_share">"To connect using USB"</string>
+        <string name="ali_bluetooth_tether_settings_share">"To connect using Bluetooth"</string>
+		<string name="ali_wlanap">"WLAN access points"</string>
+
+		<string name="ali_wifi_notify_open_networks" msgid="3755768188029653293">"Network notification"</string>
+
+
+		<string name="ali_wifi_access_points" msgid="2664629396767022441">"Scan WLAN"</string>
+		<string name="ali_wifi_menu_advanced" msgid="7522252991919573664">"Advanced"</string>
+
+
+		<string name="ali_wifi_settings" msgid="4746946030627213196">"WLAN"</string>
+
+		<string name="ali_wlanapsetting">"Portable hotspot"</string>
+
+
+
+
+		<string name="ali_wifi_ip_settings_invalid_ip" msgid="8057085083985255580">"Enter a valid IP address"</string>
+		<string name="ali_wifi_use_static_ip" msgid="2133464242165642230">"Use static IP"</string>
+		<string name="ali_staticipsettingssum">"Fill in IP address, gateway, domain name, etc."</string>
+		<string name="ali_ipnotset">"Not set"</string>
+		<string name="ali_wifi_p2p_settings_title">WLAN Direct</string>
+
+
+		<string name="ali_wifi_p2p_menu_search">Search for devices</string>
+		<string name="ali_wifi_p2p_menu_searching">Searching\u2026</string>
+		<string name="ali_wifi_p2p_menu_rename">Rename device</string>
+		<string name="ali_wifi_p2p_peer_devices">Peer devices</string>
+		<string name="ali_wifi_p2p_remembered_groups">Remembered groups</string>
+		<string name="ali_wifi_p2p_failed_connect_message">Couldn\'t connect.</string>
+		<string name="ali_wifi_p2p_failed_rename_message">Failed to rename device.</string>
+		<string name="ali_wifi_p2p_disconnect_title">Disconnect?</string>
+		<string name="ali_wifi_p2p_disconnect_message">If you disconnect, your connection with <xliff:g id="peer_name">%1$s</xliff:g> will end.</string>
+		<string name="ali_wifi_p2p_disconnect_multiple_message">If you disconnect, your connection with <xliff:g id="peer_name">%1$s</xliff:g> and <xliff:g id="peer_count">%2$s</xliff:g> other devices will end.</string>
+		<string name="ali_wifi_p2p_cancel_connect_title">Cancel invitation?</string>
+		<string name="ali_wifi_p2p_cancel_connect_message">Do you want to cancel invitation to connect with <xliff:g id="peer_name">%1$s</xliff:g>?</string>
+		<string name="ali_wifi_p2p_delete_group_message">Forget this group?</string>
+		<string name="ali_wifi_p2p_connect_info">Connect information</string>
+		<string name="ali_wifi_display_settings_title">Wireless display</string>
+		<string name="ali_wifi_display_settings_summary">Share screen contents with other devices</string>
+
+
+		<string name="ali_wifi_display_search_for_devices">Search for displays</string>
+		<string name="ali_wifi_display_searching_for_devices">Searching\u2026</string>
+		<string name="ali_wifi_display_no_devices_found">No nearby wireless displays</string>
+		<string name="ali_wifi_display_paired_devices">Paired displays</string>
+		<string name="ali_wifi_display_available_devices">Scan wireless device</string>
+
+
+		<string name="ali_wifi_display_status_available">Available</string>
+
+		<string name="ali_wifi_display_disconnect_title">Disconnect?</string>
+		<string name="ali_wifi_display_disconnect_text">This will end your connection with:&lt;br>&lt;b><xliff:g id="device_name">%1$s</xliff:g>&lt;/b></string>
+		<string name="ali_wifi_display_options_title">Wireless display options</string>
+		<string name="ali_wifi_display_options_forget">Forget</string>
+		<string name="ali_wifi_display_options_done">Done</string>
+
+		<string name="ali_wifi_sync_dialog_title">Enable System Settings backup, save the WLAN you’ve connected</string>
+		<string name="ali_wifi_sync_dialog_sub">Forgetting WLAN password? Enable System Backup, always connect to saved WLAN!</string>
+
+    <string name="ali_wifi_security_cmcc">Security</string>
+    <string name="ali_proxy_exclusionlist_label_cmcc">Bypass proxy for</string>
+    <string name="ali_wifi_priority_label">Priority</string>
+    <string name="ali_status_unavailable">Unavailable</string>
+    <string name="ali_wifi_gateway">Gateway</string>
+    <string name="ali_wifi_network_netmask">Netmask</string>
+    <string name="ali_wifi_connect_ap_title">Network auto connect</string>
+    <string name="ali_wifi_connect_ap_summary">Connect to the recently used AP automatically when WLAN enabled</string>
+    <string name="ali_wifi_connect_type_title">Set network connection method</string>
+    <string name="ali_wifi_signal_found_msg">Current connection signal is weak, would you like to use another WLAN network?</string>
+    <string name="ali_wifi_priority_type_title">Set AP priority manually</string>
+    <string name="ali_wifi_priority_type_summary">Allow to set priority for each access point manually</string>
+    <string name="ali_wifi_priority_settings_title">AP priority settings</string>
+    <string name="ali_wifi_priority_settings_summary">Click to set priority of each access point</string>
+    <string name="ali_wifi_priority_changed">Priority old value=<xliff:g id="old_value">%s</xliff:g>,new value=<xliff:g id="new_value">%s</xliff:g></string>
+    <string name="ali_wifi_priority_settings_label">Priority settings</string>
+    <string name="ali_wifi_configured_ap_list">Remembered access point list</string>
+    <string name="ali_confirm_title">Confirm</string>
+    <string name="ali_msg_wlan_signal_found">Found WLAN signal %s, would you like to use this WLAN network? Using this network will interrupt the data service partially.</string>
+    <string name="ali_msg_wlan_signal_found_manul">Found WLAN signal, would you like to use this WLAN network?</string>
+    <string name="ali_gemini_default_sim_auto">Auto</string>
+    <string name="ali_configed_access_points">Credible access points</string>
+    <string name="ali_new_access_points">Unknown access points</string>
+
+	<!--WIFI END  -->
+
+	<!--VPN BEGIN  -->
+
+
+		<string name="ali_vpn_connect">Connect</string>
+		<string name="ali_vpn_no_ca_cert">(don\'t verify server)</string>
+		<!--<string name="ali_vpn_no_server_cert">(received from server)</string>-->
+		<string name="ali_vpn_no_server_cert">(from server)</string>
+
+		<string name="ali_vpn_create">Add</string>
+		<string name="ali_vpn_edit">Edit VPN network</string>
+		<string name="ali_vpn_connect_to" msgid="2541409082892684362">"Connect to <xliff:g id="NAME">%s</xliff:g>"</string>
+
+		<!--<string name="ali_vpn_field_not_set_summary" >has not been set</string>-->
+		<string name="ali_vpn_field_not_set_summary" >not set</string>
+		<string name="ali_vpn_error_miss_entering" msgid="5377667978602483250">"Must input <xliff:g id="CODE">%s</xliff:g>"</string>
+		<string name="ali_vpn_error_miss_selecting" msgid="4890780825580511345">"Must select <xliff:g id="OPTION">%s</xliff:g>"</string>
+		<string name="ali_vpn_a_name" msgid="8445736942405283509">"VPN name"</string>
+		<string name="ali_vpn_a_vpn_server" msgid="5960906152125045853">"Server address"</string>
+		<string name="ali_vpn_a_username" msgid="6664733641993968692">"Username"</string>
+		<string name="ali_vpn_a_password" msgid="1537213632501483753">"Password"</string>
+		<string name="ali_vpn_a_ipsec_presharedkey" msgid="1255301923217898418">"IPSec PSK"</string>
+		<string name="ali_vpn_a_user_certificate" msgid="8943983437956898649">"User certificate"</string>
+		<string name="ali_vpn_dns_server_error">Enter the DNS server error</string>
+		<string name="ali_vpn_route_error">Enter the forwarding route error</string>
+		<string name="ali_vpn_dlg_prompt_title">Tips</string>
+
+
+
+		<string name="ali_vpn_back_button" msgid="192036339792734970">"Back"</string>
+
+
+		<string name="ali_vpn_menulist_disconnect">Disconnect</string>
+		<string name="ali_vpn_menulist_connect">Connect</string>
+		<string name="ali_vpn_menulist_edit">Edit</string>
+		<string name="ali_vpn_menulist_delete">Delete</string>
+		<string name="ali_vpn_profile_replaced" msgid="587435576816273815">"<xliff:g id="NAME">%s</xliff:g>" has been changed"</string>
+		<string name="ali_vpn_profile_added" msgid="9061017910337129840">"<xliff:g id="NAME">%s</xliff:g>" has been added"</string>
+		<string name="ali_vpn_confirm_profile_deletion" msgid="8679536635364177239">"Are you sure you want to delete this VPN(virtual private network)?"</string>
+		<string name="ali_vpn_delete_cancel_confirm">Confirm deletion</string>
+		<string name="ali_vpn_connected">Connected</string>
+		<string name="ali_vpn_disconnected">Disconnected</string>
+		<string name="ali_connect_failed">"Failed to connect"</string>
+		<string name="ali_vpn_disconnect_success">Disconnected</string>
+		<string name="ali_vpn_connect_success">Connected</string>
+		<string name="ali_vpn_connect_time_out">VPN connection timeout</string>
+		<string name="ali_vpn_menu_cancel" msgid="7234451214611202868">"Cancel"</string>
+		<string name="ali_vpn_menu_connect" msgid="1089399414463784218">"Connect to network"</string>
+		<string name="ali_vpn_retry_button_text">Retry</string>
+		<string name="ali_vpn_reconnect_confirm">Failed to connect to the network. Retry?</string>
+
+
+
+
+		<string name="ali_vpn_choose_type">"The type of network"</string>
+		<string name="ali_vpn_name" msgid="1550918148476193076">"Name"</string>
+		<!--<string name="ali_vpn_server" msgid="1141754908824209260">"VPN server"</string>-->
+		<string name="ali_vpn_server" msgid="1141754908824209260">"Server"</string>
+		<string name="ali_vpn_mppe">PPP encryption (MPPE)</string>
+
+
+		<string name="ali_vpn_l2tp_secret" msgid="529359749677142076">"L2TP password"</string>
+
+		<string name="ali_vpn_ipsec_identifier">IPSec identifier</string>
+		<string name="ali_vpn_ipsec_secret">IPSec pre-shared key</string>
+		<!--<string name="ali_vpn_ipsec_user_cert">IPSec user certificate</string>
+		<string name="ali_vpn_ipsec_ca_cert">IPSec CA certificate</string>
+		<string name="ali_vpn_ipsec_server_cert">IPSec server certificate</string>-->
+		<string name="ali_vpn_ipsec_user_cert">IPSec user certif.</string>
+		<string name="ali_vpn_ipsec_ca_cert">IPSec CA certif.</string>
+		<string name="ali_vpn_ipsec_server_cert">IPSec server certif.</string>
+		<string name="ali_vpn_search_domains">DNS search domains</string>
+		<!--<string name="ali_vpn_dns_servers">DNS servers (8.8.8.8)</string>
+		<string name="ali_vpn_routes">Forwarding routes (10.0.0.0/8)</string>-->
+		<string name="ali_vpn_dns_servers">DNS servers</string>
+		<string name="ali_vpn_routes">Forwarding routes</string>
+		<string name="ali_vpn_username">Username</string>
+		<string name="ali_vpn_password">Password</string>
+		<string name="ali_vpn_save_login">Save account information</string>
+		<string name="ali_vpn_settings_activity_title" msgid="7276864950701612579">"VPN settings"</string>
+		<string name="ali_vpns" msgid="3148141862835492816">"VPN"</string>
+		<string name="ali_vpn_type_title" msgid="6392933604218676224">"Add VPN"</string>
+
+		<string name="ali_vpn_settings_title" msgid="7327468307909556719">"VPN settings"</string>
+		<string name="ali_vpn_lock_screen">VPN lock screen</string>
+		<string name="ali_vpn_lock_screen_password_title">Tips of using VPN</string>
+		<string name="ali_vpn_lock_screen_password">VPN may use secure credentials. To protect your privacy, please set a screen lock password first.</string>
+		<string name="ali_vpn_lock_screen_password_set_button">Set up</string>
+
+
+		<string name="ali_user_feedback">Feedback</string>
+		<string name="ali_settings_videos_title">Videos</string>
+
+		<string name="ali_gps_all_close" msgid="5007659014828162881">"Off"</string>
+		<string name="ali_gps_only_network" msgid="5007659014828162881">"Network"</string>
+		<string name="ali_gps_only_gps" msgid="5007659014828162881">"GPS"</string>
+		<string name="ali_gps_network_and_gps" msgid="5007659014828162881">"GPS,Network"</string>
+
+		<string name="vpn_name_hint">Please Input Name</string>
+		<string name="vpn_server_hint">Please Input Server address</string>
+		<string name="vpn_username_hint">Please Input Username</string>
+		<string name="vpn_password_hint">Please Input Password</string>
+	<!--VPN END  -->
+	<!-- STORAGE BEGIN -->
+		<string name="ali_summary_storage_manage">SD storage: %1$s</string>
+		<string name="ali_external_sd">External storage</string>
+		<string name="ali_internal_sd">Internal storage</string>
+		<string name="ali_dialog_sdcard_title">"Change storage location"</string>
+		<string name="ali_dialog_sdcard_message">"Phone will restart when the storage location is changed, continue?"</string>
+		<string name="ali_unmount_inform_text">"SD card will be unmounted"</string>
+		<string name="ali_sd_ejecting_title">"Unmounting"</string>
+		<string name="ali_sd_ejecting_summary">"Unmounting"</string>
+		<string name="ali_storage_settings_title">"Storage"</string>
+
+	<!-- STORAGE END -->
+	<!-- USB MODE BEGIN-->
+
+
+
+	<!-- USB MODE END -->
+
+
+
+
+
+
+
+
+    <string name="ali_aboutphone_user_experience_program">Join User Experience Improvement Program</string>
+    <string name="ali_aboutphone_user_experience_program_summary">To provide you with better products and services, we will collect your usage of the features in phone consistent with the Privacy Policy.</string>
+
+<!--CALLFEATURE BEGIN -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--CALLFEATURE END -->
+
+
+    <!-- Bluetooth ORG by tongfei.changtf -->
+    <string name="ali_bluetooth_enable">"Toggle switch to turn it on"</string>
+    <string name="ali_bluetooth_device_visibility">"Device discoverable"</string>
+    <string name="ali_bluetooth_advanced_settings">Advanced settings</string>
+    <string name="ali_bluetooth_profile_ftp">File transfer</string>
+    <string name="ali_bluetooth_ftp_profile_summary_use_for">Use for file transfer</string>
+    <string name="ali_bluetooth_ftp_profile_summary_connected">"Connected to file transfer"</string>
+    <!-- Bluetooth ORG END -->
+
+    <!-- USB Settings by tongfei.changtf -->
+    <string name="ali_usb_ums_title">USB storage</string>
+    <string name="ali_usb_ums_summary">"Lets you transfer files between your computer and your device"</string>
+    <string name="ali_usb_bicr_title">Built-in CD-ROM</string>
+    <string name="ali_usb_bicr_summary">Ali PC Suite installation disc</string>
+    <string name="ali_usb_charge_title">Charge only</string>
+    <string name="ali_usb_charge_summary">Stop all USB fuctions.Lets you speed up USB charging and decrease power consumption</string>
+    <string name="ali_usb_mtp_title">Media device (MTP)</string>
+    <string name="ali_usb_mtp_summary">Lets you transfer media files on Windows, or using File Transfer on Mac</string>
+    <string name="ali_usb_ptp_title">Camera (PTP)</string>
+    <string name="ali_usb_ptp_summary">Lets you transfer photos using camera software, and transfer any files on computers that don\'t support MTP</string>
+
+    <string name="ali_usb_storage_title">"Connected via USB cable"</string>
+    <string name="ali_usb_storage_message">" The USB storage device has already connected with computer via USB cable. If you want to copy files between them, please tap the button."</string>
+    <string name="ali_dlg_confirm_kill_storage_users_title">"Open USB storage device"</string>
+    <string name="ali_dlg_confirm_kill_storage_users_text">" When the USB storage device is open, some running apps will be stopped and cannot be used until the USB storage device is closed."</string>
+    <string name="ali_dlg_error_title">"USB operation failed"</string>
+    <string name="ali_usb_storage_error_message">" A problem occurred in taking USB storage device as USB mass storage device."</string>
+    <string name="ali_usb_storage_button_mount">"Open USB storage device"</string>
+    <string name="ali_usb_storage_stop_button_mount">"Close USB storage device"</string>
+    <string name="ali_usb_storage_stop_title">"USB storage device is in use"</string>
+    <string name="ali_usb_storage_stop_message">"Please uninstall (or eject) USB storage device before closing USB storage device."</string>
+    <!-- USB Settings end -->
+
+    <!-- Display Settings by kaike.zkk -->
+    <string name="ali_display_desktop">Desktop and wallpaper</string>
+    <string name="ali_display_screen">Screen</string>
+    <string name="ali_display_system">System</string>
+    <!-- Display Settings END -->
+
+    <!-- Font Size Settings BEGIN -->
+    <string name="ali_font_size">Font size</string>
+    <string name="ali_font_inprogress">Setting font size…</string>
+    <string name="ali_font_size_reset">Reset</string>
+    <string name="ali_font_size_message_reset">The font size setting will be reset to default</string>
+    <!-- Font Size Settings END -->
+    <!-- USB OTG -->
+    <string name="ali_mount">"Mount "</string>
+    <string name="ali_unmount">"Unmount "</string>
+    <string name="ali_not_mounted">"Not mounted"</string>
+    <!-- OTG END -->
+<string name="ali_confirm_delete">Confirm deletion</string>
+<string name="ali_system_space">System space</string>
+<string name="ali_fdn_settings">"Fixed Dialing Numbers"</string>
+<string name="ali_fdn_settings_card1">"Fixed Dialing Numbers of SIM 1"</string>
+<string name="ali_fdn_settings_card2">"Fixed Dialing Numbers of SIM 2"</string>
+    <!-- sqrd2.3 Add by liguxiang 07-08-11 for USB settings function begin -->
+
+
+
+
+
+
+
+
+    <!-- sqrd2.3 Add by liguxiang 07-08-11 for USB settings function end -->
+     <!-- Dual battery by aihua.shenah -->
+    <string name="ali_current_main_battery">Current main battery</string>
+
+
+    <!-- Account Settings -->
+    <string name="ali_setting_for_account">Account</string>
+    <string name="ali_setting_for_sync">Cloud sync</string>
+     <!-- SchedulePowerOnOff-->
+      <string name="ali_schedule_power_on_off_settings_title">Schedule power on/off</string>
+      <!-- SchedulePowerOnOff-->
+
+    <!--Pay Settings-->
+    <string name="ali_pay_settings_title">Payment</string>
+    	<!--AudioProfile Settings by aihua.shenah-->
+	<string name="ali_sound_category_calls_title">Incoming calls</string>
+	<string name="ali_sound_category_messages_title">Messages</string>
+	<string name="ali_sound_category_notification_title">Notification</string>
+	<string name="ali_ring_summary">Ring</string>
+	<string name="ali_ring_vibrate_summary">Ring and vibrate</string>
+	<string name="ali_silent_summary">Silent only</string>
+	<string name="ali_meeting_summary">Vibrate only</string>
+	<string name="ali_outdoor_summary">Loudest ring and vibrate</string>
+	<string name="ali_general_settings_title">General</string>
+	<string name="ali_silent_settings_title">Silent</string>
+	<string name="ali_meeting_settings_title">Meeting</string>
+	<string name="ali_outdoor_settings_title">Outdoor</string>
+	<string name="ali_phone_vibrate_summary">Vibrate devices for incoming calls</string>
+
+
+
+
+	<string name="ali_audio_profile_settings_title">Sound</string>
+	<string name="ali_audio_profile_category_custom_title">User defined profiles</string>
+	<string name="ali_audio_profile_category_predefine_title">Predefined profiles</string>
+
+	<string name="ali_audio_profile_add">Add</string>
+
+	<string name="ali_audio_profile_rename">Rename</string>
+	<string name="ali_audio_profile_delete">Delete</string>
+	<string name="ali_audio_profile_message_reset">All settings in audio profiles will be reset to factory defaults and all user defined profiles will be deleted, sure to reset?</string>
+	<string name="ali_audio_profile_message_rename">Please input the new profile name</string>
+	<string name="ali_audio_profile_message_name_error">The name input is already existed</string>
+	<string name="ali_audio_profile_message_name_length_wrong">Name must contain at least one character</string>
+
+	<string name="ali_audio_profile_message_overflow">You are only allowed to add 6 custom profiles</string>
+	<string name="ali_sound_enhancement_title">Sound enhancement</string>
+    	<string name="ali_music_plus_title">BesAudEnh</string>
+    	<string name="ali_music_plus_summary">Audio enhancer for earphone</string>
+    <string name="ali_all_volume_title">Volume</string>
+     	<string name="ali_sound_category_sound_title">General</string>
+
+
+    	<string name="ali_sound_category_feedback_title">System</string>
+    	<string name="ali_sound_effects_enable_title">Touch sounds</string>
+
+    	<string name="ali_volume_ring_description">Ringtone &amp; Messages</string>
+    	<string name="ali_volume_notification_description">Notifications</string>
+    	<string name="ali_volume_alarm_description">Alarms</string>
+
+
+
+	<string name="ali_add">Add</string>
+	<string name="ali_reset">Reset</string>
+	<string name="ali_delete_confirmation">Delete</string>
+	<string name="ali_audio_profile_set"><xliff:g id="profile">%s</xliff:g> Set</string>
+	<!--AudioProfile Settings by aihua.shenah end-->
+    <!-- YUNOS_SETTINGS_END  aihua.shenah -->
+
+    <string name="ali_debug_layout">Show layout bounds</string>
+    <string name="ali_debug_layout_summary">Show clip bounds, margins, etc.</string>
+    <string name="ali_debug_app">Select debug app</string>
+    <string name="ali_debug_app_not_set">No debug application set</string>
+    <string name="ali_debug_app_set">Debugging application: <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="ali_wait_for_debugger">Wait for debugger</string>
+    <string name="ali_wait_for_debugger_summary">Debugged application waits for debugger to
+            attach before executing</string>
+    <string name="ali_animator_duration_scale_title">Animator duration scale</string>
+    <string name="ali_show_hw_screen_updates">Show GPU view updates</string>
+    <string name="ali_show_hw_screen_updates_summary">Flash views inside windows when drawn with the GPU</string>
+    <string name="ali_show_hw_layers_updates">Show hardware layers updates</string>
+    <string name="ali_show_hw_layers_updates_summary">Flash hardware layers green when they update</string>
+    <string name="ali_show_hw_overdraw">Show GPU overdraw</string>
+    <string name="ali_show_hw_overdraw_summary">From best to worst: blue, green, light red, red</string>
+    <string name="ali_disable_overlays">Disable HW overlays</string>
+    <string name="ali_disable_overlays_summary">Always use GPU for screen compositing</string>
+    <string name="ali_force_msaa">Force 4x MSAA</string>
+    <string name="ali_force_msaa_summary">Enable 4x MSAA in OpenGL ES 2.0 apps</string>
+    <string name="ali_enable_opengl_traces_title">Enable OpenGL traces</string>
+    <string name="ali_track_frame_time">Profile GPU rendering</string>
+    <string name="ali_track_frame_time_summary">Measure rendering time in adb shell dumpsys gfxinfo</string>
+    <string name="ali_no_application">Nothing</string>
+    <string name="ali_select_application">Select application</string>
+
+    <string name="ali_current_backup_pw_prompt">Type your current full backup password here</string>
+    <!-- Prompt for the user to enter a new full-backup password -->
+    <string name="ali_new_backup_pw_prompt">Type a new password for full backups here</string>
+    <!-- Prompt for the user to confirm the new full-backup password by re-entering it -->
+    <string name="ali_confirm_new_backup_pw_prompt">Retype your new full backup password here</string>
+
+    <!-- Button label for setting the user's new full-backup password -->
+    <string name="ali_backup_pw_set_button_text">Set backup password</string>
+    <!-- Button label for cancelling the new-password operation and retaining the user's previous full-backup password -->
+    <string name="ali_backup_pw_cancel_button_text">Cancel</string>
+	<string name="ali_screensaver_timeout_zero_summary">Never</string>
+	<string name="ali_theme_and_wallpepper_title" msgid="5981361776594526155">"Themes and wallpaper"</string>
+	<string name="ali_account_and_sync_title" msgid="2001775315258637682">"Account and payment"</string>
+	<string name="ali_networks_connect_title" msgid="5981361776594526155">"Wireless and network"</string>
+	<string name="ali_apps_settings_title" msgid="2001775315258637682">"Application"</string>
+	<string name="ali_security_settings_title" msgid="5981361776594526155">"Security"</string>
+
+	<string name="ali_phone_system_info_title" msgid="2001775315258637682">"System"</string>
+
+
+	<string name="ali_share_mobile_data_summary" msgid="5981361776594526155">"Share mobile data connection"</string>
+	<string name="ali_vpn_summary" msgid="2001775315258637682">"Set up virtual private networks"</string>
+
+
+
+    <!--Strings of DevCertManager Begin-->
+    <string name="ali_dev_cert_manager">Developer Certificate Manager</string>
+    <string name="ali_dev_cert_developer_certification">ADB Certificate</string>
+    <string name="ali_dev_cert_devCertReq">Install</string>
+    <string name="ali_dev_cert_devCertView">View</string>
+
+    <string name="ali_dev_cert_devCertUinstall">Uninstall</string>
+    <string name="ali_dev_cert_begin_date">Install Date</string>
+    <string name="ali_dev_cert_expire_date">Expiry Date</string>
+    <string name="ali_dev_cert_certSubject">Certificate Holder</string>
+    <string name="ali_dev_cert_certDownloading">Downloading&#8230;</string>
+    <string name="ali_dev_cert_certUnInstalling">Uninstalling&#8230;</string>
+
+    <string name="ali_dev_cert_SUCCESS">succeeded</string>
+    <string name="ali_dev_cert_SYSTEM_ERROR">System Error!</string>
+    <string name="ali_dev_cert_FAILED">Failed!</string>
+    <string name="ali_dev_cert_COMMAND_MISSED">Command Lost!</string>
+    <string name="ali_dev_cert_COMMAND_EXECUTE_FAILED">Execute Result Error!</string>
+    <string name="ali_dev_cert_COMMAND_EXECUTE_ERROR">Execute Failed!</string>
+    <string name="ali_dev_cert_IM_PARAM_ERROR">Parameters Error!</string>
+    <string name="ali_dev_cert_DB_ERROR">Database Error!</string>
+
+    <!-- for No Disturb featue -->
+    <string name="disturb_settings">No disturb</string>
+    <string name="disturb_settings_manual_switch_title">Manual</string>
+    <string name="disturb_settings_manual_switch_summary">When no disturb is enabled, calls will be hung up and alerts will be silenced, and a moon icon will appear in the status bar</string>
+    <string name="disturb_settings_manual_interval_title">Duration of manual time</string>
+    <string name="disturb_settings_manual_interval_value_hour"><xliff:g>%1$d</xliff:g>h</string>
+    <string name="disturb_settings_manual_interval_value_min"><xliff:g>%1$d</xliff:g>min</string>
+    <string name="disturb_settings_time_select_dialog_title">Duration of manual time</string>
+    <string name="disturb_settings_manual_interval_changed_toast">Duration has changed, which will be used next time</string>
+    <string name="disturb_settings_alarm_setting_title">Scheduled settings</string>
+    <string name="disturb_settings_timer_switch_title">Scheduled</string>
+    <string name="disturb_settings_timer_switch_summary">No disturb will be enabled automatically according to the time you set</string>
+    <string name="disturb_settings_time_setting_title">Scheduled time setting</string>
+    <string name="disturb_settings_time_setting_summary">From <xliff:g>%1$s</xliff:g>, to <xliff:g>%2$s</xliff:g></string>
+    <string name="disturb_settings_time_setting_summary_morrow">From <xliff:g>%1$s</xliff:g>, to <xliff:g>%2$s</xliff:g> in the following day</string>
+    <string name="disturb_settings_options_title">Options</string>
+    <string name="disturb_settings_airplane_mode_title">Turn on Airplane mode</string>
+    <string name="disturb_settings_airplane_mode_summary">When no disturb is enabled, Airplane mode will be turned on</string>
+    <string name="disturb_settings_data_connection_title">Close mobile data connection</string>
+    <string name="disturb_settings_data_connection_summary">When no disturb is enabled, mobile data connection will be closed</string>
+    <string name="disturb_settings_repeated_call_title">Repeated calls</string>
+    <string name="disturb_settings_repeated_call_summary">When enabled, a second call from the same person within three minutes will not be hung up</string>
+    <string name="disturb_settings_vip_contacts_title">Allow calls from</string>
+    <string name="disturb_settings_notification">No disturb is enbled, it will be disabled at <xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_time_unreasonable_toast">Invalid, please select it again</string>
+    <string name="disturb_settings_time_from">From <xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_time_to">To <xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_time_to_morrow">To <xliff:g>%1$s in the following day</xliff:g></string>
+    <string name="disturb_settings_time_am"><xliff:g>%1$s</xliff:g> AM</string>
+    <string name="disturb_settings_time_pm"><xliff:g>%1$s</xliff:g> PM</string>
+    <string name="disturb_settings_tomorrow">"tomorrow "</string>
+    <string name="disturb_settings_options_changed_toast">Options have changed, which will be used next time</string>
+    <string name="disturb_settings_allow_all_summary">All calls from contacts will not be hung up</string>
+    <plurals name="disturb_settings_vip_summary">
+        <item quantity="one">Calls from 1 contact will not be hung up</item>
+        <item quantity="other">Calls from <xliff:g>%1$d</xliff:g> contacts will not be hung up</item>
+    </plurals>
+    <string name="ali_disturb_allow_all">All contacts</string>
+    <string name="ali_disturb_vip">Importat contacts</string>
+    <string name="ali_disturb_vip_list">Importat contacts list</string>
+    <string name="ali_edit_disturb_vip_summary">The maximum number of %1$d, has added %2$d</string>
+    <string name="ali_disturb_add_vip_tip">Importat contacts has reached the uppper limit(%d)</string>
+    <string name="ali_disturb_no_vip_contacts">No vip contacts</string>
+
+    <string name="ali_dev_cert_ACCOUNT_NOT_EXSITS">Unregistered developers account</string>
+    <string name="ali_dev_cert_ACCOUNT_VALIDATE_ERROR">YunOs account or deviceID can not be null</string>
+    <string name="ali_dev_cert_CREATE_CERT_ERROR">Certificate generate exception</string>
+    <string name="ali_dev_cert_DOWN_CERT_REQ_ILLEGAL">The certificate download request illegal</string>
+    <string name="ali_dev_cert_REVOKE_CERT_REQ_ILLEGAL">The certificate revoke request illegal</string>
+    <string name="ali_dev_cert_REVOKE_CERT_STATUS_ILLEGAL">The certificate revoke status illegal</string>
+    <string name="ali_dev_cert_ACCOUNT_DEVICE_REPEAT">DeviceID of this YunOS account repeat</string>
+    <string name="ali_dev_cert_ACCOUNT_DEVICE_LIMIT">Devices number more than 50</string>
+
+    <string name="ali_dev_cert_GET_YUNOS_ACCOUNT_FAILED">Failed to get the YunOS account</string>
+    <string name="ali_dev_cert_GET_UUID_FAILED">Failed to get the deviceID</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN">YunOS Login</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN_REMINDER">YunOS account has not login, login now?</string>
+    <string name="ali_dev_cert_BUTTON_OK">OK</string>
+    <string name="ali_dev_cert_BUTTON_CANCEL">CANCEL</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN_SUCCESSFUL">Login Success</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN_FAILED">Login Failed</string>
+    <string name="ali_dev_cert_CERT_NOT_EXISTS">Certificate does not exist</string>
+    <string name="ali_dev_cert_CERT_DOWNLOAD_FAILED">Certificate download failed</string>
+    <string name="ali_dev_cert_CERT_DOWNLOAD_EXCEPTION">Certificate download exception</string>
+    <string name="ali_dev_cert_CERT_UNINSTALL">UNINSTALL</string>
+    <string name="ali_dev_cert_CERT_UNINSTALL_REMAINDER">You will not use the common ADB after you uninstall the certificate, uninstall?</string>
+    <string name="ali_dev_cert_CERT_UNINSTALL_FAILED">Certificate uninstall failed</string>
+    <string name="ali_dev_cert_GET_SERVER_INFO_FAILED">Can not connect to Server, try later</string>
+    <string name="ali_dev_cert_GET_USER_CERT_INFO_FAILED">Does not exists any installed certificate info of this account, please check you login account</string>
+    <string name="ali_dev_cert_SERVER_NOT_RETURN_UNINSTALL">Server does not  reply this uninstall request</string>
+    <string name="ali_dev_cert_DOWNLOAD_SUCCESSFUL">Certificate download success, press View to see detail</string>
+    <string name="ali_dev_cert_UNINSTALL_SUCCESSFUL">Certificate uninstall success, press Install to install the certificate again</string>
+
+
+
+    <string name="ali_dev_cert_OPERATION_FAILED">Operation Failed</string>
+    <string name="ali_dev_cert_STATUS_OK">OK</string>
+    <string name="ali_dev_cert_adb_info">ADB Certificate Info</string>
+    <string name="ali_developer_certificate_manager">Developer Certificate Manager</string>
+    <string name="ali_about_developer_certificate">About Developer Certificate</string>
+    <string name="ask_connect_wifi">WLAN network is disconnected, set up now?</string>
+    <string name="ali_dev_cert_norepeat_operation">Processing, please wait</string>
+    <string name="ali_dev_cert_token_expire">Account token expired, please login again</string>
+
+    <string name="ali_about_cert_bedeveloper_title">Apply to be a developer</string>
+    <string name="ali_about_cert_bedeveloper">At present you can send email with your application to<b> appmarket@service.alibaba.com</b>, and the staff of YunOS will reply with the result in one working day. Your application email should be formatted as follows:\n<b>Subject:Application to be a YunOS developer of XXX\nBody:\nCloud account: xxx\nName: xxx\nID number: xxx\nPhone number: xxx\nEmail: xxx\nAlipay account: xxx\nMailing address (optional): xxx\nApplication statement (optional): xxx</b></string>
+    <string name="ali_about_cert_download_title">Apply to download certificate</string>
+    <string name="ali_about_cert_download">When your application is approved, the application and installation of certificate will be completed by following steps: open the app "Developer certificate", login with cloud account and tap "Apply to install".\nAfter installation, connect your phone with Google Eclipse ADT to debug phone.\nYou can find the app "Developer certificate" in <b>Settings > About phone > Developer certificate Manager</b></string>
+    <string name="ali_about_cert_view_title">View certificate</string>
+    <string name="ali_about_cert_view">Open the app "Developer certificate", login with cloud account and tap "View certificate".</string>
+    <string name="ali_about_cert_uninstall_title">Uninstall certificate</string>
+    <string name="ali_about_cert_uninstall">Open the app "Developer certificate", login with cloud account and tap "Uninstall certificate".</string>
+    <!--Strings of DevCertManager End-->
+    <!-- YUNOS BEGIN for window switch animation  by jia.wj -->
+
+    <!-- YUNOS END for window switch animation by jia.wj  -->
+	<!--YUI BEGIN-->
+	<string name="ali_wifi_guide_open">Enable WLAN</string>
+	<string name="ali_wifi_guide_close">Disable WLAN</string>
+	<string name="ali_wifi_guide_access_points">"Scan WLAN"</string>
+	<string name="ali_toggle_open">On</string>
+    <string name="ali_toggle_close">Off</string>
+    <string name="ali_setting_more">More</string>
+    <string name="ali_wifi_guide_skip">Skip</string>
+    <string name="ali_wifi_guide_next">Next</string>
+
+    <string name="ali_audio_profile_settings_title">Sound</string>
+    <string name="ali_lockscreen_weather_title">Weather</string>
+    <string name="ali_account_settings_title">Account</string>
+    <string name="ali_pay_settings_title">Payment</string>
+    <string name="ali_cloud_services_title">Cloud services</string>
+    <string name="ali_manageapplications_title">"App management"</string>
+    <string name="ali_about_phone_title">About phone</string>
+    <string name="ali_phone_firmware_update_title">System updates</string>
+    <string name="ali_phone_settings_title">Call</string>
+    <string name="ali_sms_settings_title">Messages</string>
+    <string name="ali_contact_settings_title">Contacts</string>
+    <string name="ali_camera_settings_title">Camera</string>
+    <string name="ali_mail_settings_title">Mail</string>
+    <string name="ali_notification_title">Notification</string>
+    <string name="ali_application_center_title">App market</string>
+	<!--YUI END-->
+
+    <string name="ali_lock_screen_settings_finger_lock_title">Unlock by finger</string>
+    <string name="ali_lock_screen_settings_more_title">Advanced</string>
+    
+	<!--change ali_lock_screen_settings_switch_title from 'Wallpaper switch' to Magazine by lichengfeng for doov 20160607 begin -->
+	<string name="ali_lock_screen_settings_switch_title">Magazine Wallpaper switch</string>
+	<!--change ali_lock_screen_settings_switch_title from 'Wallpaper switch' to Magazine by lichengfeng for doov 20160607 end -->
+	
+    <string name="ali_lock_screen_settings_switch_summary">Subscription and auto change wallpaper</string>
+    <string name="ali_lock_screen_settings_finger_lock_summary">Pinch three fingers to unlock the lock screen</string>
+    <string name="ali_unlock_set_show_option_title">Display swipe screen</string>
+    <string name="ali_unlock_set_unlock_off_title">Normal unlock</string>
+    <string name="ali_unlock_set_unlock_pattern_title">Pattern unlock</string>
+    <string name="ali_unlock_set_unlock_password_title">Password unlock</string>
+    <string name="ali_unlock_set_unlock_launch_picker_title">Screen unlock mode</string>
+    <string name="ali_lock_screen_settings_more_weather">Defalut style for weather animation</string>
+
+    <!-- wujun.ywj begin -->
+    <string name="ali_dualcard_card_absent">No SIM Card</string>
+    <string name="ali_dualcard_edit_simname_title">Change SIM card name</string>
+    <string name="ali_dualcard_edit_simname_error">SIM card name can not be empty</string>
+    <string name="ali_dualcard_edit_simname_hint">You can change the name to tell SIM cards apart</string>
+    <string name="ali_apn_new">New APN</string>
+    <string name="ali_apn_restore">Reset</string>
+    <!-- wujun.ywj end -->
+    <string name="ali_sound_ringtone_volume">Ringtone(call,message,notification,camera,screenshot)</string>
+    <string name="ali_sound_media_volume">Media(music,video,game)</string>
+    <string name="ali_sound_system_volume">System(screen lock,button clicks)</string>
+    <string name="ali_sound_alarm_volume">Alarm</string>
+    <string name="ali_sound_voice_call_volume">In call</string>
+
+    <!-- for CMCC-->
+    <string name="ali_sound_ringtone_volume_cmcc">Ringtone(call,message,notification)</string>
+
+    <string name="ali_gallery_settings_title">Gallery</string>
+
+    <string name="ali_wifi_boot_title">"WLAN Settings"</string>
+    <string name="ali_wifi_boot_open">"WLAN"</string>
+
+    <string name="ali_ringtone_cancel">Cancel</string>
+    <string name="ali_ringtone_save">Save</string>
+    <string name="ali_ringtone_system">Defaults</string>
+    <string name="ali_ringtone_media">Media</string>
+
+    <string name="ali_security_and_privacy_title">Security and privacy</string>
+
+    <string name="ali_ringtone_usb_status_text">Unable to load media files,\n in USB drive mode</string>
+    <string name="ali_ringtone_no_songs">No songs</string>
+    <string name="ali_phone_reset_to_factory_account_psw">Please enter account password:</string>
+    <string name="ali_phone_restore_account_psw">Please enter account password:</string>
+
+    <string name="ali_ringtone_picker_default_title">Ringtone Settings</string>
+    <string name="ali_network_settings_more">More network settings</string>
+    <string name="ali_system_settings_more">More system settings</string>
+    <string name="ali_lock_screen_settings_weather_anim">Weather animation</string>
+    <string name="ali_lock_screen_settings_weather_description">Wallpaper switch will disable the weather animation</string>
+
+    <string name="ali_date_time_auto_network">Use network-provided time</string>
+    <string name="location_mode_sensors_only_description">No consumption of network traffic</string>
+
+    <string name="ali_password_safe_title">Password safe</string>
+    <string name="ali_password_safe_mode">Password safe mode</string>
+    <string name="ali_password_safe_mode_summary">Use system keyboard on password input</string>
+    <string name="ali_remote_connection">Remote control</string>
+    <string name="ali_aoc">System accelerate</string>
+    <string name="ali_aoc_warning_message_on">The system will accelerate after reboot, there will be a faster runtime but the application compatibility may be less degree. Restart process will be longer, please be patient. do you want to open it now?</string>
+    <string name="ali_aoc_warning_message_off">The system will close acceleration mode after reboot, there will be a better application compatibility  but the speed will be slower. Restart process will be longer, please be patient. do you want to close it now?</string>
+    <string name="ali_aoc_warning_title_on">Open acceleration mode</string>
+    <string name="ali_aoc_warning_title_off">Close acceleration mode</string>
+    <string name="ali_aoc_reboot">Reboot</string>
+    <string name="ali_aoc_warning_nospace">No enough system space switch to acceleration mode</string>
+    <!--mistake touchmode feature-->
+    <string name="mistake_touch_mode_setting">Mistake touch mode setting</string>
+    <string name="mistake_touch_mode_setting_summary">Prevent faulty operation when phone is in pocket</string>
+    <string name="ali_on_status">On</string>
+    <string name="ali_off_status">Off</string>
+    <string name="ali_devices_section_title">Device</string>
+    <string name="ali_individuation_section_title">Individuation</string>
+    <string name="ali_system_section_title">System</string>
+    <string name="ali_search_title">Search</string>
+
+    <string name="gemini_voice_call">Voice call</string>
+    <string name="gemini_msg">Messaging</string>
+    <string name="gemini_default_sim_title">DEFAULT SETTINGS</string>
+    <string name="gemini_sim_mode_progress_deactivating_message">Deactivating\u2026</string>
+    <string name="gemini_sim_mode_progress_activating_message">Activating\u2026</string>
+    <string name="gemini_sim_info_editor_name_dup_title">Save failed</string>
+    <string name="gemini_sim_info_editor_name_dup_msg">Duplicate name for SIM card</string>
+    <string name="gemini_default_sim_always_ask">Always ask</string>
+
+    <!-- high contrast mode feature -->
+    <string name="high_contrast_mode_setting">Sunshine Mode Setting</string>
+    <string name="high_contrast_mode_setting_summary">Block top of the phone on locksreen to enter high contrast mode.</string>
+
+    <string name="app_manager">App management</string>
+    <string name="app_ram_manager">RAM Manager</string>
+    <string name="app_in_data_storage">System Space</string>
+    <string name="app_in_internal_sd">Internal storage</string>
+    <string name="app_in_external_sd">External storage</string>
+    <string name="confirm_to_enable">Confirm to enable</string>
+    <string name="install_all_warning">Your phone and personal data are more vulnerable to attack by apps from unknown sources. You agree that you are solely responsible for any damage to your phone or loss of data that may result from using these apps. Are you sure you want to turn on?</string>
+    <string name="internal_sdcard_space_low">Internal sdcard\'s space is not enough, application\'s setup location will be decided by system.</string>
+    <string name="system_space_low">System\'s space is not enough, application\'s setup location will be decided by system.</string>
+    <string name="external_sdcard_space_low">External sdcard\'s space is not enough, application\'s setup location will be decided by system.</string>
+    <string name="ali_desktop_settings_title">Desktop</string>
+    <string name="install_unknown_applications_summary">Allow installation from sources other than App Store</string>
+    <!--app freeze-->
+    <string name="app_share">App Share</string>
+    <string name="app_freeze">App Freeze</string>
+    <string name="unfreeze">unfreeze</string>
+    <string name="freeze">freeze</string>
+    <string name="freezed_app">frozen application</string>
+    <string name="unfreezed_app">unfrozen application</string>
+    <string name="freezed_app_empty">No applications now</string>
+    <string name="freezed_option">freezing...</string>
+    <string name="unfreezed_option">unfreezeing...</string>
+    <string name="freezed_progress">"%1$d/%2$d"</string>
+    <string name="share">Share</string>
+
+    <string name="ali_aged_mode_setting_title">Senior Mode</string>
+    <string name="ali_aged_mode_on_description"><![CDATA[In senior mode, system will, <br/>
+    · set font size to extra large <br/>
+    · extend tapping respond time <br/>
+    · volume up <br/>
+    · disable desktop advanced gestures <br/>
+    · enable contacts shortcut <br/>
+    · hide low frequency apps into folder <br/>
+    · extend screen standby time <br/>
+    ]]>
+    </string>
+
+    <string name="ali_aged_mode_off_description">System settings will revert after you switch senior mode off.</string>
+    <string name="ali_battery_management">Power-saving mode</string>
+    <string name="storage_freeup_space_button_title">Release</string>
+    <string name="vibrate_category_title">Vibrate</string>
+    <string name="ali_fingerprint_settings">Fingerprint</string>
+    <string name="ali_fingerprint_lock_screen_title">Unlock switch</string>
+    <string name="ali_fingerprint_lock_screen_hint">For protect your privacy, you must enable password or pattern unlock to use fingerprint</string>
+    <string name="fingerprint_settings_title">Fingerprint Settings</string>
+    <string name="fingerprint_settings_unlock">Fingerprint Unlock</string>
+    <string name="fingerprint_settings_unlock_summary">used to unlock lockscreen</string>
+    <string name="fingerprint_settings_unlock_vibration">Fingerprint Unlock Vibration</string>
+    <string name="fingerprint_settings_unlock_vibration_summary">vibrate when fingerprint unlock</string>
+    <string name="fingerprint_settings_homeshell_hideseat">Fingerprint Unlock Homeshell Hideseat</string>
+    <string name="fingerprint_settings_homeshell_hideseat_summary">Only fingerprint can open homeshell hideseat</string>
+    <string name="finger_print_privacy_space_app_lock">Privacy Space APP Lock</string>
+    <string name="finger_print_privacy_space_app_lock_summary">Unlock privacy space app lock using fingerprint</string>
+    <string name="fingerprint_settings_listtext">Fingerprint List(%d/5)</string>
+    <string name="fingerprint_settings_addtext">Add Fingerprint</string>
+    <string name="fingerprint_enroll_title">Add Fingerprint</string>
+    <string name="fingerprint_enroll_text_background">Enroll Fingerprint</string>
+    <string name="fingerprint_enroll_text_home">Enroll Fingerprint</string>
+    <string name="fingerprint_enroll_text1">Please put the finger to the background fingerprint sensor</string>
+    <string name="fingerprint_enroll_text2">Left your finger when feeling vibrate</string>
+    <string name="fingerprint_enroll_success"> was added successfully</string>
+    <string name="fingerprint_enroll_tips">Please press the finger different part</string>
+    <string name="fingerprint_enroll_sensorerror">Enroll failed</string>
+    <string name="fingerprint_enroll_failed">Enroll failed</string>
+    <string name="fingerprint_enroll_finishtips">Enroll successfully, saving…</string>
+    <string name="fingerprint_enroll_duplicatefinger">duplicate fingerpint</string>
+    <string name="fingerprint_enroll_duplicate_capture_tips">duplicate fingerpint</string>
+	<string name="fingerprint_enroll_finger_not_tuning_tips">please move your finger</string>
+    <string name="fingerprint_rename_deleteconfirm">Are you sure to delete the fingerprint\'</string>
+    <string name="fingerprint_rename_deleteconfirm1">\'?</string>
+    <string name="fingerprint_rename_deletebutton">Delete fingerprint</string>
+    <string name="fingerquick_select_app">Select Application</string>
+    <string name="finger_name_category">Fingerprint Name</string>
+    <string name="finger_name_modify">Click to edit</string>
+    <string name="fingerquick_type_title">Finger Quick</string>
+    <string name="fingerprint_settings_category">The fingerprint can be applied to</string>
+    <string name="fingerprint_click_setting">Click to set</string>
+    <string name="fingerquick_settings_dial_number">Select Contact</string>
+    <string name="fingerquick_settings_start_app">Select Application</string>
+    <string name="fingerquick_settings_tip">To use fingerquick function, please open fingerprint unlock firstly.</string>
+    <string name="fingerprint_rename_nulltips">Fingerprint name cannot be null</string>
+    <string name="fingerprint_rename_repeatename">Fingerprint name should be different or not null</string>
+    <string name="fingerprint_settings_listFullTips">Fingerprint has reached its limit</string>
+    <string name="fingerprint_enroll_conntect_failed">Finger sensor connection failed, please restart phone and try again</string>
+    <string name="fingerprint_enroll_fingerleft_timeout">please left your finger</string>
+    <string name="fingerprint_enroll_timeout">Fingerprint enroll timeout</string>
+    <string name="fingerprint_default_name">Finger</string>
+    <string name="fingerprint_unlock_off">Close Fingerprint</string>
+    <string name="fingerprint_unlock_offmessage">Switching to normal unlcok mode would disable fingerprint unlock, are you sure?</string>
+    <string name="fingerprint_calibration_succeeded">Fingerprint calibration succeeded</string>
+    <string name="fingerprint_calibration_failed">Fingerprint calibration failed</string>
+    <string name="fingerprint_fingerquick_pay">Easy Pay</string>
+    <string name="fingerprint_fingerquick_pay_set">Unlock and launcher Bar/QR Code in Alipay with fingerprint of %s</string>
+    <string name="fingerprint_fingerquick_pay_not_set">Set to launcher Bar/QR Code in Alipay after unlock with fingerprint</string>
+    <string name="fingerprint_fingerquick_disabled">Shortcut of %s disabled</string>
+    <string name="fingerprint_fingerquick_pay_close">Close</string>
+    <string name="data_usage_not_set">Not set</string>
+    <string name="fingerprint_rename_too_long">"Cannot save new fingername as it's too long"</string>
+    <!--add finger reenroll by lichengfeng 20160617 begin -->
+    <string name="fingerquick_settings_reenroll">Enroll Fingerprint again</string>
+    <string name="fingerquick_settings_summary_reenroll">Click to enroll again</string>
+    <!--add finger reenroll by lichengfeng 20160617 end -->
+    <!--YUNOS BEGIN-->
+    <!--BugID:5236596
+    date:2014/09/29 ##author:yajun.xyj-->
+    <string name="filter_apps_cached">Cached</string>
+    <!--YUNOS END-->
+    <string name="app_version_label">Version</string>
+    <string name="app_location_label">Location</string>
+    <string name="app_moving">Moving</string>
+    <string name="app_permission_details_title"><xliff:g>%1$s</xliff:g> permission details</string>
+
+    <string name="ali_vibrate_title">Vibrate on call</string>
+    <string name="ali_sound_effect_title">Sound effect</string>
+
+    <string name="ali_wifi_display_enable_menu_item">Enable</string>
+    <string name="ali_wfd_change_resolution_menu_title">Resolution</string>
+    <string name="ali_wifi_display_status_in_use">In use</string>
+    <string name="ali_system_button_backlight_title">System button backlight</string>
+
+    <string name="led_light_settings">Lamp</string>
+    <string name="led_light_category_title_notification">Notification</string>
+    <string name="led_light_category_title_power">Power</string>
+    <string name="led_light_missed_call_title">Missed call</string>
+    <string name="led_light_new_message_title">New message</string>
+    <string name="led_light_new_notification_title">Notification</string>
+    <string name="led_light_low_battery_title">Low power remind</string>
+    <string name="led_light_charging_title">Charging</string>
+
+    <string name="about_phone_copy">Copy</string>
+    <string name="privacy_title">Privacy</string>
+    <string name="lost_protection">Anti-theft</string>
+    <string name="permission_management">Permissions</string>
+    <string name="has_open">On</string>
+    <string name="has_close">Off</string>
+
+    <string name="ali_phone_disconnect_vibrate_summary">Vibrate devices for disconnecting calls</string>
+    <string name="ali_data_connection">"Data Sim"</string>
+    <string name="ali_no_trusted_credentials" >"No trusted credentials"</string>
+    <string name="ali_process_system_label">YunOS system unit</string>
+    <string name="battery_percent_summary">Show battery percent on system UI</string>
+    <!--YUNOS BEGIN-->
+    <string name="ali_lab_mode">Ali Lab Mode Settings</string>
+    <!--YUNOS END-->
+    <string name="ali_media_format_desc" product="nosdcard">Erase all USB storage? You will lose <b>all</b> stored data!</string>
+    <string name="ali_media_format_desc" product="default">Erase the SD card? You will lose <b>all</b> data on the card!</string>
+    <string name="ali_memory_clear_cache_message">This will clear <xliff:g>%s</xliff:g> cached data for all apps.</string>
+    <string name="ali_clear_data_dlg_text">All this app\'s data will be deleted permanently. This includes settings, accounts, databases, etc.</string>
+    <string name="ali_clear_data_dlg_button_text">Clear</string>
+    <string name="ali_force_stop_dlg_text">If you force stop an app, it may misbehave.</string>
+    <string name="ali_storage_sd_card">SD card</string>
+    <string name="ali_no_vpn">No VPN</string>
+    <string name="ali_add_device_warning_dlg_text">Activating this administrator will allow the app to use system permission without warning, whether to continue to activate?</string>
+    <string name="ali_add_device_warning_dlg_button_text">Activate</string>
+    <string name="ali_xiaoyun_launch_activity_failed">This feature can not be used.</string>
+    <!-- face string start -->
+    <string name="ali_face_title">Face unlock</string>
+    <string name="ali_unlock_switch_title">Unlock switch</string>
+    <string name="ali_face_lock_screen_hint">For protect your privacy, you must enable password or pattern unlock to use face unlock</string>
+    <!-- face string end -->
+    <!-- YUNOS BEGIN PB
+         ##modules:one-handed mode ##author:xy83652@alibaba-inc.com
+         ##BugID:(6468899) ##date: 2015/09/28
+         ##decription: some switches info for one-handed mode.
+    -->
+    <string name="one_handed_title">One-handed mode</string>
+    <string name="one_handed_summary">Turn on or off one-handed mode</string>
+    <string name="ali_one_handed_shortcut">Shortcut Switch</string>
+    <string name="ali_one_handed_shortcut_info">Long press the Back button to turn on or off one-handed mode</string>
+    <string name="ali_one_handed_navi_bar">Navigation bar switch</string>
+    <string name="ali_one_handed_navi_bar_info">Open it, to show navigation bar in the bottom of screen.</string>
+    <string name="ali_one_handed_disable">Shortcut switch is disable when recording screen.</string>
+    <!-- YUNOS END PB -->
+    <string name="dynamic_color_title">System Color Change</string>
+    <string name="dynamic_color_summary">System color will automatically follow wallpaper color when you turn this on.</string>
+    <string name="open_dialog_title">System Color Change</string>
+    <string name="open_dialog_message">System color will automatically follow wallpaper color when you turn this on.</string>
+    <string name="close_dialog_title">System Color Change</string>
+    <string name="close_dialog_message">Keep the current system color or not ?</string>
+    <string name="ali_ping_hostname">www.taobao.com</string>
+    <string name="ali_ping_hostname_label">Ping Hostname(www.taobao.com):</string>
+
+    <string name="ali_dualsim_dialog_msg_airplane_mode">Please turn off Airplane mode to enable dualsim Settings.</string>
+    <string name="memoryusage_item_app">Apps</string>
+    <string name="memoryusage_item_music">Music</string>
+    <string name="memoryusage_item_cache_data">Cached data</string>
+    <string name="memoryusage_item_other">Misc.</string>
+    <string name="memoryusage_item_app_data">Apps and Data</string>
+    <string name="memoryusage_item_pictures_videos">Pictures, videos</string>
+    <string name="memoryusage_item_apk">Apks</string>
+    <string name="memoryusage_item_available_space">Available</string>
+    <string name="memoryusage_item_total_space">Total</string>
+    <string name="memoryusage_total_storage">Total</string>
+    <string name="internal_storage_device">Phone memory</string>
+    <string name="portable_storage_device">Portable storage</string>
+    <string name="storage_volume_summary"><xliff:g id="used" example="1.2GB">%1$s</xliff:g> available space <xliff:g id="total" example="32GB">%2$s</xliff:g></string>
+    <string name="portable_storage_device_item_currency">Currency</string>
+    <string name="portable_storage_device_item_inside">Inside</string>
+    <string name="storage_detail_apps">Apps</string>
+    <string name="storage_detail_images">Images</string>
+    <string name="storage_detail_videos">Videos</string>
+    <string name="storage_detail_audio">Audio</string>
+    <string name="storage_detail_cached">Cached data</string>
+    <string name="storage_detail_other">Other</string>
+    <string name="apps_storage">Apps storage</string>
+    <string name="storage_rename_title">Rename storage</string>
+    <string name="save">Save</string>
+    <string name="storage_detail_dialog_other">Other includes shared files saved by apps, files downloaded from the Internet or Bluetooth, Android files, and so on.
+    \n\nTo see the entire contents of this <xliff:g id="name" example="SD card">^1</xliff:g>, touch Explore.</string>
+    <string name="storage_menu_explore">Explore</string>
+    <string name="storage_detail_dialog_user"><xliff:g id="user" example="Guest user">^1</xliff:g> may have saved photos, music, movies, apps, or other data that is taking up <xliff:g id="size" example="1.2 GB">^2</xliff:g> of storage.
+    \n\nTo view details, switch to <xliff:g id="user" example="Guest user">^1</xliff:g>.</string>
+    <string name="storage_detail_transfer_data">"Migrate data"</string>
+    <string name="storage_detail_apps_data">"Apps data"</string>
+    <string name="storage_detail_cache">"Cached data"</string>
+    <string name="storage_wizard_init_external_title">Use as portable storage</string>
+    <string name="storage_wizard_init_external_summary">For moving photos and other media between devices.</string>
+    <string name="storage_wizard_init_internal_title">Use as internal storage</string>
+    <string name="storage_wizard_init_internal_summary">For storing anything on this device only, including apps and photos. Requires formatting that prevents it from working with other devices.</string>
+    <!-- Title of wizard step prompting user to setup a storage device [CHAR LIMIT=32] -->
+    <string name="storage_wizard_init_title">Set up your <xliff:g id="name" example="SD card">^1</xliff:g></string>
+    <!-- Title of wizard choice to use storage device as external storage [CHAR LIMIT=64] -->
+    <string name="storage_wizard_init_external_title">Use as portable storage</string>
+    <!-- Summary of wizard choice to use storage device as external storage [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_init_external_summary">For moving photos and other media between devices.</string>
+    <!-- Title of wizard choice to use storage device as internal storage [CHAR LIMIT=64] -->
+    <string name="storage_wizard_init_internal_title">Use as internal storage</string>
+    <!-- Summary of wizard choice to use storage device as internal storage [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_init_internal_summary">For storing anything on this device only, including apps and photos. Requires formatting that prevents it from working with other devices.</string>
+
+    <!-- Title of wizard step prompting user to format a storage device [CHAR LIMIT=32] -->
+    <string name="storage_wizard_format_confirm_title">Format as internal storage</string>
+    <!-- Body of wizard step prompting user to format a storage device [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_format_confirm_body"><b>This requires the <xliff:g id="name" example="SD card">^1</xliff:g> to be formatted to make it secure.
+\n\nAfter formatting, </b>this <xliff:g id="name" example="SD card">^1</xliff:g> will only work in this device.
+\n\n<b>Formatting erases all data currently stored on the <xliff:g id="name" example="SD card">^1</xliff:g>.</b> To avoid losing the data, consider backing it up.
+    </string>
+
+    <!-- Title of wizard step prompting user to format a storage device [CHAR LIMIT=32] -->
+    <string name="storage_wizard_format_confirm_public_title">Format as portable storage</string>
+    <!-- Body of wizard step prompting user to format a storage device [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_format_confirm_public_body">This requires the <xliff:g id="name" example="SD card">^1</xliff:g> to be formatted.
+\n\n<b>Formatting erases all data currently stored on the <xliff:g id="name" example="SD card">^1</xliff:g>.</b> To avoid losing the data, consider backing it up.
+    </string>
+
+    <!-- Next button text of wizard step prompting user to format a storage device [CHAR LIMIT=32] -->
+    <string name="storage_wizard_format_confirm_next">Erase &amp; format</string>
+
+    <!-- Title of wizard step showing formatting progress [CHAR LIMIT=32] -->
+    <string name="storage_wizard_format_progress_title">Formatting <xliff:g id="name" example="SD card">^1</xliff:g>\u2026</string>
+    <!-- Body of wizard step showing formatting progress [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_format_progress_body">Don\u2019t remove the <xliff:g id="name" example="SD card">^1</xliff:g> while it\u2019s formatting.</string>
+
+    <!-- Title of wizard step prompting user to migrate data to new storage [CHAR LIMIT=32] -->
+    <string name="storage_wizard_migrate_title">Move data to new storage</string>
+    <!-- Body of wizard step prompting user to migrate data to new storage [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_migrate_body">You can move your photos, files, and some apps to this new <xliff:g id="name" example="SD card">^1</xliff:g>.
+\n\nThe move takes about <xliff:g id="time" example="1 hour">^2</xliff:g> and will free <xliff:g id="size" example="1.2 GB">^3</xliff:g> on internal storage. Some apps won\u2019t work while it\u2019s underway.
+    </string>
+
+    <!-- Title of wizard choice to migrate data right now [CHAR LIMIT=64] -->
+    <string name="storage_wizard_migrate_now">Move now</string>
+    <!-- Title of wizard choice to migrate data at later time [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_migrate_later">Move later</string>
+
+    <!-- Title of wizard step prompting user to start data migration [CHAR LIMIT=32] -->
+    <string name="storage_wizard_migrate_confirm_title">Move data now</string>
+    <!-- Body of wizard step providing details about data migration [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_migrate_confirm_body">Move the data on the SD card into internal storage device,It will free <xliff:g id="size" example="1.2 GB">^1</xliff:g>.</string>
+    <string name="storage_wizard_migrate_confirm_sd_body">Move the data on the internal storage device into SD card ,It will free <xliff:g id="size" example="1.2 GB">^1</xliff:g>.</string>
+    <!-- Title of wizard button prompting user to start data migration [CHAR LIMIT=32] -->
+    <string name="storage_wizard_migrate_confirm_next">Move</string>
+
+    <!-- Title of wizard step showing migration progress [CHAR LIMIT=32] -->
+    <string name="storage_wizard_migrate_progress_title">Moving data\u2026</string>
+
+    <!-- Body of wizard step providing details about data migration [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_migrate_details">During the move:
+\n\u2022 Don\u2019t remove the <xliff:g id="name" example="SD card">^1</xliff:g>.
+\n\u2022 Some apps won\u2019t work correctly.
+\n\u2022 Keep the device charged.
+    </string>
+
+    <!-- Title of wizard step indicating that storage is ready [CHAR LIMIT=32] -->
+    <string name="storage_wizard_ready_title"><xliff:g id="name" example="SD card">^1</xliff:g> is ready</string>
+    <!-- Body of wizard step indicating that external storage is ready [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_ready_external_body">
+        Your <xliff:g id="name" example="SD card">^1</xliff:g> is all set to use with photos and other media.
+    </string>
+    <!-- Body of wizard step indicating that internal storage is ready [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_ready_internal_body">Your new <xliff:g id="name" example="SD card">^1</xliff:g> is working.
+\n\nTo move photos, files, and app data to this device, go to Settings > Storage.
+    </string>
+
+    <!-- Title of wizard step prompting user to move an app [CHAR LIMIT=32] -->
+    <string name="storage_wizard_move_confirm_title">Move <xliff:g id="app" example="Calculator">^1</xliff:g></string>
+    <!-- Body of wizard step prompting user to move an app [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_move_confirm_body">Moving <xliff:g id="app" example="Calculator">^1</xliff:g> and its data to <xliff:g id="name" example="SD card">^2</xliff:g> will take only a few moments. You won\u2019t be able to use the app until the move is complete.
+\n\nDon\u2019t remove the <xliff:g id="name" example="SD card">^2</xliff:g> during the move.
+    </string>
+
+    <!-- Title of wizard step showing app move progress [CHAR LIMIT=32] -->
+    <string name="storage_wizard_move_progress_title">Moving <xliff:g id="app" example="Calculator">^1</xliff:g>\u2026</string>
+    <!-- Body of wizard step showing app move progress [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_move_progress_body">Don\u2019t remove the <xliff:g id="name" example="SD card">^1</xliff:g> during the move.
+\n\nThe <xliff:g id="app" example="Calculator">^2</xliff:g> app on this device won\u2019t be available until the move is complete.
+    </string>
+    <!-- Title of wizard button offering to cancel move [CHAR LIMIT=32] -->
+    <string name="storage_wizard_move_progress_cancel">Cancel move</string>
+
+    <!-- Title of wizard step prompting user to start data migration [CHAR LIMIT=NONE] -->
+    <string name="storage_wizard_slow_body">This <xliff:g id="name" example="SD card">^1</xliff:g> appears to be slow.
+\n\nYou can continue, but apps moved to this location may stutter and data transfers may take a long time.
+\n\nConsider using a faster <xliff:g id="name" example="SD card">^1</xliff:g> for better performance.
+    </string>
+    <string name="done">"Done"</string>
+    <string name="storage_unmount">"Umount"</string>
+    <string name="storage_mount">"Mount"</string>
+    <string name="storage_volume_used_total">Total used of <xliff:g id="total" example="32GB">%1$s</xliff:g></string>
+    <string name="storage_dialog_unmountable">This <xliff:g id="name" example="SD card">^1</xliff:g> is corrupted.
+\n\nTo use this <xliff:g id="name" example="SD card">^1</xliff:g>, you have to set it up first.</string>
+    <string name="storage_dialog_unsupported">This device doesn\u2019t support this <xliff:g id="name" example="SD card">^1</xliff:g>.
+\n\nTo use this <xliff:g id="name" example="SD card">^1</xliff:g> with this device, you have to set it up first.</string>
+    <string name="storage_menu_forget">Forget</string>
+    <string name="storage_mount_success"><xliff:g id="name" example="SD card">%1$s</xliff:g> is mounted</string>
+    <string name="storage_mount_failure">Couldn\u2019t mount <xliff:g id="name" example="SD card">%1$s</xliff:g></string>
+    <string name="storage_dialog_unmounted"> Mount the <xliff:g id="name" example="SD card">^1</xliff:g>？</string>
+    <string name="storage_menu_mount">Mount</string>
+    <string name="storage_unmount_success"><xliff:g id="name" example="SD card">%1$s</xliff:g> is safely ejected</string>
+    <string name="storage_unmount_failure">Couldn\u2019t safely eject <xliff:g id="name" example="SD card">%1$s</xliff:g></string>
+    <string name="storage_menu_set_up">Set up</string>
+    <string name="storage_format">Format</string>
+    <string name="storage_format_tip">"Don't remove the <xliff:g id="NAME">^1</xliff:g> while it's formatting."</string>
+    <string name="storage_format_currency_tip">"Formatting, please don't remove the <xliff:g id="NAME">^1</xliff:g>."</string>
+    <string name="storage_format_complete_tip">"You can install apps and storage media files to this SD card now."</string>
+    <string name="storage_format_currency_complete_tip">"After formatting, default write disk was changed automatically. "</string>
+    <string name="storage_format_count">"0%"</string>
+
+    <string name="storage_migrate_tip">"Don't remove the SD card while it's moving."</string>
+    <string name="storage_wizard_init_internal_format_title">"Format <xliff:g id="NAME_1">^1</xliff:g> as internal storage"</string>
+    <string name="storage_wizard_init_internal_format_body">"After formatting, you can move your apps data and media files on the <xliff:g id="NAME_0">^1</xliff:g>.\nAfter formatting, this <xliff:g id="NAME_1">^1</xliff:g> will only work in this device.\nFormatting erases all data currently stored on this <xliff:g id="NAME_2">^1</xliff:g>. To avoid losing the data, consider backing it up. "</string>
+    <string name="storage_wizard_init_external_format_title">"Format <xliff:g id="NAME_1">^1</xliff:g> as common storage"</string>
+    <string name="storage_wizard_init_external_format_body">"Formatting will be cleared of all data currently stored in the <xliff:g id="NAME_1">^1</xliff:g>. To avoid losing the data, consider backing it up."</string>
+    <string name="storage_umounted">"Umounted"</string>
+    <string name="internal_storage_umounted_tip">"The SD card is formatted as a storage device, can only be used on this device. After unmount, the apps and data on the SD card will be unavailable, continue?"</string>
+    <string name="external_storage_umounted_tip">"After unmount, the data on the SD card will be unavailable, continue?"</string>
+    <string name="memory_calculating_size">"Calculating"</string>
+    <string name="storage_format_battery_Level_tip">"Power is lower than 20% can't formatted, please charge or connect the power supply."</string>
+    <!--  YUNOS BEGIN PB
+    //##module [Smart Gesture] ##BugID:168585
+    //##date:2014-11-04  ##author:xiongchao.lxc@alibaba-inc.com
+    //##description: Support Single & Dual Orient Smart Gesture based on proximity -->
+    <string name="ali_gesture_preference_title">Gesture</string>
+    <string name="ali_somatosensory_preference_title">Smart somatosensory</string>
+    <string name="accessibility_toggle_gallery_preference_title">Gallery</string>
+	<!--[accessibility_toggle_gallery_preference_summary] changed by lichengfeng form "move between pictures" to "palm shaking above distance sensor to preview next picture" 20160530 begin-->
+    <string name="accessibility_toggle_gallery_preference_summary">palm shaking above distance sensor to preview next picture</string>
+	<!--[accessibility_toggle_gallery_preference_summary] changed by lichengfeng form "move between pictures" to "palm shaking above distance sensor to preview next picture" 20160530 end-->
+    <string name="accessibility_toggle_music_preference_title">Music Player</string>
+    <string name="accessibility_toggle_music_preference_summary">move between songs</string>
+    <string name="accessibility_toggle_camera_preference_title">Camera</string>
+    <string name="accessibility_toggle_camera_preference_summary">capture photos</string>
+    <string name="accessibility_toggle_launcher_preference_title">Launcher</string>
+	<!--[accessibility_toggle_launcher_preference_summary] changed by lichengfeng form "move to next page in launcher" to "palm shaking above distance sensor to move to next page in launcher" 20160530 begin-->
+    <string name="accessibility_toggle_launcher_preference_summary">palm shaking above distance sensor to move to next page in launcher</string>
+	<!--[accessibility_toggle_launcher_preference_summary] changed by lichengfeng form "move to next page in launcher" to "palm shaking above distance sensor to move to next page in launcher" 20160530 end-->
+    <string name="accessibility_toggle_lockscreen_preference_title">Unlock</string>
+    <string name="accessibility_toggle_lockscreen_preference_summary">In the locked screen, the phone will hand waving distance sensor location, the phone will aut     omatically unlock standby interface</string>
+    <string name="accessibility_toggle_mmsdial_preference_title">SMS somatosensory dial</string>
+    <string name="accessibility_toggle_mmsdial_preference_summary">In MMS View, pick up the phone to your face can directly dial the contact\'s phone, close the holster is not recommended to use this feature</string>
+    <string name="accessibility_toggle_autoanswer_preference_title">Call Answering Car</string>
+    <string name="accessibility_toggle_autoanswer_preference_summary">Call, the palm of the phone distance sensor position for two seconds, the phone automatically      answer the call</string>
+    <string name="accessibility_smartmode_preference_title">Smart mode</string>
+    <string name="accessibility_toggle_smartread_preference_title">Smart Read</string>
+    <string name="open_auto_answer_warning">Close the holster is not recommended to use this feature</string>
+    <string name="open_auto_dial_warning">Close the holster is not recommended to use this feature</string>
+    <string name="error_title">"Warning"</string>
+    <!--  YUNOS END PB  -->
+    <string name="storage_format_notification">"<xliff:g id="NAME">%1$s</xliff:g>Format"</string>
+    <string name="storage_internal_forget_details">To use the apps, photos, or data this <xliff:g id="name" example="SD card">^1</xliff:g> contains, reinsert it.
+\n\nAlternatively, you can choose to forget this storage if the device isn\u2019t available.
+\n\nIf you choose to forget, all the data the device contains will be lost forever.
+\n\nYou can reinstall the apps later, but their data stored on this device will be lost.</string>
+
+    <!-- Title of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=32]-->
+    <string name="storage_internal_forget_confirm_title">Forget <xliff:g id="name" example="SD card">^1</xliff:g>?</string>
+    <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
+    <string name="storage_internal_forget_confirm">All the apps, photos, and data stored on this <xliff:g id="name" example="SD card">^1</xliff:g> will be lost forever.</string>
+    <string name="storage_format_unsupported">"Unavailable, please reformat"</string>
+	
+	<!--applock begin-->
+    <string name="action_settings">Settings</string>
+    <string name="setup_end">End</string>
+    <string name="fingerprint_use">Use FingerPrint To</string>
+    <string name="fingerprint_pwd">Digital Password</string>
+    <string name="fingerprint_screen_unlock">FingerPrint Screen Unlock</string>
+    <string name="fingerprint_app_unlock">FingerPrint App Unlock</string>
+    <string name="fingerprint_title">FingerPrint List</string>
+    <string name="fingerprint_add">Add new fingerprint</string>
+    <string name="record_continue">continue</string>
+    <string name="fp_name">fingerprint</string>
+    <string name="rename">rename</string>
+    <string name="delete">delete</string>
+    <string name="finish">finish</string>
+    <string name="input_pwd_title_new">Create</string>
+    <string name="input_pwd_title_update">Update</string>
+    <string name="title_activity_passwd">PasswdActivity</string>
+    <string name="input_first_pwd">Input Password To Protect Your FingerPrint</string>
+    <string name="input_confirm_pwd">please confirm the password</string>
+    <string name="input_confirm_pwd_error">Two times the password is not consistent，please confirm the password</string>
+    <string name="input_pwd">Input Password</string>
+    <string name="input_error_pwd">Error! Input Again!</string>
+    <string name="match_fp">click button, start comparing</string>
+    <string name="match_fp_ing">comparing...</string>
+    <string name="match_fp_res">result：%1$d ，compare%2$s \n if result score is more than 600 means successful \n notes：recoding and comparing should put your finger to the sensor。each finger needs five steps.</string>
+    <string name="match_test_start">start</string>
+    <string name="match_test_success">pass</string>
+    <string name="match_test_fail">not pass</string>
+    <string name="fp_detail">Detail</string>
+    <string name="fp_detail_delete">Delete The Fingerprint？</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    
+    <string name="record_fp_title_first">Place your fingers</string>
+    <string name="record_fp_title">Repeatedly press your fingers</string>
+    
+    <string name="record_fp_content_first">Place your fingers on the back of the fingerprint reader.</string>
+    <string name="record_fp_content">Input complete fingerprint need to continue to press repeatedly</string>  
+     
+    <string name="record_fp_content_remove_first">Please lift your finger after pressing</string>
+    <string name="record_fp_content_remove">Please raise your finger</string>
+    
+    <string name="record_fp_title_positive">Please enter the fingerprint positive</string>
+    <string name="record_fp_content_first_positive">Place the finger on the back of the center of the sensing area.</string>
+    <string name="record_fp_title_left">Please enter the left edge of the fingerprint</string>
+    <string name="record_fp_title_left_top">Please enter the upper left corner of the fingerprint.</string>
+    <string name="record_fp_title_right_top">Please enter the upper right corner of the fingerprint.</string>
+    <string name="record_fp_title_right">Please enter the right edge of the fingerprint</string>
+    <string name="record_fp_title_right_bottom">Please enter the lower right corner of the fingerprint</string>
+    <string name="record_fp_title_left_bottom">Please enter the lower left corner of the fingerprint</string>
+    <string name="record_fp_content_left">Place the left edge of the finger in the center of the sensing area of the back of the fingerprint.</string>
+    <string name="record_fp_content_left_top">Place the upper left corner of the finger in the center of the sensing region of the back.</string>
+    <string name="record_fp_content_right_top">Position the upper right corner of the finger at the center of the sensing area of the back of the fingerprint.</string>
+    <string name="record_fp_content_right">Place the right edge of the finger in the center of the sensing area of the back of the fingerprint.</string>
+    <string name="record_fp_content_right_bottom">Position the bottom right corner of the finger to the center of the sensing area of the back of the fingerprint.</string>
+    <string name="record_fp_content_left_bottom">Place the left lower corner of the finger in the center of the sensing area of the back of the fingerprint.</string>
+
+    <string name="fp_sensor_inuse">Other app using sensor，Please Try Again!</string>
+    <string name="fp_addfail">Fail，Please Try Again!</string>
+    <string name="fp_fail_overtime">Please press your finger!</string>
+    <string name="fp_fail_tooquick">Too Quick，Please Try Again!</string>
+    <string name="fp_fail_notin_center">Not in the center，Please Try Again!</string>
+    <string name="fp_tryagain">Please Try Again!</string>
+    <string name="pwd_tryagain">Password Error,Please Try Again!</string>
+    <string name="menu_manage_release_sensor">Manual release sensor</string>
+    <string name="menu_manage_needlock_apps">Lock Apps</string>
+    <string name="lockui_guide">Unlock\nUse Fingerprint Or Inout Password</string>
+    <string name="lockui_title">App Locked</string>
+    <string name="record_step">Step%1$s</string>
+    <string name="record_successfully">Record Successfully</string>
+    <string name="fp_test_guide">put your finger to the sensor</string>
+    <string name="correct">collect</string>
+    <string name="error">wrong</string>
+    <string name="reset">reset</string>
+    <string name="new_name_warning">New name can\'t be empty!</string>
+    <string name="toDigital">digital password</string>
+    <string name="finger_notice">Release encryption \n please press the back of the phone</string>
+    <string name="digital_notice">Release encryption \n please enter the correct digital password</string>
+
+    <string name="fingerprint_mag">Fingerprint management</string>
+    <string name="fingerprint_phone">Photograph</string>
+    <string name="fingerprint_msg">Manage and set up the fingerprint related functions</string>
+    <string name="fingerprint_phone_msg">In the camera interface press the fingerprint sensor to take pictures</string>
+    <string name="fingerprint_explain_msg">Description: touch function without the need to verify the fingerprint information, any finger can be operated。</string>
+    <string name="fingerprint_function">Fingerprint</string>
+    <string name="fingerprint_touch">Touch</string>
+	<!--app lock end-->
+
+	
+</resources>

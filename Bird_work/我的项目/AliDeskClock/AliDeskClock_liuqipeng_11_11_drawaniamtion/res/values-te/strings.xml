@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"><!--  --><!-- Label shown on launcher icon --><!-- Label for the this application displayed on-screen when this application must be represented to the user. --><string name="app_label">గడియారం</string><!-- Title for AlarmClock activity --><!-- Label for the Alarms activity displayed on-screen when that activity must be represented to the user. --><!-- Menu item on Alarm Clock screen: Add alarm --><!--<string name="add_alarm">Add alarm</string>--><!-- Setting label on Set alarm screen: Label --><string name="label">లేబుల్</string><!-- Default label to display for an alarm --><string name="default_label">అలారం</string><!-- Preference category on Alarm Settings screen: Set alarm --><!-- Setting labels on Set alarm screen: Vibration on or off --><string name="alarm_vibrate">కంపించడం</string><!-- Setting labels on Set alarm screen: Repeat --><string name="alarm_repeat">రిపీట్</string><!-- Label on expanded alarm edit view. --><string name="ringtone">రింగ్‌టోన్</string><!-- Button labels on the alarm dialog: Dismiss --><string name="alarm_alert_dismiss_text">డిస్మిస్</string><!-- Button labels on the pre-dismiss alarm notifications: Dismiss now --><string name="alarm_alert_dismiss_now_text">ఇప్పడు డిస్‌మిస్ చేయండి</string><!--
+         Alarm Alert screen: this message is shown after an alarm rung
+         unattended for a number of minutes.  It tells the user that
+         the alarm has been silenced.
+    --><string name="alarm_missed_title">మిస్డ్ అలారం</string>
+    <string name="alarm_missed_text"><xliff:g id="alarm_time">%s</xliff:g> - <xliff:g id="alarm_label">%s</xliff:g></string><!-- Button labels on the alarm dialog: Snooze --><string name="alarm_alert_snooze_text">స్మూజ్</string><!--
+         Toast that appears after Alarm is snoozed from the Alarm
+         dialog. Says the alarm will snooze for xxx minutes.
+    --><plurals name="alarm_alert_snooze_set"><!-- Duration for one minute --><item quantity="one">1 నిమిషం పాటు స్నూజ్ చేయి.</item><!-- Duration for more than one minute --><item quantity="other"><xliff:g id="minutes">%d</xliff:g> నిమిషాల తరువాత నాకు గుర్తు చేయి.</item>
+    </plurals><!-- Text to appear inside a notification while an alarm is snoozing. --><string name="alarm_alert_snooze_until"><xliff:g id="time">%s</xliff:g> వరకు స్నూజింగ్</string><!-- Text to appear in the notification title while an alarm is about to go off. --><string name="alarm_alert_predismiss_title">రాబోయే అలారం</string><!-- Text to appear in when trying to view a missed alarm that has been deleted --><string name="missed_alarm_has_been_deleted">మీ మిస్ అయిన అలారం తొలగించబడింది</string><!--
+         0: nothing
+         1: days
+         2:      hours
+         3: days hours
+         4:            minutes
+         5: days       minutes
+         6:      hours minutes
+         7: days hours minutes
+    --><skip /><!-- Timer notification: how long from now until timer goes off. --><string-array name="timer_notifications">
+        <item>ఒక నిమిషం కంటే తక్కువ మిగిలి ఉంది</item>
+        <item><xliff:g id="HOURS" example="2 hours">%1$s</xliff:g> మిగిలి ఉంది</item>
+        <item><xliff:g id="MINUTES" example="2 minutes">%2$s</xliff:g> మిగిలి ఉంది</item>
+        <item><xliff:g id="HOURS" example="2 hours">%1$s</xliff:g><xliff:g id="MINUTES" example="2 minutes">%2$s</xliff:g> మిగిలి ఉంది</item>
+    </string-array><!--
+         Alarm confirmation toast: Describes how long from now until
+         alarm fires
+    --><string-array name="alarm_set">
+        <item>ఇప్పటి నుంచి 1 నిమిషంలోగా అలారం సెట్ చేయబడింది.</item>
+        <item>ఇప్పటి నుంచి <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> లోగా అలారం సెట్ చేయబడింది.</item>
+        <item>ఇప్పటి నుంచి <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> లోగా అలారం సెట్ చేయబడింది.</item>
+        <item>ఇప్పటి నుంచి <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> మరియు <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> కొరకు అలారం సెట్ చేయబడింది.</item>
+        <item>ఇప్పటి నుంచి <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> లోగా అలారం సెట్ చేయబడింది.</item>
+        <item>ఇప్పటి నుంచి <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> మరియు <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> కొరకు అలారం సెట్ చేయబడింది.</item>
+        <item>ఇప్పటి నుంచి <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> మరియు <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> కొరకు అలారం సెట్ చేయబడింది.</item>
+        <item>ఇప్పటి నుంచి <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, మరియు <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> కొరకు అలారం సెట్ చేయబడింది.</item>
+    </string-array>
+    <string-array name="alarm_set_tmp">
+    <item msgid="6450913786084215050">“ఇప్పటి నుంచి 1 నిమిషం కంటే తక్కువ&quot;</item>
+    <item msgid="6002066367368421848">“ఇప్పటి నుంచి <xliff:g id="DAYS">%1$s</xliff:g> &quot;</item>
+    <item msgid="8824719306247973774">“ఇప్పటి నుంచి <xliff:g id="HOURS">%2$s</xliff:g> &quot;</item>
+    <item msgid="8182406852935468862">“ఇప్పటి నుంచి <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g> &quot;</item>
+    <item msgid="2532279224777213194">“ఇప్పటి నుంచి <xliff:g id="MINUTES">%3$s</xliff:g> &quot;</item>
+    <item msgid="5936557894247187717">“ఇప్పటి నుంచి <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g> &quot;</item>
+    <item msgid="9115697840826129603">“ఇప్పటి నుంచి <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g> &quot;</item>
+    <item msgid="2332583385137381060">“ఇప్పటి నుంచి <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g> &quot;</item>
+  </string-array><!-- Alarm confirmation toast: singular day --><string name="day">“1 రోజు&quot;</string><!-- Alarm confirmation toast: plural days --><string name="days">“<xliff:g id="days">%s</xliff:g> రోజులు&quot;</string><!-- Alarm confirmation toast: singular hour --><string name="hour">1 గంట</string><!-- Alarm confirmation toast: plural hours --><string name="hours"><xliff:g id="hours">%s</xliff:g> గంటలు</string><!-- Alarm confirmation toast: singular minute --><string name="minute">“1 నిమిషం&quot;</string><!-- Alarm confirmation toast: plural minutes --><string name="minutes">“%S<xliff:g id="minutes">%s</xliff:g> నిమిషాలు&quot;</string><!--
+         Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day
+    --><string name="every_day">ప్రతిరోజూ</string>
+
+    <string name="working_day">పనిదినం</string>
+    <string name="weekend">వారాంతరం</string><!--
+         Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat
+    --><string name="never">ఎన్నడూ లేదు</string><!--
+         Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: concatenate days with
+         this character, i.e. "Mon, Tue, Wed"
+    --><string name="day_concat">&quot;, &quot;</string><!--
+         Appears at the top of the Clock Picker screen: Tell user to
+         select a clock to display
+    --><!-- Label for analog clock gadget displayed on-screen when that gadget is represented to the user. --><!--<string name="analog_gadget">Analog clock</string>--><!-- Settings activity name --><!-- Label for the Settings activity displayed on-screen when that activity must be represented to the user. --><string name="settings">సెట్టింగ్‌లు</string>
+    <string name="alarm_settings">అలారం సెట్టింగ్‌లు</string><!-- Setting title for changing the snooze duration. --><string name="snooze_duration_title">స్నూజ్ అంతరం</string>
+
+    <plurals name="snooze_duration"><!-- Duration for one minute --><item quantity="one">1 నిమిషం</item><!-- Duration for more than one minute --><item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> నిమిషాలు</item>
+    </plurals>
+    <plurals name="snooze_picker_label"><!-- Duration for one minute --><item quantity="one">నిమిషం</item><!-- Duration for more than one minute --><item quantity="other">నిమిషాలు</item>
+    </plurals><!-- Auto silence preference title --><string name="auto_silence_title">తరువాత అలర్ట్ చేయడం నిలిపివేయి</string><!-- Auto silence summary string set based on the preference value. --><string name="auto_silence_summary"><xliff:g id="minutes">%d</xliff:g> నిమిషాలు</string><!-- Auto silence summary when turned off --><string name="auto_silence_never">ఎన్నడూ లేదు</string><!--
+         Entries listed in the ListPreference when invoking the auto silence
+         preference.
+    --><string-array name="auto_silence_entries">
+        <item>5 నిమిషాలు</item>
+        <item>10 నిమిషాలు</item>
+        <item>15 నిమిషాలు</item>
+        <item>20 నిమిషాలు</item>
+        <item>25 నిమిషాలు</item>
+        <item>30 నిమిషాలు</item>
+        <item>ఎన్నడూ లేదు</item>
+    </string-array>
+    <string name="timer_10minutes">“10 నిమిషాలు&quot;</string>
+    <string name="timer_15minutes">“15 నిమిషాలు&quot;</string>
+    <string name="timer_30minutes">“30 నిమిషాలు&quot;</string>
+    <string name="timer_45minutes">“45 నిమిషాలు&quot;</string><!--
+         Values that are retrieved from the ListPreference. These must match
+         the auto_silence_entries above.
+    --><string-array name="auto_silence_values" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>-1</item> <!-- Off --></string-array><!-- Summary for the alarm preference when silent is chosen. --><string name="silent_alarm_summary">నిశ్శబ్ధం</string><!-- Accessibility labels for Clock activity buttons --><skip /><!-- Accessibility labels for alarm buttons --><string name="label_description">లేబుల్</string><!--<string name="ringtone_description">Ringtone</string>--><!--
+         What to show the user if the weather widget exists but fails to
+         respond. This is a sign of an error; if the weather widget is not
+         present on the device, we show nothing at all.
+    --><!--
+         A description for the DeskClock timer sound playback service.
+         [CHAR LIMIT=NONE]
+    --><string name="timer_ring_service_desc">టైమర్ల కొరకు సౌండ్ ప్లేబ్యాక్ సర్వీస్ క్లాక్‌లో సెట్ చేయబడింది</string><!-- Label on the main screen control used to set alarm when there is already an existing alarm [CHAR LIMIT=30] --><string name="control_set_alarm_with_existing"><xliff:g id="time">%s</xliff:g></string><!-- ActionBar strings --><!-- Describes the purpose of the tab button which which switches the activity to the Alarm page --><string name="menu_alarm">అలారం</string><!-- Describes the purpose of the tab button which which switches the activity to the Timer page --><string name="menu_timer">టైమర్</string><!-- Describes the purpose of the tab button which which switches the activity to the Clock page --><string name="menu_clock">గడియారం</string><!-- Describes the purpose of the tab button which which switches the activity to the Stopwatch page --><string name="menu_stopwatch">స్టాప్ వాచ్</string><!-- - Clock view buttons strings --><!-- Describes the purpose of the button which provides a list of cities for the world clock settings --><!--<string name="button_cities">Cities</string>--><!-- Describes the purpose of the button which pops up a menu of setting choices --><!--<string name="button_menu">More options</string>--><!-- Menu item on most screens to get to more settings --><string name="menu_item_settings">సెట్టింగ్‌లు</string><!-- Menu item on most screens to get to the help information --><string name="menu_item_help">సహాయం</string><!-- Menu item on Cities screen to sort by GMT offset --><!--<string name="menu_item_sort_by_gmt_offset">Sort by time</string>--><!-- Menu item on Cities screen to sort by alphabetical order --><!--<string name="menu_item_sort_by_name">Sort by name</string>--><!-- Label for selected cities in Cities list view --><string name="selected_cities_label">ఎంపిక చేయబడ్డ నగరాలు</string><!-- Stop Watch strings --><!-- Describes the purpose of the button to begin running a stopwatch --><string name="sw_start_button">ప్రారంభించు</string><!-- Describes the purpose of the button to pause a stopwatch. --><string name="sw_stop_button">ఆగడం</string><!-- Describes the purpose of the button to record current the stopwatch value into the4 collection of lap times. --><string name="sw_lap_button">లాప్</string><!-- Describes the purpose of the button to return the stopwatch to zero and remove the lap times. --><string name="sw_reset_button">రీసెట్</string><!-- Abbreviation for temporal hours [CHAR LIMIT=1] --><string name="hours_label">h</string><!-- Abbreviation for temporal minutes [CHAR LIMIT=1] --><string name="minutes_label">m</string><!-- Abbreviation for temporal seconds [CHAR LIMIT=1] --><string name="seconds_label">s</string><!-- Accessibility strings --><string name="hours_label_description">గంటలు</string>
+    <string name="minutes_label_description">నిమిషాలు</string>
+    <string name="seconds_label_description">సెకనులు</string><!-- Stopwatch share strings --><!-- Sentence within the message created to share the total time recorded within the stopwatch --><string name="sw_share_main">నా సమయం <xliff:g id="time">%s</xliff:g></string><!-- Header within the message created to share a list of lap times (a new line is appended to this) --><string name="sw_share_laps">లాప్ సమయాలు:</string><!-- Label to enumerate the number of laps in the notification the user has counted --><string name="sw_notification_lap_number">లాప్ <xliff:g id="number">%d</xliff:g></string><!-- Formatted stopwatch time --><string-array name="stopwatch_format_set" translatable="false">
+        <item> <!-- <10 minutes - example "1 02.03" --><xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <1 hour - example "12 03.04" --><xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <10 hours - example "1 02 03.04" --><xliff:g id="H">%1$02d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <100 hours - example "12 03 04.05" --><xliff:g id="H">%1$02d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <1000 hours - example "123 04 05.06" --><xliff:g id="H">%1$03d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+    </string-array><!-- Formatted stopwatch time for laps shared using the share button --><string-array name="shared_laps_format_set" translatable="false">
+        <item> <!-- <10 minutes - example "1 02.03" --><xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="M">%2$d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <1 hour - example "12 03.04" --><xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <10 hours - example "1 02 03.04" --><xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="H">%1$d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <100 hours - example "12 03 04.05" --><xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="H">%1$02d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> <!-- <1000 hours - example "123 04 05.06" --><xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="H">%1$03d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+    </string-array><!-- Label to enumerate the number of laps the user has counted --><string-array name="sw_lap_number_set" translatable="false">
+        <item><xliff:g id="number">%d</xliff:g>.</item>
+        <item><xliff:g id="number">%02d</xliff:g>.</item>
+    </string-array><!-- Stopwatch accessibility strings --><plurals name="Nhours_description"><!-- 1 hour --><item quantity="one">1 గంట</item><!-- more --><item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> గంటలు</item>
+    </plurals>
+    <plurals name="Nminutes_description"><!-- 1 minute --><item quantity="one">1 నిమిషం</item><!-- more --><item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> నిమిషాలు</item>
+    </plurals>
+    <plurals name="Nseconds_description"><!-- 1 second --><item quantity="one">1 సెకను</item><!-- more --><item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> సెకండ్లు</item>
+    </plurals><!-- timer strings --><!-- Describes the purpose of the button to add a new timer --><string name="timer_add_timer">టైమర్ జోడించు</string><!-- Describes the purpose of the button to begin or continue running a timer --><string name="timer_start">ప్రారంభించు</string><!-- Describes the purpose of the button to delete a timer. --><string name="timer_delete">డిలీట్</string><!-- Describes the purpose of the button increase the remaining time on a timer by one minute. --><string name="timer_plus_one">1 నిమిషం జోడించు</string><!-- Like "timer_plus_one", but with 'minute' abbreviated for the notification. --><string name="timer_plus_1_min">1 నిమిషం జోడించు</string><!-- Describes the purpose of the button to stop the timer. --><string name="timer_stop">పాజ్ చేయి</string><!-- Describes the purpose of the button to stop and delete the timer. --><string name="timer_done">చేయబడింది.</string><!-- Describes the purpose of the button to return the timer to it's original starting value. --><string name="timer_reset">రీసెట్</string><!-- Describes the purpose of the button to discard the current dialog values. Will also close the dialog if other time's exist --><string name="timer_cancel">రద్దు చేయండి</string><!-- Notification content shown when a timer has completed and has no more time remaining --><string name="timer_times_up">టైమ్ అయిపోయింది</string><!-- Label associated with a notification for a Timer --><string name="timer_notification_label">టైమర్</string><!-- Jocular content that user may append when sharing the lap times --><string-array name="sw_share_strings" translatable="true">
+        <item>మీరు కాస్తంత వేగవంతమైన డెమాన్.</item>
+        <item>మీ శ్రమ యొక్క ఫలాలను ఆస్వాదిస్తున్నారు.</item>
+        <item>Yunos వేగవంతమైనదని తెలుసు, అయితే మీ అంత వేగవంతమైనది కాదు!</item>
+        <item>Phew.</item>
+        <item>L33t సార్లు.</item>
+        <item>అటువంటి అద్భుతమైన వేగం.</item>
+        <item>టైమ్ ర్యాప్‌ను మళ్లీ మనం చేద్దాం.</item>
+        <item>ఎడమవైపుకు జంప్ చేయండి.</item>
+        <item>వేగవంతంగా చేయడానికి మీరు పాలెట్ ఉంది.</item>
+        <item>ఫోటోనిక్ వెలాసిటీ.</item>
+    </string-array><!-- Title with the clock on the main page displaying the user's regular timezone (shows when automatic_home_clock enabled) --><string name="home_label">హోమ్</string><!-- Label for the Cities activity displayed on-screen when that activity must be represented to the user. --><string name="cities_activity_title">నగరాలు</string><!-- Settings strings --><!-- Header for a Clock Dream Setting referring to choosing analog or digital style --><string name="clock_style">స్టైల్</string><!--
+         Entries listed in the ListPreference when invoking the clock style
+         preference.
+    --><string-array name="clock_style_entries">
+        <item>అనలాగ్</item>
+        <item>డిజిటల్</item>
+    </string-array><!--
+         Values that are retrieved from the ListPreference. These must match
+         the clock_style_entries above.
+    --><string-array name="clock_style_values" translatable="false">
+        <item>అనలాగ్</item>
+        <item>డిజిటల్</item>
+    </string-array><!-- Title for an option that will automtically show a clock representing the user's regular timezone on the main fragment whenever the user leaves their regular timezone --><string name="automatic_home_clock">ఆటోమేటిక్ హోం క్లాక్</string><!-- Describes the functionality provided by the automatic_home_clock option --><string name="automatic_home_clock_summary">టైమ్ తేడా ఉన్న ప్రాంతంలో ప్రయాణించేటప్పుడు, హోం కొరకు ఒక క్లాక్ జోడించండి.</string><!-- Title in the preferences change the time zone for the user's home --><string name="home_time_zone">హోమ్ టైమ్ జోన్</string><!-- Title in a list dialog box to pick a time zone for the user's home --><string name="home_time_zone_title">హోమ్ టైమ్ జోన్</string><!-- Textual content of the button to discard the current dialog values and close the dialog --><string name="time_picker_cancel">రద్దు చేయండి</string><!-- Textual content of the button to update an alarm with the current dialog values --><string name="time_picker_set">సరే</string><!-- Choices for timezones, must be kept in sync with timezone_values. CHAR LIMIT=25] --><string-array name="timezone_labels">
+        <item>“మార్షల్ దీవులు&quot;</item>
+        <item>“ మిడ్ వే దీవులు&quot;</item>
+        <item>“ హవాయి&quot;</item>
+        <item>“అలాస్కా&quot;</item>
+        <item>“ఫసిఫిక్ సమయం&quot;</item>
+        <item>“ టిజుయానా&quot;</item>
+        <item>“అరిజోనా&quot;</item>
+        <item>“చిహుయాహు&quot;</item>
+        <item>“ పర్వత సమయం&quot;</item>
+        <item>“ మధ్య అమెరికా&quot;</item>
+        <item>“ మధ్య సమయం&quot;</item>
+        <item>“ మెక్సికో నగరం&quot;</item>
+        <item>“సస్కాచెవాన్&quot;</item>
+        <item>“బొగోటా&quot;</item>
+        <item>“ తూర్పు సమయం&quot;</item>
+        <item>“ వెనుజులా&quot;</item>
+        <item>“అట్లాంటిక్ టైమ్ (బార్బడోస్)&quot;</item>
+        <item>“అట్లాంటిక్ టైమ్ (కెనడా)&quot;</item>
+        <item>“మనుస్&quot;</item>
+        <item>“శాంటియాగో&quot;</item>
+        <item>“న్యూఫౌండ్ లాండ్&quot;</item>
+        <item>“బ్రెసీలియా&quot;</item>
+        <item>“బ్యూనస్ ఎయిర్స్&quot;</item>
+        <item>“గ్రీన్లాండ్&quot;</item>
+        <item>“మోంటెవీడియో&quot;</item>
+        <item>“మిడ్ అట్లాంటిక్&quot;</item>
+        <item>“అజోరెస్&quot;</item>
+        <item>“కేప్ వర్దె ద్వీపాలు&quot;</item>
+        <item>“కాసాబ్లాంకా&quot;</item>
+        <item>“లండన్, డబ్లిన్&quot;</item>
+        <item>“ఆమెస్టర్ డాం, బెర్లిన్&quot;</item>
+        <item>“బెల్గ్రేడ్&quot;</item>
+        <item>“బ్రసెల్స్&quot;</item>
+        <item>“సారజేయేవొ&quot;</item>
+        <item>“విండ్హోక్&quot;</item>
+        <item>ఆఫ్రికా సమయం &quot;</item>
+        <item>“అమ్మన్, జోర్డాన్&quot;</item>
+        <item>“ఏథెన్స్, ఇస్తాంబుల్&quot;</item>
+        <item>“బీరూట్, లెబనాన్&quot;</item>
+        <item>“కైరో&quot;</item>
+        <item>“హెల్సింకి&quot;</item>
+        <item>“జెరూసలేం&quot;</item>
+        <item>“మిన్స్క్&quot;</item>
+        <item>“హరారే&quot;</item>
+        <item>“బాగ్దాద్&quot;</item>
+        <item>“మాస్కో&quot;</item>
+        <item>“కువైట్&quot;</item>
+        <item>“నైరోబి&quot;</item>
+        <item>“టెహ్రాన్&quot;</item>
+        <item>“బాకు&quot;</item>
+        <item>“టిబిల్సి&quot;</item>
+        <item>“యెరెవాన్&quot;</item>
+        <item>“దుబాయ్&quot;</item>
+        <item>“కాబూల్&quot;</item>
+        <item>“ఇస్లామాబాద్, కరాచీ&quot;</item>
+        <item>“యురల్క్&quot;</item>
+        <item>“యెకాటెరిన్బర్గ్&quot;</item>
+        <item>“కోల్‌‌కతా&quot;</item>
+        <item>“శ్రీలంక&quot;</item>
+        <item>“ఖాట్మాండు&quot;</item>
+        <item>“ఆస్థానా&quot;</item>
+        <item>“యాన్‌గాన్&quot;</item>
+        <item>&quot;Krasnoyarsk&quot;</item>
+        <item>&quot;Bangkok&quot;</item>
+        <item>&quot;Beijing&quot;</item>
+        <item>&quot;Hong Kong&quot;</item>
+        <item>&quot;Irkutsk&quot;</item>
+        <item>&quot;Kuala Lumpur&quot;</item>
+        <item>&quot;Perth&quot;</item>
+        <item>&quot;Taipei&quot;</item>
+        <item>&quot;Seoul&quot;</item>
+        <item>&quot;Tokyo, Osaka&quot;</item>
+        <item>&quot;Yakutsk&quot;</item>
+        <item>&quot;Adelaide&quot;</item>
+        <item>&quot;Darwin&quot;</item>
+        <item>&quot;Brisbane&quot;</item>
+        <item>&quot;Hobart&quot;</item>
+        <item>&quot;Sydney, Canberra&quot;</item>
+        <item>&quot;Vladivostok&quot;</item>
+        <item>&quot;Guam&quot;</item>
+        <item>&quot;Magadan&quot;</item>
+        <item>&quot;Auckland&quot;</item>
+        <item>&quot;Fiji&quot;</item>
+        <item>&quot;Tonga&quot;</item>
+        <item>&quot;Jakarta&quot;</item>
+    </string-array><!-- Choices for timezones, must be kept in sync with timezone_values. --><string-array name="timezone_values" translatable="false">
+        <item>&quot;Pacific/Majuro&quot;</item>
+        <item>&quot;Pacific/Midway&quot;</item>
+        <item>&quot;Pacific/Honolulu&quot;</item>
+        <item>&quot;America/Anchorage&quot;</item>
+        <item>&quot;America/Los_Angeles&quot;</item>
+        <item>&quot;America/Tijuana&quot;</item>
+        <item>&quot;America/Phoenix&quot;</item>
+        <item>&quot;America/Chihuahua&quot;</item>
+        <item>&quot;America/Denver&quot;</item>
+        <item>&quot;America/Costa_Rica&quot;</item>
+        <item>&quot;America/Chicago&quot;</item>
+        <item>&quot;America/Mexico_City&quot;</item>
+        <item>&quot;America/Regina&quot;</item>
+        <item>&quot;America/Bogota&quot;</item>
+        <item>&quot;America/New_York&quot;</item>
+        <item>&quot;America/Caracas&quot;</item>
+        <item>&quot;America/Barbados&quot;</item>
+        <item>&quot;America/Halifax&quot;</item>
+        <item>&quot;America/Manaus&quot;</item>
+        <item>&quot;America/Santiago&quot;</item>
+        <item>&quot;America/St_Johns&quot;</item>
+        <item>&quot;America/Sao_Paulo&quot;</item>
+        <item>&quot;America/Argentina/Buenos_Aires&quot;</item>
+        <item>&quot;America/Godthab&quot;</item>
+        <item>&quot;America/Montevideo&quot;</item>
+        <item>&quot;Atlantic/South_Georgia&quot;</item>
+        <item>&quot;Atlantic/Azores&quot;</item>
+        <item>&quot;Atlantic/Cape_Verde&quot;</item>
+        <item>&quot;Africa/Casablanca&quot;</item>
+        <item>&quot;Europe/London&quot;</item>
+        <item>&quot;Europe/Amsterdam&quot;</item>
+        <item>&quot;Europe/Belgrade&quot;</item>
+        <item>&quot;Europe/Brussels&quot;</item>
+        <item>&quot;Europe/Sarajevo&quot;</item>
+        <item>&quot;Africa/Windhoek&quot;</item>
+        <item>&quot;Africa/Brazzaville&quot;</item>
+        <item>&quot;Asia/Amman&quot;</item>
+        <item>&quot;Europe/Athens&quot;</item>
+        <item>&quot;Asia/Beirut&quot;</item>
+        <item>&quot;Africa/Cairo&quot;</item>
+        <item>&quot;Europe/Helsinki&quot;</item>
+        <item>&quot;Asia/Jerusalem&quot;</item>
+        <item>&quot;Europe/Minsk&quot;</item>
+        <item>&quot;Africa/Harare&quot;</item>
+        <item>&quot;Asia/Baghdad&quot;</item>
+        <item>&quot;Europe/Moscow&quot;</item>
+        <item>&quot;Asia/Kuwait&quot;</item>
+        <item>&quot;Africa/Nairobi&quot;</item>
+        <item>&quot;Asia/Tehran&quot;</item>
+        <item>&quot;Asia/Baku&quot;</item>
+        <item>&quot;Asia/Tbilisi&quot;</item>
+        <item>&quot;Asia/Yerevan&quot;</item>
+        <item>&quot;Asia/Dubai&quot;</item>
+        <item>&quot;Asia/Kabul&quot;</item>
+        <item>&quot;Asia/Karachi&quot;</item>
+        <item>&quot;Asia/Oral&quot;</item>
+        <item>&quot;Asia/Yekaterinburg&quot;</item>
+        <item>&quot;Asia/Calcutta&quot;</item>
+        <item>&quot;Asia/Colombo&quot;</item>
+        <item>&quot;Asia/Katmandu&quot;</item>
+        <item>&quot;Asia/Almaty&quot;</item>
+        <item>&quot;Asia/Rangoon&quot;</item>
+        <item>&quot;Asia/Krasnoyarsk&quot;</item>
+        <item>&quot;Asia/Bangkok&quot;</item>
+        <item>&quot;Asia/Shanghai&quot;</item>
+        <item>&quot;Asia/Hong_Kong&quot;</item>
+        <item>&quot;Asia/Irkutsk&quot;</item>
+        <item>&quot;Asia/Kuala_Lumpur&quot;</item>
+        <item>&quot;Australia/Perth&quot;</item>
+        <item>&quot;Asia/Taipei&quot;</item>
+        <item>&quot;Asia/Seoul&quot;</item>
+        <item>&quot;Asia/Tokyo&quot;</item>
+        <item>&quot;Asia/Yakutsk&quot;</item>
+        <item>&quot;Australia/Adelaide&quot;</item>
+        <item>&quot;Australia/Darwin&quot;</item>
+        <item>&quot;Australia/Brisbane&quot;</item>
+        <item>&quot;Australia/Hobart&quot;</item>
+        <item>&quot;Australia/Sydney&quot;</item>
+        <item>&quot;Asia/Vladivostok&quot;</item>
+        <item>&quot;Pacific/Guam&quot;</item>
+        <item>&quot;Asia/Magadan&quot;</item>
+        <item>&quot;Pacific/Auckland&quot;</item>
+        <item>&quot;Pacific/Fiji&quot;</item>
+        <item>&quot;Pacific/Tongatapu&quot;</item>
+        <item>&quot;Asia/Jakarta&quot;</item>
+    </string-array><!-- Header in the preferences settings for the section pertaining to alarms --><!-- Describes the purpose of the button to show the remaining choices whenever there were too many --><string name="see_all">అన్ని చూడు(…, …) ? </string>
+    <string name="desk_clock_help_url" translatable="false"></string><!-- Describes the running service for the stopwatch --><string name="stopwatch_service_desc">నోటిఫికేషన్ రన్ చేయడం కొరకు స్టాప్ వాచీ సర్వీస్.</string><!-- Desription for the stopped stop watch --><string name="swn_stopped">ఆపివేయబడింది</string><!-- Notification title when timer is stopped. --><string name="timer_stopped">టైమర్ ఆపివేయబడింది</string><!-- Notification title when multiple timers are stopped. --><string name="timers_stopped"><xliff:g id="number" example="7">%d</xliff:g> టైమర్‌లు ఆపివేయబడ్డాయి</string><!-- Notification text when multiple timers are stopped. --><string name="all_timers_stopped_notif">మీ టైమర్లు వీక్షించడానికి టచ్ చేయండి.</string><!-- Notification title when at least one timer, of those in use, is counting down. --><string name="timers_in_use"><xliff:g id="number" example="7">%d</xliff:g> టైమర్లు</string><!-- Notification text when at least one timer, of those in use, is counting down. --><string name="next_timer_notif">తరువాత టైమర్: <xliff:g id="time_remaining" example="2 minutes remaining">%s</xliff:g></string><!-- screensaver settings strings --><!-- Label for the screen saver activity displayed on-screen when that activity must be represented to the user. --><string name="screensaver_settings">డ్రీమ్ సెట్టింగ్ లు</string><!-- Title for check box to pick intensity of display diminuation during dream mode --><string name="night_mode_title">రాత్రి రీతి</string><!-- Describes intensity of display diminuation during dream mode --><string name="night_mode_summary">చాలా మసక ప్రదర్శన (చీకటి గదుల కొరకు)</string><!-- Description of the up caret in the alarm alert screen to collapse the alarm content to summary perspective. [CHAR LIMIT=NONE] --><string name="collapse_alarm">అలారం కొలాప్స్</string><!-- Toast content when an alarm was deleted --><string name="alarm_deleted">అలారం తొలగించబడింది.</string><!-- slash between date and next alarm in the clock --><!--<string name="world_day_of_week_label"> / <xliff:g id="label">%s</xliff:g></string>--><!-- Description of field showing the next alarm time in the clock page, for accessibility. --><string name="next_alarm_description">తరువాత అలారం: <xliff:g id="alarm_time" example="Wed 8:00am">%s</xliff:g></string>
+    <string name="label_unlabeled"></string><!-- Displays the number of alarms selected from the list of alarms. --><string name="alarms_selected"><xliff:g id="alarms">%d</xliff:g> ఎంచుకోబడింది</string><!-- Label for digital clock gadget displayed on-screen when that gadget is represented to the user. --><!--<string name="digital_gadget">Digital clock</string>--><string name="diag_ok">సరే</string>
+    <string name="diag_delete">డిలీట్</string>
+    <string name="diag_edit">సవరణ</string>
+    <string name="alarm_delete_msg">అలారం కచ్చితంగా తొలగించాలా?</string>
+    <string name="clock_delete_msg">నగరం కచ్చితంగా తొలగించాలా?</string><!-- format strings for clocks --><string name="clock_24_hours_format" translatable="false">kk:mm</string><!--<string name="main_widget_12_hours_format" translatable="false">h&#58;mm</string>--><!-- Font size for AM/PM should match widget_label_font_size --><!--<string name="wc_widget_12_hours_format" translatable="false">h&#58;mm&#8202;<b><font face="sans-serif-condensed" size="14">a</font></b></string>--><!-- Font size for AM/PM should match bottom_text_size --><string name="main_clock_12_hours_format" translatable="false">h:mm <b><font face="sans-serif-condensed" size="16">a</font></b></string><!-- Font size for AM/PM should match label_font_size --><string name="world_clock_12_hours_format" translatable="false">h:mm <b><font face="sans-serif-condensed" size="14">a</font></b></string><!-- Font size for AM/PM should match alarm_label_size --><string name="alarm_time_12_hours_format" translatable="false">h:mm <b><font face="sans-serif-condensed" size="14">a</font></b></string><!-- String for no alarms --><string name="no_alarms">అలారంలు లేవు</string><!-- String for no enabled alarms in timeline view [CHAR LIMIT=30] --><string name="no_upcoming_alarms">రాబోయే అలారం లేదు</string>
+    <string name="title_activity_delete_alarm">అలారం తొలగించు</string>
+    <string name="add_alarm_page_confirm">సరే</string>
+    <string name="add_alarm_page_cacnel">రద్దు చేయండి</string>
+
+    <string name="tab_alarm">అలారం</string>
+    <string name="tab_clock">గడియారం</string>
+    <string name="tab_timer">టైమర్</string>
+    <string name="tab_stopwatch">స్టాప్ వాచ్</string>
+
+    <string-array name="desk_clock_tab_names">
+        <item>అలారం</item>
+        <item>గడియారం</item>
+        <item>టైమర్</item>
+        <item>T-minus</item>
+    </string-array>
+
+    <string-array name="set_alarm_week_strings">
+        <item >SUN</item>
+        <item >MON</item>
+        <item >TUE</item>
+        <item >WED</item>
+        <item >THU</item>
+        <item >FRI</item>
+        <item >SAT</item>
+    </string-array>
+
+    <string name="clock_am">AM</string>
+    <string name="clock_pm">PM</string><!--<string name="delete_alarm_button_text">"Delete"</string>--><string name="add_alarm_button_text">&quot;జోడించు&quot;</string>
+    <string name="title_activity_delete_clock">క్లాక్ డిలీట్ చేయడం</string><!--<string name="timer_add_seconds">"+15sec"</string>--><string name="stopwatch_notification_title">స్టాప్ వాచ్</string><!--<string name="default_ringtone">Default</string>--><string name="stopwatch_start_button_text">ప్రారంభించు</string>
+    <string name="stopwatch_stop_button_text">ఆగడం</string>
+    <string name="stopwatch_lap_button_text">లాప్</string>
+    <string name="stopwatch_resume_button_text">తిరిగి కొనసాగించు</string>
+    <string name="stopwatch_reset_button_text">రీసెట్</string>
+    <string name="citylist_already_added">జోడించబడ్డవి:</string>
+    <string name="add_worldclock">“అలారం క్లాక్ జోడించు&quot;</string><!--<string name="get_up">Get up</string>--><string name="set_alarm_title">అలారం జోడించు</string>
+    
+    <string name="hot_city">హాట్ సిటీ</string>
+    <string name="time_text_60">60\&apos;</string>
+    <string name="time_text_15">15\&apos;</string>
+    <string name="stopwatch_text_60">60\&apos;\&apos;</string>
+    <string name="stopwatch_text_15">15\&apos;\&apos;</string>
+    <string name="system_time">“నగరాలు లేవు&quot;</string>
+    <string name="time_clock_start">&quot;00:00:00&quot;</string>
+</resources>

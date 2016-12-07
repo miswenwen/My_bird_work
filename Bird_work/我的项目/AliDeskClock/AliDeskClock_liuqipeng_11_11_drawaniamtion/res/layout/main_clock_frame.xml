@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clock="http://schemas.android.com/apk/res/com.android.deskclock"
+    android:id="@+id/main_clock_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <!-- <TextClock
+            android:id="@+id/digital_clock"
+            android:format12Hour="@string/main_clock_12_hours_format"
+            android:format24Hour="@string/clock_24_hours_format"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_text_spacing_digital"
+            android:layout_marginBottom="@dimen/bottom_text_spacing_digital"
+            android:singleLine="true"
+            android:ellipsize="none"
+            style="@style/big_thin"
+            android:textSize="@dimen/digital_main_clock_text_size"
+            android:textColor="@color/text_clock_text_color" />
+        <TextView android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/world_clock_date_margin_top"
+            android:textColor="#828282"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            /> -->
+        <com.android.deskclock.WorldMyAnalogClock
+            android:id="@+id/timezone_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="19dp"
+            android:layout_centerHorizontal="true"
+            clock:dial="@drawable/clock_wordclock_view1_day_bg"
+            clock:dot="@drawable/clock_alarm_view2_day_bg"
+            clock:hand_hour="@drawable/clock_alarm_view2_day_hour"
+            clock:hand_minute="@drawable/clock_alarm_view2_day_minute" 
+            clock:hand_second="@drawable/clock_alarm_view2_second"/> 
+
+        <TextView android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timezone_clock"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textColor="#828282"
+            android:textSize="12sp"
+            />
+</RelativeLayout>
+

@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2007 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <string-array name="ali_hdcp_checking_titles">
+        <item>Never check</item>
+        <item>Check for DRM content only</item>
+        <item>Always check</item>
+    </string-array>
+
+    <!-- Values for HDCP checking preference. -->
+    <string-array name="ali_hdcp_checking_values" translatable="false">
+        <item>never</item>
+        <item>drm-only</item>
+        <item>always</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100] -->
+    <string-array name="ali_hdcp_checking_summaries">
+        <item>Never use HDCP checking</item>
+        <item>Use HDCP checking for DRM content only</item>
+        <item>Always use HDCP checking</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <string-array name="ali_window_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale 0.5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+
+    <!-- Values for window animation scale preference. -->
+    <string-array name="ali_window_animation_scale_values" translatable="false">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <string-array name="ali_transition_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale 0.5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+
+    <!-- Values for transition animation scale preference. -->
+    <string-array name="ali_transition_animation_scale_values" translatable="false">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <string-array name="ali_animator_duration_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale 0.5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+
+    <!-- Values for animator duration scale preference. -->
+    <string-array name="ali_animator_duration_scale_values" translatable="false">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <string-array name="ali_app_process_limit_entries">
+        <item>Standard limit</item>
+        <item>No background processes</item>
+        <item>At most 1 process</item>
+        <item>At most 2 processes</item>
+        <item>At most 3 processes</item>
+        <item>At most 4 processes</item>
+    </string-array>
+
+    <!-- Values for app process limit preference. -->
+    <string-array name="ali_app_process_limit_values" translatable="false">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!--
+         Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog.
+    -->
+
+    <!-- Do not translate. -->
+    <string-array name="ali_apn_auth_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP or CHAP</item>
+    </string-array>
+    <string-array name="ali_bluetooth_visibility_timeout_entries">
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>1 hour</item>
+        <item>Never time out</item>
+    </string-array>
+
+    <!-- WIFI BEGIN -->
+    <string-array name="ali_wlan_ap_security">
+        <item>Open</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="ali_wifi_security">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>Open</item>
+        <!-- Do not translate. -->
+        <item>WEP</item>
+        <!-- Do not translate. -->
+        <item>WPA PSK</item>
+        <!-- Do not translate. -->
+        <item>WPA2 PSK</item>
+        <!-- Do not translate. -->
+        <item>WPA Enterprise</item>
+        <!-- Do not translate. -->
+        <item>WPA2 Enterprise</item>
+        <!-- Do not translate. -->
+        <item>WAPI PSK</item>
+        <!-- Do not translate. -->
+        <item>WAPI CERT</item>
+    </string-array>
+    <!-- Wi-Fi set up options -->
+    <!-- Note that adding/removing/moving items will need wifi settings code change. -->
+    <string-array name="ali_wifi_network_setup">
+        <!-- Manual wifi configuration [CHAR LIMIT=25] -->
+        <item>Off</item>
+        <!-- WPS is a new standard that allowes secure connection establishment to a home wireless network using a simplified process. WPS push button based configuration involves pushing a button on the router and the device [CHAR LIMIT=25] -->
+        <item>Push button</item>
+        <!-- WPS pin method based configuration. This requires entering a pin obtained from the access point [CHAR LIMIT=25] -->
+        <item>PIN from access point</item>
+        <!-- WPS pin method based configuration. This requires generating a pin from this device [CHAR LIMIT=25] -->
+        <item>PIN from this device</item>
+    </string-array>
+    <string-array name="ali_wifi_eap_method">
+        <!-- Do not translate. -->
+        <item>PEAP</item>
+        <!-- Do not translate. -->
+        <item>TLS</item>
+        <!-- Do not translate. -->
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="ali_wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="ali_wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25] -->
+        <item>Static</item>
+    </string-array>
+    <string-array name="ali_wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>None</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>Manual</item>
+    </string-array>
+    <string-array name="ali_wifi_sleep_policy_entries">
+        <!-- Wi-Fi should go to sleep when the screen turns off. -->
+        <item>15 minutes after screen turns off</item>
+        <!-- When plugged in, never go to sleep.  When on battery, go to sleep when screen turns off. -->
+        <item>Never when plugged in</item>
+        <!-- Never go to sleep. -->
+        <item>Never</item>
+    </string-array>
+    <string-array name="ali_wifi_sleep_policy_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+    </string-array>
+    <string-array name="ali_wifi_signal">
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Excellent</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="ali_wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>Connecting\u2026</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>Authenticating\u2026</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>Obtaining IP\u2026</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>Connected,Secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>Suspended</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>Disconnecting\u2026</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>Disconnected</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>Unsuccessful</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>Blocked</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>Verification\u2026</item>
+        <!-- Status message of Wi-Fi when Checking if network is a captive portal -->
+        <item>CaptivePortal\u2026</item>
+    </string-array>
+    <string-array name="ali_wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>Scanning\u2026</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>Connecting to <xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>Authenticating with <xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>Obtaining IP address from <xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>Connected to <xliff:g id="network_name">%1$s</xliff:g></item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>Suspended</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>Disconnecting from <xliff:g id="network_name">%1$s</xliff:g>\u2026</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>Disconnected</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>Unsuccessful</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>Blocked</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>Temporarily avoiding poor connection</item>
+        <!-- Status message of Wi-Fi when Checking if network is a captive portal -->
+        <item>CaptivePortal\u2026</item>
+    </string-array>
+    <string-array name="ali_wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>Always</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>Only when plugged in</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>Never</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <string-array name="ali_wifi_p2p_status">
+        <item>Connected</item>
+        <item>Invited</item>
+        <item>Unsuccessful</item>
+        <item>Available</item>
+        <item>Out-of-range</item>
+    </string-array>
+
+    <string-array name="ali_wifi_connect_type_entries">
+        <!-- auto connect to wifi -->
+        <item>Automatically connect</item>
+        <!-- manual connect to wifi -->
+        <item>Manually connect</item>
+        <!-- always notify user when wifi is available -->
+        <item>Always ask</item>
+    </string-array>
+
+    <string-array name="ali_wifi_connect_type_values">
+        <!-- auto connect to wifi -->
+        <item>0</item>
+        <!-- manual connect to wifi -->
+        <item>1</item>
+        <!-- always notify user when wifi is available -->
+        <item>2</item>
+    </string-array>
+    <!-- WIFI END -->
+    <!-- VPN BEGIN -->
+    <string-array name="ali_vpn_types" translatable="false">
+        <item>PPTP</item>
+        <item>L2TP/IPSec PSK</item>
+        <item>L2TP/IPSec RSA</item>
+        <item>IPSec Xauth PSK</item>
+        <item>IPSec Xauth RSA</item>
+        <item>IPSec Hybrid RSA</item>
+    </string-array>
+    <string-array name="ali_vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>Disconnected</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>Initializing\u2026</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>Connecting\u2026</item>
+        <!-- Status message when VPN is connected. -->
+        <item>Connected</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>Timeout</item>
+        <!-- Status message when VPN is failed. -->
+        <item>Unsuccessful</item>
+    </string-array>
+
+    <!-- VPN END -->
+    <string-array name="locale_language" translatable="false">
+        <item>zh</item>
+        <item>zh</item>
+        <item>en</item>
+    </string-array>
+    <string-array name="locale_country" translatable="false">
+        <item>CN</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="language_list" translatable="false">
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="ali_date_format_values" translatable="false">
+        <item>yyyy-MM-dd</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+    </string-array>
+    <string-array name="ali_screen_timeout_entries">
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>30 minutes</item>
+        <!-- <item>Never</item> -->
+    </string-array>
+    <string-array name="ali_screen_timeout_values" translatable="false">
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>1800000</item>
+        <!-- <item>31536000000</item> -->
+        <!-- one year -->
+    </string-array>
+
+    <!-- system app list -->
+    <string-array name="systemapp_packagename" translatable="false">
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.android.settings</item>
+        <item>com.aliyun.xiaoyunmi</item>
+        <item>com.aliyun.mobile.ime</item>
+        <item>com.aliyun.ams.netstats</item>
+        <item>com.aliyun.ams.translation.mobile</item>
+        <item>com.android.SmsService</item>
+        <item>com.android.phone</item>
+        <item>com.android.providers.telephony</item>
+        <item>com.android.providers.contacts</item>
+        <item>com.android.providers.settings</item>
+        <item>com.android.providers.applications</item>
+        <item>com.android.providers.userdictionary</item>
+        <item>com.aliyun.fota</item>
+        <item>com.android.weatherservice</item>
+        <item>com.android.bluetooth</item>
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.drm</item>
+        <item>com.aliyun.ams.localrmisvc</item>
+        <item>com.aliyun.ams.rmi</item>
+        <item>com.android.providers.media</item>
+        <item>com.android.alarmclock</item>
+        <item>com.android.certinstaller</item>
+        <item>com.mediatek.CellConnService</item>
+        <item>com.android.stk2</item>
+        <item>com.android.stk</item>
+        <item>com.mediatek.bluetooth</item>
+        <item>com.android.defcontainer</item>
+        <item>com.aliyun.dataservice</item>
+        <item>com.android.calendar</item>
+        <item>com.mediatek.atci.service</item>
+        <item>com.aliyun.location.NetworkLocationProvider</item>
+        <item>com.android.bluetooth</item>
+    </string-array>
+    <!-- filter app list -->
+    <!--YUNOS BEGIN PB -->
+    <!--BugID:6732300 Date:2015.12.14 Author:jinjiang.wjj-->
+    <!--remove com.android.providers.calendar from filter_list-->
+    <string-array name="filter_packagename" translatable="false">
+        <item>com.android.location.fused</item>
+        <item>com.yunos.cloudcontrol</item>
+        <item>com.mediatek.atci.service</item>
+        <item>com.mtk.telephony</item>
+        <item>com.mediatek.connectivity</item>
+        <item>com.android.simmelock</item>
+        <item>com.mediatek.engineermode</item>
+        <item>com.mediatek.thermalmanager</item>
+        <item>com.mediatek.mtklogger</item>
+        <item>com.mediatek.omacp</item>
+        <item>com.mediatek</item>
+        <item>com.yunos.theme.themeservice</item>
+        <item>com.android.pacprocessor</item>
+        <item>com.android.proxyhandler</item>
+        <item>com.android.shell</item>
+        <item>com.taobao.statistic</item>
+        <item>com.android.providers.userdictionary</item>
+        <item>com.aliyun.ams.tyid</item>
+        <item>android</item>
+        <item>com.android.providers.applications</item>
+        <item>com.aliyun.ic</item>
+        <item>com.svox.pico</item>
+        <item>com.android.wallpaper.livepicker</item>
+        <item>com.android.stk</item>
+        <item>com.android.defcontainer</item>
+        <item>com.mediatek.ygps</item>
+        <item>com.android.keychain</item>
+        <item>com.android.sharedstoragebackup</item>
+        <item>com.android.provision</item>
+        <item>com.android.packageinstaller</item>
+        <item>com.android.vpndialogs</item>
+        <item>com.android.development</item>
+        <item>com.android.webview</item>
+        <item>com.mediatek.ftprecheck</item>
+        <item>com.mediatek.fwk.plugin</item>
+        <item>com.mediatek.batterywarning</item>
+        <item>com.android.server.telecom</item>
+        <item>com.mediatek.nlpservice</item>
+        <item>com.yunos.imageengine</item>
+        <item>com.yunos.ad</item>
+        <item>com.vlife.aliyun.wallpaper</item>
+        <item>com.android.documentsui</item>
+    </string-array>
+    <!--YUNOS END PB-->
+
+    <string-array name="hide_packagename">
+        <item>com.android.providers.downloads</item>
+        <item>com.android.systemui</item>
+    </string-array>
+
+    <!-- FONT SCALE BEGIN -->
+    <string-array name="ali_font_scale_name">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Extra large</item>
+    </string-array>
+    <!-- YUNOS BEGIN -->
+    <string-array name="ali_font_size_key">
+        <item>font_size_small</item>
+        <item>font_size_normal</item>
+        <item>font_size_large</item>
+        <item>font_size_extra_large</item>
+    </string-array>
+    <!-- YUNOS END -->
+    <!-- YUNOS BEGIN -->
+    <string-array name="ali_font_title_scale" translatable="false">
+        <item>15.0</item>
+        <item>17.0</item>
+        <item>19.0</item>
+        <item>21.0</item>
+    </string-array>
+    <!-- YUNOS END -->
+    <!-- YUNOS BEGIN -->
+    <!--
+     ##modules(Settings)
+     ##date:2013.11.20 ##author:xiaoyan.mxy
+    -->
+    <string-array name="ali_font_scale_value" translatable="false">
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.12</item>
+        <item>1.25</item>
+    </string-array>
+    <!-- YUNOS END -->
+    <!-- FONT SCALE END -->
+    <!-- YUNOS BEGIN -->
+    <!--
+     ##modules(Settings)
+     ##date:2013.05.03 ##author:aihua.shenah@aliyun-inc.com
+    -->
+    <string-array name="ali_main_battery_entries">
+        <item>"Standard config(1700 mAh)"</item>
+        <item>"Optional config(3100 mAh)"</item>
+    </string-array>
+    <!-- YUNOS END -->
+
+    <!-- audioProfile Settings by aihua.shenah end -->
+    <string-array name="ali_enable_opengl_traces_entries">
+        <item>None</item>
+        <item>Logcat</item>
+        <item>Systrace (Graphics)</item>
+        <item>Call stack on glGetError</item>
+    </string-array>
+
+    <!-- Values for OpenGL traces preference. -->
+    <string-array name="ali_enable_opengl_traces_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>systrace</item>
+        <item>error</item>
+    </string-array>
+    <string-array name="app_install_location_entries1">
+        <item>System space</item>
+        <item>Internal storage</item>
+        <item>External storage</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="app_install_location_entries2">
+        <item>System space</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="app_install_location_entries3">
+        <item>System space</item>
+        <item>Removable SD card</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="app_install_location_values1" translatable="false">
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="app_install_location_values2" translatable="false">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="app_install_location_values3" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array translatable="false" name="data_usage_merge_to_system">
+        <item>com.aliyun.ams.netstats</item>
+        <item>com.taobao.statistic</item>
+        <item>com.aliyun.ams.assistantservice</item>
+        <item>com.aliyun.ic</item>
+        <item>com.yunos.baseservice.cmns_client</item>
+        <item>com.aliyun.httpdns</item>
+    </string-array>
+
+    <string-array translatable="false" name="data_usage_system_app">
+        <item>com.yunos.theme.thememanager</item>
+        <item>fm.xiami.yunos</item>
+        <item>com.aliyun.video</item>
+        <item>com.aliyun.mobile.email</item>
+        <item>com.aliyun.image</item>
+        <item>com.aliyun.wireless.vos.appstore</item>
+        <item>com.yunos.alicontacts</item>
+        <item>com.UCMobile</item>
+        <item>com.autonavi.minimap</item>
+    </string-array>
+
+    <string-array name="permission_items">
+        <item>permission details</item>
+        <item>permission manager</item>
+    </string-array>
+    <string-array name="permission_items_system">
+        <item>permission details</item>
+    </string-array>
+
+    <string-array name="fingerquick_type_list" translatable="false">
+        <item>UnlockScreen and Dial out</item>
+        <item>UnlockScreen and Start APP</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="fingerquick_type" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

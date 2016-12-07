@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stopwatch_mainview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0093d1">
+    <com.android.deskclock.StopWatchRefreshableView
+        android:id="@id/pull_to_refresh_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id= "@+id/drag_view"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+		>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/label"
+            android:background="@drawable/clock_dropdown"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#4bffffff"/>
+
+    <com.android.deskclock.AlarmListView
+		android:background="#ffffff"
+        android:id="@+id/laps_list"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+    </com.android.deskclock.StopWatchRefreshableView>
+    <FrameLayout
+        android:id="@+id/stopwatch_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:layout_gravity="bottom">
+        <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aui_footer_divider"
+            android:background="@color/footer_header_line"/> -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+            <RelativeLayout
+                android:id="@+id/stopwatch_left_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+				android:layout_weight="1"
+                android:background="@drawable/clock_star_bg">
+		        <TextView
+		            android:id="@+id/stopwatch_left_button_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textSize="14sp"
+					android:textColor="#ffffff"
+					android:text="@string/stopclock_stop"
+		            android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/reset_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+				android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/clock_meter_bg">
+		        <TextView
+		            android:id="@+id/reset_btn_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textSize="14sp"
+					android:textColor="#8d8d8d"
+					android:text="@string/stopclock_count"
+		            android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id= "@+id/startwatch_btn"
+			android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+            android:background="@drawable/clock_star_bg">
+            <TextView
+                android:id="@+id/startwatch_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="14sp"
+				android:textColor="#ffffff"
+				android:text="@string/stopclock_start"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

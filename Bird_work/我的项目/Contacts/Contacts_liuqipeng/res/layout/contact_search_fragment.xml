@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_header_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp" >
+
+        <ImageView
+            android:id="@+id/search_back_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/contact_search_activity_back_selector" />
+
+        <EditText
+            android:id="@+id/search_editor"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:hint="@string/searchHint"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/search_clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/hw_ic_clear" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@null" >
+
+        <com.yunos.alicontacts.widget.PinnedHeaderListView
+            android:id="@android:id/list"
+            style="@style/ContactsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:listSelector="@drawable/list_selector_background"
+            android:splitMotionEvents="false" />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lineSpacingMultiplier="0.92"
+            android:paddingBottom="100dp"
+            android:text="@string/noContactsWithPhoneNumbers"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.yunos.yundroid.widget.FishEyeView
+            android:id="@+id/fisheye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="proximity_title">Annäherungssensor kalibrieren</string>
+    <string name="proximity_dlg_message">Bitte halten sie einen Abstand von mindestens 20 cm zum Sensor ein und vermeiden sie direkte Sonneneinstrahlung.</string>
+    <string name="proximity_dlg_title">Info</string>
+    <string name="gsensor_title">G-Sensor kalibrieren</string>
+    <string name="gsensor_calibration">kalibrieren</string>
+</resources>

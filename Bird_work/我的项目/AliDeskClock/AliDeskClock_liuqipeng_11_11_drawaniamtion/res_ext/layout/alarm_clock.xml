@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01ab4a">
+    <com.android.deskclock.RefreshableView
+        android:id="@+id/pull_to_refresh_head"
+        android:focusable="true"
+        android:layout_marginTop="75dp"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    <TextView 
+		    android:id="@+id/alarms_empty_view"
+		    android:visibility="gone"
+			android:textSize="12sp"
+		    android:layout_width="match_parent"
+		    android:layout_height="63dp"
+		    android:gravity="center"
+		    android:contentDescription="@string/no_alarms"
+		    android:text="@string/no_alarms"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/white"/>
+        <RelativeLayout
+		    android:id= "@+id/drag_view_parent"
+		    android:layout_width="match_parent"
+		    android:layout_height="63dp">
+				<TextView
+					android:textColor="@color/white"
+					android:id="@+id/current_time" 
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="@string/no_alarms"
+					android:gravity="center"
+					android:textSize="36sp"
+					android:visibility="gone"/>
+           		<ImageView
+					android:id= "@+id/drag_view"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:contentDescription="@string/label"
+		            android:background="@drawable/clock_dropdown"/>
+       </RelativeLayout>	 
+        <View
+		    android:id="@+id/separator"
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:layout_marginLeft="16dp"
+		    android:layout_marginRight="16dp"
+		    android:background="#4bffffff"/>
+        <com.android.deskclock.AlarmListView
+			android:background="#ffffff"
+            android:id="@+id/alarms_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+    </com.android.deskclock.RefreshableView>
+
+    <RelativeLayout
+        android:id="@+id/alarm_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="#ffffff"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:id="@+id/add_Alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="24dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/clock_add"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="24dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/clock_add_normal"/>
+   </RelativeLayout>
+</FrameLayout>

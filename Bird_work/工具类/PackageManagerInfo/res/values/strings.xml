@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PackageManagerInfo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="input_app">输入应用名字</string>
+ <string name="check">查找</string>
+  <string name="current_interface">当前界面的包名/类名</string>
+   <string name="desktop">桌面所有有图标的应用的包名/类名 </string>
+    <string name="input_method">机中预制的所有输入法的包名/服务名 </string>
+</resources>

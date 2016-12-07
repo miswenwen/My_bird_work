@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <style name="Theme.Settings" parent="@android:Theme.Material.Light">
+        <item name="@*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
+        <item name="@*android:preferencePanelStyle">@style/PreferencePanelSinglePane</item>
+        <item name="@*android:preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
+        <item name="@*android:preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
+        <item name="@*android:preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
+        <item name="@*android:preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
+
+        <item name="apnPreferenceStyle">@style/ApnPreference</item>
+
+        <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
+        <item name="ic_menu_moreoverflow">@drawable/elder_ic_overflow</item>
+        <item name="ic_wps">@drawable/ic_wps_light</item>
+        <item name="wifi_signal">@drawable/wifi_signal_teal</item>
+        <item name="side_margin">@dimen/settings_side_margin</item>
+
+        <!-- Redefine the ActionBar style for contentInsetStart -->
+        <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
+        <item name="@*android:actionBarSize">@dimen/actionbar_size</item>
+
+        <item name="switchBarTheme">@style/Theme.SwitchBar.Settings</item>
+
+        <item name="preferenceBackgroundColor">@drawable/preference_background</item>
+
+        <!-- For all Alert Dialogs -->
+        <item name="android:alertDialogTheme">@style/Theme.AlertDialog</item>
+
+        <!-- LockPatternView colors -->
+        <item name="@*android:regularColor">@color/lock_pattern_view_regular_color</item>
+        <item name="@*android:successColor">@color/lock_pattern_view_success_color</item>
+        <item name="@*android:errorColor">@color/lock_pattern_view_error_color</item>
+
+        <!-- For the TimePicker -->
+        <item name="@android:timePickerStyle">@style/Widget.TimePicker</item>
+		<item name="android:actionBarTabStyle">@style/ElderActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/ElderActionBarTabTextStyle</item>
+        <item name="android:colorPrimary">@color/elder_actionbar_bg</item>
+		<item name="android:actionOverflowButtonStyle">@style/ElderOverflow</item>
+    </style>
+
+	<style name="ElderOverflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/elder_ic_overflow</item>
+    </style>
+ 
+    <style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
+        <item name="android:displayOptions">showTitle</item>
+		<item name="android:background">@color/elder_actionbar_bg</item>
+		<item name="android:backgroundSplit">@color/elder_actionbar_bg</item>
+		<item name="android:titleTextStyle">@style/ElderActionBarTitleTextStyle</item>
+    </style>
+	
+    <style name="ElderActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/elder_tab_indicator_bg</item>
+		<item name="android:actionBarDivider">@drawable/elder_actionbar_divider_color</item>
+    </style>
+
+    <style name="ElderActionBarTabTextStyle" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/elder_actionbar_textcolor</item>
+        <item name="android:textSize">18sp</item>
+		<item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="ElderActionBarTitleTextStyle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+		<item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="Theme.SwitchBar.Settings" parent="@android:style/Theme.Material.Light">
+        <item name="switchBarMarginStart">@dimen/switchbar_margin_start</item>
+        <item name="switchBarMarginEnd">@dimen/switchbar_margin_end</item>
+    </style>
+    <style name="Widget.TimePicker" parent="@*android:style/Widget.Material.Light.TimePicker">
+        <item name="@android:numbersBackgroundColor">@android:color/white</item>
+    </style>
+</resources>

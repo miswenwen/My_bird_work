@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- My persional info -->
+    <header
+        android:id="@+id/category_myvcard"
+        android:fragment="category"
+        android:title="@string/view_my_personal_info" />
+    <header
+        android:id="@+id/myvcard"
+        android:summary="@string/contacts_settings_profile_none"
+        android:title="@string/view_my_personal_info" >
+        <intent
+            android:action="android.intent.action.INSERT"
+            android:data="content://com.android.contacts/contacts" >
+            <extra
+                android:name="newLocalProfile"
+                android:value="true" />
+        </intent>
+    </header>
+
+    <!-- Cloud sync -->
+    <header
+        android:id="@+id/category_cloud_sync"
+        android:fragment="category"
+        android:title="@string/contacts_settings_cloud_sync" />
+    <header
+        android:id="@+id/cloud_sync"
+        android:title="@string/contacts_settings_yunsync" >
+        <intent
+            android:action="com.aliyun.xiaoyunmi.action.SELECT_SYNC"
+            android:data="yunmi://sync_select?type=contact" >
+            <extra
+                android:name="synctype"
+                android:value="sync" />
+        </intent>
+    </header>
+    <header
+        android:id="@+id/calllog_sync"
+        android:title="@string/calllog_sync" >
+        <intent
+            android:action="com.aliyun.xiaoyunmi.action.SELECT_SYNC"
+            android:data="yunmi://sync_select/?type=calllog" >
+            <extra
+                android:name="wificheck"
+                android:value="false" />
+            <extra
+                android:name="synctype"
+                android:value="backup" />
+        </intent>
+    </header>
+
+    <!-- SIM management -->
+    <header
+        android:id="@+id/category_sim_management"
+        android:fragment="category"
+        android:title="@string/setting_contact_manage_label" />
+    <header
+        android:id="@+id/import_contacts"
+        android:title="@string/contacts_settings_import_title" />
+    <header
+        android:id="@+id/export_contacts"
+        android:title="@string/contacts_settings_export_title" />
+
+    <!-- Contacts display -->
+    <header
+        android:id="@+id/category_display_switch"
+        android:fragment="category"
+        android:title="@string/setting_contact_display_label" />
+    <header
+        android:id="@+id/display_favorite_switch"
+        android:title="@string/contacts_settings_display_favorite_contacts" />
+    <header
+        android:id="@+id/favorite_switch"
+        android:title="@string/contacts_settings_auto_favorite_contacts" />
+    <header
+        android:id="@+id/photo_switch"
+        android:title="@string/contacts_settings_photo_onoff" />
+
+    <!-- Security -->
+    <header
+        android:id="@+id/category_security"
+        android:fragment="category"
+        android:title="@string/contacts_settings_security_title" />
+    <header
+        android:id="@+id/security"
+        android:title="@string/contacts_settings_blacklist" >
+        <intent
+            android:targetClass="com.aliyun.SecurityCenter.harassintercept.HarassInterceptionActivity"
+            android:targetPackage="com.aliyun.SecurityCenter" >
+            <extra
+                android:name="page_type"
+                android:value="black" />
+        </intent>
+    </header>
+
+    <!-- Group -->
+    <header
+        android:id="@+id/category_group"
+        android:fragment="category"
+        android:title="@string/contacts_setting_group_title" />
+    <header
+        android:id="@+id/group_sendsms"
+        android:title="@string/contacts_setting_group_sendsms" >
+    </header>
+    <header
+        android:id="@+id/group_member"
+        android:title="@string/group_member_title" >
+    </header>
+
+
+    <!-- Plugins List -->
+    <header
+        android:id="@+id/category_plugins"
+        android:fragment="category"
+        android:title="@string/plugins_list" />
+    <header
+        android:id="@+id/duplicate_remove"
+        android:title="@string/dup_rm_activity_title" >
+        <intent
+            android:action="com.yunos.alicontacts.plugin.duplicateremove.setting.action"
+            android:targetClass="com.yunos.alicontacts.plugin.duplicateremove.DuplicateRemoveActivity"
+            android:targetPackage="com.yunos.alicontacts" >
+        </intent>
+    </header>
+
+</preference-headers>

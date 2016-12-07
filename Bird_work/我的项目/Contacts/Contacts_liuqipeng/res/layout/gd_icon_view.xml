@@ -1,0 +1,4 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HWDroid.ListItemViewDrawableStyle"
+    android:background="@null"
+    android:gravity="center_vertical" />

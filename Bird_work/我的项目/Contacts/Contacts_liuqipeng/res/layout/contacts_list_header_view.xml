@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contacts_list_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/contacts_list_header"
+    android:background="@color/aui_bg_color_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <hwdroid.widget.searchview.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="1px"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/searchHint"/>
+
+    <ImageView
+        android:id="@+id/add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/add_contact_selector"
+        android:paddingEnd="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

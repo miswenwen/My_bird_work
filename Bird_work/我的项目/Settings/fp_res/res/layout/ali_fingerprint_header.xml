@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fingerprint_settings_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fingerprint_settings_image_height"
+        android:paddingTop="@dimen/fingerprint_settings_image_padding"
+        android:paddingBottom="@dimen/fingerprint_settings_image_padding"
+        android:layout_gravity="center"
+        android:background="@color/fingerprint_setting_background"
+        android:src="@drawable/ic_fingerprint_setting_main"/>

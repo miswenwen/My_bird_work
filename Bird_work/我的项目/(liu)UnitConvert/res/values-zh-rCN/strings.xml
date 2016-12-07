@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">计算器</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- lqp -->
+    <string name="length_title">长度单位换算</string>
+    <string name="area_title">面积单位换算</string>
+    <string name="volume_title">体积单位换算</string>
+    <string name="temperature_title">温度单位换算</string>
+    <string name="speed_title">速度单位换算</string>
+    <string name="time_title">时间单位换算</string>
+    <string name="mass_title">重量单位换算</string>
+    <string name="choose_unit">请选择单位</string>
+    <string name="pick_commit">确认</string>
+    <string name=" pick_cancel">取消</string>
+    <!-- FunctionSet显示 -->
+    <string name="length_text">长度转换</string>
+    <string name="area_text">面积转换</string>
+    <string name="volume_text">体积转换</string>
+    <string name="temperature_text">温度转换</string>
+    <string name="speed_text">速度转换</string>
+    <string name="time_text">时间转换</string>
+    <string name="mass_text">重量转换</string>
+    <string name="capital_text">大写转换</string>
+    <string name="science_text">科学计算器</string>
+    <!-- 长度单位集合 全称 -->
+    <string name="km_length">千米</string>
+    <string name="m_length">米</string>
+    <string name="dm_length">分米</string>
+    <string name="cm_length">厘米</string>
+    <string name="mm_length">毫米</string>
+    <string name="um_length">微米</string>
+    <string name="nm_length">纳米</string>
+    <string name="pm_length">皮米</string>
+    <string name="nmi_length">海里</string>
+    <string name="mi_length">英里</string>
+    <string name="fur_length">弗隆</string>
+    <string name="fm_length">英寻</string>
+    <string name="yd_length">码</string>
+    <string name="ft_length">英尺</string>
+    <string name="in_length">英寸</string>
+    <string name="gongli_length">公里</string>
+    <string name="li_length">里</string>
+    <string name="zhang_length">丈</string>
+    <string name="chi_length">尺</string>
+    <string name="cun_length">寸</string>
+    <string name="fen_length">分</string>
+    <string name="li_new_length">厘</string>
+    <string name="hao_length">毫</string>
+    <string name="pc_length">秒差距</string>
+    <string name="ld_length">月球距离</string>
+    <string name="tianwen_length">天文单位</string>
+    <string name="ly_length">光年单位</string>
+    <!-- 面积单位集合 全称 -->
+    <string name="km2_area">平方千米</string>
+    <string name="ha_area">公顷</string>
+    <string name="are_area">公亩</string>
+    <string name="m2_area">平方米</string>
+    <string name="dm2_area">平方分米</string>
+    <string name="cm2_area">平方厘米</string>
+    <string name="mm2_area">平方毫米</string>
+    <string name="um2_area">平方微米</string>
+    <string name="acre_area">英亩</string>
+    <string name="mile2_area">平方英里</string>
+    <string name="yd2_area">平方码</string>
+    <string name="ft2_area">平方英尺</string>
+    <string name="in2_area">平方英寸</string>
+    <string name="rd2_area">平方竿</string>
+    <string name="qing_area">顷</string>
+    <string name="mu_area">亩</string>
+    <string name="chi2_area">平方尺</string>
+    <string name="cun2_area">平方寸</string>
+    <string name="gongli2_area">平方公里</string>
+    <!-- 体积单位集合 全称 -->
+    <string name="m3_volume">立方米</string>
+    <string name="dm3_volume">立方分米</string>
+    <string name="cm3_volume">立方厘米</string>
+    <string name="mm3_volume">立方毫米</string>
+    <string name="hl3_volume">公石</string>
+    <string name="l_volume">升</string>
+    <string name="dl_volume">分升</string>
+    <string name="cl_volume">厘升</string>
+    <string name="ml_volume">毫升</string>
+    <string name="ft3_volume">立方英尺</string>
+    <string name="ln3_volume">立方英寸</string>
+    <string name="yd3_volume">立方码</string>
+    <string name="af3_volume">亩英尺</string>
+    <!-- 温度单位集合 全称 -->
+    <string name="c_temperature">摄氏度</string>
+    <string name="f_temperature">华氏度</string>
+    <string name="k_temperature">开尔文</string>
+    <string name="r_temperature">兰氏度</string>
+    <string name="re_temperature">列氏度</string>
+    <!-- 速度单位集合 全称 -->
+    <string name="c_speed">光速</string>
+    <string name="ma_speed">马赫</string>
+    <string name="m_s_speed">米/秒</string>
+    <string name="km_h_speed">千米/小时</string>
+    <string name="km_s_speed">千米/秒</string>
+    <string name="kn_speed">海里/小时</string>
+    <string name="mph_speed">英里/小时</string>
+    <string name="fps_speed">英尺/秒</string>
+    <string name="ips_speed">英寸/秒</string>
+    <!-- 时间单位集合 全称 -->
+    <string name="yr_time">年</string>
+    <string name="wk_time">周</string>
+    <string name="day_time">天</string>
+    <string name="h_time">小时</string>
+    <string name="min_time">分钟</string>
+    <string name="s_time">秒</string>
+    <string name="ms_time">毫秒</string>
+    <string name="us_time">微秒</string>
+    <string name="ps_time">皮秒</string>
+    <!-- 重量单位集合 全称 -->
+    <string name="t_mass">吨</string>
+    <string name="kg_mass">千克</string>
+    <string name="g_mass">克</string>
+    <string name="mg_mass">毫克</string>
+    <string name="ug_mass">微克</string>
+    <string name="q_mass">公担</string>
+    <string name="lb_mass">磅</string>
+    <string name="oz_mass">盎司</string>
+    <string name="ct_mass">克拉</string>
+    <string name="gr_mass">格令</string>
+    <string name="l_t_mass">长吨</string>
+    <string name="sh_t_mass">短吨</string>
+    <string name="cwt_uk_mass">英担</string>
+    <string name="cwt_us_mass">美担</string>
+    <string name="uk_st_mass">英石</string>
+    <string name="dr_mass">打兰</string>
+    <string name="dan_mass">担</string>
+    <string name="jin_mass">斤</string>
+    <string name="qian_mass">钱</string>
+    <string name="liang_mass">两</string>
+
+</resources>

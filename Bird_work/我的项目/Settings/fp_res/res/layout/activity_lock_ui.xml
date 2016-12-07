@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/fingerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/id_lockui_fp_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"            
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fingerprint" />
+ 
+        <TextView
+            android:id="@+id/fingernotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" 
+            android:layout_below="@id/id_lockui_fp_iv"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/finger_notice"
+            android:textColor="#1E1E1E" />
+           
+        <Button
+            android:id="@+id/toDigital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/toDigital"
+            android:textSize="16sp"
+            android:textColor="#1e1e1e"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/digital_btn" />
+			
+
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/digitallayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/digital_notice"
+            android:textColor="#1E1E1E" />
+        <!--
+        <com.bird.fingerprintunlock.applock.NumberPad
+            android:id="@+id/id_lockui_numberpad"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentBottom="true"
+            android:background="#33ffffff" />
+            
+        <com.bird.fingerprintunlock.applock.ProcessIndication
+            android:id="@+id/id_lockui_indication"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/id_lockui_numberpad"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true" />
+			-->
+        
+    </RelativeLayout>
+
+</FrameLayout>

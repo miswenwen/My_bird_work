@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Appearances -->
+    <dimen name="ali_textAppearance_textSize">13sp</dimen>
+    <dimen name="ali_textAppearance_large_textSize">18sp</dimen>
+    <dimen name="ali_textAppearance_medium_textSize">16sp</dimen>
+    <dimen name="ali_textAppearance_small_textSize">12sp</dimen>
+    <dimen name="data_usage_chart_view_width">280dp</dimen>
+    <dimen name="data_usage_chart_view_height">280dp</dimen>
+    <dimen name="data_usage_chart_view_margin_top">32dp</dimen>
+    <dimen name="data_usage_chart_front_thickness">11dp</dimen>
+    <dimen name="data_usage_chart_background_thickness">11dp</dimen>
+    <dimen name="data_usage_tip_margin_top">120dp</dimen>
+    <dimen name="data_usage_range_margin_top">285dp</dimen>
+    <dimen name="data_usage_set_limit_margin_top">165dp</dimen>
+    <dimen name="data_usage_state_margin_top">5dp</dimen>
+    <dimen name="data_usage_summary_margin_top">35dp</dimen>
+    <dimen name="data_usage_summary_margin_bottom">5dp</dimen>
+    <dimen name="data_usage_overview_margin_top">25dp</dimen>
+    <dimen name="fingerprint_settings_image_padding">41dp</dimen>
+    <dimen name="fingerprint_settings_widget_padding">21dp</dimen>
+    <dimen name="fingerprint_guide_text_size">12sp</dimen>
+    <dimen name="fingerprint_guide_text_top">50dp</dimen>
+    <dimen name="fingerprint_guide_image_top">41dp</dimen>
+    <dimen name="fingerprint_enroll_text_top">126dp</dimen>
+    <dimen name="fingerprint_enroll_text_size">16sp</dimen>
+    <dimen name="fingerprint_enroll_comment_top">20dp</dimen>
+    <dimen name="fingerprint_rename_text_top">20dp</dimen>
+    <dimen name="fingerprint_guide_text_margin">6dp</dimen>
+    <dimen name="fingerprint_enroll_guidetext_bottom">104dp</dimen>
+    <dimen name="fingerprint_enroll_guidetext_top">20dp</dimen>
+    <dimen name="fingerprint_enroll_process_bottom">60dp</dimen>
+    <dimen name="fingerprint_settings_image_height">164dp</dimen>
+    <dimen name="ali_manage_applications_textSize">10dp</dimen>
+    <!-- dialog preference padding -->
+    <dimen name="sim_dialog_preference_padding_start">16dip</dimen>
+    <dimen name="sim_dialog_preference_padding_end">16dip</dimen>
+    <!-- YUNOS BEGIN PB -->
+    <!-- BugID:6054730 author:jinjiang.wjj date:2015/06/10-->
+    <dimen name="wallpaper_width">144dp</dimen>
+    <dimen name="wallpaper_height">256dp</dimen>
+    <!-- YUNOS END PB -->
+
+    <dimen name="security_settings_desc_text_size">16sp</dimen>
+    <dimen name="security_settings_desc_padding_top">20dp</dimen>
+    <dimen name="Ali_Category_memoryusage_text2icon_space">8dip</dimen>
+    <dimen name="Ali_Category_memoryusage_text_space">12dip</dimen>
+    <dimen name="fingerprint_decor_padding_top">0dp</dimen>
+
+</resources>

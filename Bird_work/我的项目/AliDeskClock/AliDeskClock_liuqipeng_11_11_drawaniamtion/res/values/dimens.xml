@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2011, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+
+<!--
+     These resources are around just to allow their values to be customized
+     for different hardware and product builds.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <dimen name="time_text_size">120dip</dimen>
+    <dimen name="date_text_size">15sp</dimen>
+    <dimen name="time_margin_top">32dip</dimen>
+    <dimen name="screensaver_margin">16dip</dimen>
+    <dimen name="bottom_text_spacing_digital">-8dp</dimen>
+    <!--<dimen name="top_text_spacing_digital">-19dp</dimen>-->
+    <dimen name="bottom_text_spacing_analog">14dp</dimen>
+    <!--<dimen name="digital_world_clock_text_size">40dp</dimen>
+    <dimen name="digital_main_clock_text_size">75dp</dimen>-->
+    <dimen name="digital_screensaver_clock_text_size">100dp</dimen>
+
+    <!-- Footer size in the screen -->
+    <!--<dimen name="footer_button_margin_bottom">24sp</dimen>
+    <dimen name="footer_text_size">12sp</dimen>
+    <dimen name="footer_left_button_marginLeft">110dp</dimen>
+    <dimen name="footer_right_button_marginLeft">198dp</dimen>-->
+    <!-- Analog clock size in the the screen saver -->
+    <dimen name="timer_circle_diameter">300dip</dimen>
+    <dimen name="bottom_text_size">16dp</dimen>
+    <dimen name="actionbar_tab_padding">0dip</dimen>
+    <dimen name="footer_button_size">40dp</dimen>
+    <!--<dimen name="footer_button_layout_left">110dp</dimen>
+    <dimen name="footer_text_layout_right">198dp</dimen>-->
+    <dimen name="footer_button_layout_margin">2dip</dimen>
+    <dimen name="alarm_timeline_width">2dp</dimen>
+    <dimen name="alarm_timeline_margin_top">50dp</dimen>
+    <dimen name="alarm_timeline_length">1200dp</dimen>
+    <dimen name="alarm_timeline_radius">5dp</dimen>
+    <dimen name="alarm_timeline_inner_radius">4dp</dimen>
+    <dimen name="alarm_text_padding">15dp</dimen>
+    <dimen name="alarm_text_font_size">16sp</dimen>
+    <dimen name="alarm_min_distance">2dp</dimen>
+    <!--<dimen name="alarm_timeline_title_margin_bottom">2dp</dimen>
+    <dimen name="alarm_undo_bar_horizontal_margin">8dp</dimen>-->
+    <dimen name="circletimer_dot_size">12dip</dimen>
+    <dimen name="circletimer_circle_size">4dip</dimen>
+    <dimen name="circletimer_marker_size">16dip</dimen>
+    <dimen name="big_font_size">26sp</dimen>
+    <dimen name="big_font_size2">14sp</dimen>
+    <dimen name="small_font_size">36dp</dimen>
+    <dimen name="medium_font_size">60dp</dimen>
+    <dimen name="label_font_size">14sp</dimen>
+    <dimen name="widget_label_font_size">14sp</dimen>
+    <dimen name="header_font_size">24sp</dimen>
+    <dimen name="body_font_size">16dp</dimen>
+    <dimen name="alarm_time_font_size">26sp</dimen>
+    <dimen name="no_alarms_font_size">24sp</dimen>
+    <dimen name="body_font_padding">9dp</dimen>
+    <dimen name="button_font_size">6dp</dimen>
+    <dimen name="timer_label_font_size">24sp</dimen>
+    <dimen name="alarm_label_size">14sp</dimen>
+    <dimen name="medium_font_padding">12dp</dimen>
+    <dimen name="medium_space_bottom">12dp</dimen>
+    <dimen name="style_label_space">4dip</dimen>
+    <dimen name="sw_item_space">100dip</dimen>
+    <dimen name="label_margin_small">2dp</dimen>
+    <dimen name="dialpad_font_size">36sp</dimen>
+    <!-- padding should be (in dip) ~ 60% dialpad_font_size -->
+    <dimen name="timer_setup_font_size">56sp</dimen>
+    <dimen name="timer_setup_button_size">24sp</dimen>
+    <!-- margin should be ~ half timer_setup_font_size -->
+    <dimen name="timer_setup_delete_start_margin">28sp</dimen>
+    <dimen name="timer_setup_delete_padding">12dip</dimen>
+    <dimen name="timer_setup_label_size">18sp</dimen>
+    <dimen name="city_name_font_size">16sp</dimen>
+    <dimen name="city_time_font_size">12sp</dimen>
+    <dimen name="cities_list_item_height">58dp</dimen>
+
+    <!-- Size of margin for circles. -->
+    <dimen name="timer_circle_margin">32dp</dimen>
+
+    <!-- The width of the big icons in notifications. -->
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <!-- The width of the big icons in notifications. -->
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <!-- Size of notification text (see TextAppearance.StatusBar.EventContent) -->
+    <dimen name="notification_text_size">14dp</dimen>
+    <!-- Size of notification text titles (see TextAppearance.StatusBar.EventContent.Title) -->
+    <dimen name="notification_title_text_size">18dp</dimen>
+    <!-- Size of smaller notification text (see TextAppearance.StatusBar.EventContent.Line2, Info, Time) -->
+    <dimen name="notification_subtext_size">12dp</dimen>
+
+    <!-- Width of the clock, for use with alarm buttons. -->
+    <dimen name="add_alarm_option_item_height">50dp</dimen>
+
+    <!-- Size of analog clock in world clock. -->
+    <dimen name="world_clock_digtal_size">80dip</dimen>
+    <dimen name="world_clock_date_margin_right">16sp</dimen>
+    <!--<dimen name="world_clock_date_margin_top">41dp</dimen>-->
+    <dimen name="world_clock_margin">32dp</dimen>
+    <dimen name="toast_bar_bottom_margin_in_conversation">24dip</dimen>
+
+    <!-- Size of timer in stopwatch -->
+    <!--<dimen name="stop_watch_timer_height">144dp</dimen>-->
+    <!-- Size of lapview in stopwatch. -->
+    <dimen name="lap_view_number_margin_start">20sp</dimen>
+    <dimen name="lap_view_total_margin_start">50sp</dimen>
+    <dimen name="lap_view_time_margin_right">30sp</dimen>
+
+    <!-- Empty space at the edges of the +1 and reset button icons. Based off of 56dip width, only nonzero for tablets. -->
+    <dimen name="plusone_reset_button_padding">0dip</dimen>
+    <!-- Empty space at the edges of the delete button icons. Based off of 56dip width, only nonzero for tablets. -->
+    <dimen name="delete_button_padding">0dip</dimen>
+    <!-- Empty space at the edges of the lap button icon. Based off of 56dip width, only nonzero for tablets. -->
+    <!-- Extra offset for timer button paddings. Only nonzero for non-tablets. -->
+    <dimen name="timer_button_extra_offset">14dip</dimen>
+
+    <!-- Height of the button footers. 56 height and 16 on top and bottom. -->
+    <dimen name="button_footer_height">104dp</dimen>
+    <!--<dimen name="footer_height">68dp</dimen>
+    <dimen name="footer_margin_start_for_three">68dp</dimen>
+    <dimen name="footer_margin_start_for_two">107dp</dimen>
+    <dimen name="footer_button_margin_top">6dp</dimen>
+    <dimen name="footer_button_margin_bottom2">6dp</dimen>
+    <dimen name="footer_button_and_text_height">55dp</dimen>
+    <dimen name="footer_button_and_text_width">60dp</dimen>
+    <dimen name="footer_image_width">40dp</dimen>
+    <dimen name="footer_button_text_height">15dp</dimen>-->
+    <dimen name="footer_button_text_size">10dp</dimen>
+    <!--<dimen name="footer_margin_between">7dp</dimen>
+    <dimen name="footer_margin_between2">14dp</dimen>
+    <dimen name="aui_footer_divider">1px</dimen>-->
+    <!-- Height of space between timers. -->
+    <dimen name="timer_divider_height">24dip</dimen>
+
+
+    <!-- Digital Widget settings (keyguard|home_screen) -->
+    <!-- Clock and world clock sizes -->
+    <dimen name="widget_big_font_size">80sp</dimen>
+    <dimen name="widget_medium_font_size">32dp</dimen>
+    <!--<dimen name="widget_24_medium_font_size">40dp</dimen>-->
+
+
+    <!-- width/height of layout/digital_widget_time -->
+    <!-- height is sum of widget_big_font_size + label_font_size + margins -->
+    <!--<dimen name="min_digital_widget_width">206dp</dimen>
+    <dimen name="min_digital_widget_height">129dp</dimen>-->
+    <!-- same as min_digital_widget_{width,height} -->
+    <!--<dimen name="min_digital_widget_resize_width">206dp</dimen>
+    <dimen name="min_digital_widget_resize_height">129dp</dimen>-->
+    <!-- sum of scaled heights -->
+    <!--<dimen name="digital_widget_list_min_scaled_height">162dp</dimen>-->
+    <!-- sum of fixed heights -->
+    <!--<dimen name="digital_widget_list_min_fixed_height">12dp</dimen>-->
+    <!-- top margin for digital_appwidget_listview 
+    <dimen name="digital_widget_list_margin_top">20dp</dimen>
+    <dimen name="digital_widget_city_margin_bottom">10dp</dimen>-->
+
+    <!-- Bottom margin for the expand area -->
+    <dimen name="collapse_expand_height">48dp</dimen>
+
+    <dimen name="minute_and_hour_Hand_offset">10dp</dimen>
+    <dimen name="circletimer_stroke_size">13dp</dimen>
+    <dimen name="circletimer_radius_Offset">8dp</dimen>
+    <dimen name="button_left_margin">67dp</dimen>
+
+    <!-- Stroke width for hour hand, minute hand and second hand -->
+    <dimen name="second_hand_width">1dp</dimen>
+    <dimen name="connect_line_width">2dp</dimen>
+    <dimen name="hour_hand_width">3dp</dimen>
+    <dimen name="hour_hand_radius">44dp</dimen>
+    <dimen name="minute_hand_radius">78dp</dimen>
+    <dimen name="second_hand_radius">82dp</dimen>
+    <dimen name="dayRadius">38dp</dimen>
+</resources>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="proximity_title">Proximity Sensor Calibration</string>
+    <string name="proximity_dlg_message">Please note that the sensor can not be blocked within 20 CM,and avoid direct sunlight!</string>
+    <string name="proximity_dlg_title">Calibration Tips</string>    
+    <string name="proximity_success">Calibration Succeed.</string>    
+    <string name="proximity_fail">Calibration Failed.</string>    
+    <string name="proximity_fail_busy">Calibration Failed.Proximity Sensor is busy.</string>  
+    <string name="proximity_dlg_yes">Yes</string>
+    <string name="proximity_dlg_no">No</string>
+    <string name="gsensor_ok">Ok</string>
+    <string name="gsensor_title">G-Sensor calibration</string>
+    <string name="gsensor_calibration">Calibration</string>
+    <string name="gsensor_hint1">Please place the phone</string>
+    <string name="gsensor_hint2">on a level surface</string>
+    <string name="gsensor_hint3">Calibrating...</string>
+    <string name="gsensor_hint4">Do not move the phone</string> 
+    <string name="gsensor_hint5">Calibration complete</string>
+    <string name="cooee_nf_str">Free software, use it?</string>
+    <string name="installing">Install...</string>
+    <string name="install_complete">App installed.</string>
+    <string name="install_open">Open</string>
+    <string name="done">Done</string>
+    <!-- BIRD_TP_SMART_WAKE:wangfei 20131227 begin -->
+    <string name="smart_wake">Smart wake</string>
+    <!-- BIRD_TP_SMART_WAKE:wangfei 20131227 end -->
+	<string name="smart_sensor">Direct</string>
+<!-- [103061], add start by shenzhiwang, 20140603 -->
+    <string name="phone_total_memory_title">Phone Total Memory</string>
+    <string name="phone_total_memory_summary">4GB</string>
+    <string name="phone_system_memory_title">Phone System Memory</string>
+    <string name="phone_system_memory_summary">1GB</string>
+
+    <string name="zzz_bird_cpu_model_title">CPU Model</string>
+    <string name="zzz_bird_cpu_frequency_title">CPU Frequency</string>
+    <string name="zzz_bird_cpu_core_title">CPU Core</string>
+    <string name="zzz_bird_cpu_model_summary">MTK6592</string>
+    <string name="zzz_bird_cpu_frequency_summary">"Quad core__1.5GHz"</string>
+    <string name="zzz_bird_cpu_model_Quad">Quad Core</string>
+    <string name="zzz_bird_cpu_model_Octuple">Octuple Core</string>
+    <string name="filter_GB">GB</string>
+    <string name="filter_GHz">GHz</string>
+<!-- [103061], add end by shenzhiwang, 20140603 -->
+    
+     <!--BIRD_POWER_SAVING add by ludaxu 20160618 begin-->
+    <string name="powersaving_settings">Power Saving</string>
+    <string name="keywords_powersaving">power saving battery</string>
+
+    <string name="powersaving_wifi_title">Wifi</string>
+    <string name="powersaving_wifi_summary">Close Wifi When Power Saving</string>
+    <string name="powersaving_autobrightness_title">Auto Brightness</string>
+    <string name="powersaving_autobrightness_summary">Close Auto Brightness When Power Saving</string>
+    <string name="powersaving_bluetooth_title">Bluetooth</string>
+    <string name="powersaving_bluetooth_summary">Close Bluetooth When Power Saving</string>
+    <string name="powersaving_data_connection_title">Data Connection</string>
+    <string name="powersaving_data_connection_summary">Close Data Connection When Power Saving</string>
+    <string name="powersaving_gps_title">Location</string>
+    <string name="powersaving_gps_summary">Close Location When Power Saving</string>
+    <string name="powersaving_battery_saver_title">Battery Saver</string>
+    <string name="powersaving_battery_saver_summary">Open Battery Saver When Power Saving,otherwise close</string>
+    <string name="power_saving_category">Setting</string>
+    <!--BIRD_POWER_SAVING add by ludaxu 20160618 end-->
+    
+    <!-- BIRD_A200_CUSTOM add by qinzhifeng 20160415 begin -->
+    <string name="arrange_show_settings">Arrange show</string>
+	<!-- add by liuzhiling 20160707 begin -->
+    <string name="zzz_common_settings">Quick setting</string>
+    <string name="zzz_complete_settings">General setting</string>
+    <string name="zzz_speech_settings">Speech Settings</string>
+    <string name="gemini_sim_management_title">SIM management</string>
+    <!-- add by liuzhiling 20160707 end -->
+    <string name="arrange_show_grid">Grid view</string>
+    <string name="arrange_show_list">List view</string>
+    <!-- BIRD_A200_CUSTOM add by qinzhifeng 20160415 end -->
+    
+<!-- @ { bird, imei by adb, add by shenzhiwang @20160705 -->
+    <string name="imei_invalid">Invalid</string>
+<!-- @ } -->
+
+<!-- @{ BIRD_SYSTEM_SPACE, add by shenzhiwang, @20160707 -->
+    <string name="storage_detail_systemspace">System Space</string>
+    <string name="storage_detail_total_size">8.00 GB</string>
+    <string name="storage_detail_system_size">2.00 GB</string>
+        <!--add by liuzhiling for Smartstay-->
+	<string name="ic_settings_smart_stay">Smart Stay</string>
+<!-- @} -->
+    <!--sim toolkit add by meifangting 20150417 begin -->
+    <string name="sim_toolkit">SIM Toolkit</string>
+    <!--sim toolkit add by meifangting 20150417 end -->
+    
+    <!-- bird add by liuzhenting 20160815 begin -->
+    <string name="phone_total_title">Phone</string>
+    <string name="phone_total_memory_summary">16GB</string>
+    <string name="new_storage_settings">Storage</string>
+    <!-- bird add by liuzhenting 20160815 end -->
+</resources>

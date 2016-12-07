@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_field"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ali_dialpad_edit_field_height"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/dialpad_hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:paddingStart="@dimen/ali_dialpad_edit_field_paddding"
+        android:src="@drawable/dialpad_hidden_selector" />
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:paddingEnd="@dimen/ali_dialpad_edit_field_paddding"
+        android:src="@drawable/dial_delete_button" />
+
+    <com.yunos.alicontacts.dialpad.DigitsEditText
+        android:id="@+id/input_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/dialpad_hidden"
+        android:layout_toStartOf="@id/btn_delete"
+        android:background="@null"
+        android:gravity="center"
+        android:maxLength="100"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:singleLine="true"
+        android:textAppearance="@style/DialtactsDigitsTextAppearance"
+        android:textColor="@color/aui_primary_txt_color_black"
+        android:textSize="@dimen/ali_dialpad_edit_text_size" />
+
+</RelativeLayout>

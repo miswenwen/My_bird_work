@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.yundroid.widget.itemview.HeaderIconText2CBItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"  
+    android:orientation="vertical" >
+
+	<include 
+	    layout="@layout/gd_header_item_view"/> 
+            
+    <include 
+        layout="@layout/gd_icon_text2_cb_item_view"/> 
+</com.yunos.yundroid.widget.itemview.HeaderIconText2CBItemView>

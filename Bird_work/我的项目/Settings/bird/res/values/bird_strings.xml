@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--add by tianjianwei 2016/05/25 start-->
+    <string name="close_mobile_data_work">Do you want to turn off the mobile data network?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <!--add by tianjianwei 2016/05/25 end-->
+</resources>

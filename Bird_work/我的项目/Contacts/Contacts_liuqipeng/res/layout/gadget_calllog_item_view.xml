@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/numInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="66dp"
+    android:layout_alignParentStart="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/gadget_calllog_item_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/listview_divider"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="16dp"
+        android:textSize="10sp"
+        android:textColor="@color/aui_secondary_txt_color_grey"
+        tools:ignore="SmallSp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@id/date">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:singleLine="true"
+            android:layout_marginBottom="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/aui_primary_txt_color_black" />
+
+        <ImageView
+            android:id="@+id/call_type_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/name" />
+
+        <ImageView
+            android:id="@+id/call_features_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/call_type_indicator"
+            android:layout_marginStart="6dp"
+            android:layout_below="@id/name" />
+
+        <TextView
+            android:id="@+id/labelAndNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/call_features_indicator"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/aui_secondary_txt_color_grey" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <color name="quickcontact_list_background">#ffe2e2e2</color>
+    <color name="quickcontact_tab_indicator">#ff33b5e6</color>
+
+    <!-- Color used for the letter in the A-Z section header -->
+    <color name="section_header_text_color">#ff999999</color>
+
+    <!-- Color of the text describing an unconsumed missed call. -->
+    <color name="call_log_missed_call_highlight_color">#FF0000</color>
+
+    <!-- Color of the text describing an unconsumed voicemail. -->
+    <color name="call_log_voicemail_highlight_color">#33b5e5</color>
+
+    <!-- Color of the theme of the People app -->
+    <color name="people_app_theme_color">#FF8326</color>
+
+    <!-- Secondary text color in the Phone app -->
+    <color name="dialtacts_secondary_text_color">#888888</color>
+
+    <!-- Colors in the contact browser list -->
+    <color name="contact_count_text_color">#AAAAAA</color>
+
+    <!--  Color of the status message for starred contacts in the People app -->
+    <color name="people_contact_tile_status_color">#CCCCCC</color>
+
+    <!--  Color of the semi-transparent shadow box on contact tiles -->
+    <color name="contact_tile_shadow_box_color">#7F000000</color>
+
+    <!--  Color of the vertical stripe that goes on the left of a block quote inside a stream item -->
+    <color name="stream_item_stripe_color">#CCCCCC</color>
+
+    <!-- Color of image view placeholder. -->
+    <color name="image_placeholder">#DDDDDD</color>
+
+    <color name="title_text_color">#00b4b2</color>
+
+    <!-- added by xiaodong.lxd -->
+    <color name="call_detail_history_item_txt_color">#808080</color>
+    <color name="aui_primary_txt_color_black">#FF333333</color>
+    <color name="aui_primary_txt_color_black_disable">#66333333</color>
+    <color name="aui_primary_txt_color_white">#FFFFFFFF</color>
+    <color name="contact_txt_color_green">#FF01cc99</color>
+   <!--  <color name="contact_txt_color_red">#FFFF5b4f</color> -->
+    <color name="aui_secondary_txt_color_grey">#FF999999</color>
+    <!-- <color name="aui_secondary_txt_color_grey">#FF808080</color> -->
+
+    <color name="aui_bg_color_white">#FFFFFFFF</color>
+    <color name="aui_calllog_detail_label_color">#FFFF8000</color>
+    <color name="aui_calllog_detail_red">#FFfd5d51</color>
+
+    <color name="dialpad_digtal_field_bg_color">#ffffffff</color>
+
+    <color name="fisheye_alpha_enable_text_color">#333333</color>
+    <color name="fisheye_alpha_disable_text_color">#808080</color>
+    <color name="fisheye_index_text_color">#FFFFFFFF</color>
+    <color name="fisheye_child_item_text_color">#FFFFFFFF</color>
+
+    <color name="group_text_color_normal">#ff333333</color>
+    <color name="editor_field_text_color">#333333</color>
+
+    <color name="contacts_listview_background">#FFFFFF</color>
+
+    <!-- portrait color-->
+    <color name="portrait_default">#00b1b1</color>
+    <color name="portrait_color1">#f7614e</color>
+    <color name="portrait_color2">#ff8000</color>
+    <color name="portrait_color3">#eeb900</color>
+    <color name="portrait_color4">#27bf74</color>
+    <color name="portrait_color5">#12b3b3</color>
+    <color name="portrait_color6">#0099e5</color>
+
+    <color name="dialpad_calllog_background">#ffffffff</color>
+
+    <color name="calllog_detail_number_color">#ff333333</color>
+    <color name="create_new_contact_title_color">#ff2c2c2c</color>
+    <color name="group_list_text_color">#ff333333</color>
+    <color name="edit_ringtone_name_color">#ff333333</color>
+    <color name="editor_right_input_background">#ffffff</color>
+    <color name="background_white">#ffffff</color>
+
+    <!-- quick call -->
+    <color name="quick_call_tip">#9b9b9e</color>
+    <color name="quick_call_background">#eeeeee</color>
+    <color name="quick_call_txt_color">#333333</color>
+
+    <!-- contact search activity begin -->
+    <color name="contact_search_activity_btn_normal">#01cc99</color>
+    <color name="contact_search_activity_btn_press">#01ae82</color>
+    <color name="contact_search_activity_btn_disable">#99ebd6</color>
+    <!-- contact search activity end -->
+
+    <color name="listview_divider">#d6d6d6</color>
+
+    <color name="header_line_color">#d6d6d6</color>
+    <color name="listview_pressed_color">#f2f2f2</color>
+    <color name="listview_normal_color">#00000000</color>
+    <color name="group_membership_background_color">#ffffffff</color>
+
+    <!-- Colors for duplicate remove plugin BEGIN -->
+    <color name="dup_remove_check_result_clean_text">#CCCCCC</color>
+    <color name="color_list_item_text_red">#ffff5b4f</color>
+    <!-- From HWDroidConmmon2 -->
+    <color name="bright_foreground_light">#ff333333</color>
+    <!-- Colors for duplicate remove plugin END -->
+
+    <color name="deleting_contacts_indicator_background">#f7edc1</color>
+
+    <!-- appwidget -->
+    <color name="text_color_primary">#333333</color>
+    <color name="text_color_secondary">#999999</color>
+
+    <color name="gadget_header_text_color_primary">@color/appwidget_text_normal</color>
+    <color name="gadget_header_text_color_secondary">@color/appwidget_text_normal_with_alpha_80</color>
+    <color name="gadget_text_color_primary">#000000</color>
+    <color name="gadget_text_color_tertiary">#b0b0b0</color>
+    <color name="gadget_footer_text_color">#7f7f7f</color>
+    <color name="gadget_loading_background_normal">#ffffff</color>
+    <color name="gadget_loading_background_pressed">#f2f2f2</color>
+    <color name="gadget_calllog_item_background_pressed">#f2f2f2</color>
+    <color name="gadget_calllog_item_background_normal">#ffffff</color>
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!--
+    Top position of quick contact. If this is -1, the vertical position is determined
+    based on the source of the request
+    -->
+    <dimen name="quick_contact_top_position">48dip</dimen>
+
+    <!-- Top padding of the entire contact editor -->
+    <dimen name="editor_padding_top">0dip</dimen>
+
+    <!-- Padding of the rounded plus/minus/expand/collapse buttons in the editor -->
+    <dimen name="editor_round_button_padding_left">8dip</dimen>
+    <dimen name="editor_round_button_padding_right">8dip</dimen>
+    <dimen name="editor_round_button_padding_top">8dip</dimen>
+    <dimen name="editor_round_button_padding_bottom">8dip</dimen>
+
+    <!-- Padding to be used between a visible scrollbar and the contact list -->
+    <dimen name="list_visible_scrollbar_padding">32dip</dimen>
+
+    <!-- Width of the Type-Label in the Editor -->
+    <dimen name="editor_type_label_width">92dip</dimen>
+
+    <!-- Minimum height of a row in the Editor -->
+    <dimen name="editor_min_line_item_height">58dip</dimen>
+
+    <!-- Margin around the contact's photo on the contact card -->
+    <dimen name="detail_contact_photo_margin">8dip</dimen>
+
+    <!-- Width and height of the contact photo on the contact detail page -->
+    <dimen name="detail_contact_photo_size">128dip</dimen>
+    <!--
+         This is the minimum amount of space to leave underneath an expanded contact detail
+         photo
+    -->
+    <!-- Minimum width for the photo action popup options -->
+    <dimen name="photo_action_popup_min_width">300dip</dimen>
+
+    <!-- Left and right padding for a contact detail item -->
+    <dimen name="detail_item_icon_margin">8dip</dimen>
+
+    <!-- Left and right padding for a contact detail item -->
+    <dimen name="detail_item_side_margin">16dip</dimen>
+
+    <!-- Top and bottom padding for a contact detail item -->
+    <dimen name="detail_item_vertical_margin">10dip</dimen>
+
+    <!-- Margin between type and data for a contact detail item -->
+    <dimen name="detail_item_between_subitems_margin">6dip</dimen>
+
+    <!-- Minimum height of a row in the contact detail -->
+    <dimen name="detail_min_line_item_height">48dip</dimen>
+
+    <!-- Width of height of an icon from a third-party app in the networks section of the contact card. -->
+    <dimen name="detail_network_icon_size">32dip</dimen>
+
+    <!--
+         Vertical margin for vertical dividers existing between primary data
+         (phone number, email, etc.) and a secondary action button
+    -->
+    <dimen name="detail_vertical_divider_vertical_margin">16dip</dimen>
+
+    <!-- Size of the shortcut icon. 0dip means: use the system default -->
+    <dimen name="shortcut_icon_size">0dip</dimen>
+
+    <!-- Height of edit text in dialpad fragment -->
+    <dimen name="dialpad_vertical_margin">2dip</dimen>
+    <dimen name="dialpad_digits_text_size">30sp</dimen>
+
+    <!-- Width of search view in action bar.  Use 0dip for MATCH_PARENT -->
+    <dimen name="search_view_width">0dip</dimen>
+
+    <!-- contact browser list margins -->
+    <dimen name="contact_browser_list_header_left_margin">16dip</dimen>
+    <dimen name="contact_browser_list_header_right_margin">@dimen/list_visible_scrollbar_padding</dimen>
+    <dimen name="contact_browser_list_top_margin">8dip</dimen>
+    <!-- For join screen. Mainly for tablet. -->
+    <dimen name="join_header_left_margin">@dimen/contact_browser_list_header_left_margin</dimen>
+    <dimen name="join_header_right_margin">@dimen/contact_browser_list_header_right_margin</dimen>
+    <dimen name="join_header_top_margin">16dip</dimen>
+    <dimen name="join_header_bottom_margin">0dip</dimen>
+
+    <!-- ContactTile Layouts -->
+    <!--
+      Use dp instead of dip to keep uniformity,ignore system font preference
+    -->
+    <dimen name="contact_title_font_size">16dp</dimen>
+
+    <!--
+      Use sp instead of dip so that the shadowbox heights can all scale uniformly
+      when the font size is scaled for accessibility purposes
+    -->
+    <dimen name="contact_tile_shadowbox_height">48sp</dimen>
+
+    <!-- Top padding of the ListView in the contact tile list -->
+    <dimen name="contact_tile_list_padding_top">0dip</dimen>
+
+    <!-- Call Log -->
+    <dimen name="call_log_call_action_width">56dip</dimen>
+    <dimen name="call_log_icon_margin">4dip</dimen>
+
+    <!-- Empty message margins -->
+    <dimen name="empty_message_top_margin">48dip</dimen>
+
+    <!-- For contact filter setting screens -->
+    <dimen name="contact_filter_left_margin">16dip</dimen>
+    <dimen name="contact_filter_right_margin">16dip</dimen>
+    <dimen name="contact_filter_icon_size">32dip</dimen>
+
+    <!-- Vertical and horizontal padding in between contact tiles -->
+    <dimen name="contact_tile_divider_padding">1dip</dimen>
+
+    <!-- Width of the lead margin on the left of a block quote inside a stream item -->
+    <dimen name="stream_item_stripe_width">8dip</dimen>
+
+    <!--
+         Layout weight values for dialpad screen. These layouts will be used in one
+         LinearLayout (dialpad_fragment.xml), configuring dialpad screen's vertical
+         ratio.
+    -->
+
+    <!--
+         Minimum height used with @drawable/list_section_divider_holo_custom.
+         Right now the drawable has implicit 32dip minimal height, which is confusing.
+         This value is for making the hidden configuration explicit in xml.
+    -->
+    <dimen name="list_section_divider_min_height">32dip</dimen>
+
+    <!-- added by xiaodong.lxd for dialpad merge from MTK -->
+    <dimen name="dialpad_digits_width">266dip</dimen>
+    <dimen name="dialpad_digits_text_size_min">20sp</dimen>
+    <dimen name="dialpad_digits_text_size_delta">5sp</dimen>
+    <!-- Common AUI textsize -->
+    <dimen name="aui_txt_size_3">18sp</dimen>
+    <dimen name="aui_txt_size_4">14sp</dimen>
+    <dimen name="aui_line_height_2">56dp</dimen>
+    <dimen name="aui_padding_3">16dp</dimen>
+    <dimen name="aui_margin_1">12dip</dimen>
+    <!-- L size to T size are defined by UED in "YunOS Design Guideline V1.0". -->
+    <dimen name="aui_text_l_size">18sp</dimen>
+    <dimen name="aui_text_m_size">16sp</dimen>
+    <dimen name="aui_text_n_size">14sp</dimen>
+    <dimen name="aui_text_s_size">12sp</dimen>
+    <!-- dimen name="aui_text_t_size">10sp</dimen -->
+
+    <!--
+     __________________________________________
+    |     b                                    |
+    |   ____________________________________   |
+    |  |                                    |  |
+    | a|                                    |a |
+    |  |                                    |  |
+    |  |____________________________________|  |
+    |      b                                   |
+    |__________________________________________|
+
+    a = list_item_margin_left / list_item_margin_right
+    b = list_item_margin_top / list_item_margin_bottm
+
+     ______     ______
+    |      |   |      |
+    |      | c |      |
+    |______|   |______|
+
+    c = list_item_margin_horizontal_1
+
+
+     ______
+    |      |
+    |      |
+    |______|
+        d
+     ______
+    |      |
+    |      |
+    |______|
+
+    d = list_item_margin_vertical_1
+    -->
+
+    <!-- end added by xiaodong.lxd -->
+
+    <dimen name="icon_text_padding">6dp</dimen>
+    <dimen name="listview_item_height">58dp</dimen>
+    <dimen name="listview_item_height_dual_line">68dp</dimen>
+
+    <dimen name="contacts_editor_min_line_item_height">50dp</dimen>
+
+    <dimen name="ali_dialpad_edit_field_height">50dp</dimen>
+    <dimen name="ali_dialpad_edit_field_paddding">16dp</dimen>
+    <dimen name="ali_dialpad_edit_text_size">30dp</dimen>
+
+    <dimen name="portrait_text_size_large">16dp</dimen>
+    <dimen name="portrait_text_size_small">12dp</dimen>
+    <dimen name="portrait_widget_size_large">60dp</dimen>
+    <dimen name="portrait_widget_size_small">40dp</dimen>
+    <!-- fisheye index char size -->
+    <dimen name="fisheye_index_char_width">49dp</dimen>
+    <dimen name="fisheye_index_char_height">49dp</dimen>
+    <!-- fisheye fileter data item -->
+    <dimen name="fisheye_child_text_size">18dp</dimen>
+    <dimen name="fisheye_index_char_margin_bottom">6dp</dimen>
+    <dimen name="fisheye_filter_margin_right">6dp</dimen>
+    <dimen name="fisheye_filter_data_padding">8dp</dimen>
+    <dimen name="fisheye_child_item_width">33dp</dimen>
+    <dimen name="fisheye_child_item_height">33dp</dimen>
+    <dimen name="fisheye_max_width">247dp</dimen>
+    <dimen name="fisheye_max_height">247dp</dimen>
+    <!-- fisheye index bar -->
+    <dimen name="fisheye_alpha_bar_height">42dp</dimen>
+    <dimen name="fisheye_alpha_bar_width">30dp</dimen>
+    <dimen name="fish_eye_alpha_text_size">10dp</dimen>
+    <!--YUNOS BEGIN
+         #description:BugID:132320:keep fisheye font size
+         #textSize must be dp
+         #author:changjun.bcj
+         #date:2014/06/24 -->
+    <!-- YUNOS END -->
+
+    <dimen name="gd_footerbar_icon_text_padding">6dp</dimen>
+
+    <dimen name="list_padding">10dp</dimen>
+
+    <!-- begin : editor for 3.0 -->
+    <dimen name="contacts_editor_padding_1">12dp</dimen>
+    <dimen name="contacts_editor_padding_spinner_icon_left">6dp</dimen>
+    <!-- end : editor for 3.0 -->
+
+    <!-- begin : detail for 3.0 -->
+    <dimen name="contacts_call_history_detail_subitem_margin">10dp</dimen>
+    <!-- end : detail for 3.0 -->
+
+    <!-- begin. dialpad for 3.0 -->
+     <dimen name="dialpad_row_height">55dp</dimen>
+     <dimen name="dialpad_footer_height">76dp</dimen>
+     <dimen name="dialpad_info_text_height">30dp</dimen>
+     <dimen name="calllog_item_padding">16dp</dimen>
+     <dimen name="contacts_list_header">58dp</dimen>
+     <dimen name="dilapd_footer_button_margin">8dp</dimen>
+     <!-- end. dialpad for 3.0 -->
+
+    <dimen name="pinned_header_list_view_height">30dp</dimen>
+    <dimen name="action_bar_view_height">50dp</dimen>
+
+    <dimen name="content_right_padding">16dp</dimen>
+
+    <!-- begin. tag -->
+    <dimen name="custom_tag_dialog_edit_margin_left_right">16dp</dimen>
+    <dimen name="custom_tag_dialog_edit_margin_top_bottom">32dp</dimen>
+    <!-- end. tag -->
+
+    <dimen name="action_bar_height">48dp</dimen>
+
+    <!-- DIMENs for duplicate remove plugin BEGIN -->
+    <dimen name="checkbox_to_above_text">16dp</dimen>
+    <dimen name="empty_result_text_top_margin">24dp</dimen>
+    <dimen name="left_text_size">14dp</dimen>
+    <!-- DIMENs for duplicate remove plugin END -->
+
+</resources>

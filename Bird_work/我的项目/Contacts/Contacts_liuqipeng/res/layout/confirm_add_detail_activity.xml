@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Layout for confirming the addition of a piece of information to an existing contact. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/photo_and_name"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/editor_type_label_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/photo_frame"
+                android:layout_width="70dp"
+                android:layout_height="70dp" >
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/contact_detail_avatar_border_acquiesce" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/contact_detail_avatar_border" />
+            </FrameLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/list_selector_background">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/aui_primary_txt_color_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/extra_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dip"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/aui_secondary_txt_color_grey"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <!-- Message that gets displayed if the contact is read-only (instead of showing the editor) -->
+
+    <TextView
+        android:id="@+id/read_only_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dip"
+        android:padding="15dip"
+        android:layout_below="@id/photo_and_name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="gone" />
+
+    <!-- Container for a single detail field editor when the contact is not read-only -->
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/read_only_warning"
+	     >
+	
+	    <FrameLayout
+	        android:id="@+id/editor_container"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+</RelativeLayout>

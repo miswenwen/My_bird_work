@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- dualcard settings -->
+    <header
+        android:id="@+id/dualcard_settings"
+        android:title="@string/dualcard_settings_label" >
+        <intent android:action="com.android.settings.SIM_MANAGEMENT_ACTIVITY" />
+    </header>
+
+    <!-- Quick dial -->
+    <header
+        android:id="@+id/quick_dial"
+        android:title="@string/quick_call_setting" >
+        <intent
+            android:targetClass="com.yunos.alicontacts.quickcall.QuickCallSettingActivity"
+            android:targetPackage="com.yunos.alicontacts" >
+        </intent>
+    </header>
+
+    <!-- Tag auto mark settings -->
+    <header
+        android:id="@+id/tag_auto_mark_settings"
+        android:title="@string/tag_auto_mark_label"
+        android:summary="@string/tag_auto_mark_description" />
+
+</preference-headers>

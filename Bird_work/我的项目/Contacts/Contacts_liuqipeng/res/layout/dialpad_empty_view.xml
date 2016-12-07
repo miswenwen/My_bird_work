@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="142dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_calllog_empty"
+        android:scaleType="centerInside" >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearance"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:textColor="#CCCCCC"
+        android:textSize="14dp"
+        android:singleLine="true"
+        android:text="@string/dialpad_callog_empty_text" >
+    </TextView>
+
+</LinearLayout>

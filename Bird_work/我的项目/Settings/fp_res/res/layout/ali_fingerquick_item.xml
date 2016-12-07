@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fingerprint_guide_text_color"
+        android:textSize="@dimen/fingerprint_enroll_text_size"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingRight="80dp"
+        android:paddingLeft="16dp"/>
+    <ImageView
+        android:id="@+id/textView_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fingerprint_next"
+        android:layout_alignParentRight="true"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="11dp"/>
+    <TextView
+        android:id="@+android:id/summary"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/fingerprint_setting_hint"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/textView_next"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp"/>
+</RelativeLayout>

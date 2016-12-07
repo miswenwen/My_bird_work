@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:fadingEdge="none"
+    android:fillViewport="true"
+    android:overScrollMode="never" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="@dimen/editor_type_label_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/contact_detail_avatar_border_acquiesce" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/contact_detail_edit_avatar_border" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/name_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hw_edit_text_multiple"
+                android:hint="@string/contacts_name"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/aui_primary_txt_color_black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/number_container"
+            layout="@layout/sim_contact_editor_item" />
+
+        <LinearLayout
+            android:id="@+id/usim_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include
+                android:id="@+id/anr_container"
+                layout="@layout/sim_contact_editor_item" />
+
+            <include
+                android:id="@+id/email_container"
+                layout="@layout/sim_contact_editor_item" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

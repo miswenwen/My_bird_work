@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clock="http://schemas.android.com/apk/res/com.android.deskclock"
+    android:id="@+id/main_alarm_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.android.deskclock.MyAnalogClock
+        android:id="@+id/timezone_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        clock:dial="@drawable/clock_alarm_view2_day_bg"
+        clock:dot="@drawable/clock_alarm_view2_day_center"
+        clock:hand_hour="@drawable/clock_alarm_view2_day_hour"
+        clock:hand_minute="@drawable/clock_alarm_view2_day_minute"
+        clock:hand_second="@drawable/clock_alarm_view2_second"/>
+	<RelativeLayout
+ 		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_centerHorizontal="true">
+	<ImageView
+		android:id="@+id/analog_dot_index"
+		android:visibility="invisible"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@drawable/clock_dot_index"	
+		/>
+	<ImageView
+		android:id="@+id/analog_hour_index"
+		android:visibility="invisible"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/clock_hour_index"	
+		/>
+	<ImageView
+		android:id="@+id/analog_minute_index"
+		android:visibility="invisible"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/clock_minute_index"	
+		/>	
+	</RelativeLayout>
+</RelativeLayout>

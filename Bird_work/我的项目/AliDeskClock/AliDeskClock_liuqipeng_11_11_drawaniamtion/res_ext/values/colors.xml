@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <color name="dialog_gray">#28ffffff</color>
+	<color name="alarmclock_new_bg">#01ab4a</color>
+	<color name="worldclock_new_bg">#009a96</color>
+    <color name="repeat_white">#ffffff</color>
+    <color name="repeat_green">#47b792</color>
+    <color name="repeat_disable_button">#e0e0e0</color>
+    <color name="repeat_disable_text">#ffffff</color>
+    <color name="stopwatch_text">#666666</color>
+    <color name="aui_green">#ff49b836</color>
+    <color name="black">#ff000000</color>
+    <!-- If this color is changed or no longer used as the primary background, ensure that blackish_trans is changed as well. -->
+    <color name="blackish">#1c1e20</color>
+    <!-- Transparent background for use in the footer. 80% opacity. The color must remain the same as "blackish" above. -->
+    <color name="blackish_trans">#cc1c1e20</color>
+    <color name="white">#ffffffff</color>
+    <!--<color name="red">#ffee0000</color>-->
+    <color name="grey">#ffaaaaaa</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="alarm_item_color">#f2f2f2</color>
+    <color name="click_item_color">#19ffffff</color>
+    <color name="main_button_normal">#606060</color>
+    <color name="main_button_selected">#909090</color>
+
+    <color name="clock_red">#ffe827</color>
+    <color name="clock_gray">#80ffffff</color>
+    <color name="clock_second">#ffe827</color>
+
+    <color name="alarm_timeline_color">#4d4d4d</color>
+    <!--<color name="footer_header_line">#dddddd</color>-->
+    <color name="footer_text_color">#333333</color>
+    <!--<color name="footer_background">#F9F9F9</color>
+    <color name="dust_wallpaper">#99000000</color>-->
+    <color name="fragment_background">#f9f9f9</color>
+    <color name="separator_color">#d6d6d6</color>
+    <color name="timer_clock_background">#f9f9f9</color>
+<!--liuqipeng-->
+    <color name="lap_time_text_color">#cbcbcb</color>
+	<color name="lap_view_text_color">#5f5f5f</color>
+<!--liuqipeng-->
+    <color name="alarm_edit_item_background">#ffffff</color>
+    <color name="alarm_edit_item_text">#333333</color>
+    <color name="screen_save_text_clock_text">#000000</color>
+    <!--<color name="text_clock_color">#828282</color>-->
+    <color name="stopwatch_text_default">#ffffff</color>
+    <color name="timer_textClock_color">#ffffff</color>
+    <color name="timer_clock_bg">#624bc6</color>
+    <color name="stopwatch_bg">#00b1b1</color>
+
+    <color name="timer_text_color">#ffffff</color>
+    <drawable name="status_bar_notification_row_background_color"> #19ffffff</drawable>
+    <!--<color name="timer_text_stop_color">#f53030</color>
+    <color name="timer_text_start_color">#333333</color>-->
+    <color name="text_color_warning_selector">#ff5b4f</color>
+</resources>

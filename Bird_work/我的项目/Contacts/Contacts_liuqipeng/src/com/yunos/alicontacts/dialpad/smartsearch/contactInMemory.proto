@@ -1,0 +1,22 @@
+package contactInMemory;
+option java_package = "com.yunos.alicontacts.dialpad.smartsearch";
+option java_outer_classname = "ContactInMemoryProto";
+message RetArray {
+required string pinyin = 1;
+}
+
+message ContactMemoryItem {
+required string key = 1;
+required string pinyinData = 2;
+required string allFistCharacter = 3;
+required int32 length = 4;
+required int64 version = 5;
+repeated RetArray retArray = 6; 
+required string contactName = 7;
+required string phoneNumber = 8;
+required string area = 9;
+}
+
+message ContactInMemoryList {
+  repeated ContactMemoryItem contactMemoryItem = 1;
+}

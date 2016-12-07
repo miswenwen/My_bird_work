@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="true" >
+        <bitmap android:src="@drawable/ic_pop_menu_pressed" android:tint="@color/header_widget_color_pressed"/>
+    </item>
+    <item android:state_enabled="false" >
+        <bitmap android:src="@drawable/ic_pop_menu_disable" android:tint="@color/header_widget_color_disable"/>
+    </item>
+    <item >
+        <bitmap android:src="@drawable/ic_pop_menu_normal" android:tint="@color/header_widget_color_normal"/>
+    </item>
+
+</selector>

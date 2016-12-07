@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clock_mainview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/world_clock_bg">
+    <com.android.deskclock.WorldClockRefreshableView
+        android:id="@+id/pull_to_refresh_head"
+        android:focusable="true"
+        android:layout_marginTop="75dp"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView 
+            android:id="@+id/clock_empty_view"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:contentDescription="@string/no_alarms"
+            android:text="@string/system_time"
+            android:layout_marginTop="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+       <RelativeLayout
+            android:id= "@+id/drag_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp">
+           <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/label"
+                android:background="@drawable/clock_dropdown"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#4bffffff"/>
+        <com.android.deskclock.AlarmListView
+            android:id="@+id/cities"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </com.android.deskclock.WorldClockRefreshableView>
+        <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@color/footer_background">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aui_footer_divider"
+            android:background="@color/footer_header_line"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/footer_button_margin_top"
+            android:paddingBottom="@dimen/footer_button_margin_top"> -->
+            <!-- <LinearLayout 
+                android:layout_width="@dimen/footer_button_and_text_width"
+                android:layout_height="@dimen/footer_button_and_text_height"
+                android:layout_marginLeft="@dimen/footer_margin_between"
+                android:layout_marginRight="@dimen/footer_margin_between"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id= "@+id/delete_cities_button"
+                    android:layout_width="@dimen/footer_image_width"
+                    android:layout_height="@dimen/footer_image_width"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/aui_btn_delete"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/footer_button_text_height"
+                    android:text="@string/delete_alarm_button_text"
+                    style="@style/footer_text_style"
+                    android:gravity="center_horizontal|bottom"/>
+            </LinearLayout> -->
+            <!-- <LinearLayout 
+                android:layout_width="@dimen/footer_button_and_text_width"
+                android:layout_height="@dimen/footer_button_and_text_height"
+                android:layout_marginLeft="@dimen/footer_margin_between"
+                android:layout_marginRight="@dimen/footer_margin_between"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id= "@+id/cities_button"
+                    android:layout_width="@dimen/footer_image_width"
+                    android:layout_height="@dimen/footer_image_width"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/aui_btn_add"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/footer_button_text_height"
+                    android:text="@string/add_alarm_button_text"
+                    style="@style/footer_text_style"
+                    android:gravity="center_horizontal|bottom"/>
+            </LinearLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/clock_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@color/world_clock_bg"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/cities_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/clock_add"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/clock_add_normal"/>
+        </RelativeLayout>
+            <!-- <LinearLayout 
+                android:layout_width="@dimen/footer_button_and_text_width"
+                android:layout_height="@dimen/footer_button_and_text_height"
+                android:layout_marginLeft="@dimen/footer_margin_between"
+                android:layout_marginRight="@dimen/footer_margin_between"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/menu_button"
+                    android:layout_width="@dimen/footer_image_width"
+                    android:layout_height="@dimen/footer_image_width"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/aui_btn_setting"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/footer_button_text_height"
+                    android:text="@string/settings"
+                    style="@style/footer_text_style"
+                    android:gravity="center_horizontal|bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout> -->
+</FrameLayout>

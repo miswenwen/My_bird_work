@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="proximity_title">"近距離傳感器校準"</string>
+    <string name="proximity_dlg_message">"請注意感應器20公分距離內不應有遮擋物，且避免陽光照射！"</string>
+    <string name="proximity_dlg_title">"校準提示"</string>    
+    <string name="proximity_success">校準成功.</string>    
+    <string name="proximity_fail">校準失敗.</string>    
+    <string name="proximity_fail_busy">校準失敗.設備忙</string> 
+    
+    <string name="proximity_dlg_yes">"是"</string>
+    <string name="proximity_dlg_no">"否"</string>
+
+    <string name="gsensor_ok">確定</string>
+    <string name="gsensor_title">G-Sensor 校準</string>   
+    <string name="gsensor_calibration">校準</string>      
+    <string name="gsensor_hint1">請將電話放置在</string>
+    <string name="gsensor_hint2">平直表面上</string>
+    <string name="gsensor_hint3">正在校準...</string>
+    <string name="gsensor_hint4">請勿移動電話</string>    
+    <string name="gsensor_hint5">校準完成</string>
+    <!-- BIRD_TP_SMART_WAKE:wangfei 20131227 begin -->
+    <string name="smart_wake">"智能喚醒"</string>
+    <!-- BIRD_TP_SMART_WAKE:wangfei 20131227 end -->
+    <!-- show direct menu in accessibility,chengting,@20140918,begin-->
+    <string name="smart_sensor">智能體感</string>
+    <!-- show direct menu in accessibility,chengting,@20140918,end-->
+    <!-- add by kelinxi begin 20150320 -->
+    <string name="battery_percent">電量百分比</string>
+    <!-- add by kelinxi end 20150320 -->
+    <!--sim toolkit add by meifangting 20150417 begin -->
+    <string name="sim_toolkit">SIM卡應用</string>
+    <!--sim toolkit add by meifangting 20150417 end -->
+
+    <string name="memory_system">系統數據</string>
+    
+    <!-- BIRD_A200_CUSTOM add by qinzhifeng 20160415 begin -->
+    <string name="arrange_show_settings">查看方式</string>
+    <string name="arrange_show_grid">網格視圖</string>
+    <string name="arrange_show_list">列表視圖</string>
+    <!-- BIRD_A200_CUSTOM add by qinzhifeng 20160415 end -->
+
+    <string name="phone_total_memory_title">機身內存總量</string>
+    <string name="phone_system_memory_title">運行內存總量</string>
+    <string name="zzz_bird_cpu_model_title">CPU 型號</string>
+    <string name="zzz_bird_cpu_frequency_title">CPU 主頻</string>
+        <string name="zzz_bird_cpu_core_title">CPU 核心</string>
+    <string name="zzz_bird_cpu_model_summary">MTK6592</string>
+    <string name="zzz_bird_cpu_frequency_summary">四核__1.5GHz</string>
+    <string name="zzz_bird_cpu_model_Quad">四核</string>
+    <string name="zzz_bird_cpu_model_Octuple">八核</string>
+
+    <string name="ali_phone_memory_used_summary"><xliff:g id="VALUE">%s</xliff:g> 已使用</string>
+    <string name="memory_used_size">已使用容量</string>
+    
+    <string name="total_storage_title">手機總容量</string>
+    <string name="system_storage_title">系統空間</string>
+
+<!-- BIRD_MULTI_TOUCH, add start by shenzhiwang, 20151009 -->
+    <string name="bird_3p_touch_screenshot_title">三指截屏</string>
+    <string name="bird_3p_touch_screenshot_summary">三指同時上滑或者下滑，截取屏幕</string>
+<!-- BIRD_MULTI_TOUCH, add end by shenzhiwang, 20151009 -->
+
+    <!--BIRD_RENAME_ALI_EXPERIENCE add by qinzhifeng 20151225 begin-->
+    <string name="bird_aboutphone_user_experience_program">同意使用者體驗改進計畫</string>
+    <!--BIRD_RENAME_ALI_EXPERIENCE add by qinzhifeng 20151225 end-->
+	<!-- add by caizhaohui for BIRD_SHARE_SDCARD_SHOW_INTERNAL_STORAGE 20160301 -->
+	<string name="bird_memory_internal_sdcard_usage">內部存儲</string>
+	<!-- add by caizhaohui for BIRD_SHARE_SDCARD_SHOW_INTERNAL_STORAGE 20160301 -->
+	<!--add by lichengfeng for fix TASK #7676 Silent model call remainder @20160321 begin -->
+	<string name="silent_model_call_remainder_enable_title">"靜音模式來電提醒"</string>
+	<string name="silent_model_call_remainder_enable_summary">"三分鐘內同壹號碼第二次來電不會被靜音"</string>
+	<!--add by lichengfeng for fix TASK #7676 Silent model call remainder @20160321 end -->
+
+    <string name="roam_reboot">請重啟手機!</string>
+    <string name="roam_select_error">請選擇RAM和ROM!</string>
+    <string name="roam_model_error">情輸入正確的產品型號!</string>
+    <!--BIRD_DOOV_BREATHLED task 7688 add by qinzhifeng 20160425 begin-->
+    <string name="bird_breath_led_time_title">呼吸燈僅提示15分鐘</string>
+    <string name="bird_breath_led_time_summary">低電量/充電狀態呼吸燈，不受該開關影響</string>
+    <!--BIRD_DOOV_BREATHLED task 7688 add by qinzhifeng 20160425 end-->
+    
+    <!--[BIRD] [BIRD_PRESS_FP_SUPPORT] lichengfeng @20160425 for fps1196 begin-->
+    <string name="bird_goodx_finger_title">指紋識別</string>
+    <!--[BIRD] [BIRD_PRESS_FP_SUPPORT] lichengfeng @20160425 for fps1196 end-->   
+	
+	<!--add by lichengfeng add microarray fingerprint sensor calibration @20160503 begin-->
+	<string name="bird_fingerprint_calibration_titile">指紋校準</string>
+	<string name="bird_fingerprint_reset_titile">重置指紋</string>
+	<string name="bird_fingerprint_reset_dialog_content">確定重置指紋？</string>
+	<string name="bird_fingerprint_calibration_dialog_attention">指紋校準中...\n請勿觸摸指紋器!</string>
+	<string name="bird_fingerprint_reset_dialog_attention">重置指紋中...\n請勿觸摸指紋器!</string>
+	
+	<string name="fingerprint_reset_succeeded">重置指紋成功!</string>
+	<string name="fingerprint_reset_failed">重置指紋失敗!</string>
+	<!--add by lichengfeng add microarray fingerprint sensor calibration @20160503 end-->
+	<!--BIRD_POWER_SAVING add by ludaxu 20160618 begin-->
+    <string name="powersaving_settings">省電</string>
+    <string name="keywords_powersaving">"省電 電量"</string>
+
+    <string name="powersaving_wifi_title">Wifi</string>
+    <string name="powersaving_wifi_summary">省電時關閉Wifi</string>
+    <!--update by liuzhiling 20160707 begin -->
+    <string name="zzz_common_settings">常用</string>
+    <string name="zzz_complete_settings">全部</string>
+    <!--update by liuzhiling 20160707 end -->
+    <string name="powersaving_autobrightness_title">自動亮度</string>
+    <string name="powersaving_autobrightness_summary">省電時關閉自動亮度</string>
+    <string name="powersaving_bluetooth_title">藍牙</string>
+    <string name="powersaving_bluetooth_summary">省電時關閉藍牙</string>
+    <string name="powersaving_data_connection_title">數據連線</string>
+    <string name="powersaving_data_connection_summary">省電時關閉數據連線</string>
+    <string name="powersaving_gps_title">定位</string>
+    <string name="powersaving_gps_summary">省電時關閉定位</string>
+    <string name="powersaving_battery_saver_title">節約耗電量</string>
+    <string name="powersaving_battery_saver_summary">省電時打開節約耗電量，否則關閉</string>
+    <string name="power_saving_category">設置</string>
+    <!--BIRD_POWER_SAVING add by ludaxu 20160618 end-->
+	<!--add by liuzhiling for Smartstay-->
+    <string name="ic_settings_smart_stay">視頻眼球控制</string>
+
+<!-- @{ BIRD_SYSTEM_SPACE, add by shenzhiwang, @20160707 -->
+    <string name="storage_detail_systemspace" >"系統空間"</string>
+<!-- @} -->
+    <!--sim toolkit add by meifangting 20150417 begin -->
+    <string name="sim_toolkit">SIM卡應用</string>
+    <!--sim toolkit add by meifangting 20150417 end -->
+</resources>

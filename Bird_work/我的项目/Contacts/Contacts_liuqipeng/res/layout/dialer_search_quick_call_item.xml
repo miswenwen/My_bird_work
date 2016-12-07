@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/listview_item_height_dual_line"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingEnd="@dimen/calllog_item_padding"
+    android:paddingStart="@dimen/calllog_item_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/sc_icon_detail"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp" >
+
+        <TextView
+            android:id="@+id/sc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/aui_primary_txt_color_black"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/sc_labelAndNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearance" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sc_icon_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/calllog_item_padding"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

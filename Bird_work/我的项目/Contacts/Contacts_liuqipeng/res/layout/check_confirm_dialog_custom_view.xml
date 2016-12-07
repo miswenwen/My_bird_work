@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_message_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dialog_msg_notification_for_check"
+        android:textColor="@color/bright_foreground_light">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/checkbox_backup"
+        android:text="@string/need_backup_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/checkbox_to_above_text"
+        android:layout_below="@id/tv_message_hint"
+        android:textColor="@color/bright_foreground_light">
+    </CheckBox>
+
+</RelativeLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2007 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="ali_hdcp_checking_titles">
+    <item msgid="441827799230089869">"永不检查"</item>
+    <item msgid="6042769699089883931">"仅检查 DRM 内容"</item>
+    <item msgid="9174900380056846820">"总是检查"</item>
+  </string-array>
+  <string-array name="ali_hdcp_checking_summaries">
+    <item msgid="505558545611516707">"一律不使用 HDCP 检查"</item>
+    <item msgid="3878793616631049349">"仅使用 HDCP 检查 DRM 内容"</item>
+    <item msgid="45075631231212732">"始终使用 HDCP 检查"</item>
+  </string-array>
+  <string-array name="ali_window_animation_scale_entries">
+    <item msgid="8134156599370824081">"关闭动画"</item>
+    <item msgid="6624864048416710414">"动画缩放 0.5x"</item>
+    <item msgid="2219332261255416635">"动画缩放 1x"</item>
+    <item msgid="3544428804137048509">"动画缩放 1.5x"</item>
+    <item msgid="3110710404225974514">"动画缩放 2x"</item>
+    <item msgid="4402738611528318731">"动画缩放 5x"</item>
+    <item msgid="6189539267968330656">"动画缩放 10x"</item>
+  </string-array>
+  <string-array name="ali_transition_animation_scale_entries">
+    <item msgid="8464255836173039442">"关闭动画"</item>
+    <item msgid="3375781541913316411">"动画缩放 0.5x"</item>
+    <item msgid="1991041427801869945">"动画缩放 1x"</item>
+    <item msgid="4012689927622382874">"动画缩放 1.5x"</item>
+    <item msgid="3289156759925947169">"动画缩放 2x"</item>
+    <item msgid="7705857441213621835">"动画缩放 5x"</item>
+    <item msgid="6660750935954853365">"动画缩放 10x"</item>
+  </string-array>
+  <string-array name="ali_animator_duration_scale_entries">
+    <item msgid="6039901060648228241">"关闭动画"</item>
+    <item msgid="1138649021950863198">"动画缩放 0.5x"</item>
+    <item msgid="4394388961370833040">"动画缩放 1x"</item>
+    <item msgid="8125427921655194973">"动画缩放 1.5x"</item>
+    <item msgid="3334024790739189573">"动画缩放 2x"</item>
+    <item msgid="3170120558236848008">"动画缩放 5x"</item>
+    <item msgid="1069584980746680398">"动画缩放 10x"</item>
+  </string-array>
+  <string-array name="ali_app_process_limit_entries">
+    <item msgid="3401625457385943795">"标准限制"</item>
+    <item msgid="4071574792028999443">"不允许后台进程"</item>
+    <item msgid="4810006996171705398">"不得超过 1 个进程"</item>
+    <item msgid="8586370216857360863">"不得超过 2 个进程"</item>
+    <item msgid="836593137872605381">"不得超过 3 个进程"</item>
+    <item msgid="7899496259191969307">"不得超过 4 个进程"</item>
+  </string-array>
+  
+  
+  
+  <string-array name="ali_apn_auth_entries">
+    <item msgid="3856896061242872146">"无"</item>
+    <item msgid="5756844015743664882">"PAP"</item>
+    <item msgid="535934025797984365">"CHAP"</item>
+    <item msgid="8383098660619805783">"PAP 或 CHAP"</item>
+  </string-array>
+  
+  <string-array name="ali_bluetooth_visibility_timeout_entries">
+    <item msgid="8151962652413645395">"2 分钟"</item>
+    <item msgid="8675215713017289017">"5 分钟"</item>
+    <item msgid="477015974247590543">"1 小时"</item>
+    <item msgid="5198271470953124739">"永不超时"</item>
+  </string-array>
+  
+    <!--WIFI BEGIN  -->
+    <string-array name="ali_wlan_ap_security">
+        <item>开放</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>	
+
+    <string-array name="ali_wifi_security">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>"开放"</item>
+        <!-- Do not translate. -->
+        <item>WEP</item>
+        <!-- Do not translate. -->
+        <item>&quot;WPA个人&quot;</item>
+        <!-- Do not translate. -->
+        <item>&quot;WPA2个人&quot;</item>
+        <!-- Do not translate. -->
+        <item>&quot;WPA企业级&quot;</item>
+        <!-- Do not translate. -->
+        <item>&quot;WPA2企业级&quot;</item>
+        <!-- Do not translate. -->
+        <item>&quot;WAPI PSK&quot;</item>
+        <!-- Do not translate. -->
+        <item>&quot;WAPI CERT&quot;</item>
+    </string-array>
+    <!-- Wi-Fi set up options -->
+    <!-- Note that adding/removing/moving items will need wifi settings code change. -->
+    <string-array name="ali_wifi_network_setup">
+        <!-- Manual wifi configuration [CHAR LIMIT=25]-->
+        <item>"关闭"</item>
+        <!-- WPS is a new standard that allowes secure connection establishment to a home wireless network using a simplified process. WPS push button based configuration involves pushing a button on the router and the device [CHAR LIMIT=25]-->
+        <item>"按钮"</item>
+        <!-- WPS pin method based configuration. This requires entering a pin obtained from the access point [CHAR LIMIT=25] -->
+        <item>"从接入点获取的 PIN"</item>
+        <!-- WPS pin method based configuration. This requires generating a pin from this device [CHAR LIMIT=25] -->
+        <item>"从此设备生成的 PIN"</item>
+    </string-array>
+    <string-array name="ali_wifi_eap_method">
+        <!-- Do not translate. -->
+        <item>PEAP</item>
+        <!-- Do not translate. -->
+        <item>TLS</item>
+        <!-- Do not translate. -->
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="ali_wifi_phase2_entries">
+        <item>"无"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="ali_wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>"动态"</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"静态"</item>
+    </string-array>
+    <string-array name="ali_wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"无"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"手动"</item>
+    </string-array>
+    <string-array name="ali_wifi_sleep_policy_entries">
+        <!-- Wi-Fi should go to sleep when the screen turns off. -->
+        <item>"屏幕关闭后15分钟休眠"</item>
+        <!-- When plugged in, never go to sleep.  When on battery, go to sleep when screen turns off. -->
+        <item>"充电时永不休眠"</item>
+        <!-- Never go to sleep. -->
+        <item>"永不休眠"</item>
+    </string-array>
+    <string-array name="ali_wifi_sleep_policy_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+    </string-array>
+    <string-array name="ali_wifi_signal">
+        <item>"弱"</item>
+        <item>"一般"</item>
+        <item>"较强"</item>
+        <item>"强"</item>
+        <item>"无"</item>
+    </string-array>
+    <string-array name="ali_wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>""</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"连接&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"身份验证&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"获取 IP&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"已连接,通过 <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g> 进行保护"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"已暂停"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"断开&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"已断开"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"失败"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"已阻止"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"暂时关闭"</item>
+        <!-- Status message of Wi-Fi when Checking if network is a captive portal -->
+        <item>"网络门户检查"</item>
+    </string-array>
+    <string-array name="ali_wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"正在扫描&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"正在连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"正在通过 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 进行身份验证&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"正在从 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 获取 IP 地址&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"已连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"已暂停"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"正在断开与 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 的连接&#8230;"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"已断开连接"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"失败"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"已阻止"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"暂时关闭状况不佳的连接"</item>
+        <!-- Status message of Wi-Fi when Checking if network is a captive portal -->
+        <item>"强制网络门户检查"</item> 
+    </string-array>
+    <string-array name="ali_wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>Always</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>Only when plugged in</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>Never</item>
+    </string-array>
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <string-array name="ali_wifi_p2p_status">
+        <item>"已连接"</item>
+        <item>"已邀请"</item>
+        <item>"失败"</item>
+        <item>"可用"</item>
+        <item>"超出范围"</item>
+    </string-array>
+
+    <string-array name="ali_wifi_connect_type_entries">
+        <!-- auto connect to wifi -->
+        <item>自动连接</item>
+        <!-- manual connect to wifi -->
+        <item>手动连接</item>
+        <!-- always notify user when wifi is available -->
+        <item>总是询问</item>
+    </string-array>
+    <!--WIFI END  -->
+
+    <!--VPN BEGIN -->
+    <string-array name="ali_vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"连接已断开"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"正在初始化&#8230;"</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"正在连接&#8230;"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"已连接"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"超时"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"失败"</item>
+    </string-array>
+    
+    <!--VPN END -->
+    
+    <string-array name="ali_screen_timeout_entries">
+        <item>"30 秒"</item>
+        <item>"1 分钟"</item>
+        <item>"2 分钟"</item>
+        <item>"5 分钟"</item>
+        <item>"30 分钟"</item>
+        <!-- <item>"永不"</item> -->
+    </string-array>
+
+    <!-- FONT SCALE BEGIN -->
+    <string-array name="ali_font_scale_name">
+        <item>小号</item>
+        <item>标准</item>
+        <item>大号</item>
+        <item>超大号</item>
+    </string-array>
+    <!-- FONT SCALE END -->
+     <!-- YUNOS BEGIN -->
+     <!-- ##modules(Settings)
+     ##date:2013.05.03 ##author:aihua.shenah@aliyun-inc.com-->
+    <string-array name="ali_main_battery_entries">
+        <item>"标配（1700 mAh）"</item>
+        <item>"选配（3100 mAh）"</item>
+    </string-array>
+    <!-- YUNOS END-->
+
+    <!-- audioProfile Settings by aihua.shenah-->
+    
+	
+
+    <!--audioProfile Settings by aihua.shenah end -->
+    
+    
+  <string-array name="ali_enable_opengl_traces_entries">
+    <item msgid="3191973083884253830">"无"</item>
+    <item msgid="9089630089455370183">"Logcat"</item>
+    <item msgid="5397807424362304288">"Systrace（图形）"</item>
+    <item msgid="1340692776955662664">"glGetError 上的调用堆栈"</item>
+  </string-array>
+
+    <string-array name="app_install_location_entries1">
+        <item>系统空间</item>
+        <item>内部存储</item>
+        <item>外置存储卡</item>
+        <item>由系统确定</item>
+    </string-array>
+    <string-array name="app_install_location_entries2">
+        <item>系统空间</item>
+        <item>由系统确定</item>
+    </string-array>
+    <string-array name="app_install_location_entries3">
+        <item>系统空间</item>
+        <item>可卸载的SD卡</item>
+        <item>由系统确定</item>
+    </string-array>
+
+    <string-array name="permission_items">
+        <item>权限详情</item>
+        <item>权限管理</item>
+    </string-array>
+    <string-array name="permission_items_system">
+        <item>权限详情</item>
+    </string-array>
+    <string-array name="fingerquick_type_list" translatable="false">
+        <item>解锁并拨打电话</item>
+        <item>解锁并启动应用</item>
+        <item>无</item>
+    </string-array>
+</resources>

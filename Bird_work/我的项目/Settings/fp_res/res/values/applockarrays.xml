@@ -1,0 +1,44 @@
+<resources>
+
+    <string-array name="needlock_systemapp">
+        <item>"com.yunos.theme.thememanager"</item>
+        <item>"com.yunos.alicontacts"</item>
+        <item>"com.aliyun.mobile.email"</item>
+        <item>"com.aliyun.image"</item>
+        <item>"com.aliyun.video"</item>
+        <item>"com.aliyun.wireless.vos.appstore"</item>
+        <item>"com.android.mms"</item>
+        <item>"com.aliyunos.filemanager"</item>
+        <item>"com.android.calendar"</item>
+        <item>"com.aliyun.note"</item>
+        <item>"com.aliyun.antiroot"</item>
+        <item>"com.yunos.camera"</item>
+        <item>"com.yunos.calculator"</item>
+        <item>"com.android.phone"</item>
+        <item>"com.UCMobile"</item>
+        <item>"com.yunos.gamestore"</item>
+        <item>"com.yunos.privacy"</item>
+        <item>"com.yunos.weatherservice"</item>
+        <item>"com.aliyun.mobile.permission"</item>
+        <item>"com.android.deskclock"</item>
+        <item>"com.yunos.easyclone"</item>
+        <item>"fm.xiami.yunos"</item>
+        <item>"com.android.settings"</item>
+        <item>"com.autonavi.minimap"</item>
+        <item>"com.yunos.FMRadio"</item>
+        <item>"com.boyaa.lordland.bodao_yz"</item>
+        <item>"com.xiami.walkman"</item>
+        <item>"com.alipay.android.app"</item>
+        <item>"com.android.calculator2"</item>
+        <item>"com.android.soundrecorder"</item>
+        <item>"com.mediatek.fmradio"</item>
+        <item>"com.aliyun.SecurityCenter"</item>
+    </string-array>
+
+    <string-array name="exclude_app">
+        <item>"com.bird.flashlight"</item>
+        <item>"com.bird.fingerprintunlock"</item>
+        <item>"com.yunos.camera"</item>
+        <item>"com.android.deskclock"</item>
+    </string-array>
+</resources>

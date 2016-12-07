@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <hwdroid.preference.HWSwitchPreference
+                android:key="power_off_alarm_preference"
+                android:title="关机闹钟"/>
+        <SwitchPreference
+                android:key="automatic_home_clock"
+                android:title="自动显示家中时区" />
+        <ListPreference
+            android:key="home_time_zone"
+            android:entries="@array/timezone_labels"
+            android:dependency="automatic_home_clock"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:entryValues="@array/timezone_values"
+            android:dialogTitle="@string/home_time_zone_title"
+            android:title="@string/home_time_zone" />
+        <ListPreference
+            android:key="auto_silence"
+            android:title="@string/auto_silence_title"
+            android:entries="@array/auto_silence_entries"
+            android:entryValues="@array/auto_silence_values"
+            android:defaultValue="10"
+            android:dialogTitle="@string/auto_silence_title" />
+</PreferenceScreen>

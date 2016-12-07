@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/timer_10min_00" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_01" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_02" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_03" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_04" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_05" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_06" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_07" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_08" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_09" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_10" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_11" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_12" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_13" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_14" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_15" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_16" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_17" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_18" android:duration="50"></item>
+    <item android:drawable="@drawable/timer_10min_19" android:duration="50"></item>
+</animation-list>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/contact_filter_left_margin"
+        android:layout_marginEnd="@dimen/icon_text_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_height_dual_line"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/aui_text_m_size"
+            android:textColor="@color/aui_primary_txt_color_black" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/aui_text_n_size"
+            android:textColor="@color/aui_secondary_txt_color_grey"/>
+    </LinearLayout>
+
+</LinearLayout>

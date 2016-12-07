@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_pressed="true">
+        <bitmap android:src="@drawable/hw_ic_clear_pressed" android:tint="@color/contact_search_activity_btn_press" />
+    </item>
+    <item android:state_enabled="false">
+        <bitmap android:src="@drawable/hw_ic_clear_disabled" android:tint="@color/contact_search_activity_btn_disable" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/hw_ic_clear_normal" android:tint="@color/contact_search_activity_btn_normal" />
+    </item>
+
+</selector>

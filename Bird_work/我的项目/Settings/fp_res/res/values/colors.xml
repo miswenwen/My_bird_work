@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="data_usage_state_normal">#ff808080</color>
+    <color name="data_usage_settings_button_save">#ff52b800</color>
+    <color name="data_usage_chart_grey">#ffdadada</color>
+    <color name="data_usage_chart_green">#ff52b800</color>
+    <color name="data_usage_chart_light_green">#ffddeecf</color>
+    <color name="data_usage_chart_orange">#fff65d00</color>
+    <color name="fingerprint_guide_text_color">#333333</color>
+    <color name="fingerprint_setting_background">#f4f4f4</color>
+    <color name="fingerprint_enroll_process">#52b800</color>
+    <color name="fingerprint_setting_hint">#ff808080</color>
+    <color name="fingerprintDeleteColor">#ffff0000</color>
+    <color name="color_dialog_ok">#01cc99</color>
+    <color name="ali_wallpaper_header_background">#d8d8d8</color>
+    <color name="ali_wallpaper_header_text_view_background">#f4f4f4</color>
+    <color name="ali_progress_background">#ffffffff</color>
+    <color name="ali_disturb_scheduled_time_selected_bg">#f2f2f2</color>
+    <color name="actionbutton_black">#000000</color>
+    <color name="alertDialogButtonTextColor">#ff5b4f</color>
+    <color name="aboutPhoneBgColor">#ff9017</color>
+    <color name="selectSimCarBgColor">#12b3b3</color>
+    <color name="primary_text_color_normal">#333333</color>
+    <color name="primary_text_color_disabled">#6f333333</color>
+    <color name="empty_view_text_color">#cccccc</color>
+    <color name="divider_color">#d6d6d6</color>
+    <color name="back_color_white">#fffffe</color>
+    <color name="back_color_white_pressed">#dfd6d7</color>
+    <color name="security_settings_desc_text_color">#333333</color>
+    <!--menu 字体颜色-->
+    <color name="menu_text_color">#333</color>
+    <color name="inside_back_color">#3abf40</color>
+    <color name="currency_back_color">#0491ea</color>
+    <color name="cache_data_clear_button_color">#ff5b4f</color>
+</resources>

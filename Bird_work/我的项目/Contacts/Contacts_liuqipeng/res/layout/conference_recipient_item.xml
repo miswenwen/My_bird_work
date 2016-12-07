@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/conference_recipient_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/listview_item_height_dual_line"
+    android:paddingStart="@dimen/content_right_padding" >
+
+    <ImageView
+        android:id="@+id/remove_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/listview_item_height_dual_line"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_contact_edit_delete"
+        android:contentDescription="@string/description_minus_button"
+        android:paddingStart="@dimen/content_right_padding"
+        android:paddingEnd="@dimen/content_right_padding" />
+
+    <TextView android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/remove_icon"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/aui_text_l_size"
+        android:textColor="@drawable/aui_ic_color_black_to_white"
+        android:singleLine="true" />
+
+    <TextView android:id="@+id/number_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/title_line"
+        android:layout_marginBottom="14dp"
+        android:layout_toStartOf="@id/remove_icon"
+        android:textSize="@dimen/aui_text_n_size"
+        android:textColor="@drawable/aui_ic_color_grey_to_white"
+        android:singleLine="true" />
+
+</RelativeLayout>

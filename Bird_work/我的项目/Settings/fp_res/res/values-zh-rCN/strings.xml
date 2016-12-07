@@ -1,0 +1,2388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  YUNOS BEGIN
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="uninstall_apps">卸载已安装的应用程序</string>
+    <string name="format_internal_storage">格式化内部存储空间</string>
+    <string name="essential_category">必选清除</string>
+    <string name="optional_category">可选清除</string>
+    <string name="detailed_essential_steps">恢复出厂设置时，会清除您的联系人，通话，短信，便签，账号等隐私数据，以及在使用过程中产生的其他个人设置和数据信息。</string>
+    <string name="format_internal_storage_summary">删除照片、音乐及其他下载内容</string>
+    <string name="restore_button">恢复出厂设置</string>
+    <string name="restore_confirm_description">还原不可撤销，请务必确认您已将重要数据备份至云空间。\n\
+您在隐私空间中加密的内容也会被清理。
+    </string>
+    <string name="restore_confirm_button">确认并重启</string>
+    <string name="remove_category">系统将会删除</string>
+    <string name="retain_category">以下内容将会保留</string>
+    <string name="installed_apps">- 安装的应用程序</string>
+	<string name="retain_installed_apps_with_warnings">- 系统空间中的应用程序（安装在内/外部存储卡中的应用程序会被删除）</string>
+	<string name="internal_contents">- 内部存储空间中的照片、音乐和下载的内容</string>
+    <string name="system_restore">系统还原</string>
+    <string name="system_restore_confirm">确认恢复出厂设置？</string>
+    <string name="system_restore_verify_account_title">验证帐号</string>
+    <string name="system_restore_verify_account_message">请验证您的 YunOS 帐号密码</string>
+
+    <string name="battery_percent">电量百分比</string>
+
+    <string name="location_mode_high_accuracy_title">"使用GPS、WLAN和移动网络"</string>
+    <string name="location_mode_high_accuracy_description">"准确度高"</string>
+    <string name="location_mode_battery_saving_title">"使用WLAN和移动网络"</string>
+    <string name="location_mode_battery_saving_description">"耗电量低"</string>
+    <string name="location_mode_sensors_only_title">"使用GPS"</string>
+    <string name="location_mode_sensors_only_description">不消耗网络流量</string>
+
+	<string name="ali_credentials_not_erased">"系统无法清除凭据存储。"</string>
+	<string name="ali_credentials_configure_lock_screen_hint_title">安装提示</string>    
+	<string name="ali_credentials_configure_lock_screen_hint">"需要先设置锁定屏幕密码才能使用凭据存储"</string>
+	<string name="ali_credentials_configure_lock_screen_hint_set">设置</string>
+	
+	
+	
+	<string name="ali_memory_card_management">存储</string>
+
+	<string name="ali_memory_card_total_size">容量</string>
+	
+	<string name="ali_memory_card_free_size">可用空间：</string>
+	<string name="ali_memory_card_format">格式化</string>
+	<string name="ali_memory_card_format_summary">清除存储卡所有数据</string>
+	<string name="ali_memory_card_format_confirm_title">格式化确认</string>
+	<string name="ali_memory_card_format_confirm_content">"该操作会清空存储卡上的所有数据, 确定要格式化吗?"</string>
+	<string name="ali_memory_card_unmount_user_accessing">用户正在使用存储卡</string>
+	<string name="ali_memory_card_format_init">格式化初始化中&#8230;</string>
+	<string name="ali_memory_card_formatting">正在格式化&#8230;</string>
+	
+	<string name="ali_memory_card_format_done">格式化已成功</string>
+	<string name="ali_memory_card_format_failed_title">格式化失败</string>
+	<string name="ali_memory_card_format_failed_content">格式化失败，请稍后再试。</string>    
+	<string name="ali_usb_management">USB连接</string>
+	
+	
+	
+	<string name="ali_usb_notification_title">USB已连接</string>
+	<string name="ali_usb_notification_text_click_to_open">点击开启U盘模式</string>
+	<string name="ali_usb_notification_text_click_to_close">点击关闭U盘模式</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_verifier_device_identifier">"开发设备 ID"</string>
+	<string name="ali_verifier_device_identifier_not_available">"无法读取设备信息"</string>
+	<string name="ali_debug_ui_category">"用户界面"</string>
+	
+	
+	<string name="ali_stk">SIM卡应用程序</string>
+	    
+	<string name="ali_security_setting">安全管理</string>
+	
+	<string name="ali_lock_on">开启</string>
+	<string name="ali_lock_off">关闭</string>
+	<string name="ali_lock_phone">锁屏</string>
+	<string name="ali_lock_phone_enable">开启手机锁定</string>
+	<string name="ali_lock_phone_disable">关闭手机锁定</string>
+	<string name="ali_set_new_code">设置密码</string>
+	<string name="ali_enter_code_again">再次输入</string>
+	<string name="ali_enter_code">密码</string>
+	<string name="ali_code_error">密码错误</string>
+	<string name="ali_code_error_form">请输入4位有效密码</string>
+	<string name="ali_code_error_pin">PIN码为4&#8211;8位数字</string>
+	<string name="ali_code_conflict">两次密码输入不一致</string>
+	<string name="ali_kgd_passwd_input_error_wait">密码错误次数过多, 请等待%d秒后重试</string>
+	
+	
+	<string name="ali_phone_code_modify">修改密码</string>
+	
+	<string name="ali_old_code">旧密码</string>
+	<string name="ali_old_code_error">旧密码错误</string>
+	<string name="ali_new_code">新密码</string>
+	
+	<string name="ali_lock_sim">SIM卡PIN码锁定</string>
+	<string name="ali_lock_sim_enable">开启SIM卡锁定</string>
+	<string name="ali_lock_sim_disable">关闭SIM卡锁定</string>
+	<string name="ali_pin_code_error_header">PIN码错误，您还剩</string>
+	<string name="ali_pin_code_modify">修改PIN码</string>
+	
+	<string name="ali_enter_pin_code">PIN码</string>
+	<string name="ali_pin_code_error_header_normal">您还剩</string>
+	<string name="ali_pin_code_error_modify_header">旧PIN码错误，您还剩</string>
+	<string name="ali_pin_code_error_tail">次机会</string>
+	<string name="ali_pin_code_error_tip">连续错误3次，SIM卡将被锁定</string>
+	<string name="ali_puk_code_error_tip">连续错误10次，SIM卡将报废</string>
+	<string name="ali_code_pin_conflict">两次输入的PIN码不一致</string>
+	<string name="ali_code_puk_conflict">两次输入的PUK码不一致</string>
+	
+	
+	<string name="ali_old_pin_code">旧PIN码</string>
+	<string name="ali_new_pin_code">新PIN码</string>
+	<string name="ali_enter_pin_code_again">再次输入</string>
+	
+	<string name="ali_sim_locked">SIM卡已被锁</string>
+	<string name="ali_pin_lock_puk">\t\t您的SIM卡已经被锁，需要输入PUK码来激活。</string>
+	<string name="ali_puk_enter_title">输入PUK码</string>
+	<string name="ali_puk_enter">PUK码</string>
+	<string name="ali_puk_code_error_header">您还剩</string>
+	<string name="ali_puk_code_error_tail">次机会</string>
+	
+	<string name="ali_sim_invalid">SIM卡已失效</string>
+	<string name="ali_sim_invalid_text">PUK码连续输入错误10次，您的SIM卡已失效</string>
+	<string name="ali_lock_sim1">SIM卡1锁定</string>
+	<string name="ali_lock_sim2">SIM卡2锁定</string>
+	<string name="ali_about_phone">关于本机</string>
+	
+	<string name="ali_desktop_theme_setting">主题</string>
+    <string name="ali_not_remain" msgid="4676390750360727396">"不保留"</string>
+    <string name="ali_remain" msgid="4676390750360727396">"保留"</string>
+	<string name="ali_yes" msgid="4676390750360727396">"确定"</string>
+	<string name="ali_no" msgid="6731231425810196216">"取消"</string>
+	<string name="ali_device_info_default" msgid="7847265875578739287">"未知"</string>
+	
+	
+	
+	
+	
+	
+	<string name="ali_radioInfo_service_in" msgid="1915416319177520020">"正在使用中"</string>
+	<string name="ali_radioInfo_service_out" msgid="5238736759641916278">"不在服务区"</string>
+	
+	<string name="ali_radioInfo_service_off" msgid="1434084741785525415">"关闭无线通信"</string>
+	<string name="ali_radioInfo_roaming_in" msgid="9045363884600341051">"国际漫游"</string>
+	<string name="ali_radioInfo_roaming_not" msgid="2851853244069662307">"非国际漫游"</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_radioInfo_display_dbm" msgid="3621221793699882781">"dBm"</string>
+	<string name="ali_radioInfo_display_asu" msgid="1422248392727818082">"asu"</string>
+	
+	
+	<string name="ali_battery_info_status_charging" msgid="1705179948350365604">"正在充电"</string>
+	<string name="ali_battery_info_status_charging_ac" msgid="5874340256342956252">"（交流电）"</string>
+	<string name="ali_battery_info_status_charging_usb" msgid="4059070156126770959">"(USB 绑定选项)"</string>
+	<string name="ali_battery_info_status_discharging" msgid="6222697503392774475">"正在放电"</string>
+	<string name="ali_battery_info_status_not_charging" msgid="2820070506621483576">"未在充电"</string>
+	<string name="ali_battery_info_status_full" msgid="2824614753861462808">"已满"</string>
+	<string name="ali_bluetooth" msgid="5549625000628014477">"蓝牙"</string>
+	
+	
+	
+    <string name="ali_bluetooth_is_discoverable_always" msgid="2849387702249327748">"让附近所有的蓝牙设备均可检测到"</string>
+	
+	
+	
+	
+	<string name="ali_bluetooth_connected" msgid="6038755206916626419">"已连接"</string>
+	<string name="ali_bluetooth_disconnected" msgid="6557104142667339895">"已断开连接"</string>
+	<string name="ali_bluetooth_disconnecting" msgid="8913264760027764974">"正在断开连接&#8230;"</string>
+	<string name="ali_bluetooth_connecting" msgid="8555009514614320497">"正在连接&#8230;"</string>
+	
+	
+	<string name="ali_bluetooth_pairing" msgid="1426882272690346242">"正在配对&#8230;"</string>
+	
+	<string name="ali_bluetooth_device" msgid="6873461446424952003">"未命名的蓝牙设备"</string>
+	<string name="ali_progress_scanning" msgid="3760897655335759141">"正在扫描&#8230;"</string>
+    <string name="ali_bluetooth_no_devices_found" msgid="1085232930277181436">"未在附近找到蓝牙设备"</string>
+	<string name="ali_bluetooth_notif_ticker" msgid="4726721390078512173">"蓝牙配对请求"</string>
+	<string name="ali_bluetooth_notif_title" msgid="2485175521845371514">"配对请求"</string>
+	<string name="ali_bluetooth_notif_message" msgid="5381418499788668724">"选择要配对的对象 "</string>
+    <string name="ali_bluetooth_show_received_files" msgid="5164787486105868895">"显示接收到的文件"</string>
+	<string name="ali_device_picker" msgid="8721012448931226323">"蓝牙设备选择器"</string>
+	<string name="ali_bluetooth_permission_request" msgid="1523129741266262748">"蓝牙权限请求"</string>
+	<string name="ali_bluetooth_ask_enablement" msgid="2342558978033892004">"要使用蓝牙服务，必须先开启蓝牙。是否要开启蓝牙？"</string>
+	<string name="ali_bluetooth_ask_discovery" msgid="669870705606180872">"您手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而使其他设备可在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的手机。是否要授予这种权限？"</string>
+	<string name="ali_bluetooth_ask_enablement_and_discovery" msgid="7220210326619399542">"您手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而使其他设备可在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的手机。是否要授予这种权限？"</string>
+	<string name="ali_bluetooth_turning_on" msgid="3107102168379705771">"正在打开蓝牙…"</string>
+	<string name="ali_bluetooth_empty_list_bluetooth_off">"打开蓝牙， 搜索可用设备"</string>
+	<string name="ali_date_and_time" msgid="4114084177056654663">"时间和日期"</string>
+	<string name="ali_choose_timezone" msgid="7762866468013985022">"选择时区"</string>
+	<string name="ali_normal_date_format" msgid="1982904221918374153">"普通 (<xliff:g id="DATE">%s</xliff:g>)"</string>
+	<skip />
+	
+	
+	
+	
+	
+	<string name="ali_language_picker_title" msgid="4034157617842965844">"语言区域"</string>
+	<string name="ali_select_your_language" msgid="1146235168951906084">"选择您使用的语言"</string>
+	<string name="ali_activity_picker_label" msgid="4910700713930693329">"选择活动"</string>
+	<string name="ali_cancel" msgid="6859253417269739139">"取消"</string>
+	<string name="ali_settings_label" msgid="1626402585530130914">"设置"</string>
+	<string name="ali_settings_shortcut" msgid="3672145147925639262">"设置"</string>
+	<string name="ali_airplane_mode" msgid="8837269988154128601">"飞行模式"</string>
+	
+	
+	
+	<string name="ali_radio_controls_title" msgid="5868688473587168882">"无线网络"</string>
+	<string name="ali_date_time_auto" msgid="3086083265745944725">"自动更新时间"</string>
+	<string name="ali_date_time_24hour" msgid="1193032284921000063">"24小时制"</string>
+	<string name="ali_date_time_set_time" msgid="5716856602742530696">"时间"</string>
+	<string name="ali_date_time_set_timezone" msgid="5045627174274377814">"时区"</string>
+	<string name="ali_date_time_set_date" msgid="7021491668550232105">"日期"</string>
+	<string name="ali_date_time_date_format" msgid="436706100255870967">"日期格式"</string>
+	
+	<string name="ali_header_button_confirm">确定</string>
+	
+	
+	<string name="ali_change_language">切换语言中&#8230;</string>
+	<string name="ali_date_time_settings_timezone_null">无相关搜索结果</string>
+
+	<string name="ali_manage_device_admin" msgid="3864120111085199551">"选择设备管理器"</string>
+	<string name="ali_manage_device_admin_summary" msgid="915390201809231575">"添加或删除设备管理器"</string>
+	
+	<string name="ali_bluetooth_settings" msgid="2725796451253089609">"蓝牙"</string>
+	<string name="ali_bluetooth_settings_title" msgid="2824020086246268296">"蓝牙"</string>
+
+        <string name="ali_bluetooth_open_discovery">"开放检测"</string>
+        <string name="ali_bluetooth_rename_my_device">"点击更改设备名称"</string>
+        <string name="ali_bluetooth_my_device_name">"我的设备名称"</string>
+	<string name="ali_bluetooth_pairing_request" msgid="6385750334766370310">"蓝牙配对请求"</string>
+	<string name="ali_bluetooth_enter_pin_msg" msgid="856962526754150334">\n"键入 PIN 与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”进行配对。（尝试键入 0000 或 1234。）"</string>
+	<string name="ali_bluetooth_enter_passkey_msg" msgid="8121515818772179228">\n"键入匹配密钥可与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”进行配对。"</string>
+	<string name="ali_bluetooth_confirm_passkey_msg" msgid="1205362283945104263">"要与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”配对，请核实其中是否显示匹配密钥：<xliff:g id="PASSKEY">%2$s</xliff:g>。"</string>
+	<string name="ali_bluetooth_incoming_pairing_msg" msgid="1076613564387784476">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>向您请求配对，是否配对？"</string>
+	<string name="ali_bluetooth_pairing_accept" msgid="6163520056536604875">"配对"</string>
+	<string name="ali_bluetooth_pairing_decline" msgid="930951069988011471">"取消"</string>
+	<string name="ali_bluetooth_error_title" msgid="538287072376677166">"注意"</string>
+	<string name="ali_bluetooth_pairing_error_message" msgid="2852744547246910349">"与<xliff:g id="DEVICE_NAME">%1$s</xliff:g>配对时出现问题。"</string>
+	<string name="ali_bluetooth_pairing_pin_error_message" msgid="6065697229258906937">"与 <xliff:g id="DEVICE_NAME">%1$s</xliff:g> 配对时出现问题，因为 PIN 或匹配密钥不正确。"</string>
+	<string name="ali_bluetooth_pairing_device_down_error_message" msgid="6688215193824686741">"无法与 <xliff:g id="DEVICE_NAME">%1$s</xliff:g> 建立通信连接。"</string>
+	<string name="ali_bluetooth_pairing_rejected_error_message" msgid="1648157108520832454">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> 已拒绝配对。"</string>
+	<string name="ali_bluetooth_connecting_error_message" msgid="1779660510084746802">"连接到<xliff:g id="DEVICE_NAME">%1$s</xliff:g>时出现问题。"</string>
+	<string name="ali_bluetooth_preference_scan_title" msgid="2277464653118896016">"扫描查找设备"</string>
+	
+        <string name="ali_bluetooth_search_for_devices" msgid="5957007154213560390">"搜索设备"</string>
+        <string name="ali_bluetooth_searching_for_devices" msgid="9203739709307871727">"搜索中…"</string>
+        <string name="ali_bluetooth_stop_searching">"停止搜索"</string>
+        <string name="ali_bluetooth_preference_my_device">"我的设备"</string>
+        <string name="ali_bluetooth_preference_paired_devices" msgid="1970524193086791964">"配对设备"</string>
+        <string name="ali_bluetooth_preference_found_devices" msgid="1647983835063249680">"可用设备"</string>
+	
+	
+	<string name="ali_bluetooth_device_context_unpair" msgid="662992425948536144">"取消配对"</string>
+	
+	
+	<string name="ali_bluetooth_profile_a2dp" msgid="3259633293424539529">"媒体"</string>
+	<string name="ali_bluetooth_profile_headset" msgid="1874975688666658946">"电话"</string>
+	<string name="ali_bluetooth_profile_opp" msgid="3799470046565284440">"传输"</string>
+	
+	
+	
+	<string name="ali_bluetooth_device_advanced_title" msgid="528816860793581131">"已配对的蓝牙设备"</string>
+	
+	
+        <string name="ali_bluetooth_device_advanced_profile_header_title" msgid="3764437426089639639">"配置文件"</string>
+        <string name="ali_bluetooth_device_advanced_rename_device" msgid="5148578059584955791">"重命名"</string>
+	<string name="ali_bluetooth_a2dp_profile_summary_connected" msgid="963376081347721598">"已连接到媒体音频"</string>
+	<string name="ali_bluetooth_headset_profile_summary_connected" msgid="7661070206715520671">"已连接到手机音频"</string>
+	<string name="ali_bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"用于媒体音频"</string>
+	<string name="ali_bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"用于手机音频"</string>
+	<string name="ali_bluetooth_dock_settings_title" msgid="5543069893044375188">"底座用于音频"</string>
+	<string name="ali_bluetooth_dock_settings_headset" msgid="1001821426078644650">"将底座用作免提电话"</string>
+	<string name="ali_bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"用于音乐和媒体"</string>
+	<string name="ali_bluetooth_dock_settings_remember" msgid="5551459057010609115">"记住设置"</string>
+	<string name="ali_bluetooth_device_details" msgid="4594773497930028085">"设备设置"</string>
+	
+	
+	
+	
+	
+	<string name="ali_vibrate_title" msgid="6045820877942801599">"振动"</string>
+    <string name="disconnect_vibrate_title">"挂断振动"</string>
+	
+	
+	<string name="ali_haptic_feedback_enable_title" msgid="6311736559245411290">"触摸振动"</string>
+	
+	
+	<string name="ali_display_settings" msgid="3912042046350078328">"显示"</string>
+	
+	<string name="ali_accelerometer_title" msgid="7854608399547349157">"自动旋转屏幕"</string>
+    <string name="ali_screen_timeout_summary" msgid="2905757633140605334">"<xliff:g id="TIMEOUT_DESCRIPTION">%1$s</xliff:g>"</string>
+	
+	<string name="ali_system_update_settings_list_item_title" msgid="3342887311059985961">"系统更新"</string>
+	<string name="ali_system_update_settings_list_item_summary" msgid="3853057315907710747"/>
+	<string name="ali_firmware_version" msgid="4801135784886859972">"Android 版本"</string>
+	<string name="ali_model_number" msgid="3765737700545384794">"型号"</string>
+	<string name="ali_baseband_version" msgid="1848990160763524801">"基带版本"</string>
+	<string name="ali_kernel_version" msgid="9192574954196167602">"内核版本"</string>
+	<string name="ali_build_number" msgid="3075795840572241758">"版本号"</string>
+	<string name="ali_device_info_not_available" msgid="8062521887156825182">"不可用"</string>
+	<string name="ali_device_status" msgid="607405385799807324">"状态消息"</string>
+	<string name="ali_device_status_summary" msgid="2599162787451519618">"电话号码、信号等"</string>
+	<string name="ali_memory_available" msgid="418542433817289474">"可用空间"</string>
+	<string name="ali_memory_size" msgid="6629067715017232195">"总容量"</string>
+	<string name="ali_sd_eject" msgid="6915293408836853020">"卸载 SD 卡"</string>
+	<string name="ali_sd_eject_summary" msgid="3315557796211542962">"必须先卸载 SD 卡，才能将其安全移除"</string>
+	<string name="ali_sd_insert_summary" msgid="2048640010381803841">"插入 SD 卡进行安装"</string>
+	<string name="ali_sd_mount" msgid="5940523765187704135">"安装 SD 卡"</string>
+	<string name="ali_sd_mount_summary" msgid="4936591681679097699">"安装 SD 卡"</string>
+	<string name="ali_sd_format" msgid="5448738337382712203">"格式化 SD 卡"</string>
+	<string name="ali_sd_format_summary" msgid="6616491027883134004">"格式化（清除）SD 卡"</string>
+	<string name="ali_read_only" msgid="6702420168629076340">" （只读）"</string>
+	<string name="ali_dlg_confirm_unmount_title" msgid="8612140627310646730">"卸载 SD 卡"</string>
+	<string name="ali_dlg_confirm_unmount_text" msgid="5851214273718817727">"如果您卸载 SD 卡，则您当前使用的某些应用程序会停止，而且在您重新安装 SD 卡前可能都无法使用。"</string>
+	<string name="ali_dlg_error_unmount_title" msgid="4004106918266783081">"无法卸载 SD 卡"</string>
+	<string name="ali_dlg_error_unmount_text" msgid="9188972789897713180">"无法卸载 SD 卡，请稍后重试。"</string>
+	<string name="ali_apn_settings" msgid="3743170484827528406">"APN"</string>
+	<string name="ali_apn_edit" msgid="1354715499708424718">"修改APN"</string>
+	<string name="ali_apn_not_set" msgid="7422262558097875757">"&lt;未设置&gt;"</string>
+	<string name="ali_apn_name" msgid="4115580098369824123">"名称"</string>
+	<string name="ali_apn_apn" msgid="2479425126733513353">"APN"</string>
+	<string name="ali_apn_http_proxy" msgid="1826885957243696354">"代理"</string>
+	<string name="ali_apn_http_port" msgid="3763259523984976226">"端口"</string>
+	<string name="ali_apn_user" msgid="455637547356117761">"用户名"</string>
+	<string name="ali_apn_password" msgid="5412301994998250968">"密码"</string>
+	<string name="ali_apn_server" msgid="2436185314756372858">"服务器"</string>
+	<string name="ali_apn_mmsc" msgid="3670124402105585737">"MMSC"</string>
+	<string name="ali_apn_mms_proxy" msgid="5374082621073999275">"彩信代理"</string>
+	<string name="ali_apn_mms_port" msgid="4074188088199243040">"彩信端口"</string>
+	<string name="ali_apn_mcc" msgid="4258628382260674636">"MCC"</string>
+	<string name="ali_apn_mnc" msgid="8629374076888809874">"MNC"</string>
+	<string name="ali_apn_auth_type" msgid="6167205395676037015">"身份验证类型"</string>
+	<string name="ali_apn_type" msgid="469613123902220544">"APN 类型"</string>
+	<string name="ali_error_title" msgid="1319225301794168762">"注意"</string>
+	<string name="ali_error_name_empty" msgid="1498238337687930558">"请填写“名称”字段。"</string>
+	<string name="ali_error_apn_empty" msgid="1513892291812404310">"请填写“APN”字段。"</string>
+	<string name="ali_error_mcc_not3" msgid="4560171714156251661">"MCC 字段必须为 3 位数字。"</string>
+	<string name="ali_error_mnc_not23" msgid="8418177072458379439">"MNC 字段必须为 2 位数或 3 位数字。"</string>
+	<string name="ali_restore_default_apn" msgid="2724583218635739913">"正在将接入点还原至默认设置&#8230;"</string>
+	<string name="ali_restore_default_apn_completed" msgid="3990449939234957281">"重置默认设置已完成"</string>
+	
+	<string name="ali_master_clear_button_text" msgid="7550632653343157971">"重置手机"</string>
+	<string name="ali_master_clear_gesture_prompt" msgid="1428645764883536750">"绘制您的解锁图案"</string>
+	<string name="ali_master_clear_gesture_explanation" msgid="8901714274312707918">"您必须绘制解锁图案才能确认重置手机。"</string>
+	<string name="ali_tether_settings_title_usb" msgid="4315031513434087777">"绑定"</string>
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_network_settings_title" msgid="7967552516440151852">"移动网络"</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_location_wireless_network">"网络定位"</string>
+	
+	<string name="ali_location_GPS">"GPS定位"</string>
+	
+	
+	<string name="ali_wireless_settings_apn_title">接入点</string>
+	<string name="ali_wireless_settings_apn_add">添加接入点</string> 
+	<string name="ali_wireless_settings_empty">不能为空!</string>
+	<string name ="ali_wireless_settings_apn_default">还原接入点设置</string>
+	<string name = "ali_bn_preference">删除该接入点</string>
+	<string name = "ali_wireless_settings_apn_delete_confirm_desc">确认删除该接入点吗？</string>
+	
+	<string name = "ali_wireless_settings_apn_reset_title">还原接入点</string>
+	
+	
+	
+	<string name="ali_about_settings" msgid="1743378368185371685">"关于手机"</string>
+	<string name="ali_legal_information" msgid="5769301644270604095">"法律信息"</string>
+	
+	<string name="ali_copyright_title" msgid="865906688917260647">"版权"</string>
+	<string name="ali_license_title" msgid="1990487604356037871">"许可"</string>
+	<string name="ali_terms_title" msgid="7697580845616764642">"条款"</string>
+	
+	
+	<string name="ali_settings_safetylegal_title" msgid="1289483965535937431">"安全信息"</string>
+
+        <string name="ali_lockpassword_input_new_password_header">"输入新密码"</string>
+        <string name="ali_lockpassword_input_new_pin_header">"输入新密码"</string>
+        <string name="ali_lockpassword_confirm_new_password_header">"确认新密码"</string>
+        <string name="ali_lockpassword_confirm_new_pin_header">"确认新密码"</string>
+        <string name="ali_lockpassword_confirm_saved_password_header">"请输入解锁密码"</string>
+        <string name="ali_lockpassword_confirm_saved_pin_header">"请输入解锁密码"</string>
+        <string name="ali_lockpassword_ok_label" msgid="313822574062553672">"确定"</string>
+        <string name="ali_lockpassword_cancel_label" msgid="8818529276331121899">"取消"</string>
+	<string name="lockpassword_pin_too_short">"密码至少应为%d位"</string>
+	<string name="lockpassword_pin_too_long">"密码必须少于 <xliff:g id="NUMBER">%d</xliff:g> 位数。"</string>
+	<string name="lockpassword_pin_recently_used">设备管理员不允许使用最近用过的密码。</string>
+	<string name="lockpassword_confirm_pins_dont_match">密码不匹配！</string>
+
+        <string name="ali_lockpattern_recording_intro_header" msgid="308287052221942814">"绘制新解锁图案"</string>
+        <string name="ali_lockpattern_need_to_confirm">"确认新解锁图案"</string>
+	<string name="ali_lockpattern_need_to_unlock" msgid="757935356911054465">"请绘制解锁图案"</string>
+	<string name="ali_lockpattern_settings_enable_visible_pattern_title">显示解锁轨迹</string>
+	<string name="ali_lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"错误的尝试次数过多！"</string>
+	<string name="ali_lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"<xliff:g id="NUMBER">%d</xliff:g> 秒后重试。"</string>
+
+	<string name="ali_lock_sounds_enable_title" msgid="1575990840389107141">锁屏声音</string>
+	<string name="ali_dtmf_tone_enable_title" msgid="1453831168789523185">"拨号声音"</string>
+	
+	<string name="ali_manageapplications_name">"应用管理"</string>
+	<string name="ali_battery_info_status_unknown" msgid="196130600938058547">"未知"</string>
+	
+	<string name="ali_lock_power_button_instantly">"电源按键即时锁定"</string>
+        <string name="ali_lock_power_button_instantly_summary">"按下电源键后立即锁定屏幕"</string>
+
+	<string name="ali_application_info_label" msgid="1150486628158409543">"应用程序信息"</string>
+	<string name="ali_storage_label" msgid="8700867073480107253">"存储"</string>
+	<string name="ali_auto_launch_label" msgid="3012617472833815382">"默认启动"</string>
+	<string name="ali_permissions_label" msgid="2605296874922726203">"权限"</string>
+	<string name="ali_cache_header_label" msgid="1877197634162461830">"缓存"</string>
+	<string name="ali_clear_cache_btn_text" msgid="5756314834291116325">"清除缓存"</string>
+	<string name="ali_cache_size_label" msgid="7505481393108282913">"缓存"</string>
+	<string name="ali_force_stop" msgid="7435006169872876756">"停止运行"</string>
+	<string name="ali_total_size_label" msgid="1048676419552557254">"总计"</string>
+	<string name="ali_application_size_label" msgid="5055196275624686382">"应用程序"</string>
+	<string name="ali_data_size_label" msgid="8679376373625710107">"数据"</string>
+	<string name="ali_uninstall_text" msgid="3644892466144802466">"卸载"</string>
+	<string name="ali_clear_user_data_text" msgid="5597622864770098388">"清除数据"</string>
+	<string name="ali_app_factory_reset" msgid="6635744722502563022">"卸载更新"</string>
+	<string name="ali_auto_launch_enable_text" msgid="2630656657744196691">"您已选择在默认情况下对某些操作启动此应用程序。"</string>
+	<string name="ali_auto_launch_disable_text" msgid="7800385822185540166">"无默认设置"</string>
+	<string name="ali_clear_activities" msgid="7408923511535174430">"清除默认设置"</string>
+	<string name="ali_unknown" msgid="1592123443519355854">"未知"</string>
+	<string name="ali_sort_order_alpha" msgid="8622029358896599842">"按字母排序"</string>
+	<string name="ali_sort_order_size" msgid="7024513286636502362">"按大小排序"</string>
+	<string name="ali_manage_space_text" msgid="8852711522447794676">"管理空间"</string>
+	<string name="ali_filter_apps_all" msgid="5142129378749391876">"全部"</string>
+	<string name="ali_filter_apps_third_party" msgid="7786348047690140979">"已下载"</string>
+	<string name="ali_filter_apps_running" msgid="7767071454371350486">"正在运行"</string>
+	<string name="ali_filter_apps_onsdcard" msgid="1477351142334784771">"存储卡中"</string>
+	<string name="ali_recompute_size" msgid="7722567982831691718">"正在重新计算大小&#8230;"</string>
+	
+	<string name="ali_clear_data_dlg_text" msgid="8368035073300828451">"确定要将应用程序的所有数据永久清除吗？清除的内容包括：所有文件、设置、账号、数据库等。"</string>
+	<string name="ali_dlg_ok" msgid="2402639055725653590">"确定"</string>
+	<string name="ali_dlg_confirm_delete">"确认清除"</string>
+	<string name="ali_dlg_cancel" msgid="1674753358972975911">"取消"</string>
+	<string name="ali_app_not_found_dlg_title" msgid="8458335716378083713">"找不到应用程序"</string>
+	
+	<string name="ali_app_factory_reset_dlg_text" msgid="438395129140568893">"确定要卸载该应用程序的所有更新？"</string>
+	
+	<string name="ali_clear_failed_dlg_text" msgid="7943411157007320290">"无法清除应用程序数据"</string>
+	<string name="ali_security_settings_desc" msgid="3116027624526915561">"此应用程序有权访问手机上的以下内容："</string>
+	<string name="ali_computing_size" msgid="1599186977475211186">"正在计算&#8230;"</string>
+	<string name="ali_invalid_size_value" msgid="1901940003700269523">"无法计算包大小"</string>
+	<string name="ali_version_text" msgid="9189073826278676425">"版本 <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+	
+	
+	
+	
+	<string name="ali_insufficient_storage" msgid="8566913062094452962">"存储空间不足。"</string>
+	<string name="ali_does_not_exist" msgid="837163572898468245">"该应用程序不存在。"</string>
+	<string name="ali_app_forward_locked" msgid="5747805144210389585">"该应用程序受版权保护。"</string>
+	<string name="ali_invalid_location" msgid="4934491353200240499">"指定的安装位置无效。"</string>
+	<string name="ali_system_package" msgid="1030561474413022831">"无法在外部媒体上安装系统更新。"</string>
+	<string name="ali_force_stop_dlg_title" msgid="4289453224368188476">"任务停止确认"</string>
+	<string name="ali_force_stop_dlg_text" msgid="3381302041569982075">"将停止运行该任务，释放内存，加速系统运行，确定要停止吗？"</string>
+	
+	<string name="ali_move_app_failed_dlg_text" msgid="8824246817947643697">"无法移动应用程序。<xliff:g id="REASON">%1$s</xliff:g>"</string>
+	
+	
+	
+	<string name="ali_confirm_stop_stop" msgid="7382363913280993331">"停止"</string>
+	<string name="ali_language_keyboard_settings_title" msgid="3455826933385341107">"输入法设置"</string>
+	
+	
+	<string name="ali_ime_security_warning" msgid="812267421486877917">"该输入法可能会收集您输入的所有文字，包括密码和信用卡号码等个人数据。它源自 <xliff:g id="IME_APPLICATION_NAME">%1$s</xliff:g> 应用程序。是否要使用该输入法？"</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_input_methods_settings_label_format" msgid="6002887604815693322">"<xliff:g id="IME_NAME">%1$s</xliff:g>设置"</string>
+	
+	
+	
+	<string name="ali_development_settings_title" msgid="6719732334835420989">"开发"</string>
+	
+	<string name="ali_enable_adb" msgid="7982306934419797485">"USB 调试"</string>
+	<string name="ali_enable_adb_summary" msgid="4881186971746056635">"连接 USB 后启用调试模式"</string>
+	<string name="ali_keep_screen_on" msgid="1146389631208760344">"保持唤醒状态"</string>
+	<string name="ali_keep_screen_on_summary" msgid="2173114350754293009">"充电时屏幕不会休眠"</string>
+	<string name="ali_allow_mock_location" msgid="2787962564578664888">"允许模拟地点"</string>
+	<string name="ali_allow_mock_location_summary" msgid="317615105156345626">"允许模拟地点"</string>
+	<string name="ali_adb_warning_title" msgid="6234463310896563253">"是否允许 USB 调试？"</string>
+	<string name="ali_adb_warning_message" msgid="5352555112049663033">"USB 调试仅用于开发工作。使用该功能可在计算机和移动设备之间复制数据、在移动设备上安装应用程序而不进行通知，以及读取日志数据。"</string>
+	
+	<string name="ali_battery_history_days" msgid="7110262897769622564">"<xliff:g id="DAYS">%1$d</xliff:g> 天 <xliff:g id="HOURS">%2$d</xliff:g> 小时 <xliff:g id="MINUTES">%3$d</xliff:g> 分 <xliff:g id="SECONDS">%4$d</xliff:g> 秒"</string>
+	<string name="ali_battery_history_hours" msgid="7525170329826274999">"<xliff:g id="HOURS">%1$d</xliff:g> 小时 <xliff:g id="MINUTES">%2$d</xliff:g> 分 <xliff:g id="SECONDS">%3$d</xliff:g> 秒"</string>
+	<string name="ali_battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g> 分 <xliff:g id="SECONDS">%2$d</xliff:g> 秒"</string>
+	<string name="ali_battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> 秒"</string>
+	
+	
+	<string name="ali_power_usage_summary_title" msgid="5180282911164282324">"电量使用情况"</string>
+	<string name="ali_power_usage_summary" msgid="7237084831082848168">"耗电情况"</string>
+	<string name="ali_battery_since_unplugged" msgid="338073389740738437">"拔下电源后的电量消耗情况"</string>
+	<skip />
+	<string name="ali_details_title" msgid="7564809986329021063">"电量使用详情"</string>
+	<string name="ali_details_subtitle" msgid="32593908269911734">"详细使用情况"</string>
+	<string name="ali_controls_subtitle" msgid="390468421138288702">"调配电量"</string>
+	<string name="ali_packages_subtitle" msgid="4736416171658062768">"包括的软件包"</string>
+	<string name="ali_power_data_connection" msgid="3115486941253159785">"移动上网"</string>
+	<string name="ali_power_screen" msgid="2353149143338929583">"显示屏"</string>
+	<string name="ali_power_bluetooth" msgid="4373329044379008289">"蓝牙"</string>
+	<string name="ali_power_cell" msgid="6596471490976003056">"移动网络待机"</string>
+	<string name="ali_power_phone" msgid="5392641106474567277">"语音通话"</string>
+	<string name="ali_power_idle" msgid="9055659695602194990">"手机待机"</string>
+	<string name="ali_usage_type_cpu" msgid="715162150698338714">"CPU 总使用时间"</string>
+	<string name="ali_usage_type_cpu_foreground" msgid="6500579611933211831">"CPU（前台）"</string>
+	<string name="ali_usage_type_gps" msgid="7989688715128160790">"GPS"</string>
+	<string name="ali_usage_type_data_send" msgid="2857401966985425427">"数据已发送"</string>
+	<string name="ali_usage_type_data_recv" msgid="7251090882025234185">"数据已收到"</string>
+	<string name="ali_usage_type_audio" msgid="6957269406840886290">"音频"</string>
+	<string name="ali_usage_type_video" msgid="4295357792078579944">"视频"</string>
+	<string name="ali_usage_type_on_time" msgid="3351200096173733159">"已运行时间"</string>
+	<string name="ali_usage_type_no_coverage" msgid="3797004252954385053">"无信号的时间"</string>
+	<string name="ali_battery_action_app_details" msgid="3275013531871113681">"应用程序信息"</string>
+	<string name="ali_battery_desc_voice" msgid="8980322055722959211">"语音通话所耗的电量"</string>
+	<string name="ali_battery_desc_standby" msgid="3009080001948091424">"手机待机时所耗的电量"</string>
+	<string name="ali_battery_desc_radio" msgid="5479196477223185367">"手机射频所耗的电量"</string>
+	<string name="ali_battery_sugg_radio" msgid="8211336978326295047">"不在信号覆盖范围内时切换到飞行模式，以节约电量"</string>
+	<string name="ali_battery_desc_display" msgid="5432795282958076557">"显示屏和背光所耗的电量"</string>
+	<string name="ali_battery_sugg_display" msgid="3370202402045141760">"降低屏幕亮度，并且/或者缩短屏幕超时时间"</string>
+	<string name="ali_battery_desc_bluetooth" msgid="7535520658674621902">"蓝牙所耗的电量"</string>
+	<string name="ali_battery_sugg_bluetooth_basic" msgid="817276933922157788">"请在未使用蓝牙功能时将其关闭"</string>
+	<string name="ali_battery_desc_apps" msgid="8123202939321333639">"运行应用程序时所耗的电量"</string>
+	<string name="ali_battery_sugg_apps_info" msgid="6065882899391322442">"停止或卸载应用程序"</string>
+	<string name="ali_battery_sugg_apps_gps" msgid="4145005297393800223">"不使用 GPS 时将其关闭"</string>
+	<string name="ali_menu_stats_total" msgid="8973377864854807854">"总使用量"</string>
+	<string name="ali_menu_stats_refresh" msgid="1676215433344981075">"刷新"</string>
+	<string name="ali_process_systemui_label">"状态栏"</string>
+	<string name="ali_process_kernel_label" msgid="3916858646836739323">"YunOS核心组件"</string>
+	<string name="ali_process_mediaserver_label" msgid="6500382062945689285">"YunOS媒体服务组件"</string>
+	<string name="ali_credentials_unlock" msgid="1463040326264133844">"凭证存储密码"</string>
+	<!--<string name="ali_credentials_unlock_hint" msgid="594679530407918031">"当前凭证存储密码（至少8个字符）："</string>-->
+	<string name="ali_credentials_unlock_hint" msgid="594679530407918031">"当前凭证存储密码："</string>
+	<string name="ali_credentials_install_certificates" msgid="177337517568022236">"从存储卡安装"</string>
+	
+	<string name="ali_credentials_set_password" msgid="9104473585811899989">"设置密码"</string>
+	<string name="ali_credentials_reset" msgid="9170150870552453457">"清除存储"</string>
+	
+	<string name="ali_credentials_reset_hint" msgid="819990295796804516">"确认要清除所有凭证吗？"</string>
+	<!--<string name="ali_credentials_old_password" msgid="7553393815538684028">"当前凭证存储密码（至少8个字符）："</string>-->
+	<string name="ali_credentials_old_password" msgid="7553393815538684028">"当前凭证存储密码："</string>
+	<string name="ali_credentials_new_password" msgid="267487774686796938">"新密码："</string>
+	<string name="ali_credentials_confirm_password" msgid="4732250000633424345">"再次输入："</string>
+	<string name="ali_credentials_first_time_hint" msgid="1567821077545346039">"新凭证存储密码（至少8个字符）："</string>
+	<string name="ali_credentials_wrong_password" msgid="7525192410790152041">"请输入正确的密码。"</string>
+	<string name="ali_credentials_reset_warning" msgid="6392481296673345268">"请输入正确的密码。在系统删除该凭证存储之前，您还有 1 次输入正确密码的机会。"</string>
+	<string name="ali_credentials_reset_warning_plural" msgid="454828369803055270">"请输入正确的密码。在系统删除该凭证存储之前，您还有 <xliff:g id="NUMBER">%1$d</xliff:g> 次输入正确密码的机会。"</string>
+	<string name="ali_credentials_passwords_mismatch" msgid="5288565139590031733">"两次密码输入不一致。"</string>
+	<string name="ali_credentials_passwords_empty" msgid="8647631321684363549">"您需要输入并确认密码。"</string>
+	<string name="ali_credentials_password_empty" msgid="8292138152983330473">"请输入密码。"</string>
+	<string name="ali_credentials_erased" msgid="7700309135582200849">"凭证存储已清除"</string>
+	<string name="ali_credentials_enabled" msgid="7588607413349978930">"凭证存储已开启"</string>
+	<string name="ali_credentials_disabled" msgid="7453188089059045380">"凭证存储已关闭"</string>
+	<string name="ali_credentials_setnew_ps_ok" >"密码设置成功，凭证存储已开启"</string>
+	<string name="ali_credentials_change_ps_ok" >"密码设置成功"</string>
+	
+	<string name="ali_active_device_admin_msg" msgid="6930903262612422111">"设备管理器"</string>
+	<string name="ali_remove_device_admin" msgid="3596845261596451437">"取消激活"</string>
+	<string name="ali_no_device_admins" msgid="702695100241728775">"没有可供显示的设备管理器"</string>
+	<string name="ali_add_device_admin_msg" msgid="6246742476064507965">"要激活设备管理器吗？"</string>
+	<string name="ali_add_device_admin" msgid="7133327675884827091">"激活"</string>
+	<string name="ali_device_admin_warning" msgid="1149471041373876923">"激活此管理器可允许应用程序 <xliff:g id="APP_NAME">%1$s</xliff:g> 执行以下操作："</string>
+	<string name="ali_device_admin_status" msgid="7169948053970923035">"此管理器已激活，从而允许应用程序 <xliff:g id="APP_NAME">%1$s</xliff:g> 执行以下操作："</string>
+	
+	
+	
+	
+	
+    <!-- BugID:83947:show alias name weather instead of lock -->
+	<string name="ali_lock">天气</string>
+	<string name="ali_wallpaper">壁纸</string>
+	<string name="ali_wallpaper_selected">当前选择</string>
+	<string name="ali_select_new_wallpaper">选择新的壁纸</string>
+	<string name="ali_lock_screen">锁屏壁纸</string>
+	<string name="ali_home_screen">桌面壁纸</string>
+	
+	<string name="ali_screenautolock">屏幕休眠</string>
+	
+	<string name="ali_screenlightautochange">自动调节亮度</string>
+	
+	
+	
+	<string name="ali_wallpapersetsucess">壁纸已设定成功</string>
+	<string name="ali_callringsetting">来电铃声</string>
+	<string name="ali_smsringsetting">信息铃声</string>
+	<string name="ali_notificationringsetting">其它通知铃声</string>
+	<string name="ali_card1_call_ring_setting">卡1来电铃声</string>
+	<string name="ali_card1_sms_ring_setting">卡1信息铃声</string>
+	<string name="ali_card2_call_ring_setting">卡2来电铃声</string>
+	<string name="ali_card2_sms_ring_setting">卡2信息铃声</string>
+	<string name="ali_card1_picker_Ringtone">卡1来电铃声设置</string>
+	<string name="ali_card1_picker_Notificationtone">卡1信息铃声设置</string>
+	<string name="ali_card2_picker_Ringtone">卡2来电铃声设置</string>
+	<string name="ali_card2_picker_Notificationtone">卡2信息铃声设置</string>
+	<string name="ali_poweronmusic">开关机音乐</string>
+	
+
+	<string name="ali_dial_pad_touch_tone_summary">轻击拨号键盘时播放音效</string>
+    <string name="ali_touch_sounds_summary">轻击屏幕时播放音效</string>
+    <string name="ali_screen_lock_sound_summary">锁定和解锁屏幕时播放音效</string>
+    <string name="ali_power_on_off_sound_summary">开机和关机时播放音乐</string>
+    <string name="ali_vibrate_on_touch_summary">轻击按键或某些动作时振动</string>
+    <string name="ali_bes_aud_enh_summary">耳机使用BesAudEnh效果增强</string>
+    <string name="ali_call_tone_hint_summary">通话时每隔1分钟振动提醒</string>
+
+    <string name="ali_call_tone_hint">通话中时间提醒振动</string>
+
+
+	<string name="ali_suretoon">开启确认</string>
+	<string name="ali_lockscreenoninfo">显示锁屏界面天气信息，需要先开启位置服务</string>
+	
+	
+	
+	
+	<string name="ali_cancel_dialog">"取消"</string>
+	<string name="ali_packmove_tocard">"已移至存储卡"</string>
+	<string name="ali_packmove_tophone">"已移至手机内存"</string>
+	<string name="ali_defaultisclear">"默认设置已清除"</string>
+	<string name="ali_cacheisfree">"缓存已释放"</string>
+	
+	<string name="ali_staticipsettings">"静态IP设置"</string>
+	
+	
+	
+	<string name="ali_credentials_settings">"安全凭证存储"</string>
+	<string name="ali_credentials_settingssum">"设置使用安全凭证和安装证书等"</string>
+	<string name="ali_credentials_clear">"清除确认"</string>
+	<string name="ali_clear_space">"手机垃圾清理"</string>
+	<string name="ali_clear_space_status">"可释放空间:"</string>
+	<string name="ali_clear_space_status_start">"正在计算&#8230;"</string>
+	<string name="ali_onebutton_clear">"一键清理"</string>
+	<string name="ali_clear_space_warntext">"一键清理可清除系统垃圾文件和浏览器缓存。以下应用占用较多系统空间，请点击查看详情并手动清除。"</string>
+	<string name="ali_onebutton_clear_finish">"清理完毕"</string>
+	
+	<string name="ali_display_settings_des">设置壁纸、屏幕亮度等</string>
+	
+	<string name="ali_date_and_time_des">设置时间、日期、时区和格式</string>
+	<string name="ali_language_keyboard_settings_des">设置系统语言及翻译</string>
+	<string name="ali_phone_settings_title">电话</string>
+	<string name="ali_phone_set_title">电话设置</string>
+	<string name="ali_contact_settings_title">联系人</string>
+	<string name="ali_camera_settings_title">相机</string>
+	<string name="ali_sms_settings_title">信息</string>
+
+	<string name="date_picker_dialog_title">设置日期</string>
+	<string name="time_picker_dialog_title">设置时间</string>
+	<string name="diag_ok">确定</string>
+
+	<string name="ali_mail_settings_title">邮箱</string>
+	
+	
+	
+	<string name="ali_ime_settings_title">输入法</string>
+	
+	<string name="ali_location">定位</string>
+	<string name="ali_location_des">设置GPS卫星定位等</string>
+	<string name="ali_language">语言</string>
+	<string name="ali_system_language">系统语言</string>
+	<string name="ali_language_input">语言和输入法</string>
+	<string name="ali_add_other_input">添加输入法</string>
+	
+	<string name="ali_phone_battery">剩余电量</string>
+	<string name="ali_phone_main_battery">主电池剩余电量</string>
+	<string name="ali_phone_vice_battery">副电池剩余电量</string>
+	
+	<string name="ali_phone_state_network">网络</string>
+	
+	
+	
+	
+	
+	<string name="ali_phone_firmware">系统更新</string>
+	
+	
+	<string name="ali_phone_lawright">版权信息</string>
+	<string name="ali_os_version">"YunOS <xliff:g id="VALUE">%s</xliff:g></string>
+	
+	
+	<string name="ali_operator">运营商名称</string>
+	<string name="ali_signal_strength">信号强度</string>
+	<string name="ali_network">手机网络类型</string>
+	<string name="ali_service_state">服务状态</string>
+	<string name="ali_roam">漫游</string>
+	 
+	
+	
+	
+	
+	
+	<string name="ali_phone_identify_1">产品型号</string>
+	<!-- YUNOS BEGIN-->
+	<!-- BugID:5922168 author:jinjiang.wjj date:2015.4.18-->
+	<string name="ali_phone_identify_2">IMEI 1</string>
+	<string name="ali_phone_identify_3">IMEI SV 1</string>
+	<string name="ali_phone_identify_2_SIM2">IMEI 2</string>
+	<string name="ali_phone_identify_3_SIM2">IMEI SV 2</string>
+	<string name="ali_phone_device_serialno">设备序列号</string>
+	<!-- YUNOS END-->
+
+	<string name="ali_phone_law_info">法律信息</string>
+	<string name="ali_phone_privacy">YunOS个人信息保护政策</string>
+	<string name="ali_phone_terms">YunOS服务条款</string>
+	<string name="ali_phone_privacy_url">"http://my.yunos.com/os/program-privacy-zh-cn.html"</string>
+	<string name="ali_phone_terms_url">"http://my.yunos.com/os/program-terms-zh-cn.html"</string>
+       <string name="ali_phone_law_disconnected">"无法连接到网络"</string>
+	
+	<string name="ali_phone_identify_imsi_single">IMSI</string>
+	<string name="ali_phone_identify_6">SIM1_IMSI</string>
+	<string name="ali_phone_identify_7">SIM2_IMSI</string>
+	  
+	
+	<string name="ali_phone_hardware">硬件信息</string>
+	<string name="ali_phone_hardware_cpu">CPU</string>
+	
+	<string name="ali_phone_hardware_memory">运行内存</string>
+	
+	<string name="ali_phone_memory_summary">共<xliff:g id="VALUE">%s</xliff:g>，可用<xliff:g id="VALUE">%s</xliff:g></string>
+	
+	
+	<string name="ali_phone_hardware_5">WLAN MAC地址</string>
+	<string name="ali_phone_hardware_6">蓝牙地址</string>
+
+    <string name="ali_phone_software_version">软件版本</string>
+    <string name="ali_phone_hardware_version">硬件版本</string>
+    <string name="ali_phone_release_date">发布时间</string>
+	<string name="ali_phone_software_system_version">系统版本</string>
+	<string name="ali_phone_software_firmware_version">固件版本</string>
+	<string name="ali_phone_software_update_version">升级版本</string>
+	<string name="ali_phone_software_android_version">兼容安卓版本</string>
+	<!-- <string name="ali_phone_software_android_version">兼容Android <xliff:g id="VALUE">%s</xliff:g>版本</string> -->
+	<string name="ali_phone_software_2">基带版本</string>
+	<string name="ali_phone_software_3">内核版本</string>
+	<string name="ali_phone_software_4">内部版本</string>
+	<string name="ali_phone_restore">还原</string>
+	<string name="ali_phone_restore_1">还原系统设置</string>
+	
+	<string name="ali_phone_restore_2">还原到出厂状态</string>
+	<string name="ali_phone_restore_psw">请输入还原密码1122:</string> 
+	
+	<string name ="ali_phone_restore_1_des">"还原设置项将会对设置中心的所有选项恢复到出厂设置值。\n此操作存在风险，请慎重操作！"</string>
+	<string name ="ali_phone_power_warning_desc">电量过低，为保证系统安全，请充电到10%后再执行该操作。</string>
+	<string name ="ali_phone_warning_title">警告</string>
+	<string name ="ali_phone_restore_progress_text">正在还原设置项&#8230;</string>
+	
+	<string name ="ali_phone_restore_2_desc1">"在还原前，您可将联系人信息、短信和图片等数据备份到云端，以防重要数据丢失。"</string>
+	<string name ="ali_phone_restore_to_aliyunhost">备份到云端</string>
+	<string name ="ali_phone_restore_2_desc2">"请注意：手机还原出厂设置后，安全中心-隐私空间已经加密的文件和图片将无法再打开。请在还原之前自行解密并备份文件。\n还原到出厂状态将清除您手机上的所有数据，包括账号信息，下载的应用程序。但不会清除：系统和应用程序数据，及内置存储卡文件，如音乐和照片等。\n此操作存在风险，请慎重操作！"</string>
+	<string name = "ali_phone_reset_to_factory">还原到出厂状态</string>
+	<string name = "ali_phone_reset_to_factory_psw">请输入还原出厂密码1122:</string>
+	<string name = "ali_password_error">密码错误，请重新输入</string>
+    <string name="ali_yunos_no_network_connection">网络未连接，请先连接网络</string>
+    <string name = "ali_yunos_validate_password_error">密码错误，请重新输入</string>
+    <string name = "ali_yunos_validate_password_error_times">您的密码错误,您还有<xliff:g id="try_times">%d</xliff:g>次尝试机会</string>
+    <string name = "ali_freeze_five_time_tip">您的帐号由于密码输错次数达到上限，已被锁定。请查收短信或邮件解锁，或3小时后重试。</string>
+    <string name = "ali_ssl_time_error">证书验证失败，请检查您的系统时间</string>
+	<string name = "ali_phone_reset_progress_text">正在还原到出厂状态&#8230;</string>
+	<string name = "ali_phone_reboot_text">系统将自动重启&#8230;</string>
+	
+	
+	<string name = "ali_apn_mms_protocal">彩信协议</string>
+	
+	
+	
+	<string name="ali_pickerRingtone">来电铃声设置</string>
+	<string name="ali_pickerNotificationtone">信息铃声设置</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_userapptitle">用户任务</string>
+	<string name="ali_systemapptile">常规任务</string>
+	<string name="ali_force_stop_all_user_app">一键加速</string>
+	<string name="ali_force_stop_all_user_app_confirm">一键加速确认</string>
+	<string name="ali_force_stop_all_user_app_confirm_msg">将关闭部分运行的任务, 清除缓存, 加速系统运行, 确定要加速吗?</string>
+	<string name="ali_force_stop_all_user_app_ok">确定</string>
+	<string name="ali_force_stop_all_user_app_cancel">取消</string>
+	<string name="ali_force_stop_all_user_app_title">一键加速</string>
+	<string name="ali_force_stop_all_user_app_msg">正在系统加速&#8230;</string>
+	<string name="ali_force_stop_all_user_app_result">停止%1$d个任务，释放%2$s内存</string>
+	<string name="ali_clear_data">数据已清除</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_zairuzhong">列表载入中&#8230;</string>
+	
+	<string name="ali_app_manage_header_title">选项</string>
+	<string name="ali_blanklist">无应用</string>
+	
+	<string name="ali_unableview">U盘模式下无法浏览应用列表</string>
+	<string name="ali_notification">通知</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="ali_choose_one_sim_card">选择SIM卡</string>
+	<string name="ali_sim_card_1">SIM卡1</string>
+	<string name="ali_sim_card_2">SIM卡2</string>
+        <string name="ali_sim_1">卡1：</string>
+        <string name="ali_sim_2">卡2：</string>
+	<string name="ali_sim_1_network">卡1网络</string>
+	<string name="ali_sim_2_network">卡2网络</string>
+	<string name="ali_contacts_settings_read_from_sim">从SIM卡导入联系人</string>
+	<string name="ali_contacts_settings_read_from_sim1">从卡1导入联系人</string>
+	<string name="ali_contacts_settings_read_from_sim2">从卡2导入联系人</string>
+	<string name="ali_contacts_settings_put_info_in_sim">从联系人到SIM卡</string>
+	<string name="ali_contacts_settings_put_info_in_sim1">从联系人到卡1</string>
+	<string name="ali_contacts_settings_put_info_in_sim2">从联系人到卡2</string>
+	<string name="ali_choose_sim_callset">通话设置</string>
+	<string name="ali_stk_sim_card1">SIM卡1应用程序</string>
+	<string name="ali_stk_sim_card2">SIM卡2应用程序</string>
+	<string name="ali_dualcard_settings_title">双卡设置</string>
+	<string name="ali_singlecard_settings_title">单卡设置</string>
+	
+	<string name="ali_mms_settings_read_from_sim">从SIM卡导入信息</string>
+	<string name="ali_mms_settings_read_from_sim1">从卡1导入信息</string>
+	<string name="ali_mms_settings_read_from_sim2">从卡2导入信息</string>
+	<string name="ali_dialog_apn_disabled">禁用APN！</string>
+	<string name="ali_dialog_apn_disabled_msg">请关闭飞行模式，以打开APN设置</string>
+	<string name="ali_callset_sim_card1">卡1通话设置</string>
+	<string name="ali_callset_sim_card2">卡2通话设置</string>
+	<string name="ali_lock_sim_disable1">关闭SIM卡1锁定</string>
+	<string name="ali_lock_sim_disable2">关闭SIM卡2锁定</string>
+	<string name="ali_lock_sim_enable1">开启SIM卡1锁定</string>
+	<string name="ali_lock_sim_enable2">开启SIM卡2锁定</string>
+	<string name="ali_credentials_enable_confirm">"启用确认"</string>
+	<string name="ali_credentials_disable_confirm">"停用确认"</string>
+	<string name="ali_credentials_remove_confirm">"删除确认"</string>
+	
+	
+	
+	<string name="ali_appliction_center">应用中心</string>
+	
+	
+	
+	
+	
+	
+	 
+	
+	
+	<string name="ali_close_dialog" msgid="2365884406356986917">"确定"</string>
+	
+	<string name="ali_clear_cache_dlg_text">"将清除缓存，加速系统运行，确定要清除吗？"</string>
+	
+	<string name="ali_law_company">"YunOS版权所有"</string>
+	<string name="ali_power_managemant">"电量"</string>
+	
+	<string name="ali_power_percent_show">"顶部电量百分比样式"</string>
+	
+	<string name="ali_power_saving">省电优化</string>
+	<string name="ali_power_save_mode">"省电模式"</string>
+	
+	<string name="ali_power_save_mode_open">"开启省电模式"</string>
+	<string name="ali_power_save_mode_close">"关闭省电模式"</string>
+	<string name="ali_power_save_mode_opening">"正在开启&#8230;"</string>
+	<string name="ali_power_save_mode_closing">"正在关闭&#8230;"</string>
+	<string name="ali_power_save_mode_auto">"自动调节"</string>
+	<string name="ali_screen_brightness_str">"屏幕亮度"</string>
+	<string name="ali_power_save_title_str">"当前设置状态"</string>
+	<string name="ali_power_save_location_GPS">"GPS卫星定位"</string>
+	<string name="ali_power_save_brightness_min">最低</string>
+	<string name="ali_power_save_brightness_max">最高</string>
+	<string name="ali_power_save_camera_preview_quality">"相机预览画质"</string>
+	<string name="ali_power_save_camera_preview_quality_high">"高"</string>
+	<string name="ali_power_save_camera_preview_quality_low">"低"</string>
+	<string name="ali_development_mode">"开发者模式"</string>
+	<string name="ali_development_mode_summary">"ENG版本才会出现该功能"</string>
+    <string name="ali_bluetooth_pb_remember_choice">"下次不再询问"</string>
+    <string name="ali_bluetooth_pin_values_hint">"通常为 0000 或 1234"</string>
+    <string name="ali_bluetooth_enable_alphanumeric_pin">"PIN 由字母或符号组成"</string>
+    <string name="ali_crypt_keeper_final_desc" product="tablet">
+    "要加密平板电脑吗？此操作不可逆，如果您中断该过程，则会丢失数据。加密过程需要一个小时或更长时间，在此期间，平板电脑会重新启动数次。"
+    </string>
+    <string name="ali_crypt_keeper_final_desc" product="default">
+    "要加密手机吗？此操作不可逆，如果您中断该过程，则会丢失数据。加密过程需要一个小时或更长时间，在此期间，手机会重新启动数次。"
+    </string>
+    <string name="ali_crypt_keeper_button_text" product="tablet">>"加密平板电脑"</string>
+    <string name="ali_crypt_keeper_button_text" product="default">"加密手机"</string>
+    <string name="ali_enter_password">"键入密码以解密存储设备"</string>
+    <string name="ali_crypt_keeper_setup_title">"正在加密"</string>
+    <string name="ali_crypt_keeper_desc" product="tablet">
+    "您可以加密自己的帐户、设置、已下载的应用程序及其数据、媒体和其他文件。加密平板电脑后，您每次开机时都必须输入数字 PIN 或密码才能解密。取消加密的唯一方法就是恢复出厂设置，但这会清除平板电脑上的所有数据。"\n\n"加密过程需要一个小时或更长时间。在开始加密前，需要确保电池有电，并且在加密完成前必须一直连接电源。如果您中断加密过程，会丢失部分或全部数据。"</string>
+    <string name="ali_crypt_keeper_desc" product="default">
+    "您可以加密自己的帐户、设置、已下载的应用程序及其数据、媒体和其他文件。加密手机后，您每次开机时都必须输入数字 PIN 或密码才能解密。取消加密的唯一方法就是恢复出厂设置，但这会清除手机上的所有数据。"\n\n"加密过程需要一个小时或更长时间。在开始加密前，需要确保电池有电，并且在加密完成前必须一直连接电源。如果您中断加密过程，会丢失部分或全部数据。"</string>
+    <string name="ali_crypt_keeper_low_charge_text">"请为电池充电，然后重试。"</string>
+    <string name="ali_crypt_keeper_unplugged_text">"插上充电器，然后重试。"</string>
+    <string name="ali_power_wifi" msgid="2382791137776486974">"WLAN"</string>
+    <string name="ali_trusted_credentials">"受信任的凭证"</string>
+    
+    <string name="ali_hdcp_checking_title">"HDCP 检查"</string>
+    <string name="ali_hdcp_checking_dialog_title">"设置 HDCP 检查行为"</string>
+    <string name="ali_local_backup_password_title">"桌面备份密码"</string>
+    <string name="ali_local_backup_password_summary_none">"桌面完整备份当前未设置保护。"</string>
+    <string name="ali_strict_mode">"严格模式已启用"</string>
+    <string name="ali_strict_mode_summary">"应用程序在主线程上执行长时间操作时闪烁屏幕"</string>
+    <string name="ali_pointer_location">"指针位置"</string>
+    <string name="ali_pointer_location_summary">"屏幕叠加层显示当前触摸数据"</string>
+    <string name="ali_show_touches">"显示触摸操作"</string>
+    <string name="ali_show_touches_summary">"为触摸操作提供视觉提示"</string>
+    <string name="ali_show_screen_updates">"显示屏幕更新"</string>
+    <string name="ali_show_screen_updates_summary">"屏幕上的区域更新时闪烁相应区域"</string>
+    <string name="ali_show_cpu_usage">"显示 CPU 使用情况"</string>
+    <string name="ali_show_cpu_usage_summary">屏幕叠加层显示当前 CPU 使用情况"</string>
+    <string name="ali_force_hw_ui">"强制进行 GPU 渲染"</string>
+    <string name="ali_force_hw_ui_summary">"在应用程序中使用 2D 硬件加速"</string>
+    <string name="ali_window_animation_scale_title">"窗口动画缩放"</string>
+    <string name="ali_transition_animation_scale_title">"过渡动画缩放"</string>
+    <string name="ali_debug_applications_category">"应用程序"</string>
+    <string name="ali_immediately_destroy_activities">"不保留活动"</string>
+    <string name="ali_immediately_destroy_activities_summary">"用户离开后即销毁每个活动"</string>
+    <string name="ali_app_process_limit_title">"后台进程限制"</string>
+    <string name="ali_show_all_anrs">"显示所有“应用程序无响应”(ANR)"</string>
+    <string name="ali_show_all_anrs_summary">"为后台应用程序显示“应用程序无响应”对话框"</string>
+    
+    <string name="ali_crypt_keeper_encrypt_title" product="tablet">"加密平板电脑"</string>
+    <string name="ali_crypt_keeper_encrypt_title" product="default">"加密手机"</string>
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="ali_location_settings_title">"位置服务"</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="ali_bluetooth_connection_permission_request">"蓝牙连接请求"</string>
+    <string name="ali_bluetooth_profile_hid">"输入设备"</string>
+    <string name="ali_bluetooth_hid_profile_summary_use_for">"用于输入"</string>
+    <string name="ali_bluetooth_hid_profile_summary_connected">"已连接到输入设备"</string>
+    <string name="ali_bluetooth_profile_pan_nap">"互联网连接共享"</string>
+    <string name="ali_bluetooth_profile_pan">"互联网访问"</string>
+    <string name="ali_bluetooth_pan_profile_summary_use_for">"用于访问互联网"</string>
+    <string name="ali_bluetooth_pan_nap_profile_summary_connected">"与设备共享本地互联网连接"</string>
+    <string name="ali_bluetooth_pan_user_profile_summary_connected">"连接到设备以访问互联网"</string>
+    <string name="ali_bluetooth_disconnect_all_profiles">"此操作将会断开您与以下设备的连接：&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;"</string>
+    <string name="ali_bluetooth_disconnect_title">"断开连接？"</string>
+    <string name="ali_bluetooth_connected_no_headset_no_a2dp">"已连接（没有手机或媒体信号）"</string>
+    <string name="ali_bluetooth_connected_no_a2dp">"已连接（无媒体）"</string>
+    <string name="ali_bluetooth_connected_no_headset">"已连接（无手机）"</string>
+    <string name="ali_bluetooth_only_visible_to_paired_devices">"仅让已配对的设备检测到"</string>
+    <string name="ali_bluetooth_not_visible_to_other_devices">"不让其他蓝牙设备检测到"</string>
+    <string name="ali_bluetooth_rename_button">"重命名"</string>
+    <string name="ali_bluetooth_rename_device" product="tablet">"重命名平板电脑"</string>
+    <string name="ali_bluetooth_rename_device" product="default">"重命名手机"</string>
+    <string name="ali_bluetooth_enter_pin_other_device">"您可能还需要在另一台设备上输入此 PIN。"</string>
+    <string name="ali_bluetooth_enter_passkey_other_device">"您可能还需要在另一台设备上输入此匹配密钥。"</string>
+    <string name="ali_bluetooth_display_passkey_pin_msg">"要与 <xliff:g id="BOLD1_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD1">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> 设备配对，请在该设备上键入：<xliff:g id="BOLD2_1">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="PASSKEY">%2$s</xliff:g><xliff:g id="END_BOLD2">&lt;/b&gt;</xliff:g>，然后按回车键。"</string>
+    <string name="ali_bluetooth_phonebook_request">"电话簿请求"</string>
+    <string name="ali_bluetooth_connection_dialog_text">"要连接到“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”吗？"</string>
+    <string name="ali_bluetooth_pb_acceptance_dialog_text">"“%1$s”希望访问您的联系人和通话记录。要向“%2$s”授予访问权吗？"</string>
+    <string name="ali_bluetooth_connection_notif_message">"触摸可连接到“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”。"</string>
+    
+    
+    <string name="ali_bluetooth_visibility_timeout">检测超时设置</string>
+    <string name="ali_bluetooth_disable_profile_title">"要停用个人资料吗？"</string>
+    <string name="ali_bluetooth_disable_profile_message">此操作将停用：&lt;br&gt;&lt;b&gt;<xliff:g id="PROFILE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;来自：&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/b&gt;"</string>
+    <string name="ali_bluetooth_ask_lasting_discovery" product="tablet">"您平板电脑上的某个应用程序想让其他蓝牙设备“一直可检测到”您的平板电脑。允许该程序执行相应操作吗？"</string>
+    <string name="ali_bluetooth_ask_lasting_discovery" product="default">"您手机上的某个应用程序想让其他蓝牙设备“一直可检测到”您的手机。允许该程序执行相应操作吗？"</string>
+    <string name="ali_bluetooth_ask_enablement_and_lasting_discovery" product="tablet">"您平板电脑上的某个应用程序想要打开蓝牙，以便其他设备可检测到您的平板电脑。允许该程序打开蓝牙吗？"</string>
+    <string name="ali_bluetooth_ask_enablement_and_lasting_discovery" product="default">"您手机上的某个应用程序想要打开蓝牙，以便其他设备可检测到您的手机。允许该程序打开蓝牙吗？"</string>
+    
+    <string name="ali_try_again">"请重试。"</string>
+    <string name="ali_crypt_keeper_failed_title">"加密失败"</string>
+    <string name="ali_crypt_keeper_failed_summary" product="tablet">
+      "加密过程中断，无法完成。因此，您无法再访问平板电脑上的数据了。"\n\n"要继续使用您的平板电脑，必须将其恢复出厂设置。恢复出厂设置后对平板电脑进行设置时，您可以将之前备份到云帐户的所有数据恢复到平板电脑中。"
+    </string>
+    <string name="ali_crypt_keeper_failed_summary" product="default">
+      "加密过程中断，无法完成。因此，您无法再访问手机上的数据了。"\n\n"要继续使用您的手机，必须将其恢复出厂设置。恢复出厂设置后对手机进行设置时，您可以将之前备份到云帐户的所有数据恢复到手机中。"
+    </string>
+    <string name="ali_crypt_keeper_setup_description" product="tablet">"正在加密您的平板电脑（已完成 <xliff:g id="PERCENT">^1</xliff:g>%），请耐心等待。"</string>
+    <string name="ali_crypt_keeper_setup_description" product="default">"正在加密您的手机（已完成 <xliff:g id="PERCENT">^1</xliff:g>%），请耐心等待。"</string>
+    <string name="ali_crypt_keeper_cooldown">"<xliff:g id="DELAY">^1</xliff:g> 秒后重试。"</string>
+    <string name="ali_cryptkeeper_return_to_call">"返回通话"</string>
+    <string name="ali_cryptkeeper_emergency_call">"紧急呼救"</string>
+    <string name="ali_crypt_keeper_dialog_need_password_message">"您必须先设置锁定屏幕 PIN 或密码才能开始加密过程。"</string>
+    <string name="ali_crypt_keeper_dialog_need_password_title">"没有锁定屏幕 PIN 或密码"</string>
+    <string name="ali_crypt_keeper_confirm_title">"确认加密"</string>
+    <string name="ali_local_backup_password_summary_change">"选择以更改或删除桌面完整备份的密码"</string>
+    <string name="ali_misc_files">"其他文件"</string>
+    <string name="ali_misc_files_selected_count">"已选择 <xliff:g id="NUMBER">%1$d</xliff:g> 个，共 <xliff:g id="TOTAL">%2$d</xliff:g> 个"</string>
+    <string name="ali_misc_files_selected_count_bytes">"<xliff:g id="NUMBER">%1$s</xliff:g>，共 <xliff:g id="TOTAL">%2$s</xliff:g>"</string>
+    <string name="ali_memory_apps_usage">"应用程序"</string>
+    <string name="ali_memory_dcim_usage">"图片、视频"</string>
+    <string name="ali_memory_music_usage">"音频文件（音乐、铃声、播客等）"</string>
+    <string name="ali_memory_downloads_usage">"下载内容"</string>
+    <string name="ali_memory_media_misc_usage">"其他"</string>
+    <string name="ali_internal_storage">"系统空间"</string>
+    <string name="ali_memory_calculating_size">"正在计算&#8230;"</string>
+    <string name="ali_battery_stats_on_battery">"电池电量已用时间：<xliff:g id="TIME">%1$s</xliff:g>"</string>
+    <string name="ali_battery_stats_charging_label">"正在充电"</string>
+    <string name="ali_battery_stats_screen_on_label">"屏幕已开启"</string>
+    <string name="ali_battery_stats_gps_on_label">"GPS 已启用"</string>
+    <string name="ali_battery_stats_wifi_running_label">"WLAN"</string>
+    <string name="ali_battery_stats_wake_lock_label">"唤醒"</string>
+    <string name="ali_battery_stats_phone_signal_label">"移动网络信号"</string>
+    <string name="ali_battery_desc_wifi" msgid="1702486494565080431">"WLAN 所耗的电量"</string>
+    <string name="ali_battery_sugg_wifi" msgid="7542345142282261691">"不使用 WLAN 或其不可用时将其关闭"</string>
+    <string name="ali_percentage">"<xliff:g id="NUMBER">%d</xliff:g>%%"</string>
+    <string name="ali_power_usage_level_and_status">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATUS">%2$s</xliff:g>"</string>
+    <string name="ali_history_details_title">"历史记录详细信息"</string>
+    <string name="ali_usage_type_wake_lock">"保持唤醒状态"</string>
+    <string name="ali_usage_type_wifi_running">"WLAN 正在运行"</string>
+    
+    <string name="ali_trusted_credentials_system_tab">"系统"</string>
+    <string name="ali_trusted_credentials_user_tab">"用户"</string>
+    <string name="ali_trusted_credentials_enable_label">"启用"</string>
+    <string name="ali_trusted_credentials_disable_label">"停用"</string>
+    <string name="ali_trusted_credentials_remove_label">"删除"</string>
+    <string name="ali_trusted_credentials_enable_confirmation">"要启用该系统 CA 证书吗？"</string>
+    <string name="ali_trusted_credentials_disable_confirmation">"要停用该系统 CA 证书吗？"</string>
+    <string name="ali_trusted_credentials_remove_confirmation">"要永久删除该用户 CA 证书吗？"</string>
+    <string name="ali_tether_settings_title_all">"网络共享与便携式热点"</string>
+    <string name="ali_tether_settings_title_usb_bluetooth">"网络共享"</string>
+    <string name="ali_tether_settings_title_bluetooth">"蓝牙共享网络"</string>
+    <string name="ali_tether_settings_title_wifi" msgid="3277144155960302049">"便携式热点"</string>
+    <string name="ali_wifi_tether_enabled_subtext">"名称： <xliff:g id="NETWORK_SSID">%1$s</xliff:g>\n密码： <xliff:g id="NETWORK_PASSWORD">%2$s</xliff:g>"</string>
+    <string name="ali_no_password">"无"</string>
+    <string name="ali_delete">"删除"</string>
+    <string name="ali_select_all">"全选"</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	<!--WIFI BEGIN  -->
+		<string name="ali_wifi_more">更多设置</string>
+		<string name="ali_wifi_list_category_title">WLAN 列表</string>
+		<string name="ali_wifi_setting_sleep_policy_error" msgid="5103670439972135148">"设置休眠策略时出现问题。"</string>
+		<string name="ali_status_unavailable" msgid="7862009036663793314">"不可用"</string>
+		<string name="ali_radioInfo_unknown" msgid="737385314432468266">"未知"</string>
+		<string name="ali_wifi_add_network" msgid="1671334951296205616">"添加网络"</string>
+		<string name="ali_wifi_add_network_existed">"已经存在"</string>
+		<string name="ali_wifi_save" msgid="3331121567988522826">"保存"</string>
+		<string name="ali_connect_to_blank">"%1$s"</string>
+		
+		<string name="ali_wifi_security" msgid="6603611185592956936">"安全性："</string>
+		<string name="ali_wifi_signal" msgid="5514120261628065287">"信号强度："</string>
+		<string name="ali_wifi_speed" msgid="3526198708812322037">"连接速度："</string>
+		<string name="ali_wifi_ip_address" msgid="1440054061044402918">"IP 地址："</string>
+		
+		<string name="ali_wifi_connect" msgid="1076622875777072845">"连接"</string>
+		<string name="ali_wifi_cancel" msgid="6763568902542968964">"取消"</string>
+		<string name="ali_wifi_details">"详细信息"</string>
+		<string name="ali_wifi_wapi_unsupport">"WAPI硬件不支持。"</string>
+		<string name="ali_wifi_wapi_cert_error">"WAPI证书不能为空。"</string>
+		<string name="ali_wifi_ap_password_error">&quot;密码格式错误&quot;</string>
+		<string name="ali_wifi_ap_password_error_wep">&quot;密码必须是5位或13位ASCII字符，或者10位或26位十六进制字符&quot;</string>
+		<string name="ali_wifi_ap_password_error_wapi_hex">&quot;密码必须是8到64位十六进制字符&quot;</string>
+		<string name="ali_wifi_ap_password_error_wpa">&quot;密码必须是8到63位ASCII字符或64位十六进制字符&quot;</string>
+		<string name="ali_wifi_ap_password_error_wapi">&quot;密码必须是8到63位ASCII字符&quot;</string>
+		<string name="ali_proxy_error_invalid_port" msgid="1816315605424943626">"您输入的端口无效。"</string>
+		<string name="ali_wifi_ip_settings">"IP 设置"</string>
+		<string name="ali_wifi_ip_settings_invalid_ip_address">"请输入有效的 IP 地址。"</string>
+		<string name="ali_wifi_ip_settings_invalid_gateway">"请输入有效的网关地址。"</string>
+		<string name="ali_wifi_ip_settings_invalid_network_prefix_length">"请输入长度在 0 到 32 之间的网络前缀。"</string>
+		
+		<string name="ali_wifi_ip_settings_invalid_dns1">"请输入有效的 域名 1 地址。"</string>
+		<string name="ali_wifi_ip_settings_invalid_dns2">"请输入有效的 域名 2 地址。"</string>
+		
+		<string name="ali_proxy_error_invalid_host" msgid="9120776460063182119">"您输入的主机名无效。"</string>
+		<string name="ali_proxy_error_invalid_exclusion_list">"您输入的对象格式不正确，输入多个对象时请使用逗号进行分隔。"</string>
+		<string name="ali_proxy_error_empty_port" msgid="3525734169948795417">"您必须填写端口字段。"</string>
+		<string name="ali_proxy_error_empty_host_set_port" msgid="2451694104858226781">"如果主机字段为空，则端口字段必须为空。"</string>
+		<string name="ali_wifi_unchanged" msgid="3410422020930397102">"（未更改）"</string>
+		<string name="ali_wifi_unspecified" msgid="5431501214192991253">"（未指定）"</string>
+		<string name="ali_wifi_settings_wifi_connect">&quot;连接&quot;</string>
+		<string name="ali_wifi_ap_ssid_error">&quot;SSID不能为空&quot;</string>
+		<string name="ali_wifi_open_conneced">"已连接"</string>
+		<string name="ali_wifi_status_conneced">"已连接"</string>
+		<string name="ali_wifi_error" msgid="3207971103917128179">"出错"</string>
+		<string name="ali_wlanapsum">"以热点方式分享移动数据连接"</string>
+		
+		<string name="ali_wifi_starting" msgid="6710266609710860129">"正在开启&#8230;"</string>
+		<string name="ali_wifi_stopping" msgid="5952909472548218348">"正在关闭&#8230;"</string>
+		<string name="ali_start_done">&quot;开启&quot;</string>
+		<string name="ali_stop_done">&quot;关闭&quot;</string>
+		<string name="ali_wlanapsettingplus">"配置便携式WLAN热点"</string>
+		<string name="ali_wifi_apsetting_confirm">&quot;确定&quot;</string>
+		<string name="ali_wifi_empty_list_wifi_off">"打开 WLAN，查看可用网络。"</string>
+		<string name="ali_wifi_empty_list_wifi_on">"未找到可用网络"</string>
+
+		<string name="ali_wifi_wps_overlap_error">"检测到另一个 WLAN 保护会话。请过几分钟后重试。"</string>
+		<string name="ali_wifi_fail_to_scan" msgid="6194542252808587669">"无法通过扫描查找网络"</string>
+		<string name="ali_wifi_wps_setup_title">"WPS 设置"</string>
+		<string name="ali_wifi_wps_failed">"无法启动 WPS，请重试。"</string>
+		<string name="ali_wifi_wps_in_progress">"正在进行 WPS，这一过程可能需要数十秒的时间"</string>
+		<string name="ali_wifi_wps_pin_output">"键入接入点上的 PIN <xliff:g id="WPS_PIN">%1$s</xliff:g>"</string>
+		<string name="ali_wifi_wps_complete">"WPS 已成功启动。正在连接网络&#8230;"</string>
+		<string name="ali_wifi_wps_failed_generic">"WPS 未能成功启动。请过几分钟后重试。"</string>
+		<string name="ali_wifi_wps_onstart_pin">"请在 WLAN 路由器上输入 PIN <xliff:g id="NUMBER">%1$s</xliff:g>。设置过程最多可能需要两分钟时间才能完成。"</string>
+		<string name="ali_wifi_wps_onstart_pbc">"请按下您路由器上的 WLAN 保护设置按钮，它可能会标为“WPS”或包含此符号："</string>
+		<string name="ali_wifi_wps_failed_wep">"无线路由器安全设置 (WEP) 不受支持"</string>
+		<string name="ali_wifi_wps_failed_tkip">"无线路由器安全设置 (TKIP) 不受支持"</string>
+		<string name="ali_wifi_wps_connected">"已连接到 WLAN 网络 <xliff:g id="NETWORK_NAME">%s</xliff:g>"</string>
+		<string name="ali_wifi_wps_failed_overlap">"检测到其他 WPS 会话。请过几分钟后重试。"</string>
+		<string name="ali_wifi_wps_setup_msg">"正在启动 WPS&#8230;"</string>
+		<string name="ali_wifi_wps_onstart_pad">"正在向无线路由器发送pin请求&#8230;"</string>
+		<string name="ali_wifi_security_short_eap">802.1x</string>
+		<string name="ali_wifi_security_short_eap2">WPA2企业</string>
+		<string name="ali_wifi_security_eap">"WPA企业"</string>
+		<string name="ali_wifi_security_eap2">"WPA2企业"</string>
+		<string name="ali_wifi_security_short_wpa">WPA</string>
+		<string name="ali_wifi_security_short_wpa2">WPA2</string>
+		<string name="ali_wifi_security_wep">WEP</string>	
+		<string name="ali_wifi_security_short_wep">WEP</string>
+		<string name="ali_wifi_security_wpa">WPA个人</string>
+		<string name="ali_wifi_security_wpa2">WPA2个人</string>
+		<string name="ali_wifi_security_wapi_psk">WAPI PSK</string>
+		<string name="ali_wifi_security_wapi_cert">WAPI CERT</string>
+		<string name="ali_wifi_security_none">&quot;开放&quot;</string>
+		<string name="ali_wifi_not_in_range" msgid="1136191511238508967">"不在范围内"</string>
+		<string name="ali_wifi_disabled_valid_failure">"验证失败"</string>
+		<string name="ali_wifi_disabled_password_failure">"身份验证出现问题"</string>
+		<string name="ali_wifi_disabled_network_failure">"已停用状况不佳的互联网连接"</string>	
+		<string name="ali_wifi_disabled_generic">"已停用"</string>
+		<string name="ali_wifi_remembered" msgid="8426719916135950136">"已保存"</string>
+		<string name="ali_wifi_secured_first_item">"通过 <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g> 进行保护"</string>
+		<string name="ali_wifi_secured_second_item">"，通过 <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g> 进行保护"</string>
+		<string name="ali_wifi_wps_available_first_item">"可使用 WPS"</string>
+		<string name="ali_wifi_wps_available_second_item">" （可使用 WPS）"</string>
+		
+		<string name="ali_wifi_quick_toggle_title" msgid="874495178395350104">"WLAN"</string>
+		
+		<string name="ali_wifi_ssid" msgid="641393708309146745">"网络SSID:"</string>
+		
+		<string name="ali_wifi_password" msgid="5948219759936151048">"密码:"</string>
+		<string name="ali_credentials_password_too_short" msgid="7502749986405522663">"密码至少为8个字符。"</string>
+		<string name="ali_wifi_show_password" msgid="4235237470701732009">"显示密码"</string>
+		<string name="ali_wifi_settings_category" msgid="2810363951104753710">"WLAN设置"</string>
+		<string name="ali_wifi_security_title" >"安全性"</string>
+		
+		
+		<string name="ali_wifi_eap_method_title">"EAP方法"</string>
+		
+		<string name="ali_wifi_hex_password">"十六进制密码"</string>
+		
+		<string name="ali_please_select_phase2_title">"第二阶段身份认证"</string>
+		
+		<string name="ali_wifi_eap_ca_cert_title">"根证书"</string>
+		
+		<string name="ali_wifi_eap_user_cert_title">"客户证书"</string>
+		<string name="ali_wifi_eap_identity" msgid="4359453783379679103">"身份:"</string>
+		<string name="ali_wifi_eap_anonymous" msgid="2989469344116577955">"匿名身份:"</string>
+		<string name="ali_wifi_wapi_as_cert">&quot;AS证书：&quot;</string>
+		<string name="ali_wifi_wapi_user_cert">&quot;用户证书：&quot;</string>
+		<string name="ali_wifi_show_advanced">"显示高级选项"</string>
+		<string name="ali_wifi_network_setup">WPS:</string>
+		
+		<string name="ali_proxy_settings_title">"代理设置:"</string>
+		<string name="ali_proxy_warning_limited_support">"该浏览器使用 HTTP 代理，但其他应用程序可能不会使用。"</string>
+		<string name="ali_proxy_hostname_label" msgid="7531298584350977540">"主机名:"</string>
+		
+		<string name="ali_proxy_port_label" msgid="2623639656638472491">"端口:"</string>
+		
+		<string name="ali_proxy_exclusionlist_label">"对以下对象绕过代理："</string>
+		
+		<string name="ali_wifi_ip_settings_titlebar" msgid="4345739031248760326">"IP 设置"</string>
+		
+		<string name="ali_wifi_gateway" msgid="163914742461092086">"网关："</string>
+		
+		<string name="ali_wifi_network_prefix_length">"网络前缀长度："</string>
+		
+		<string name="ali_wifi_netmask" msgid="4520635321425529085">"网络掩码："</string>
+		<string name="ali_wifi_dns1" msgid="7344118050720080045">"域名 1："</string>
+		<string name="ali_wifi_dns2" msgid="1368601006824882659">"域名 2："</string>
+		
+		
+		<string name="ali_wifi_ap_disconnect">&quot;断开该网络&quot;</string>
+		<string name="ali_wifi_ap_forget">&quot;清除相关设置&quot;</string>
+		<string name="ali_wifi_ap_update_titile">"&quot;修改密码和相关设置&quot;</string>
+		<string name="ali_ping_test_label" msgid="7255376471490860631">"运行 ping 测试"</string>
+		<string name="ali_radio_info_ping_ipaddr" msgid="498747917793263530">"Ping IP 地址："</string>
+		<string name="ali_radio_info_ping_hostname" msgid="3054888474808217853">"Ping 主机名 (www.aliyun.com)："</string>
+		<string name="ali_radio_info_http_client_test" msgid="5733604021077701555">""HTTP 客户端测试："</string>
+		<string name="ali_wifi_advanced_titlebar" msgid="5419052271935350999">"高级"</string>
+		<string name="ali_wifi_setting_sleep_policy_title" msgid="1367731352485585528">"休眠策略"</string>
+		<string name="ali_wifi_enable_watchdog_service">"不采用状况差的连接"</string>
+		<string name="ali_wifi_enable_watchdog_service_summary">"仅在 WLAN 互联网连接状况良好时使用 WLAN 网络"</string>
+        <string name="ali_wifi_advanced_mac_address_title" msgid="6571335466330978393">"MAC 地址"</string>
+        <string name="ali_wifi_advanced_ip_address_title">"IP 地址"</string>
+        <string name="ali_wifi_advanced_gateway_title">网关</string>
+        <string name="ali_wifi_tether_settings_title" msgid="3749063216348284432">"热点设置"</string>
+		<string name="ali_wifi_tether_settings_share">"通过WLAN热点将移动网络共享给其他设备"</string>
+		<string name="ali_usb_tether_settings_share">"通过USB让电脑使用本手机网络"</string>
+		<string name="ali_bluetooth_tether_settings_share">"蓝牙配对后将移动网络共享给其他设备"</string>
+		<string name="ali_wlanap">"WLAN热点"</string>
+		
+		<string name="ali_wifi_notify_open_networks" msgid="3755768188029653293">"询问是否加入新网络"</string>
+		
+		
+		<string name="ali_wifi_access_points" msgid="2664629396767022441">"扫描无线网络"</string>
+		<string name="ali_wifi_menu_advanced" msgid="7522252991919573664">""高级"</string>
+		
+		
+		<string name="ali_wifi_settings" msgid="4746946030627213196">"WLAN"</string>
+		
+		<string name="ali_wlanapsetting">"便携式热点"</string>
+		
+		
+		
+		
+		<string name="ali_wifi_ip_settings_invalid_ip" msgid="8057085083985255580">"请输入有效的 IP 地址。"</string>
+		<string name="ali_wifi_use_static_ip" msgid="2133464242165642230">"使用静态 IP"</string>
+		<string name="ali_staticipsettingssum">"填写IP地址、网关、域名等"</string>
+		<string name="ali_ipnotset">"未设置"</string>
+		<string name="ali_wifi_p2p_settings_title" msgid="400503541488064638">"WLAN 直连"</string>
+		
+		
+		<string name="ali_wifi_p2p_menu_search" msgid="3436429984738771974">"搜索设备"</string>
+		<string name="ali_wifi_p2p_menu_searching" msgid="2396704492143633876">"正在搜索…"</string>
+		<string name="ali_wifi_p2p_menu_rename" msgid="8448896306960060415">"重命名设备"</string>
+		<string name="ali_wifi_p2p_peer_devices" msgid="299526878463303432">"对等设备"</string>
+		<string name="ali_wifi_p2p_remembered_groups" msgid="3847022927914068230">"已保存的群组"</string>
+		<string name="ali_wifi_p2p_failed_connect_message" msgid="8921447388048243547">"无法连接。"</string>
+		<string name="ali_wifi_p2p_failed_rename_message" msgid="2562182284946936380">"无法重命名设备。"</string>
+		<string name="ali_wifi_p2p_disconnect_title" msgid="3216846049677448420">"断开连接？"</string>
+		<string name="ali_wifi_p2p_disconnect_message" msgid="8227342771610125771">"如果断开连接，您与<xliff:g id="PEER_NAME">%1$s</xliff:g>的连接将中断。"</string>
+		<string name="ali_wifi_p2p_disconnect_multiple_message" msgid="3283805371034883105">"如果断开连接，您与<xliff:g id="PEER_NAME">%1$s</xliff:g>和另外 <xliff:g id="PEER_COUNT">%2$s</xliff:g> 台设备的连接将中断。"</string>
+		<string name="ali_wifi_p2p_cancel_connect_title" msgid="255267538099324413">"取消邀请？"</string>
+		<string name="ali_wifi_p2p_cancel_connect_message" msgid="7477756213423749402">"要取消连接<xliff:g id="PEER_NAME">%1$s</xliff:g>的邀请吗？"</string>
+		<string name="ali_wifi_p2p_delete_group_message" msgid="834559380069647086">"取消保存此群组？"</string>
+		<string name="ali_wifi_p2p_connect_info">"连接信息"</string>		
+		<string name="ali_wifi_display_settings_title">"无线显示"</string>
+		<string name="ali_wifi_display_settings_summary">"实现与其他设备的无线投影"</string>		
+		
+		
+		<string name="ali_wifi_display_search_for_devices">"扫描无线设备"</string>
+		<string name="ali_wifi_display_searching_for_devices">"正在搜索…"</string>
+		<string name="ali_wifi_display_no_devices_found">"找不到附近的无线显示设备"</string>
+		<string name="ali_wifi_display_paired_devices">"已配对的显示设备"</string>
+		<string name="ali_wifi_display_available_devices">"扫描无线设备"</string>
+		
+		
+		<string name="ali_wifi_display_status_available">"可用"</string>
+		
+		<string name="ali_wifi_display_disconnect_title">"是否断开连接？"</string>
+		<string name="ali_wifi_display_disconnect_text">"此操作将会断开您与以下设备的连接：<br/><b><xliff:g id="DEVICE_NAME">%1$s</xliff:g></b>"</string>
+		<string name="ali_wifi_display_options_title">"无线显示选项"</string>
+		<string name="ali_wifi_display_options_forget">"取消保存"</string>
+		<string name="ali_wifi_display_options_done">"完成"</string>
+
+		<string name="ali_wifi_sync_dialog_title">开启系统备份，已联WLAN永不消失</string>
+		<string name="ali_wifi_sync_dialog_sub">担心连接好的WLAN网络需要重新设置？开启系统备份，更换手机WLAN还能自动连上！</string>
+
+    <string name="ali_wifi_security_cmcc">加密方式</string>
+    <string name="ali_proxy_exclusionlist_label_cmcc">代理排除列表</string>
+    <string name="ali_wifi_priority_label">优先级</string>
+    <string name="ali_status_unavailable">"不可用"</string>
+    <string name="ali_wifi_gateway">"网关"</string>
+    <string name="ali_wifi_network_netmask">网络掩码</string>
+    <string name="ali_wifi_connect_ap_title">网络自动连接</string>
+    <string name="ali_wifi_connect_ap_summary">开启 WLAN 时自动连接到最近使用过的接入点</string>
+    <string name="ali_wifi_connect_type_title">设置网络连接方法</string>
+    <string name="ali_wifi_signal_found_msg">当前 WLAN 连接信号较弱,是否切换到其他 WLAN 网络?</string>
+    <string name="ali_wifi_priority_type_title">手动设定接入点的优先级</string>
+    <string name="ali_wifi_priority_type_summary">允许手动设定每个接入点的优先级</string>
+    <string name="ali_wifi_priority_settings_title">接入点优先级设定</string>
+    <string name="ali_wifi_priority_settings_summary">点击设定各接入点的优先级</string>
+    <string name="ali_wifi_priority_changed">原优先级=<xliff:g id="old_value">%s</xliff:g>,新设定=<xliff:g id="new_value">%s</xliff:g></string>
+    <string name="ali_wifi_priority_settings_label">优先级设定</string>
+    <string name="ali_wifi_configured_ap_list">已保存的接入点列表</string>
+    <string name="ali_confirm_title">确认</string>
+    <string name="ali_msg_wlan_signal_found">发现 WLAN 信号 %s, 您是否要使用该 WLAN 网络？ 使用该网络将部分中断当前的数据连接。</string>
+    <string name="ali_msg_wlan_signal_found_manul">发现 WLAN 信号, 是否要使用 WLAN 网络？</string>
+    <string name="ali_gemini_default_sim_auto">"自动"</string>
+    <string name="ali_configed_access_points">信任接入点</string>
+    <string name="ali_new_access_points">未知接入点</string>
+				
+	<!--WIFI END  -->
+
+	<!--VPN BEGIN  -->
+		
+		
+		<string name="ali_vpn_connect">连接</string>
+		<string name="ali_vpn_no_ca_cert">"(不验证服务器)"</string>
+		<string name="ali_vpn_no_server_cert">"(来自服务器)"</string>
+		
+		<string name="ali_vpn_create">"添加"</string>
+		<string name="ali_vpn_edit">"修改 VPN 网络"</string>
+		<string name="ali_vpn_connect_to" msgid="2541409082892684362">"连接到 <xliff:g id="NAME">%s</xliff:g>"</string>
+		
+		<string name="ali_vpn_field_not_set_summary" >"未设置"</string>
+		<string name="ali_vpn_error_miss_entering" msgid="5377667978602483250">"必须输入<xliff:g id="CODE">%s</xliff:g>。"</string>
+		<string name="ali_vpn_error_miss_selecting" msgid="4890780825580511345">"必须选择<xliff:g id="OPTION">%s</xliff:g>。"</string>
+		<string name="ali_vpn_a_name" msgid="8445736942405283509">"虚拟专用网名称"</string>
+		<string name="ali_vpn_a_vpn_server" msgid="5960906152125045853">"服务器地址"</string>
+		<string name="ali_vpn_a_username" msgid="6664733641993968692">"用户名"</string>
+		<string name="ali_vpn_a_password" msgid="1537213632501483753">"密码"</string>
+		<string name="ali_vpn_a_ipsec_presharedkey" msgid="1255301923217898418">"IPSec 预共享密钥"</string>
+		<string name="ali_vpn_a_user_certificate" msgid="8943983437956898649">"用户证书"</string>
+		<string name="ali_vpn_dns_server_error">输入的DNS服务器错误</string>
+		<string name="ali_vpn_route_error">输入的转发路线错误</string>
+		<string name="ali_vpn_dlg_prompt_title">提示</string>
+		
+		
+		
+		<string name="ali_vpn_back_button" msgid="192036339792734970">"返回"</string>
+		
+		
+		<string name="ali_vpn_menulist_disconnect">断开连接</string>
+		<string name="ali_vpn_menulist_connect">连接</string>
+		<string name="ali_vpn_menulist_edit">修改</string>
+		<string name="ali_vpn_menulist_delete">删除</string>
+		<string name="ali_vpn_profile_replaced" msgid="587435576816273815">"已更改“<xliff:g id="NAME">%s</xliff:g>”"</string>
+		<string name="ali_vpn_profile_added" msgid="9061017910337129840">"已添加“<xliff:g id="NAME">%s</xliff:g>”"</string>
+		<string name="ali_vpn_confirm_profile_deletion" msgid="8679536635364177239">"确定要删除此虚拟专用网吗？"</string>
+		<string name="ali_vpn_delete_cancel_confirm">删除确认</string>
+		<string name="ali_vpn_connected">"已连接"</string>
+		<string name="ali_vpn_disconnected">"未连接"</string>
+		<string name="ali_connect_failed">&quot;连接失败&quot;</string>
+		<string name="ali_vpn_disconnect_success">"已断开连接"</string>
+		<string name="ali_vpn_connect_success">"已连接成功"</string>
+		<string name="ali_vpn_connect_time_out">"VPN连接超时"</string>
+		<string name="ali_vpn_menu_cancel" msgid="7234451214611202868">"取消"</string>
+		<string name="ali_vpn_menu_connect" msgid="1089399414463784218">"连接到网络"</string>
+		<string name="ali_vpn_retry_button_text">"重试"</string>
+		<string name="ali_vpn_reconnect_confirm">"无法连接到网络，是否重试?"</string>
+		
+		
+		
+		
+		<string name="ali_vpn_choose_type">"网络类型"</string>
+		<string name="ali_vpn_name" msgid="1550918148476193076">"名称"</string>
+		<string name="ali_vpn_server" msgid="1141754908824209260">"服务器"</string>
+		<string name="ali_vpn_mppe">"PPP 加密 (MPPE)"</string>
+		
+		
+		<string name="ali_vpn_l2tp_secret" msgid="529359749677142076">"L2TP 密钥"</string>
+		
+		<string name="ali_vpn_ipsec_identifier">"IPSec 标识符"</string>
+		<string name="ali_vpn_ipsec_secret">"IPSec 预共享密钥"</string>
+		<string name="ali_vpn_ipsec_user_cert">"IPSec 用户证书"</string>
+		<string name="ali_vpn_ipsec_ca_cert">"IPSec CA 证书"</string>
+		<string name="ali_vpn_ipsec_server_cert">"IPSec 服务器证书"</string>
+		<string name="ali_vpn_search_domains">"DNS 搜索域"</string>
+		<!--<string name="ali_vpn_dns_servers">"DNS 服务器（8.8.8.8）"</string>
+		<string name="ali_vpn_routes">"转发路线（10.0.0.0/8）"</string>-->
+		<string name="ali_vpn_dns_servers">"DNS 服务器"</string>
+		<string name="ali_vpn_routes">"转发路线"</string>
+		<string name="ali_vpn_username">"用户名"</string>
+		<string name="ali_vpn_password">"密码"</string>
+		<string name="ali_vpn_save_login">"保存帐户信息"</string>
+		<string name="ali_vpn_settings_activity_title" msgid="7276864950701612579">"VPN 设置"</string>
+		<string name="ali_vpns" msgid="3148141862835492816">"VPN"</string>
+		<string name="ali_vpn_type_title" msgid="6392933604218676224">"添加虚拟专用网"</string>
+		
+		<string name="ali_vpn_settings_title" msgid="7327468307909556719">"VPN 设置"</string>
+		<string name="ali_vpn_lock_screen">"VPN 锁屏"</string>
+		<string name="ali_vpn_lock_screen_password_title">"使用VPN提示"</string>
+		<string name="ali_vpn_lock_screen_password">"VPN可能会用到安全证书，为了保护您的隐私安全，请先设置锁屏密码。"</string>
+		<string name="ali_vpn_lock_screen_password_set_button">"设置"</string>
+		
+		
+		<string name="ali_user_feedback">反馈</string>
+		<string name="ali_settings_videos_title">视频</string>
+		
+		<string name="ali_gps_all_close" msgid="5007659014828162881">"关闭"</string>
+		<string name="ali_gps_only_network" msgid="5007659014828162881">"网络"</string>
+		<string name="ali_gps_only_gps" msgid="5007659014828162881">"GPS"</string>
+		<string name="ali_gps_network_and_gps" msgid="5007659014828162881">"GPS，网络"</string>
+		
+		<string name="vpn_name_hint" >"请输入名称"</string>
+		<string name="vpn_server_hint" >"请输入服务器地址"</string>
+		<string name="vpn_username_hint">"请输入用户名"</string>
+		<string name="vpn_password_hint">"请输入密码"</string>
+	<!--VPN END  -->
+	<!-- STORAGE BEGIN -->
+		<string name="ali_summary_storage_manage">SD 卡存储器: %1$s</string>
+		<string name="ali_external_sd">外置存储卡</string>
+		<string name="ali_internal_sd">内置存储卡</string>
+		<string name="ali_dialog_sdcard_title">"更改存储位置"</string>
+		<string name="ali_dialog_sdcard_message">"如果改变存储位置，手机将重启,是否继续？"</string>
+		<string name="ali_unmount_inform_text">"系统将会卸载 SD 卡。"</string>
+		<string name="ali_sd_ejecting_title">"正在卸载"</string>
+		<string name="ali_sd_ejecting_summary">"正在卸载"</string>
+		<string name="ali_storage_settings_title">"存储设置"</string>
+		
+	<!-- STORAGE END -->
+	<!-- USB MODE BEGIN-->
+		
+		
+		
+	<!-- USB MODE END -->
+
+		
+		
+		
+		
+		
+		
+		
+    <string name="ali_aboutphone_user_experience_program">同意用户体验改进计划</string>
+    <string name="ali_aboutphone_user_experience_program_summary">我们会统计您对产品各项功能的使用情况，用以提升我们的产品和服务。整个过程将遵循隐私政策。</string>
+<!--CALLFEATURE BEGIN -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--CALLFEATURE END -->
+<string name="ali_confirm_delete">确认删除</string>
+	<string name="ali_system_space">系统空间</string>
+	<string name="ali_fdn_settings">"固定拨号"</string>
+	<string name="ali_fdn_settings_card1">"卡1固定拨号""</string>	
+	<string name="ali_fdn_settings_card2">"卡2固定拨号""</string> 
+	
+   <!-- Bluetooth ORG by tongfei.changtf -->
+    <string name="ali_bluetooth_enable">"打开右侧开关以启动蓝牙"</string>
+    <string name="ali_bluetooth_device_visibility">"设备可被发现"</string>
+    <string name="ali_bluetooth_advanced_settings">"蓝牙高级设置"</string>
+    <string name="ali_bluetooth_profile_ftp">"文件传输"</string>
+    <string name="ali_bluetooth_ftp_profile_summary_use_for">"用于文件传输"</string>
+    <string name="ali_bluetooth_ftp_profile_summary_connected">"已连接到文件传输"</string>
+    <!-- Bluetooth ORG END -->
+    
+    <!-- USB Settings by tongfei.changtf -->
+    <string name="ali_usb_ums_title">"USB 存储设备"</string>
+    <string name="ali_usb_ums_summary">"将手机作为U盘进行文件复制"</string>
+    <string name="ali_usb_bicr_title">内置光驱</string>
+    <string name="ali_usb_bicr_summary">云手机助手安装光盘</string>
+    <string name="ali_usb_charge_title">只充电</string>
+    <string name="ali_usb_charge_summary">将停用其他一切USB功能，加速USB充电，并降低电量消耗</string>
+    <string name="ali_usb_mtp_title">"媒体设备 (MTP)"</string>
+    <string name="ali_usb_mtp_summary">"让您可以在 Windows 上传输媒体文件，或在 Mac 上使用文件传输应用来传输文件"</string>
+    <string name="ali_usb_ptp_title">"相机 (PTP)"</string>
+    <string name="ali_usb_ptp_summary">"让您可以使用相机软件传输照片，或在不支持 MTP 的计算机上传输任何文件"</string>
+    
+    <string name="ali_usb_storage_title">"已连接 USB"</string>
+    <string name="ali_usb_storage_message">"您已通过 USB 连接至计算机。如果您要在计算机与 USB 存储设备之间复制文件，请点击按钮。"</string>
+    <string name="ali_dlg_confirm_kill_storage_users_title">"打开 USB 存储设备"</string>
+    <string name="ali_dlg_confirm_kill_storage_users_text">"如果您打开 USB 存储设备，您正在使用的某些应用将会停止，并且在您关闭 USB 存储设备前都将无法使用。"</string>
+    <string name="ali_dlg_error_title">"USB 操作失败"</string>
+    <string name="ali_usb_storage_error_message">"使用 USB 存储设备作为 USB 大容量存储设备时出现问题。"</string>
+    <string name="ali_usb_storage_button_mount">"打开 USB 存储设备"</string>
+    <string name="ali_usb_storage_stop_button_mount">"关闭 USB 存储设备"</string>
+    <string name="ali_usb_storage_stop_title">"USB 存储设备正在使用中"</string>
+    <string name="ali_usb_storage_stop_message">"在关闭 USB 存储设备前，请从计算机中卸载（“弹出”） USB 存储设备。"</string>
+    <!-- USB Settings end -->
+
+    <!-- Display Settings by kaike.zkk -->
+    <string name="ali_display_desktop">桌面及壁纸</string>
+    <string name="ali_display_screen">屏幕</string>
+    <string name="ali_display_system">系统</string>
+    <!-- Display Settings END -->
+
+    <!-- Font Size Settings BEGIN -->
+    <string name="ali_font_size">字体大小</string>
+    <string name="ali_font_inprogress">正在设置字体大小…</string>
+    <string name="ali_font_size_reset">重设</string>
+    <string name="ali_font_size_message_reset">恢复字体大小为默认设置</string>
+    <!-- Font Size Settings END -->
+    <!-- USB OTG -->
+    <string name="ali_mount">"挂载"</string>
+    <string name="ali_unmount">"卸载"</string>
+    <string name="ali_not_mounted">"未挂载"</string>
+    <!-- OTG END -->
+
+	<!-- YUNOS BEGIN -->
+	<!-- ##modules(Settings)
+	##date:2013.05.03 ##author:aihua.shenah@aliyun-inc.com-->
+	<string name="ali_current_main_battery">当前主电池</string>
+	<!-- YUNOS END-->
+
+    <!-- Account Settings -->
+    <string name="ali_setting_for_account">帐号</string>
+    <string name="ali_setting_for_sync">云同步</string>
+  
+      <!-- Pay Settings -->
+    <string name="ali_pay_settings_title">支付</string>
+    <!-- SchedulePowerOnOff-->
+    <string name="ali_schedule_power_on_off_settings_title">定时开关机</string>
+   
+    	<!--AudioProfile Settings by aihua.shenah-->
+	<string name="ali_sound_category_calls_title">"来电"</string>
+	<string name="ali_sound_category_messages_title">"信息"</string>
+	<string name="ali_sound_category_notification_title">"通知"</string>
+	<string name="ali_ring_summary">铃声</string>
+	<string name="ali_ring_vibrate_summary">铃声与振动</string>
+	<string name="ali_silent_summary">仅静音</string>
+	<string name="ali_meeting_summary">仅振动</string>
+	<string name="ali_outdoor_summary">最大铃声与振动</string>
+	<string name="ali_general_settings_title">标准</string>
+	<string name="ali_silent_settings_title">静音</string>
+	<string name="ali_meeting_settings_title">会议</string>
+	<string name="ali_outdoor_settings_title">户外</string>
+	<string name="ali_phone_vibrate_summary">"在来电话时发出振动"</string>
+	
+	
+	
+	
+	<string name="ali_audio_profile_category_predefine_title">预设模式</string>
+	<string name="ali_audio_profile_category_custom_title">自定义模式</string>
+	
+	<string name="ali_audio_profile_add">添加</string>
+	
+	<string name="ali_audio_profile_rename">重命名</string>
+	<string name="ali_audio_profile_delete">删除</string>
+	
+	<string name="ali_audio_profile_message_reset">情景模式中的所有选项恢复到出厂设置值，且删除所有自定义模式，确认要还原吗？</string>
+	<string name="ali_audio_profile_message_rename">请输入情景模式名称</string>
+	<string name="ali_audio_profile_message_name_error">该情景模式已存在</string>
+	<string name="ali_audio_profile_message_name_length_wrong">名称中必须至少包含一个字符</string>
+	
+	<string name="ali_audio_profile_message_overflow">只允许添加6个自定义情景模式</string>
+	<string name="ali_sound_enhancement_title">音效改善</string>
+    	<string name="ali_music_plus_summary">针对耳机的音效改善</string>
+    	<string name="ali_all_volume_title">"音量"</string>
+    	<string name="ali_sound_category_sound_title">"常规"</string> 
+    	
+    	
+    	<string name="ali_sound_category_feedback_title">"系统"</string>
+    	<string name="ali_sound_effects_enable_title">"触摸提示音"</string>
+	
+	<string name="ali_volume_ring_description">"铃声和信息"</string>
+	<string name="ali_volume_notification_description">"通知"</string>
+	<string name="ali_volume_alarm_description">"闹钟"</string>
+	
+	
+	<string name="ali_add">新建</string>
+	<string name="ali_reset">还原</string>
+	<string name="ali_delete_confirmation">确认删除</string>
+	<string name="ali_audio_profile_set"><xliff:g id="profile">%s</xliff:g> 设置</string>
+	<!--AudioProfile Settings by aihua.shenah end-->
+    <!-- YUNOS_SETTINGS_END  aihua.shenah -->
+    
+    <!--debug layout  start-->
+    <string name="ali_debug_layout" msgid="5981361776594526155">"显示布局边界"</string>
+    <string name="ali_debug_layout_summary" msgid="2001775315258637682">"显示剪辑边界、边距等。"</string>
+    <!--debug layout  end-->
+    <string name="ali_debug_app" msgid="8349591734751384446">"选择调试应用"</string>
+    <string name="ali_debug_app_not_set" msgid="718752499586403499">"未设置任何调试应用"</string>
+    <string name="ali_debug_app_set" msgid="2063077997870280017">"调试应用：<xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+    <string name="ali_wait_for_debugger" msgid="1202370874528893091">"等待调试器"</string>
+    <string name="ali_wait_for_debugger_summary" msgid="1766918303462746804">"调试应用会在执行前等待附加调试器"</string>
+    <string name="ali_animator_duration_scale_title" msgid="3406722410819934083">"动画程序时长调整"</string>
+     <string name="ali_show_hw_screen_updates" msgid="5036904558145941590">"显示 GPU 视图更新"</string>
+    <string name="ali_show_hw_screen_updates_summary" msgid="1115593565980196197">"使用 GPU 进行绘图时闪烁显示窗口中的视图"</string>
+    <string name="ali_show_hw_layers_updates" msgid="5645728765605699821">"显示硬件层更新"</string>
+    <string name="ali_show_hw_layers_updates_summary" msgid="5296917233236661465">"Flash 硬件层在进行更新时会显示为绿色"</string>
+    <string name="ali_show_hw_overdraw" msgid="1136884304711318251">"显示 GPU 过度绘制"</string>
+    <string name="ali_show_hw_overdraw_summary" msgid="4295714000923082647">"从最优到最差：蓝、绿、淡红、红"</string>
+    <string name="ali_disable_overlays" msgid="2074488440505934665">"停用 HW 叠加层"</string>
+    <string name="ali_disable_overlays_summary" msgid="3578941133710758592">"始终使用 GPU 进行屏幕合成"</string>
+    <string name="ali_force_msaa" msgid="7920323238677284387">"强制启用 4x MSAA"</string>
+    <string name="ali_force_msaa_summary" msgid="9123553203895817537">"在 OpenGL ES 2.0 应用中启用 4x MSAA"</string>
+    <string name="ali_enable_opengl_traces_title" msgid="6790444011053219871">"启用 OpenGL 跟踪"</string>
+    <string name="ali_track_frame_time" msgid="6146354853663863443">"GPU 呈现模式分析"</string>
+    <string name="ali_track_frame_time_summary" msgid="447577515813970287">"计算 adb shell dumpsys gfxinfo 中的呈现时间"</string>
+    <string name="ali_no_application" msgid="2813387563129153880">"无"</string>
+     <string name="ali_select_application" msgid="5156029161289091703">"选择应用"</string>
+     
+     <string name="ali_current_backup_pw_prompt" msgid="7735254412051914576">"在此键入您当前的完整备份密码"</string>
+    <string name="ali_new_backup_pw_prompt" msgid="8755501377391998428">"在此键入新的完整备份密码"</string>
+    <string name="ali_confirm_new_backup_pw_prompt" msgid="3238728882512787864">"在此重新键入新的完整备份密码"</string>
+    <string name="ali_backup_pw_set_button_text" msgid="2387480910044648795">"设置备份密码"</string>
+    <string name="ali_backup_pw_cancel_button_text" msgid="8845630125391744615">"取消"</string>
+	<string name="ali_screensaver_timeout_zero_summary" msgid="1274235565189071582">"永不"</string>
+	<string name="ali_theme_and_wallpepper_title" msgid="5981361776594526155">"主题和壁纸"</string>
+	<string name="ali_account_and_sync_title" msgid="2001775315258637682">"帐号与支付"</string>
+	<string name="ali_networks_connect_title" msgid="5981361776594526155">"无线和网络"</string>
+	<string name="ali_apps_settings_title" msgid="2001775315258637682">"应用设置"</string>
+	<string name="ali_security_settings_title" msgid="5981361776594526155">"安全"</string>
+	
+	<string name="ali_phone_system_info_title" msgid="2001775315258637682">"系统信息"</string>
+	
+	
+	<string name="ali_share_mobile_data_summary" msgid="5981361776594526155">"设置手机网络共享"</string>
+	<string name="ali_vpn_summary" msgid="2001775315258637682">"设置虚拟专用网络"</string>
+	
+	
+	
+    <!--Strings of DevCertManager Begin-->
+    <string name="ali_dev_cert_manager">开发者证书管理</string>
+    <string name="ali_dev_cert_developer_certification">ADB证书</string>
+    <string name="ali_dev_cert_devCertReq">点击安装</string>
+    <string name="ali_dev_cert_devCertView">查看证书</string>
+    
+    <string name="ali_dev_cert_devCertUinstall">卸载证书</string>
+    <string name="ali_dev_cert_begin_date">安装日期</string>
+    <string name="ali_dev_cert_expire_date">失效日期</string>
+    <string name="ali_dev_cert_certSubject">证书所有者</string>
+    <string name="ali_dev_cert_certDownloading">正在下载&#8230;</string>
+    <string name="ali_dev_cert_certUnInstalling">正在卸载&#8230;</string>
+    
+    
+    
+    
+
+    <string name="ali_dev_cert_SUCCESS">执行成功</string>
+    <string name="ali_dev_cert_SYSTEM_ERROR">系统运行出错</string>
+    <string name="ali_dev_cert_FAILED">执行不成功</string>
+    <string name="ali_dev_cert_COMMAND_MISSED">命令丢失</string>
+    <string name="ali_dev_cert_COMMAND_EXECUTE_FAILED">命令执行结果错误</string>
+    <string name="ali_dev_cert_COMMAND_EXECUTE_ERROR">命令执行失败</string>
+    <string name="ali_dev_cert_IM_PARAM_ERROR">参数不正确</string>
+    <string name="ali_dev_cert_DB_ERROR">数据库错误</string>
+    
+    <string name="ali_dev_cert_ACCOUNT_NOT_EXSITS">未注册开发者账号</string>
+    <string name="ali_dev_cert_ACCOUNT_VALIDATE_ERROR">云帐号或设备号不能为空</string>
+    <string name="ali_dev_cert_CREATE_CERT_ERROR">创建证书文件异常</string>
+    <string name="ali_dev_cert_DOWN_CERT_REQ_ILLEGAL">证书下载请求不合法</string>
+    <string name="ali_dev_cert_REVOKE_CERT_REQ_ILLEGAL">证书吊销请求不合法</string>
+    <string name="ali_dev_cert_REVOKE_CERT_STATUS_ILLEGAL">证书吊销状态不合法</string>
+    <string name="ali_dev_cert_ACCOUNT_DEVICE_REPEAT">帐号下终端重复</string>
+    <string name="ali_dev_cert_ACCOUNT_DEVICE_LIMIT">终端超过限制50个</string>
+    
+    <string name="ali_dev_cert_GET_YUNOS_ACCOUNT_FAILED">获取用户云账号失败！</string>
+    <string name="ali_dev_cert_GET_UUID_FAILED">获取手机UUID号失败！</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN">登录云账号</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN_REMINDER">云账号尚未登录，现在登陆？</string>
+    <string name="ali_dev_cert_BUTTON_OK">确定</string>
+    <string name="ali_dev_cert_BUTTON_CANCEL">取消</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN_SUCCESSFUL">登录成功！</string>
+    <string name="ali_dev_cert_YUNOS_LOGIN_FAILED">登录失败！</string>
+    <string name="ali_dev_cert_CERT_NOT_EXISTS">证书不存在！</string>
+    <string name="ali_dev_cert_CERT_DOWNLOAD_FAILED">证书下载失败！</string>
+    <string name="ali_dev_cert_CERT_DOWNLOAD_EXCEPTION">证书下载过程出现异常</string>
+    <string name="ali_dev_cert_CERT_UNINSTALL">卸载</string>
+    <string name="ali_dev_cert_CERT_UNINSTALL_REMAINDER">卸载后将无法使用常规ADB功能，确定卸载？</string>
+    <string name="ali_dev_cert_CERT_UNINSTALL_FAILED">证书卸载失败！</string>
+    <string name="ali_dev_cert_GET_SERVER_INFO_FAILED">获取服务器信息失败,请稍后重试！</string>
+    <string name="ali_dev_cert_GET_USER_CERT_INFO_FAILED">未获取到此账号的证书信息,请检查当前登录账号！</string>
+    <string name="ali_dev_cert_SERVER_NOT_RETURN_UNINSTALL">服务器未应答卸载请求！</string>
+    <string name="ali_dev_cert_DOWNLOAD_SUCCESSFUL">证书下载成功，详细信息点击查看证书！</string>
+    <string name="ali_dev_cert_UNINSTALL_SUCCESSFUL">证书卸载成功，需重新安装请点击安装证书！</string>
+    
+    
+    
+    <string name="ali_dev_cert_OPERATION_FAILED">操作失败</string>
+    <string name="ali_dev_cert_STATUS_OK">OK</string> 
+    <string name="ali_dev_cert_adb_info">ADB证书信息</string>
+    <string name="ali_developer_certificate_manager">开发者证书管理</string>
+    <string name="ali_about_developer_certificate">关于开发者证书</string>
+    <string name="ask_connect_wifi">WLAN未连接,前去设置?</string>
+    <string name="ali_dev_cert_norepeat_operation">正在处理，请勿重复操作！</string>
+    <string name="ali_dev_cert_token_expire">云账号token失效，请重新登录</string>
+    
+    <string name="ali_about_cert_bedeveloper_title">申请成为开发者</string>
+    <string name="ali_about_cert_bedeveloper">\t\t\t目前使用邮件方式申请成为开发者，申请人需要将申请邮件发至<b>appmarket@service.alibaba.com</b>，YunOS客服人员将在1个工作日内邮件回复申请结果。申请成为开发者邮件要求如下格式:\n\t\t\t<b>邮件标题：xxx申请成为YunOS开发者\n\t\t\t邮件正文：\n\t\t\t开发者姓名：xxx\n\t\t\t开发者身份证号：xxx\n\t\t\t云帐号：xxx\n\t\t\t开发者联系电话：xxx\n\t\t\t开发者联系邮箱：xxx\n\t\t\t开发者支付宝账号：xxx\n\t\t\t开发者联系地址（可选）：xxx\n\t\t\t开发者申请描述（可选）：xxx</b></string>
+    <string name="ali_about_cert_download_title">申请下载证书</string>
+    <string name="ali_about_cert_download">\t\t\t申请成为开发者获得审批后，登录云账号，然后运行开发者证书管理应用，点击申请安装，完成证书申请和安装。\n\t\t\t完成安装后，即可用Google Eclipse ADT连接调试手机。\n\t\t\t开发者证书管理应用位于<b>设置\t->\t关于本机\t->\t开发者证书管理</b></string>
+    <string name="ali_about_cert_view_title">查看证书</string>
+    <string name="ali_about_cert_view">\t\t\t登录云账号，然后运行开发者证书管理应用，点击查看证书，查看证书信息。</string>
+    <string name="ali_about_cert_uninstall_title">卸载证书</string>
+    <string name="ali_about_cert_uninstall">\t\t\t登录云账号，然后运行开发者证书管理应用，点击查看证书，在证书信息页面点击卸载证书，卸载已安装证书。</string>
+    <!--Strings of DevCertManager End-->
+    <!-- YUNOS BEGIN for window switch animation  by jia.wj -->
+    
+    <!-- YUNOS END for window switch animation  by jia.wj -->
+    <!--YUI BEGIN-->
+    <string name="ali_wifi_guide_open">开启WLAN</string>
+    <string name="ali_wifi_guide_close">关闭WLAN</string>
+    <string name="ali_wifi_guide_access_points">扫描网络</string>
+	<string name="ali_toggle_open">开</string>
+    <string name="ali_toggle_close">关</string>
+    <string name="ali_setting_more">更多</string>
+    <string name="ali_wifi_guide_skip">跳过</string>
+    <string name="ali_wifi_guide_next">下一步</string>
+	<!--YUI END-->
+    <string name="gemini_voice_call">"语音电话"</string>
+    <string name="gemini_msg">"信息"</string>
+    <string name="gemini_default_sim_title">"默认设置"</string>
+    <string name="gemini_sim_mode_progress_deactivating_message">正在停用…</string>
+    <string name="gemini_sim_mode_progress_activating_message">正在启用…</string>
+    <string name="gemini_sim_info_editor_name_dup_title">"保存失败"</string>
+    <string name="gemini_sim_info_editor_name_dup_msg">"SIM 卡命名重复"</string>
+    <string name="gemini_default_sim_always_ask">"总是询问"</string>
+
+    <string name="ali_audio_profile_settings_title">"声音"</string>
+    <string name="ali_lockscreen_weather_title">天气</string>
+    <string name="ali_account_settings_title">帐号</string>
+    <string name="ali_pay_settings_title">支付</string>
+    <string name="ali_cloud_services_title">云服务</string>
+    <string name="ali_manageapplications_title">"应用安装与管理"</string>
+    <string name="ali_about_phone_title">关于本机</string>
+    <string name="ali_phone_firmware_update_title">系统更新</string>
+    <string name="ali_phone_settings_title">电话</string>
+    <string name="ali_sms_settings_title">信息</string>
+    <string name="ali_contact_settings_title">联系人</string>
+    <string name="ali_camera_settings_title">相机</string>
+    <string name="ali_mail_settings_title">邮箱</string>
+    <string name="ali_application_center_title">应用中心</string>
+    <string name="ali_notification_title">通知栏</string>
+
+    <!-- for No Disturb featue -->
+    <string name="disturb_settings">勿扰模式</string>
+    <string name="disturb_settings_manual_switch_title">手动启用</string>
+    <string name="disturb_settings_manual_switch_summary">勿扰模式启动后，来电将被挂断，提醒将被设为静音，而状态栏中将出现月亮图标</string>
+    <string name="disturb_settings_manual_interval_title">持续时间</string>
+    <string name="disturb_settings_manual_interval_value_hour"><xliff:g>%1$d</xliff:g>小时</string>
+    <string name="disturb_settings_manual_interval_value_min"><xliff:g>%1$d</xliff:g>分钟</string>
+    <string name="disturb_settings_time_select_dialog_title">持续时间</string>
+    <string name="disturb_settings_manual_interval_changed_toast">此设定将在下次手动启动勿扰模式时生效</string>
+    <string name="disturb_settings_alarm_setting_title">定时设置</string>
+    <string name="disturb_settings_timer_switch_title">定时启动/退出</string>
+    <string name="disturb_settings_timer_switch_summary">勿扰模式会在设定时间段自动启动/退出</string>
+    <string name="disturb_settings_time_setting_title">时段设置</string>
+    <string name="disturb_settings_time_setting_summary"><xliff:g>%1$s</xliff:g>开启，<xliff:g>%2$s</xliff:g>退出</string>
+    <string name="disturb_settings_time_setting_summary_morrow"><xliff:g>%1$s</xliff:g>开启，次日<xliff:g>%2$s</xliff:g>退出</string>
+    <string name="disturb_settings_options_title">其它选项</string>
+    <string name="disturb_settings_airplane_mode_title">开启飞行模式</string>
+    <string name="disturb_settings_airplane_mode_summary">开启勿扰模式时，同时开启飞行模式</string>
+    <string name="disturb_settings_data_connection_title">关闭数据连接</string>
+    <string name="disturb_settings_data_connection_summary">开启勿扰模式时，同时关闭数据连接</string>
+    <string name="disturb_settings_repeated_call_title">重复来电</string>
+    <string name="disturb_settings_repeated_call_summary">开启后，同一号码在三分钟内的第二个来电不会被挂断</string>
+    <string name="disturb_settings_vip_contacts_title">允许这些人来电</string>
+    <string name="disturb_settings_notification">勿扰模式已开启，将于<xliff:g>%1$s</xliff:g>自动退出</string>
+    <string name="disturb_settings_time_unreasonable_toast">设置的时间不合理，请重新设置</string>
+    <string name="disturb_settings_time_from">从 <xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_time_to">到 <xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_time_to_morrow">到 次日<xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_time_am">上午<xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_time_pm">下午<xliff:g>%1$s</xliff:g></string>
+    <string name="disturb_settings_tomorrow">次日</string>
+    <string name="disturb_settings_options_changed_toast">选项已更改，将在下次开启勿扰模式时生效</string>
+    <string name="disturb_settings_allow_all_summary">通讯录所有人来电不会被挂断</string>
+    <plurals name="disturb_settings_vip_summary">
+        <item quantity="other"><xliff:g>%1$d</xliff:g>位重要联系人来电不会被挂断</item>
+    </plurals>
+    <string name="ali_disturb_allow_all">通讯录中所有人</string>
+    <string name="ali_disturb_vip">重要联系人</string>
+    <string name="ali_disturb_vip_list">重要联系人名单</string>
+    <string name="ali_edit_disturb_vip_summary">最大数量%1$d位，目前已添加%2$d位</string>
+    <string name="ali_disturb_add_vip_tip">重要联系人最大数量为(%d)位，请重新设置</string>
+    <string name="ali_disturb_no_vip_contacts">无重要联系人</string>
+
+    <string name="ali_lock_screen_settings_finger_lock_title">三指解锁</string>
+    <string name="ali_lock_screen_settings_more_title">锁屏高级设置</string>
+	<!--change ali_lock_screen_settings_switch_title from 锁屏壁纸轮播 to 杂志锁屏 by lichengfeng for doov 20160607 begin -->
+    <string name="ali_lock_screen_settings_switch_title">杂志锁屏</string>
+	<!--change ali_lock_screen_settings_switch_title from 锁屏壁纸轮播 to 杂志锁屏 by lichengfeng for doov 20160607 end -->
+    <string name="ali_lock_screen_settings_switch_summary">订阅和自动更换锁屏壁纸</string>
+    <string name="ali_lock_screen_settings_finger_lock_summary">锁屏界面上三指一捏解锁</string>
+    <string name="ali_unlock_set_show_option_title">显示锁屏划屏界面</string>
+    <string name="ali_unlock_set_unlock_off_title">无密码解锁</string>
+    <string name="ali_unlock_set_unlock_pattern_title">图案解锁</string>
+    <string name="ali_unlock_set_unlock_password_title">密码解锁</string>
+    <string name="ali_unlock_set_unlock_launch_picker_title">屏幕解锁方式</string>
+    <string name="ali_unlock_set_unlock_mode_pattern">密码</string>
+    <string name="ali_lock_screen_settings_more_weather">默认样式天气动画</string>
+
+    <!-- wujun.ywj begin -->
+    <string name="ali_dualcard_card_absent">未插卡</string>
+    <string name="ali_dualcard_edit_simname_title">自定义SIM卡名称</string>
+    <string name="ali_dualcard_edit_simname_error">SIM卡名称不能为空</string>
+    <string name="ali_dualcard_edit_simname_hint">您可以修改SIM卡名称，方便双卡的区分</string>
+    <string name="ali_apn_new">新建APN</string>
+    <string name="ali_apn_restore">恢复默认设置</string>
+    <!-- wujun.ywj end -->
+    <string name="ali_sound_ringtone_volume">铃声（来电、短信、通知、拍照、截屏）</string>
+    <string name="ali_sound_media_volume">媒体（音乐、视频、游戏）</string>
+    <string name="ali_sound_system_volume">系统（锁屏、按键操作）</string>
+    <string name="ali_sound_alarm_volume">闹钟</string>
+    <string name="ali_sound_voice_call_volume">通话</string>
+    <!-- for CMCC-->
+    <string name="ali_sound_ringtone_volume_cmcc">铃声（来电、短信、通知）</string>
+
+    <string name="ali_wifi_boot_title">"WLAN设置"</string>
+    <string name="ali_wifi_boot_open">"WLAN"</string>
+    <string name="ali_gallery_settings_title">相册</string>
+
+    <string name="ali_ringtone_cancel">取消</string>
+    <string name="ali_ringtone_save">完成</string>
+    <string name="ali_ringtone_system">系统铃声</string>
+    <string name="ali_ringtone_media">媒体铃声</string>
+
+    <string name="ali_security_and_privacy_title">安全和隐私</string>
+
+    <string name="ali_ringtone_usb_status_text">U盘模式下，\n无法加载媒体音乐</string>
+    <string name="ali_ringtone_no_songs">无歌曲</string>
+    <string name="ali_phone_reset_to_factory_account_psw">请输入账号密码:</string>
+    <string name="ali_phone_restore_account_psw">请输入账号密码:</string>
+
+    <string name="ali_ringtone_picker_default_title">铃声设置</string>
+    <string name="ali_network_settings_more">更多网络设置</string>
+    <string name="ali_system_settings_more">更多系统设置</string>
+    <string name="ali_lock_screen_settings_weather_anim">锁屏天气动画</string>
+    <string name="ali_lock_screen_settings_weather_description">开启锁屏壁纸轮播会禁用锁屏天气动画</string>
+    <string name="ali_date_time_auto_network">通过网络校准当前时间和日期</string>
+    <string name="location_mode_sensors_only_description">不消耗网络流量</string>
+
+    <string name="ali_password_safe_title">密码安全</string>
+    <string name="ali_password_safe_mode">密码安全模式</string>
+    <string name="ali_password_safe_mode_summary">输入密码时使用系统密码键盘</string>
+    <string name="ali_remote_connection">远程控制</string>
+    <string name="ali_aoc">系统加速</string>
+    <string name="ali_aoc_warning_message_on">系统将在重启后开启加速模式，开启后会有更快的运行速度，但应用兼容性会稍差。重启过程会较长，请耐心等待。您需要现在开启吗？</string>
+    <string name="ali_aoc_warning_message_off">系统将在重启后关闭加速模式，关闭后会有更好的应用兼性,但运行速度会稍慢。重启过程会较长，请耐心等待。您需要现在关闭吗？</string>
+    <string name="ali_aoc_warning_title_on">开启加速模式</string>
+    <string name="ali_aoc_warning_title_off">关闭加速模式</string>
+    <string name="ali_aoc_reboot">重启</string>
+    <string name="ali_aoc_warning_nospace">没有足够的系统空间切换到加速模式</string>
+    <!--mistake touchmode feature-->
+    <string name="mistake_touch_mode_setting">防误触屏幕</string>
+    <string name="mistake_touch_mode_setting_summary">防止手机在口袋中由于摩擦导致来电话等情况下误操作</string>
+    <string name="ali_on_status">开</string>
+    <string name="ali_off_status">关</string>
+    <string name="ali_devices_section_title">设备</string>
+    <string name="ali_individuation_section_title">个性化</string>
+    <string name="ali_system_section_title">系统</string>
+    <string name="ali_search_title">搜索</string>
+    <!-- high contrast mode feature -->
+    <string name="high_contrast_mode_setting">锁屏阳光模式</string>
+    <string name="high_contrast_mode_setting_summary">开启后，在锁屏界面遮挡手机听筒处，可进入高对比度界面，更清晰地展示时间等信息</string>
+
+    <string name="app_manager">应用安装与管理</string>
+    <string name="app_ram_manager">内存管理</string>
+    <string name="app_in_data_storage">系统空间</string>
+    <string name="app_in_internal_sd">内部存储</string>
+    <string name="app_in_external_sd">外置存储卡</string>
+    <string name="confirm_to_enable">开启确认</string>
+    <string name="install_all_warning">您的手机和个人数据会更容易受到来自未知来源应用的攻击，您将对此造成的手机损坏或数据丢失承担全部责任，确定开启吗？</string>
+    <string name="internal_sdcard_space_low">内部存储卡空间不足，应用的安装位置将由系统决定</string>
+    <string name="system_space_low">系统空间不足，应用的安装位置将由系统决定</string>
+    <string name="external_sdcard_space_low">外部存储卡空间不足，应用的安装位置将由系统决定</string>
+    <string name="ali_desktop_settings_title">桌面</string>
+    <string name="install_unknown_applications_summary">允许安装非应用中心来源的应用</string>
+    <!--app freeze-->
+    <string name="app_freeze">应用冻结</string>
+    <string name="app_share">应用分享</string>
+    <string name="unfreeze">解冻</string>
+    <string name="freeze">冻结</string>
+    <string name="freezed_app">已冻结应用</string>
+    <string name="unfreezed_app">未冻结应用</string>
+    <string name="freezed_app_empty">暂未发现应用</string>
+    <string name="freezed_option">正在冻结应用...</string>
+    <string name="unfreezed_option">正在解冻应用...</string>
+    <string name="freezed_progress">"%1$d/%2$d"</string>
+    <string name="share">分享</string>
+
+    <string name="ali_aged_mode_setting_title">老人模式</string>
+    <string name="ali_aged_mode_on_description"><![CDATA[打开老人模式后，系统会自动为您：<br/>
+    · 字体调整到最大<br/>
+    · 延长触屏的反应时间<br/>
+    · 音量调大<br/>
+    · 桌面图标放大，关闭高级手势功能<br/>
+    · 支持快捷添加常用联系人到桌面<br/>
+    · 收录不常用的应用到文件夹<br/>
+    · 延长屏幕自动休眠的时间<br/>
+    ]]>
+    </string>
+
+    <string name="ali_aged_mode_off_description"><![CDATA[关闭老人模式后，系统会为您智能恢复到老人模式开启前的状态。
+    ]]>
+    </string>
+
+    <string name="ali_music_plus_title">耳机音效增强</string>
+    <string name="ali_battery_management">省电模式</string>
+    <string name="storage_freeup_space_button_title">释放空间</string>
+    <string name="vibrate_category_title">振动</string>
+    <string name="ali_fingerprint_settings">指纹识别</string>
+    <string name="ali_fingerprint_lock_screen_title">切换解锁方式</string>
+    <string name="ali_fingerprint_lock_screen_hint">为了保护您的隐私，指纹功能需要您开启密码解锁或者图案解锁后才能使用。</string>
+    <string name="fingerprint_settings_title">指纹识别</string>
+    <string name="fingerprint_settings_unlock">指纹解锁</string>
+    <string name="fingerprint_settings_unlock_summary">允许在锁屏界面使用指纹解锁</string>
+    <string name="fingerprint_settings_unlock_vibration">指纹解锁振动</string>
+    <string name="fingerprint_settings_unlock_vibration_summary">在指纹解锁时发出振动</string>
+    <string name="fingerprint_settings_homeshell_hideseat">桌面抽屉指纹锁</string>
+    <string name="fingerprint_settings_homeshell_hideseat_summary">只能通过指纹识别打开桌面抽屉</string>
+    <string name="finger_print_privacy_space_app_lock">隐私空间应用指纹锁</string>
+    <string name="finger_print_privacy_space_app_lock_summary">隐私空间应用锁可以采用指纹识别方式打开</string>
+    <string name="fingerprint_settings_listtext">指纹列表(%d/5)</string>
+    <string name="fingerprint_settings_addtext">添加指纹</string>
+    <string name="fingerprint_enroll_title">添加指纹</string>
+    <string name="fingerprint_enroll_text_background">请在手机背面录入指纹</string>
+    <string name="fingerprint_enroll_text_home">触摸Home键录入指纹</string>
+    <string name="fingerprint_enroll_text1">请按提示用手指按压指纹识别器</string>
+    <string name="fingerprint_enroll_text2">感觉到震动后抬起手指，然后继续按压录入</string>
+    <string name="fingerprint_enroll_success"> 添加成功</string>
+    <string name="fingerprint_enroll_tips">继续按压指纹的其他部位</string>
+    <string name="fingerprint_enroll_sensorerror">指纹录入失败</string>
+    <string name="fingerprint_enroll_failed">指纹录入失败</string>
+    <string name="fingerprint_enroll_finishtips">录入完成，正在保存…</string>
+    <string name="fingerprint_enroll_duplicatefinger">该指纹已存在</string>
+    <string name="fingerprint_enroll_duplicate_capture_tips">录入指纹有重复</string>
+    <string name="fingerprint_enroll_finger_not_tuning_tips">请移动手指</string>
+    <string name="fingerprint_rename_deleteconfirm">确定要删除指纹“</string>
+    <string name="fingerprint_rename_deleteconfirm1">”吗？</string>
+    <string name="fingerprint_rename_deletebutton">删除指纹</string>
+    <string name="fingerquick_select_app">选择应用</string>
+    <string name="finger_name_category">指纹名称</string>
+    <string name="finger_name_modify">点击进行编辑</string>
+    <string name="fingerquick_type_title">指纹快捷方式</string>
+    <string name="fingerprint_settings_category">该指纹应用于</string>
+    <string name="fingerprint_click_setting">点击进行设置</string>
+    <string name="fingerquick_settings_dial_number">选择联系人</string>
+    <string name="fingerquick_settings_start_app">选择启动应用</string>
+    <string name="fingerquick_settings_tip">要使用快捷方式，请先开启指纹解锁.</string>
+    <string name="fingerprint_rename_nulltips">指纹名称不能为空</string>
+    <string name="fingerprint_rename_repeatename">指纹名称不能相同或为空</string>
+    <string name="fingerprint_settings_listFullTips">最多能添加5个指纹</string>
+    <string name="fingerprint_enroll_conntect_failed">指纹设备连接失败，请重启手机再试</string>
+    <string name="fingerprint_enroll_fingerleft_timeout">请抬起手指</string>
+    <string name="fingerprint_enroll_timeout">指纹录入超时</string>
+    <string name="fingerprint_default_name">手指</string>
+    <string name="fingerprint_unlock_off">关闭指纹功能</string>
+    <string name="fingerprint_unlock_offmessage">切换到无密码解锁时，指纹解锁功能将不可用，是否继续？</string>
+    <string name="fingerprint_calibration_succeeded">指纹校准成功</string>
+    <string name="fingerprint_calibration_failed">指纹校准失败</string>
+    <string name="fingerprint_fingerquick_pay">一指付</string>
+    <string name="fingerprint_fingerquick_pay_set">开启指纹解锁功能时，使用 %s 快速解锁并打开支付宝扫码付页面</string>
+    <string name="fingerprint_fingerquick_pay_not_set">点击设置使用指纹快速解锁并打开支付宝扫码付页面</string>
+    <string name="fingerprint_fingerquick_disabled">%s 快捷方式已关闭</string>
+    <string name="fingerprint_fingerquick_pay_close">关闭</string>
+    <string name="data_usage_not_set">未设置</string>
+    <string name="fingerprint_rename_too_long">指纹名称过长，保存失败</string>
+    <!--add finger reenroll by lichengfeng 20160617 begin -->    
+    <string name="fingerquick_settings_reenroll">重新录入</string> <!--modified by lichengfeng for fix BUG #10108 @20160216 -->
+    <string name="fingerquick_settings_summary_reenroll">点击重新录入指纹</string>
+    <!--add finger reenroll by lichengfeng 20160617 end -->    
+    <!-- fingerprint string end -->
+    <!--YUNOS BEGIN-->
+    <!--BugID:5236596
+    date:2014/09/29 ##author:yajun.xyj-->
+    <string name="filter_apps_cached">已缓存</string>
+    <!--YUNOS END-->
+    <string name="app_version_label">版本</string>
+    <string name="app_location_label">安装位置</string>
+    <string name="app_moving">正在移动&#8230;</string>
+    <string name="app_permission_details_title"><xliff:g>%1$s</xliff:g>权限详情</string>
+
+    <string name="ali_vibrate_title">来电振动</string>
+    <string name="ali_sound_effect_title">耳机音效</string>
+
+    <string name="ali_wifi_display_enable_menu_item">启用</string>
+    <string name="ali_wfd_change_resolution_menu_title">分辨率</string>
+    <string name="ali_wifi_display_status_in_use">正在使用</string>
+
+    <string name="ali_system_button_backlight_title">系统按键背景灯</string>
+
+    <string name="led_light_settings">呼吸灯</string>
+    <string name="led_light_category_title_notification">通知</string>
+    <string name="led_light_category_title_power">电量</string>
+    <string name="led_light_missed_call_title">未接电话</string>
+    <string name="led_light_new_message_title">新信息</string>
+    <string name="led_light_new_notification_title">通知</string>
+    <string name="led_light_low_battery_title">低电量提示</string>
+    <string name="led_light_charging_title">充电状态</string>
+
+    <string name="about_phone_copy">复制</string>
+    <string name="privacy_title">隐私</string>
+    <string name="lost_protection">手机防盗</string>
+    <string name="permission_management">应用权限管理</string>
+    <string name="has_open">已开启</string>
+    <string name="has_close">已关闭</string>
+
+    <string name="ali_phone_disconnect_vibrate_summary">"在电话挂断时发出振动"</string>
+    <string name="ali_data_connection">"移动网络选择"</string>
+    <string name="ali_no_trusted_credentials" >"无信任的凭据"</string>
+    <string name="ali_process_system_label">YunOS系统组件</string>
+    <string name="battery_percent_summary">在状态栏上显示电量百分比</string>
+    <!--YUNOS BEGIN-->
+    <string name="ali_lab_mode">实验室模式</string>
+    <!--YUNOS END-->
+    <string name="ali_media_format_desc" product="nosdcard">此操作会抹掉所有 USB 储存设备的数据，且不可恢复，是否继续？</string>
+    <string name="ali_media_format_desc" product="default">此操作会抹掉所有 SD 卡的数据，且不可恢复，是否继续？</string>
+    <string name="ali_memory_clear_cache_message">是否清除<xliff:g>%s</xliff:g>中所有应用的缓存数据？</string>
+    <string name="ali_clear_data_dlg_text">是否删除此应用的所有数据？包括此应用的设置、账户、数据库等。</string>
+    <string name="ali_clear_data_dlg_button_text">清除</string>
+    <string name="ali_force_stop_dlg_text">是否强行停止此应用？此操作可能会导致出现异常。</string>
+    <string name="ali_storage_sd_card">"SD卡"</string>
+    <string name="ali_no_vpn">暂无VPN</string>
+    <string name="ali_add_device_warning_dlg_text">激活管理器后，应用将能在不提示的情况下使用对应的系统权限，是否继续激活？</string>
+    <string name="ali_add_device_warning_dlg_button_text">继续激活</string>
+    <string name="ali_xiaoyun_launch_activity_failed">这个功能现在用不了了呢</string>
+    <!-- face string start -->
+    <string name="ali_face_title">人脸解锁</string>
+    <string name="ali_unlock_switch_title">切换解锁方式</string>
+    <string name="ali_face_lock_screen_hint">为了保护您的隐私，人脸解锁功能需要您开启密码解锁或者图案解锁后才能使用。</string>
+    <!-- face string end -->
+    <!-- YUNOS BEGIN PB
+         ##modules:one-handed mode ##author:xy83652@alibaba-inc.com
+         ##BugID:(6468899) ##date: 2015/09/28
+         ##decription: some switches info for one-handed mode.
+    -->
+    <string name="one_handed_title">单手模式</string>
+    <string name="one_handed_summary">进入单手模式以方便单手操作</string>
+    <string name="ali_one_handed_shortcut">快捷方式</string>
+    <string name="ali_one_handed_shortcut_info">长按返回按键打开或关闭单手模式</string>
+    <string name="ali_one_handed_navi_bar">导航栏按钮</string>
+    <string name="ali_one_handed_navi_bar_info">开启后，窗口底部显示导航栏</string>
+    <string name="ali_one_handed_disable">"正在录屏中，禁止操作"</string>
+    <!-- YUNOS END PB -->
+    <string name="dynamic_color_title">壁纸映色 </string>
+    <string name="dynamic_color_summary">开启后，界面将随桌面壁纸颜色自动变化 </string>
+    <string name="open_dialog_title">控件动态变色 </string>
+    <string name="open_dialog_message">开启后，控件颜色将随桌面壁纸颜色自动变化</string>
+    <string name="close_dialog_title">控件动态变色 </string>
+    <string name="close_dialog_message">是否保留当前的控件配色?</string>
+
+    <string name="ali_dualsim_dialog_msg_airplane_mode">请关闭飞行模式，以打开双卡设置</string>
+    <string name="memoryusage_item_app">应用</string>
+    <string name="memoryusage_item_music">音乐</string>
+    <string name="memoryusage_item_cache_data">缓存</string>
+    <string name="memoryusage_item_other">其他</string>
+    <string name="memoryusage_item_app_data">应用与数据</string>
+    <string name="memoryusage_item_pictures_videos">图片与视频</string>
+    <string name="memoryusage_item_apk">应用安装包</string>
+    <string name="memoryusage_item_available_space">可用空间</string>
+    <string name="memoryusage_item_total_space">总容量</string>
+    <string name="memoryusage_total_storage">总存储量</string>
+    <string name="internal_storage_device">机身存储</string>
+    <string name="portable_storage_device">便携式存储设备</string>
+    <string name="storage_volume_summary" msgid="7023441974367853372">"可用空间 <xliff:g id="USED">%1$s</xliff:g>（共 <xliff:g id="TOTAL">%2$s</xliff:g>）"</string>
+    <string name="portable_storage_device_item_currency">通用</string>
+    <string name="portable_storage_device_item_inside">"内部"</string>
+    <string name="storage_detail_apps" msgid="6141154016753507490">"应用"</string>
+    <string name="storage_detail_images" msgid="6950678857740634769">"图片"</string>
+    <string name="storage_detail_videos" msgid="2919743464827110953">"视频"</string>
+    <string name="storage_detail_audio" msgid="1197685141676483213">"音频"</string>
+    <string name="storage_detail_cached" msgid="8547136365247818567">"缓存数据"</string>
+    <string name="storage_detail_other" msgid="8404938385075638238">"其他"</string>
+    <string name="apps_storage" msgid="4353308027210435513">"应用存储空间"</string>
+    <string name="storage_rename_title" msgid="8242663969839491485">"重命名存储设备"</string>
+    <string name="save" msgid="879993180139353333">"保存"</string>
+    <string name="storage_detail_dialog_other" msgid="4894289482062047165">"其他还包括应用保存的共享文件、通过互联网或蓝牙下载的文件、Android 文件等。\n\n要查看此<xliff:g id="NAME">^1</xliff:g>中的全部内容，请触摸“浏览”。"</string>
+    <string name="storage_menu_explore" msgid="4637496051816521560">"浏览"</string>
+    <string name="storage_detail_dialog_user" msgid="1675756743326079688">"<xliff:g id="USER_0">^1</xliff:g>所保存的照片、音乐、电影、应用或其他数据可能占用了 <xliff:g id="SIZE">^2</xliff:g> 的存储空间。\n\n要查看详细信息，请切换到<xliff:g id="USER_1">^1</xliff:g>。"</string>
+    <string name="storage_detail_transfer_data" msgid="879993180139353333">"迁移数据"</string>
+    <string name="storage_detail_apps_data" msgid="879993180139353333">"应用与数据"</string>
+    <string name="storage_detail_cache" msgid="879993180139353333">"缓存"</string>
+    <string name="storage_wizard_init_external_title" msgid="4867326438945303598">"用作便携式存储设备"</string>
+    <string name="storage_wizard_init_external_summary" msgid="7476105886344565074">"用于在设备之间移动照片和其他媒体文件。"</string>
+    <string name="storage_wizard_init_internal_title" msgid="9100613534261408519">"用作内部存储设备"</string>
+    <string name="storage_wizard_init_internal_summary" msgid="6240417501036216410">"仅用于存储这台设备上的内容，包括应用和照片。为了防止此存储设备在其他设备上使用，您需要先对其进行格式化。"</string>
+    <string name="storage_wizard_init_title" msgid="5085400514028585772">"设置您的<xliff:g id="NAME">^1</xliff:g>"</string>
+    <string name="storage_wizard_init_external_title" msgid="4867326438945303598">"用作便携式存储设备"</string>
+    <string name="storage_wizard_init_external_summary" msgid="7476105886344565074">"用于在设备之间移动照片和其他媒体文件。"</string>
+    <string name="storage_wizard_init_internal_title" msgid="9100613534261408519">"用作内部存储设备"</string>
+    <string name="storage_wizard_format_confirm_title" msgid="2814021794538252546">"格式化为内部存储设备"</string>
+    <string name="storage_wizard_format_confirm_body" msgid="4401758710076806509">"<b><xliff:g id="NAME_0">^1</xliff:g>必须进行格式化，以确保安全。</b>\n\n格式化之后，此<xliff:g id="NAME_1">^1</xliff:g>将只能在这台设备上使用。\n\n"<b>"格式化操作会清空当前存储在<xliff:g id="NAME_2">^1</xliff:g>上的所有数据。"</b>"为避免丢失数据，建议您先将数据备份。"</string>
+    <string name="storage_wizard_format_confirm_public_title" msgid="4905690038882041566">"格式化为通用存储设备"</string>
+    <string name="storage_wizard_format_confirm_public_body" msgid="1516932692920060272">"<b><xliff:g id="NAME_0">^1</xliff:g>必须进行格式化。\n\n""格式化操作会清空当前存储在<xliff:g id="NAME_1">^1</xliff:g>上的所有数据。"</b>"为避免丢失数据，建议您先将数据备份。"</string>
+    <string name="storage_wizard_format_confirm_next" msgid="2774557300531702572">"清空并格式化"</string>
+    <string name="storage_wizard_format_progress_title" msgid="6487352396450582292">"正在格式化<xliff:g id="NAME">^1</xliff:g>…"</string>
+    <string name="storage_wizard_format_progress_body" msgid="4445041233802828430">"请勿在格式化过程中移除该<xliff:g id="NAME">^1</xliff:g>。"</string>
+    <string name="storage_wizard_migrate_title" msgid="1363078147938160407">"将数据移动到新的存储设备"</string>
+    <string name="storage_wizard_migrate_body" msgid="890751699549542345">"您可以将自己的照片、文件和部分应用转移到这个新<xliff:g id="NAME">^1</xliff:g>上。\n\n转移操作大约需要 <xliff:g id="TIME">^2</xliff:g>，完成后将腾出 <xliff:g id="SIZE">^3</xliff:g> 的内部存储空间。在转移过程中，部分应用将无法正常运行。"</string>
+    <string name="storage_wizard_migrate_now" msgid="4523444323744239143">"立即移动"</string>
+    <string name="storage_wizard_migrate_later" msgid="3173482328116026253">"稍后移动"</string>
+    <string name="storage_wizard_migrate_confirm_title" msgid="8564833529613286965">"立即移动数据"</string>
+    <string name="storage_wizard_migrate_confirm_body" msgid="4212060581792135962">"将SD卡上的数据迁移至内部存储设备，此操作将为SD卡腾出 <xliff:g id="SIZE">^1</xliff:g> 的空间。"</string>
+    <string name="storage_wizard_migrate_confirm_sd_body" msgid="4212060581792135962">"将内部存储设备上的数据迁移至SD卡，此操作将为内部存储设备腾出 <xliff:g id="SIZE">^1</xliff:g> 的空间。"</string>
+    <string name="storage_wizard_migrate_confirm_next" msgid="5509475628423823202">"迁移"</string>
+    <string name="storage_wizard_migrate_progress_title" msgid="1665479429044202868">"正在移动数据…"</string>
+    <string name="storage_wizard_migrate_details" msgid="3709728824651136227">"在移动数据的过程中：\n• 请勿移除相应的<xliff:g id="NAME">^1</xliff:g>。\n• 某些应用将无法正常运行。\n• 需确保设备电量充足。"</string>
+    <string name="storage_wizard_ready_title" msgid="5381632402953258267">"<xliff:g id="NAME">^1</xliff:g>可以使用了"</string>
+    <string name="storage_wizard_ready_external_body" msgid="2879508114260597474">"您的<xliff:g id="NAME">^1</xliff:g>已设置完毕，可用于存储照片和其他媒体文件了。"</string>
+    <string name="storage_wizard_ready_internal_body" msgid="122532674037860197">"新的<xliff:g id="NAME">^1</xliff:g>可以使用了。\n\n要将照片、文件和应用数据移动到此设备，请转到“设置”&gt;“存储”。"</string>
+    <string name="storage_wizard_move_confirm_title" msgid="292782012677890250">"移动<xliff:g id="APP">^1</xliff:g>"</string>
+    <string name="storage_wizard_move_confirm_body" msgid="5176432115206478941">"将<xliff:g id="APP">^1</xliff:g>及其相关数据移动到<xliff:g id="NAME_0">^2</xliff:g>仅需几分钟时间。在移动操作完成前，您将无法使用该应用。\n\n请勿在移动过程中移除该<xliff:g id="NAME_1">^2</xliff:g>。"</string>
+    <string name="storage_wizard_move_progress_title" msgid="4443920302548035674">"正在移动<xliff:g id="APP">^1</xliff:g>…"</string>
+    <string name="storage_wizard_move_progress_body" msgid="7802577486578105609">"请勿在移动过程中移除该<xliff:g id="NAME">^1</xliff:g>。\n\n在移动操作完成前，您将无法使用此设备上的<xliff:g id="APP">^2</xliff:g>应用。"</string>
+    <string name="storage_wizard_move_progress_cancel" msgid="542047237524588792">"取消移动"</string>
+    <string name="storage_wizard_slow_body" msgid="8010127667184768025">"此<xliff:g id="NAME_0">^1</xliff:g>运行缓慢。您可以继续使用此SD卡，但有可能会影响读取效率，而且数据传输可能会花费很长时间，建议您更换更快的SD卡。"</string>
+    <string name="done" msgid="6942539184162713160">"完成"</string>
+    <string name="storage_unmount" msgid="3644892466144802466">"卸载"</string>
+    <string name="storage_mount">"加载"</string>
+    <string name="storage_volume_used_total" msgid="6113121714019000244">"共使用 <xliff:g id="TOTAL">%1$s</xliff:g>"</string>
+    <string name="storage_dialog_unmountable" msgid="3732209361668282254">"此<xliff:g id="NAME_0">^1</xliff:g>已损坏。\n\n要使用此<xliff:g id="NAME_1">^1</xliff:g>，您必须先对其进行设置。"</string>
+    <string name="storage_dialog_unsupported" msgid="4503128224360482228">"此设备不支持该<xliff:g id="NAME_0">^1</xliff:g>。\n\n要在此设备上使用此<xliff:g id="NAME_1">^1</xliff:g>，您必须先对其进行设置。"</string>
+    <string name="storage_menu_forget" msgid="6305824238997983426">"取消保存"</string>
+    <string name="storage_mount_success" msgid="687641090137253647">"<xliff:g id="NAME">%1$s</xliff:g>已装载"</string>
+    <string name="storage_mount_failure" msgid="1042621107954547316">"无法装载<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="storage_dialog_unmounted" msgid="6403320870103261477">"是否加载此<xliff:g id="NAME_1">^1</xliff:g>？"</string>
+    <string name="storage_menu_mount" msgid="1014683672493425425">"加载"</string>
+    <string name="storage_unmount_success" msgid="5737203344673441677">"<xliff:g id="NAME">%1$s</xliff:g>已安全弹出"</string>
+    <string name="storage_unmount_failure" msgid="5758387106579519489">"无法安全弹出<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="storage_menu_set_up" msgid="4263294929451685366">"设置"</string>
+    <string name="storage_format" msgid="7690626079653152152">"格式化"</string>
+    <string name="storage_format_tip">"正在将<xliff:g id="NAME">^1</xliff:g>格式化为内部存储设备，请勿移除<xliff:g id="NAME">^1</xliff:g>。"</string>
+    <string name="storage_format_currency_tip">"正在将<xliff:g id="NAME">^1</xliff:g>格式化为通用存储设备，请勿移除<xliff:g id="NAME">^1</xliff:g>。"</string>
+    <string name="storage_format_complete_tip">"格式化完毕，此SD卡现在可以安装应用和存储多媒体文件了。"</string>
+    <string name="storage_format_currency_complete_tip">"格式化完毕，默认存储路径已自动更改。"</string>
+    <string name="storage_format_count">"0%"</string>
+    <string name="storage_migrate_tip">"正在迁移数据，请勿移除SD卡"</string>
+
+    <string name="storage_wizard_init_internal_format_title">"将<xliff:g id="NAME_1">^1</xliff:g>格式化为内部存储设备"</string>
+    <string name="storage_wizard_init_internal_format_body">"格式化后，您可以将应用数据和多媒体文件移动至此<xliff:g id="NAME_0">^1</xliff:g>上。\n格式化后，此<xliff:g id="NAME_1">^1</xliff:g>将只能在此设备上使用。\n格式化后，此<xliff:g id="NAME_2">^1</xliff:g>上的数据将被清空，为避免数据丢失，建议您先备份数据"</string>
+    <string name="storage_wizard_init_external_format_title">"将<xliff:g id="NAME_1">^1</xliff:g>格式化为通用存储设备"</string>
+    <string name="storage_wizard_init_external_format_body">"格式化操作会清空当前存储在<xliff:g id="NAME_1">^1</xliff:g>上的所有数据。为避免数据丢失，建议您先备份数据。"</string>
+    <string name="storage_umounted">"已卸载"</string>
+    <string name="internal_storage_umounted_tip">"此SD卡已格式化为内部存储设备，只能在此设备上使用。卸载后，该SD卡上的应用和数据将不可用，是否卸载？"</string>
+    <string name="external_storage_umounted_tip">"卸载后，该SD卡上的数据将不可用，是否卸载？"</string>
+    <string name="memory_calculating_size">"计算中"</string>
+    <string name="storage_format_battery_Level_tip">"电量低于20%无法进行格式化，请先充电或者连接电源"</string>
+    <!--  YUNOS BEGIN PB
+    //##module [Smart Gesture] ##BugID:168585
+    //##date:2014-11-04  ##author:xiongchao.lxc@alibaba-inc.com
+    //##description: Support Single & Dual Orient Smart Gesture based on proximity  -->
+    <string name="ali_gesture_preference_title">手势感应</string>
+    <string name="ali_somatosensory_preference_title">智能体感</string>
+
+    <string name="accessibility_toggle_gallery_preference_title">图库</string>
+	<!--[accessibility_toggle_gallery_preference_summary] changed by lichengfeng form "在图库的照片之间移动" to "手掌在距离传感器位置晃动，翻页预览下一张图片" 20160530 begin-->
+    <string name="accessibility_toggle_gallery_preference_summary">手掌在距离传感器位置晃动，翻页预览下一张图片</string>
+	<!--[accessibility_toggle_gallery_preference_summary] changed by lichengfeng form "在图库的照片之间移动" to "手掌在距离传感器位置晃动，翻页预览下一张图片" 20160530 end-->
+    <string name="accessibility_toggle_music_preference_title">音乐播放器</string>
+    <string name="accessibility_toggle_music_preference_summary">在音乐列表中的歌曲之间移动</string>
+    <string name="accessibility_toggle_camera_preference_title">相机</string>
+    <string name="accessibility_toggle_camera_preference_summary">在相机中拍照</string>
+    <string name="accessibility_toggle_launcher_preference_title">桌面</string>
+	<!--[accessibility_toggle_launcher_preference_summary] changed by lichengfeng form "在主屏或菜单页面中移动至下一页" to "手掌在距离传感器位置晃动，翻页查看桌面下一页" 20160530 begin-->
+    <string name="accessibility_toggle_launcher_preference_summary">手掌在距离传感器位置晃动，翻页查看桌面下一页</string>
+	<!--[accessibility_toggle_launcher_preference_summary] changed by lichengfeng form "在主屏或菜单页面中移动至下一页" to "手掌在距离传感器位置晃动，翻页查看桌面下一页" 20160530 end-->
+    <string name="accessibility_toggle_lockscreen_preference_title">解锁</string>
+    <string name="accessibility_toggle_lockscreen_preference_summary">在上锁界面，将手掌在手机的距离传感器位置晃动一下，手机会自动解锁进入待机界面</string>
+
+    <string name="accessibility_toggle_mmsdial_preference_title">短信体感拨号</string>
+    <string name="accessibility_toggle_mmsdial_preference_summary">在查看信息界面，拿起手机贴近面部可直接拨打该联系人电话，启用此功能时，请勿在短信界
+面合上皮套</string>
+    <string name="accessibility_toggle_autoanswer_preference_title">来电车载接听</string>
+    <string name="accessibility_toggle_autoanswer_preference_summary">来电时，将手掌在手机的距离传感器位置停留2秒，手机自动接听电话</string>
+    <string name="accessibility_smartmode_preference_title">智能模式</string>
+    <string name="accessibility_toggle_smartread_preference_title">智能阅读</string>
+    <string name="accessibility_toggle_smartread_preference_summary">检测到您正在看屏幕，屏幕将继续为您亮起</string>
+    <string name="open_auto_answer_warning">合上皮套时不建议使用此功能,可能会造成电话自动接听</string>
+    <string name="open_auto_dial_warning">启用此功能时，请勿在短信界面合上皮套</string>
+    <string name="error_title">"提醒"</string>
+    <!-- YUNOS END PB -->
+    <string name="storage_format_notification">"<xliff:g id="NAME">%1$s</xliff:g>格式化"</string>
+    <string name="storage_internal_forget_details" msgid="9028875424669047327">"要使用此<xliff:g id="NAME">^1</xliff:g>中包含的应用、照片或数据，请将其重新插入。\n\n另外，如果该存储设备无法使用，您可以选择取消保存此设备。\n\n如果您选择取消保存，那么该设备中包含的所有数据均将永久丢失。\n\n尽管您以后可以重新安装这些应用，但存储在此设备上的这些应用数据将会丢失。"</string>
+    <string name="storage_internal_forget_confirm_title" msgid="1370847944388479245">"要取消保存<xliff:g id="NAME">^1</xliff:g>吗？"</string>
+    <string name="storage_internal_forget_confirm" msgid="1148446041396902905">"此<xliff:g id="NAME">^1</xliff:g>上存储的所有应用、照片和数据将会永久丢失。"</string>
+    <string name="storage_format_unsupported">"不可用，请重新格式化"</string>
+	
+	<!--applock begin-->
+	    <string name="app_name">指纹</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="setup_end">完成</string>
+    <string name="fingerprint_use">指纹可用于</string>
+    <string name="fingerprint_pwd">数字密码</string>
+    <string name="fingerprint_screen_unlock">屏幕解锁</string>
+    <string name="fingerprint_app_unlock">应用加密</string>
+    <string name="fingerprint_title">指纹列表</string>
+    <string name="fingerprint_add">新建指纹</string>
+    <string name="record_continue">继续</string>
+    <string name="fp_name">指纹名称</string>
+    <string name="rename">重命名</string>
+    <string name="delete">删除</string>
+    <string name="finish">完成</string>
+    <string name="input_pwd_title_new">新建</string>
+    <string name="input_pwd_title_update">修改</string>
+    <string name="title_activity_passwd">密码</string>
+    <string name="input_first_pwd">为了保护您的隐私，请输入安全密码</string>
+    <string name="input_confirm_pwd">请再次确认密码</string>
+    <string name="input_confirm_pwd_error">两次密码不一致，请再次确认密码</string>
+    <string name="input_pwd">输入安全密码</string>
+    <string name="input_error_pwd">密码错误，请重新输入</string>
+    <string name="match_fp">点击按钮，开始对比指纹</string>
+    <string name="match_fp_ing">对比中...</string>
+    <string name="match_fp_res">对比结果：%1$d ，对比%2$s \n 对比结果超过600表示指纹匹配成功 \n 说明：录取和对比指纹时，将手指轻按在指纹传感器上。每个指纹都需要成功录取五次才能完成。</string>
+    <string name="match_test_start">开始</string>
+    <string name="match_test_success">通过</string>
+    <string name="match_test_fail">不通过</string>
+    <string name="fp_detail">指纹详情</string>
+    <string name="fp_detail_delete">确认删除指纹？</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    
+    <string name="record_fp_title_first">放置手指</string>
+    <string name="record_fp_title">重复按压手指</string>
+    
+    <string name="record_fp_content_first">将手指放置在背面的指纹识别器上 </string>
+    <string name="record_fp_content">录入完整指纹需持续按压多次</string>  
+     
+    <string name="record_fp_content_remove_first">感觉到振动后再抬起手指重复录入</string>
+    <string name="record_fp_content_remove">请抬起手指</string>
+    
+    
+    <string name="record_fp_title_positive">请录入指纹正面</string>
+    <string name="record_fp_content_first_positive">将手指正面放置在背面指纹的感应区中心</string>
+    <string name="record_fp_title_left">请录入指纹左边缘</string>
+    <string name="record_fp_title_left_top">请录入指纹左上角</string>
+    <string name="record_fp_title_right_top">请录入指纹右上角</string>
+    <string name="record_fp_title_right">请录入指纹右边缘</string>
+    <string name="record_fp_title_right_bottom">请录入指纹右下角</string>
+    <string name="record_fp_title_left_bottom">请录入指纹左下角</string>
+    <string name="record_fp_content_left">将手指左边缘放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_left_top">将手指左上角放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_right_top">将手指右上角放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_right">将手指右边缘放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_right_bottom">将手指右下角放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_left_bottom">将手指左下角放置在背面指纹的感应区中心</string>
+    
+    
+    <string name="fp_sensor_inuse">指纹传感器被其他程序占用，请重试!</string>
+    <string name="fp_addfail">指纹录取失败，请重试!</string>
+    <string name="fp_fail_overtime">请按压手指!</string>
+    <string name="fp_fail_tooquick">速度过快，请重试!</string>
+    <string name="fp_fail_notin_center">手指不在中心，请重试!</string>
+    <string name="fp_tryagain">请再试一次!</string>
+    <string name="pwd_tryagain">密码错误，请重试!</string>
+    <string name="menu_manage_release_sensor">手动释放传感器</string>
+    <string name="menu_manage_needlock_apps">加密应用</string>
+    <string name="lockui_guide">解除加密\n请通过指纹或输入数字密码</string>
+    <string name="lockui_title">应用锁</string>
+    <string name="record_step">第%1$s步</string>
+    <string name="record_successfully">指纹已成功录取</string>
+    <string name="fp_test_guide">将手指轻按在指纹传感器上录取指纹</string>
+    <string name="correct">正确</string>
+    <string name="error">错误</string>
+    <string name="reset">重测</string>
+    <string name="new_name_warning">重命名不能为空!</string>
+    <string name="toDigital">通过密码登录</string>
+    <string name="finger_notice">已设置指纹\n请使用指纹感应器进行校验</string>
+    <string name="digital_notice">解除加密\n请输入正确的数字密码</string>
+    <string name="fingerprint_mag">指纹管理</string>
+    <string name="fingerprint_phone">拍照</string>
+    <string name="fingerprint_msg">管理及设置指纹相关功能</string>
+    <string name="fingerprint_phone_msg">在相机取景界面按压指纹感应器进行拍照</string>
+    <string name="fingerprint_explain_msg">说明: 触控功能无需校验指纹信息,任意手指可进行操作。</string>
+    <string name="fingerprint_function">指纹功能</string>
+    <string name="fingerprint_touch">触控功能</string>
+	<!--applock end-->
+
+</resources>
+<!--YUNOS END-->

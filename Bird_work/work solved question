@@ -1,0 +1,33 @@
+1498169196 mtk打开文档密码
+mtk 账号密码
+xujun.lu@nbbsw.com
+mtk2015
+mtk eservice账号密码
+XUJUN_LU_BIRD mtk2015
+
+
+1.gms文件修改包名。
+2,3网络问题
+4.设置浏览器默认权限
+5.videoplayer targetsdk更改为23
+
+
+
+连接服务器
+用户名为root
+工作组为WORKGROUP 
+密码为123456
+
+朵唯挚爱项目
+V:\qinzhifeng\project\repo_6115UO_SHINE_AY_20160813\ali_repo_6750_new\aliyunos\packages\apps
+
+
+宏控要编译整个项目才会生效，编译模块是不会生效的。
+宏控命名不能超过31位？  反正太长的时候 模块编译虽然能过，但是运行会报错。
+
+bird.mk
+阿里项目在 
+/home/disk1/ali_project/6115UO_SHINE_AY_20160913/device/mediatek/mt6755/bird.mk
+对应MTK项目的common.mk
+在alps\bird\device\common.mk
+

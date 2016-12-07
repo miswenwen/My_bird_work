@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clock="http://schemas.android.com/apk/res/com.android.deskclock"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alarm_clock_bg">
+    <com.android.deskclock.AlarmViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/desk_clock_pager"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:background="@color/transparent">
+        <TextView
+            android:id="@+id/alarm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="@string/tab_alarm"/>
+        <TextView
+            android:id="@+id/worldclock_id"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="29dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:textColor="#80ffffff"
+            android:text="@string/tab_clock"/>
+ 		<TextView
+            android:id="@+id/stopwatch_id"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="29dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:textColor="#80ffffff"
+            android:text="@string/tab_stopwatch"/>
+        <TextView
+            android:id="@+id/timer_id"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="29dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:textColor="#80ffffff"
+            android:text="@string/tab_timer"/>
+       
+    </LinearLayout>
+    <com.android.deskclock.MyAnalogClock
+        android:id="@+id/clock_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="19dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        clock:dial="@drawable/clock_alarm_view2_day_bg"
+        clock:dot="@drawable/clock_alarm_view2_day_center"
+        clock:hand_hour="@drawable/clock_alarm_view2_day_hour"
+        clock:hand_minute="@drawable/clock_alarm_view2_day_minute"
+        clock:hand_second="@drawable/clock_alarm_view2_second"/>
+    <com.android.deskclock.WorldMyAnalogClock
+        android:id="@+id/worldclock_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="19dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        clock:dial="@drawable/clock_alarm_view2_day_bg"
+        clock:dot="@drawable/clock_wordclock_view1_day_bg"
+        clock:hand_hour="@drawable/clock_alarm_view2_day_hour"
+        clock:hand_minute="@drawable/clock_alarm_view2_day_minute"
+        clock:hand_second="@drawable/clock_alarm_view2_second"/>
+    <ImageView
+        android:id="@+id/timer_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="19dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/clock_alarm_view2_day_bg"
+        android:visibility="gone"/>
+   <RelativeLayout
+        android:id="@+id/stopwatch_dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="19dp"
+        android:visibility="gone">
+        <com.android.deskclock.CircleTimerView
+			android:id="@+id/my_circle_timer_view"
+			android:layout_centerHorizontal="true"
+		    android:layout_width="266dp"
+            android:layout_height="266dp"
+            />
+        <com.android.deskclock.timer.CountingTimerView
+			android:id="@+id/stopwatch_time_text1"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

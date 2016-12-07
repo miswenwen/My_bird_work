@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">指纹</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="setup_end">完成</string>
+    <string name="fingerprint_use">指纹可用于</string>
+    <string name="fingerprint_pwd">数字密码</string>
+    <string name="fingerprint_screen_unlock">屏幕解锁</string>
+    <string name="fingerprint_app_unlock">应用加密</string>
+    <string name="fingerprint_title">指纹列表</string>
+    <string name="fingerprint_add">新建指纹</string>
+    <string name="record_continue">继续</string>
+    <string name="fp_name">指纹名称</string>
+    <string name="rename">重命名</string>
+    <string name="delete">删除</string>
+    <string name="finish">完成</string>
+    <string name="input_pwd_title_new">新建</string>
+    <string name="input_pwd_title_update">修改</string>
+    <string name="title_activity_passwd">密码</string>
+    <string name="input_first_pwd">为了保护您的隐私，请输入安全密码</string>
+    <string name="input_confirm_pwd">请再次确认密码</string>
+    <string name="input_confirm_pwd_error">两次密码不一致，请再次确认密码</string>
+    <string name="input_pwd">输入安全密码</string>
+    <string name="input_error_pwd">密码错误，请重新输入</string>
+    <string name="match_fp">点击按钮，开始对比指纹</string>
+    <string name="match_fp_ing">对比中...</string>
+    <string name="match_fp_res">对比结果：%1$d ，对比%2$s \n 对比结果超过600表示指纹匹配成功 \n 说明：录取和对比指纹时，将手指轻按在指纹传感器上。每个指纹都需要成功录取五次才能完成。</string>
+    <string name="match_test_start">开始</string>
+    <string name="match_test_success">通过</string>
+    <string name="match_test_fail">不通过</string>
+    <string name="fp_detail">指纹详情</string>
+    <string name="fp_detail_delete">确认删除指纹？</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    
+    <string name="record_fp_title_first">放置手指</string>
+    <string name="record_fp_title">重复按压手指</string>
+    
+    <string name="record_fp_content_first">将手指放置在背面的指纹识别器上 </string>
+    <string name="record_fp_content">录入完整指纹需持续按压多次</string>  
+     
+    <string name="record_fp_content_remove_first">感觉到振动后再抬起手指重复录入</string>
+    <string name="record_fp_content_remove">请抬起手指</string>
+    
+    
+    <string name="record_fp_title_positive">请录入指纹正面</string>
+    <string name="record_fp_content_first_positive">将手指正面放置在背面指纹的感应区中心</string>
+    
+    <string name="record_fp_title_left">请录入指纹左边缘</string>
+    <string name="record_fp_title_left_top">请录入指纹左上角</string>
+    <string name="record_fp_title_right_top">请录入指纹右上角</string>
+    <string name="record_fp_title_right">请录入指纹右边缘</string>
+    <string name="record_fp_title_right_bottom">请录入指纹右下角</string>
+    <string name="record_fp_title_left_bottom">请录入指纹左下角</string>
+    <string name="record_fp_content_left">将手指左边缘放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_left_top">将手指左上角放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_right_top">将手指右上角放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_right">将手指右边缘放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_right_bottom">将手指右下角放置在背面指纹的感应区中心</string>
+    <string name="record_fp_content_left_bottom">将手指左下角放置在背面指纹的感应区中心</string>
+    
+    
+    <string name="fp_sensor_inuse">指纹传感器被其他程序占用，请重试!</string>
+    <string name="fp_addfail">指纹录取失败，请重试!</string>
+    <string name="fp_fail_overtime">请按压手指!</string>
+    <string name="fp_fail_tooquick">速度过快，请重试!</string>
+    <string name="fp_fail_notin_center">手指不在中心，请重试!</string>
+    <string name="fp_tryagain">请再试一次!</string>
+    <string name="pwd_tryagain">密码错误，请重试!</string>
+    <string name="menu_manage_release_sensor">手动释放传感器</string>
+    <string name="menu_manage_needlock_apps">加密应用</string>
+    <string name="lockui_guide">解除加密\n请通过指纹或输入数字密码</string>
+    <string name="lockui_title">应用锁</string>
+    <string name="record_step">第%1$s步</string>
+    <string name="record_successfully">指纹已成功录取</string>
+    <string name="fp_test_guide">将手指轻按在指纹传感器上录取指纹</string>
+    <string name="correct">正确</string>
+    <string name="error">错误</string>
+    <string name="reset">重测</string>
+    <string name="new_name_warning">重命名不能为空!</string>
+    <string name="toDigital">通过密码登录</string>
+    <string name="finger_notice">已设置指纹\n请使用指纹感应器进行校验</string>
+    <string name="digital_notice">解除加密\n请输入正确的数字密码</string>
+<!-- [BIRD_PRESS_FP] 指纹拍照:mandy.wu 20151021 begin -->
+    <string name="fingerprint_mag">指紋管理</string>
+    <string name="fingerprint_phone">拍照</string>
+    <string name="fingerprint_msg">管理及設置指紋相關功能</string>
+    <string name="fingerprint_phone_msg">在相機取景界面按壓指紋感應器進行拍照</string>
+    <string name="fingerprint_explain_msg">說明:觸控控能無需校驗指紋信息,任意手指可進行操作。</string>
+    <string name="fingerprint_function">指紋功能</string>
+    <string name="fingerprint_touch">觸控功能</string>
+<!-- [BIRD_PRESS_FP] 指纹拍照:mandy.wu 20151021 end -->    
+</resources>

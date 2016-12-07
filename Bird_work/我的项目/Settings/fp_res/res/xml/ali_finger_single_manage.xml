@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffff0000">
+    <PreferenceCategory
+        android:key="finger_name_category"
+        android:title="@string/finger_name_category">
+        <Preference
+            android:title="@string/finger_name_category"
+            android:summary="@string/finger_name_modify"
+            android:key="ali_key_fingerprint_name"
+            android:singleLine="true"
+            android:maxLength="40"
+            />					
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="fingerquick_settings_category_reenroll"
+        android:title="@string/fingerquick_settings_reenroll">
+        <Preference
+            android:title="@string/fingerquick_settings_reenroll"
+            android:dialogTitle="@string/fingerquick_settings_reenroll"
+            android:summary="@string/fingerquick_settings_summary_reenroll"
+            android:key="ali_key_fingerprint_reenroll"
+            android:singleLine="true"
+            android:inputType="text"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="finger_delete_category"
+        android:title="@string/fingerprint_rename_deletebutton">
+        <Preference
+            android:title="@string/fingerprint_rename_deletebutton"
+            android:key="ali_key_fingerprint_delete"
+            android:singleLine="true"
+            android:maxLength="40"
+            />					
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="fingerquick_settings_category"
+        android:title="@string/fingerprint_settings_category">
+        <ListPreference
+            android:entries="@array/fingerquick_type_list"
+            android:entryValues="@array/fingerquick_type"
+            android:key="ali_key_fingerquick_type"
+            android:title="@string/fingerquick_type_title"
+            android:summary="@string/fingerprint_click_setting"/>
+        <com.android.settings.fingerprint.AliFingerquickSettingsPreference
+            android:title="@string/fingerquick_settings_dial_number"
+            android:dialogTitle="@string/fingerquick_settings_dial_number"
+            android:summary="@string/data_usage_not_set"
+            android:key="fingerquick_phone_number"
+            android:singleLine="true"
+            android:inputType="text"
+            />
+        <com.android.settings.fingerprint.AliFingerquickSettingsPreference
+            android:key="fingerquick_settings_start_app"
+            android:title="@string/fingerquick_settings_start_app"
+            android:summary="@string/data_usage_not_set"
+            android:persistent="false" />
+        <Preference android:layout="@layout/ali_fingerquick_unlock_tip"
+            android:key="fingerquick_unlock_tip"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

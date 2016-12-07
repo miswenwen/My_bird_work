@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SmallSp">
+        <ignore path="res/layout"/>
+        <ignore path="res/layout-sw320dp-w320dp"/>
+        <ignore path="res/layout-sw360dp-w360dp"/>
+    </issue>
+    <issue id="DrawAllocation" severity="ignore"/>
+</lint>

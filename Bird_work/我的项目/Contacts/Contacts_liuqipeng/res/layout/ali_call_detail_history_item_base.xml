@@ -1,0 +1,81 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/detail_item_side_margin"
+    android:paddingStart="@dimen/detail_item_side_margin" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/call_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:textColor="@color/call_detail_history_item_txt_color"
+            android:textSize="14dp" />
+        <!--
+            YUNOS BEGIN
+             #description:BugID:131037:font size
+             #textSize must be dp
+             #author:changjun.bcj
+             #date:2014/06/24
+        -->
+        <!-- YUNOS END -->
+
+        <TextView
+            android:id="@+id/call_detail_listitem_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/call_detail_history_item_txt_color"
+            android:textSize="14dp" />
+        <!--
+            YUNOS BEGIN
+             #description:BugID:131037:font size
+             #textSize must be dp
+             #author:changjun.bcj
+             #date:2014/06/24
+        -->
+        <!-- YUNOS END -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!--
+            Because we will add a click listener on the ImageView below, so we can not
+            use a TextView and use setCompoundDrawablesRelativeWithIntrinsicBounds()
+            to set an icon for the text. We have to use a TextView and ImageView separately.
+        -->
+        <TextView
+            android:id="@+id/call_detail_listitem_calldate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/call_detail_history_item_txt_color"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/call_detail_listitem_record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_record_icon_selector"
+            android:visibility="invisible"
+            android:layout_marginStart="@dimen/contacts_call_history_detail_subitem_margin"/>
+
+    </LinearLayout>
+
+</merge>

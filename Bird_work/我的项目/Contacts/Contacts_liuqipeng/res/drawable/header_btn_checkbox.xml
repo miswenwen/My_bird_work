@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bird: change by meifangting for BUG #14842 20160729   -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Enabled states -->
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="true">
+        <bitmap android:src="@drawable/header_btn_check_on_pressed" android:tint="@color/header_widget_color_pressed" />
+    </item>
+    <item android:state_checked="true" android:state_enabled="true">
+        <bitmap android:src="@drawable/header_btn_check_on_normal" android:tint="@color/header_widget_color_normal" />
+    </item>
+    <item android:state_checked="false" android:state_enabled="true" android:state_pressed="true">
+        <bitmap android:src="@drawable/header_btn_check_off_pressed" android:tint="@color/header_widget_color_pressed" />
+    </item>
+    <item android:state_checked="false" android:state_enabled="true">
+        <bitmap android:src="@drawable/header_btn_check_off_normal" android:tint="@color/header_widget_color_normal" />
+    </item>
+
+    <!-- Disabled states -->
+    <item android:state_checked="true" android:state_enabled="false">
+        <bitmap android:src="@drawable/header_btn_check_on_disable" android:tint="@color/header_widget_color_disable" />
+    </item>
+    <item android:state_checked="false" android:state_enabled="false">
+        <bitmap android:src="@drawable/header_btn_check_off_disable" android:tint="@color/header_widget_color_disable" />
+    </item>
+</selector>

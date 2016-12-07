@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+     <Button
+ 	android:paddingLeft="15dp"
+  	android:id="@+id/new_contact_btn"
+	android:textColor="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:text="@string/menu_newContact"
+    android:gravity="center_vertical|left"
+    android:textSize="15sp"
+    android:background="@drawable/contact_mark_dlg_other_btn"/>
+	<ImageView
+	android:layout_width="match_parent"
+	android:layout_height="0.2dp"
+	android:background="#d0d0d0"/>
+	<Button
+	android:paddingLeft="15dp"
+	android:id="@+id/existing_contact_btn"
+	android:textColor="#000000"
+	android:layout_width="match_parent"
+	android:layout_height="65dp"
+	android:text="@string/add_to_existing_contact_for_dialpad"
+	android:gravity="center_vertical|left"
+	android:textSize="15sp"
+	android:background="@drawable/contact_mark_dlg_other_btn"/>
+	<ImageView
+	android:layout_width="match_parent"
+	android:layout_height="0.2dp"
+	android:background="#d0d0d0"/>
+  
+ <TextView 
+ 	android:paddingLeft="15dp"
+	android:gravity="center_vertical|left"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:text="@string/dialog_mark"
+    android:textSize="15sp"
+    android:textColor="#000000"
+     />  
+
+    <GridView 
+    android:id="@+id/mark_gridview"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+	android:paddingBottom="15dp"
+	android:horizontalSpacing="15dp"
+    android:verticalSpacing="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="3"
+     />
+	<ImageView
+	android:layout_width="match_parent"
+	android:layout_height="0.2dp"
+	android:background="#d0d0d0"/>
+    <CheckBox 
+	android:layout_marginLeft="-80dp"
+	android:scaleX="0.5"
+    android:scaleY="0.5"
+    android:paddingLeft="18dp"
+	android:gravity="center_vertical|left"
+    android:id="@+id/dont_remind_chk"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:text="@string/dialog_dont_advise"
+    android:textSize="25sp"
+    android:textColor="#000000"
+    android:textStyle="normal"  />
+
+</LinearLayout>
+

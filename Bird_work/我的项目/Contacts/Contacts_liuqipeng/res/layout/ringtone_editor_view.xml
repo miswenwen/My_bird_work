@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunos.alicontacts.editor.RingtoneView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_ringtone_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listview_item_height"
+        android:background="@drawable/list_selector_background"
+        android:orientation="horizontal"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp" >
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/contact_edit_ringtone_type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/edit_ringtone_name_color" />
+
+        <TextView
+            android:id="@+id/edit_ringtone_name"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|end"
+            android:paddingStart="@dimen/contacts_editor_padding_1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/edit_ringtone_name_color" />
+
+        <include
+            layout="@layout/edit_delete_button"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/contacts_editor_separator_item" />
+
+</com.yunos.alicontacts.editor.RingtoneView>

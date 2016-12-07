@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <bitmap android:src="@drawable/ic_contact_add_disable"/>
+    </item>
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/ic_contact_add_pressed" android:tint="@color/contact_create_image_press_color" android:tintMode="src_atop"/>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_contact_add_normal" android:tint="@color/contact_create_image_color" android:tintMode="src_atop"/>
+    </item>
+
+</selector>

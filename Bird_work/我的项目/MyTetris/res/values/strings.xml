@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyTetris</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+<string name="new_game">新游戏</string>
+<string name="high_score">高分榜</string>
+<string name="clear_score">清空历史分数</string>
+<string name="right">Right</string>
+<string name="left">Left</string>
+<string name="down">Down</string>
+<string name="rotate">Rotate</string>
+<string name="pause">Pause</string>
+<string name="resume">Resume</string>
+<string name="game_over">游戏结束，是否重新开始？\n恭喜您进入高分榜！</string>
+<string name="game_over_a">游戏结束，是否重新开始？\n很遗憾您没能进入高分榜！继续加油！</string>
+<string name="end">游戏结束！</string>
+<string name="exit">退出游戏</string>
+<string name="restart">重新开始</string>
+<string name="score">Score\n</string>
+<string name="speed">Speed\n</string>
+
+</resources>

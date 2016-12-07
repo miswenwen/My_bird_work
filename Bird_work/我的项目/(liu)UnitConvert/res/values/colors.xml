@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_pressed">#f65c00</color>
+    <color name="text_def">#313433</color>
+
+</resources>
