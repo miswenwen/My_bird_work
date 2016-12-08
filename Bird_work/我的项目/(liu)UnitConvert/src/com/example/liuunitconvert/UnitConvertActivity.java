@@ -12,19 +12,15 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.Window;
-import android.widget.EditText;
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class UnitConvertActivity extends Activity implements OnClickListener {
 	private int nowUnitType;// 根据单位类型载入不同的文本
@@ -42,7 +38,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 	private TextView mInputText;
 	private TextView mResultText;
 	private PickerView mUnitPickerView;
-	private EditText mEditText;
+
 	private ImageButton mSwitchButton;
 	// 默认文本单位,在UnitSet，UnitShortSet集合中的
 	private final int PRE_LENGTH_DEF = 0;
@@ -77,33 +73,39 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		mIntent = getIntent();
 		nowUnitType = mIntent.getIntExtra("UnitType", 0);
 		mResources = getResources();
-		Window window = this.getWindow();  
-		ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);  
-		  
-		//首先使 ChildView 不预留空间  
-		View mChildView = mContentView.getChildAt(0);  
-		if (mChildView != null) {  
-		    ViewCompat.setFitsSystemWindows(mChildView, false);  
-		}  
-		  
-		int statusBarHeight = getStatusBarHeight();  
-		//需要设置这个 flag 才能设置状态栏  
-		window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);  
-		//避免多次调用该方法时,多次移除了 View  
-		if (mChildView != null && mChildView.getLayoutParams() != null && mChildView.getLayoutParams().height == statusBarHeight) {  
-		    //移除假的 View.  
-		    mContentView.removeView(mChildView);  
-		    mChildView = mContentView.getChildAt(0);  
-		}  
-		if (mChildView != null) {  
-		    FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) mChildView.getLayoutParams();  
-		    //清除 ChildView 的 marginTop 属性  
-		    if (lp != null && lp.topMargin >= statusBarHeight) {  
-		        lp.topMargin -= statusBarHeight;  
-		        mChildView.setLayoutParams(lp);  
-		    }  
-		}  
+		setStatusBar();
 		init();
+	}
+
+	private void setStatusBar() {
+		// TODO Auto-generated method stub
+		// 首先使 ChildView 不预留空间
+		Window window = this.getWindow();
+		ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
+		View mChildView = mContentView.getChildAt(0);
+		if (mChildView != null) {
+			ViewCompat.setFitsSystemWindows(mChildView, false);
+		}
+
+		int statusBarHeight = getStatusBarHeight();
+		// 需要设置这个 flag 才能设置状态栏
+		window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		// 避免多次调用该方法时,多次移除了 View
+		if (mChildView != null && mChildView.getLayoutParams() != null
+				&& mChildView.getLayoutParams().height == statusBarHeight) {
+			// 移除假的 View.
+			mContentView.removeView(mChildView);
+			mChildView = mContentView.getChildAt(0);
+		}
+		if (mChildView != null) {
+			FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) mChildView
+					.getLayoutParams();
+			// 清除 ChildView 的 marginTop 属性
+			if (lp != null && lp.topMargin >= statusBarHeight) {
+				lp.topMargin -= statusBarHeight;
+				mChildView.setLayoutParams(lp);
+			}
+		}
 	}
 
 	private void init() {
@@ -121,7 +123,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		mInputText = (TextView) findViewById(R.id.input_num_tv);
 		mResultText = (TextView) findViewById(R.id.result_num_tv);
 		mUnitPickerView = (PickerView) findViewById(R.id.unit_set_pick);
-		mSwitchButton=(ImageButton)findViewById(R.id.switch_btn);
+		mSwitchButton = (ImageButton) findViewById(R.id.switch_btn);
 		// 所有TextView设置默认内容， 设置标题，设置默认数，默认pre单位和aft单位，并计算一次。
 		mTitleView.setText(getTitleText(nowUnitType));
 		if (Locale.getDefault().getLanguage().endsWith("zh")) {
@@ -163,46 +165,14 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			}
 		});
 		mSwitchButton.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				finish();
 			}
 		});
-		/**
-		 * 暂时用editText来获取输入，回头删掉
-		 */
-		// mEditText = (EditText) findViewById(R.id.edit_input);
-		// mEditText.addTextChangedListener(new TextWatcher() {
-		//
-		// @Override
-		// public void onTextChanged(CharSequence s, int start, int before,
-		// int count) {
-		// // TODO Auto-generated method stub
-		//
-		// }
-		//
-		// @Override
-		// public void beforeTextChanged(CharSequence s, int start, int count,
-		// int after) {
-		// // TODO Auto-generated method stub
-		//
-		// }
-		//
-		// @Override
-		// public void afterTextChanged(Editable s) {
-		// // TODO Auto-generated method stub
-		// inputNum = mEditText.getText().toString();
-		// if (inputNum.equals("")) {
-		// inputNum = "1";
-		// }
-		// mInputText.setText(inputNum);
-		// result = UnitConvertUtil.computeConvertResult(inputNum,
-		// mPreUnitIndex, mGoalUnitIndex, nowUnitType);
-		// mResultText.setText(String.valueOf(result));
-		// }
-		// });
+
 		final TypedArray convertButtons = mResources
 				.obtainTypedArray(R.array.unit_convert_buttons);
 		for (int i = 0; i < convertButtons.length(); i++) {
@@ -764,8 +734,8 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 							break;
 						}
 						// 进行一次计算
-						if(inputNum.equals("")){
-							inputNum="1";
+						if (inputNum.equals("")) {
+							inputNum = "1";
 						}
 						result = UnitConvertUtil.computeConvertResult(inputNum,
 								mPreUnitIndex, mGoalUnitIndex, nowUnitType);
@@ -868,16 +838,18 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			mResultText.setText(String.valueOf(result));
 		} catch (Exception e) {
 			// TODO: handle exception
-			mResultText.setText("Input Error");
+			mResultText.setText("Error");
 		}
 
 	}
+
 	public int getStatusBarHeight() {
-	    int result = 0;
-	    int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-	    if (resourceId > 0) {
-	        result = getResources().getDimensionPixelSize(resourceId);
-	    }
-	    return result;
+		int result = 0;
+		int resourceId = getResources().getIdentifier("status_bar_height",
+				"dimen", "android");
+		if (resourceId > 0) {
+			result = getResources().getDimensionPixelSize(resourceId);
+		}
+		return result;
 	}
 }

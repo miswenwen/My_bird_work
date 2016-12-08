@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/unit_convert_bg"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/switch_btn"
+        style="@style/switch_btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/switch_btn_marginLeft"
+        android:layout_marginTop="@dimen/switch_btn_marginTop" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/convert_title_tv_paddingTop"
+        android:text="@string/capital_title"
+        android:textSize="@dimen/convert_title_tv_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/switch_btn"
+        android:divider="@drawable/linearlayout_divider"
+        android:dividerPadding="0dp"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/input_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/textview_marginLeftorRight"
+                android:layout_marginRight="@dimen/textview_marginLeftorRight"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_pressed"
+                android:textSize="@dimen/capital_convert_text_size" />
+        </RelativeLayout>
+        <!--
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/linearlayout_divider" />
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/result_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/textview_marginLeftorRight"
+                android:layout_marginRight="@dimen/textview_marginLeftorRight"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_def"
+                android:textSize="@dimen/capital_convert_text_size" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            layout="@layout/num_pick" />
+    </LinearLayout>
+
+</RelativeLayout>

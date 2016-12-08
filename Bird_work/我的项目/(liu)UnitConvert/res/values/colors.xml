@@ -3,5 +3,9 @@
 
     <color name="text_pressed">#f65c00</color>
     <color name="text_def">#313433</color>
+    <color name="unit_short_text_def">#5e5f69</color>
+    <color name="unit_convert_bg">#f1f3f2</color>
+    <color name="function_choose_text">#7f7a74</color>
+    <color name="gridview_bg">#5e5653</color>
 
 </resources>

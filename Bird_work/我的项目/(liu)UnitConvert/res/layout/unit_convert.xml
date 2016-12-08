@@ -2,25 +2,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f6f9f9"
+    android:background="@color/unit_convert_bg"
     android:orientation="vertical" >
 
     <ImageButton
         android:id="@+id/switch_btn"
+        style="@style/switch_btn_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/btn_switch" />
+        android:layout_marginLeft="@dimen/switch_btn_marginLeft"
+        android:layout_marginTop="@dimen/switch_btn_marginTop" />
 
     <TextView
         android:id="@+id/title_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:paddingTop="30dp"
-        android:text="TextView"
-        android:textSize="15sp" />
+        android:paddingTop="@dimen/convert_title_tv_paddingTop"
+        android:textSize="@dimen/convert_title_tv_size" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,22 +41,20 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/textview_marginLeftorRight"
                 android:drawableRight="@drawable/choose_arrow_btn"
-                android:text="TextView"
                 android:textColor="@color/text_def"
-                android:textSize="23sp" />
+                android:textSize="@dimen/pre_goal_unit_tv_size" />
 
             <TextView
                 android:id="@+id/input_num_tv"
                 android:layout_width="215dp"
                 android:layout_height="62dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="@dimen/textview_marginLeftorRight"
                 android:gravity="bottom|right"
-                android:text="TextView"
                 android:textColor="@color/text_pressed"
-                android:textSize="26sp" />
+                android:textSize="@dimen/input_result_num_tv_size" />
 
             <TextView
                 android:id="@+id/pre_unit_short_tv"
@@ -65,10 +62,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/input_num_tv"
-                android:layout_marginRight="15dp"
-                android:text="TextView"
-                android:textColor="#5e5f69"
-                android:textSize="13sp" />
+                android:layout_marginRight="@dimen/textview_marginLeftorRight"
+                android:textColor="@color/unit_short_text_def"
+                android:textSize="@dimen/pre_goal_unit_short_tv_size" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -82,22 +78,20 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/textview_marginLeftorRight"
                 android:drawableRight="@drawable/choose_arrow_btn"
-                android:text="TextView"
                 android:textColor="@color/text_def"
-                android:textSize="23sp" />
+                android:textSize="@dimen/pre_goal_unit_tv_size" />
 
             <TextView
                 android:id="@+id/result_num_tv"
                 android:layout_width="215dp"
                 android:layout_height="62dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="@dimen/textview_marginLeftorRight"
                 android:gravity="bottom|right"
-                android:text="TextView"
                 android:textColor="@color/text_def"
-                android:textSize="26sp" />
+                android:textSize="@dimen/input_result_num_tv_size" />
 
             <TextView
                 android:id="@+id/goal_unit_short_tv"
@@ -105,10 +99,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/result_num_tv"
-                android:layout_marginRight="15dp"
-                android:text="TextView"
-                android:textColor="#5e5f69"
-                android:textSize="13sp" />
+                android:layout_marginRight="@dimen/textview_marginLeftorRight"
+                android:textColor="@color/unit_short_text_def"
+                 android:textSize="@dimen/pre_goal_unit_short_tv_size" />
         </RelativeLayout>
 
         <include
@@ -117,13 +110,5 @@
             android:layout_weight="2.5"
             layout="@layout/num_pick" />
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/edit_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:digits=".0123456789"
-        android:hint="input number only"
-        android:visibility="invisible" />
 
 </RelativeLayout>

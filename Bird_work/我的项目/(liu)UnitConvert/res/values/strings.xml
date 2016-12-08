@@ -11,9 +11,20 @@
     <string name="speed_title">Speed converter</string>
     <string name="time_title">Time converter</string>
     <string name="mass_title">Mass converter</string>
-    <string name="choose_unit">Choose Unit</string>
+    <string name="capital_title">Traditional Characters</string>
+    <string name="choose_unit">Select unit</string>
     <string name="pick_commit">OK</string>
      <string name=" pick_cancel">Cancel</string> 
+         <!-- FunctionSet显示 -->
+    <string name="length_text">Length</string>
+    <string name="area_text">Area</string>
+    <string name="volume_text">Volume</string>
+    <string name="temperature_text">Temperature</string>
+    <string name="speed_text">Time</string>
+    <string name="time_text">Mass</string>
+    <string name="mass_text">Speed</string>
+    <string name="capital_text">Traditional Characters</string>
+    <string name="science_text">Calculator</string>
     <!-- 长度单位集合 全称 -->
     <string name="km_length">Kilometer</string>
     <string name="m_length">Meter</string>

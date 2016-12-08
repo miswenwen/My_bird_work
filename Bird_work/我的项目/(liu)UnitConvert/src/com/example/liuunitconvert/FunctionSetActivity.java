@@ -3,6 +3,7 @@ package com.example.liuunitconvert;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,32 +31,7 @@ public class FunctionSetActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.functionset_choose);
-		Window window = this.getWindow();  
-		ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);  
-		  
-		//首先使 ChildView 不预留空间  
-		View mChildView = mContentView.getChildAt(0);  
-		if (mChildView != null) {  
-		    ViewCompat.setFitsSystemWindows(mChildView, false);  
-		}  
-		  
-		int statusBarHeight = getStatusBarHeight();  
-		//需要设置这个 flag 才能设置状态栏  
-		window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);  
-		//避免多次调用该方法时,多次移除了 View  
-		if (mChildView != null && mChildView.getLayoutParams() != null && mChildView.getLayoutParams().height == statusBarHeight) {  
-		    //移除假的 View.  
-		    mContentView.removeView(mChildView);  
-		    mChildView = mContentView.getChildAt(0);  
-		}  
-		if (mChildView != null) {  
-		    FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) mChildView.getLayoutParams();  
-		    //清除 ChildView 的 marginTop 属性  
-		    if (lp != null && lp.topMargin >= statusBarHeight) {  
-		        lp.topMargin -= statusBarHeight;  
-		        mChildView.setLayoutParams(lp);  
-		    }  
-		}  
+		setStatusBar();
 		mGridView = (GridView) findViewById(R.id.functionset_grid);
 		CustomAdapter mAdapter = new CustomAdapter(FunctionSetActivity.this,
 				R.layout.function_item, mList);
@@ -68,8 +44,8 @@ public class FunctionSetActivity extends FragmentActivity {
 				Intent mIntent = null;
 				switch (position) {
 				case 0:
-					Toast.makeText(FunctionSetActivity.this,
-							"Not privided now,sry!", 0).show();
+					mIntent = new Intent(FunctionSetActivity.this,
+							UpperNumActivity.class);
 					break;
 				case 1:
 					Toast.makeText(FunctionSetActivity.this,
@@ -120,6 +96,37 @@ public class FunctionSetActivity extends FragmentActivity {
 			}
 		});
 		mGridView.setAdapter(mAdapter);
+	}
+
+	private void setStatusBar() {
+		// TODO Auto-generated method stub
+		// 首先使 ChildView 不预留空间
+		Window window = this.getWindow();
+		ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
+		View mChildView = mContentView.getChildAt(0);
+		if (mChildView != null) {
+			ViewCompat.setFitsSystemWindows(mChildView, false);
+		}
+
+		int statusBarHeight = getStatusBarHeight();
+		// 需要设置这个 flag 才能设置状态栏
+		window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		// 避免多次调用该方法时,多次移除了 View
+		if (mChildView != null && mChildView.getLayoutParams() != null
+				&& mChildView.getLayoutParams().height == statusBarHeight) {
+			// 移除假的 View.
+			mContentView.removeView(mChildView);
+			mChildView = mContentView.getChildAt(0);
+		}
+		if (mChildView != null) {
+			FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) mChildView
+					.getLayoutParams();
+			// 清除 ChildView 的 marginTop 属性
+			if (lp != null && lp.topMargin >= statusBarHeight) {
+				lp.topMargin -= statusBarHeight;
+				mChildView.setLayoutParams(lp);
+			}
+		}
 	}
 
 	public int getStatusBarHeight() {

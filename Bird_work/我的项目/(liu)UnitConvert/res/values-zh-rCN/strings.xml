@@ -12,7 +12,8 @@
     <string name="speed_title">速度单位换算</string>
     <string name="time_title">时间单位换算</string>
     <string name="mass_title">重量单位换算</string>
-    <string name="choose_unit">请选择单位</string>
+    <string name="capital_title">大写转换</string>
+    <string name="choose_unit">选择单位</string>
     <string name="pick_commit">确认</string>
     <string name=" pick_cancel">取消</string>
     <!-- FunctionSet显示 -->

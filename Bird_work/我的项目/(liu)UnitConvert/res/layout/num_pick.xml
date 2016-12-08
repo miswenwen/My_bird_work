@@ -17,18 +17,18 @@
 
             <ImageButton
                 android:id="@+id/digit_7"
+                style="@style/digits_btn_style"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_digit"
                 android:src="@drawable/calculator_btn_7_normal" />
 
             <ImageButton
                 android:id="@+id/digit_4"
+                style="@style/digits_btn_style"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_digit"
                 android:src="@drawable/calculator_btn_4_normal" />
         </LinearLayout>
 
@@ -40,18 +40,18 @@
 
             <ImageButton
                 android:id="@+id/digit_8"
+                style="@style/digits_btn_style"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_digit"
                 android:src="@drawable/calculator_btn_8_normal" />
 
             <ImageButton
                 android:id="@+id/digit_5"
+                style="@style/digits_btn_style"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_digit"
                 android:src="@drawable/calculator_btn_5_normal" />
         </LinearLayout>
 
@@ -63,29 +63,27 @@
 
             <ImageButton
                 android:id="@+id/digit_9"
+                style="@style/digits_btn_style"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_digit"
-                android:src="@drawable/calculator_btn_9_normal"
-                 />
+                android:src="@drawable/calculator_btn_9_normal" />
 
             <ImageButton
                 android:id="@+id/digit_6"
+                style="@style/digits_btn_style"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_digit"
-                android:src="@drawable/calculator_btn_6_normal"
-                />
+                android:src="@drawable/calculator_btn_6_normal" />
         </LinearLayout>
 
         <ImageButton
             android:id="@+id/func_clear"
+            style="@style/digits_btn_style"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/btn_digit"
             android:src="@drawable/calculator_btn_c_normal" />
     </LinearLayout>
 
@@ -107,26 +105,26 @@
 
                 <ImageButton
                     android:id="@+id/digit_1"
+                    style="@style/digits_btn_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_digit"
                     android:src="@drawable/calculator_btn_1_normal" />
 
                 <ImageButton
                     android:id="@+id/digit_2"
+                    style="@style/digits_btn_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_digit"
                     android:src="@drawable/calculator_btn_2_normal" />
 
                 <ImageButton
                     android:id="@+id/digit_3"
+                    style="@style/digits_btn_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_digit"
                     android:src="@drawable/calculator_btn_3_normal" />
             </LinearLayout>
 
@@ -138,19 +136,19 @@
 
                 <ImageButton
                     android:id="@+id/digit_0"
+                    style="@style/digits_btn_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:background="@drawable/btn_digit"
                     android:src="@drawable/calculator_btn_0_normal"
                     android:text="0" />
 
                 <ImageButton
                     android:id="@+id/digit_dot"
+                    style="@style/digits_btn_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_digit"
                     android:src="@drawable/calculator_btn_decimal_normal"
                     android:text="." />
             </LinearLayout>
@@ -158,10 +156,10 @@
 
         <ImageButton
             android:id="@+id/func_del"
+            style="@style/digits_btn_style"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/btn_digit"
             android:src="@drawable/calculator_btn_delete_normal" />
     </LinearLayout>
 
