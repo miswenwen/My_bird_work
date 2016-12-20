@@ -3,15 +3,17 @@ package com.example.liuunitconvert;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -31,10 +33,10 @@ public class FunctionSetActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.functionset_choose);
-		setStatusBar();
+		StatusBarUtil.setStatusBar(this);
 		mGridView = (GridView) findViewById(R.id.functionset_grid);
 		CustomAdapter mAdapter = new CustomAdapter(FunctionSetActivity.this,
-				R.layout.function_item, mList);
+				R.layout.function_item, mList, mGridView);
 		init();
 		mGridView.setOnItemClickListener(new OnItemClickListener() {
 
@@ -54,37 +56,37 @@ public class FunctionSetActivity extends FragmentActivity {
 				case 2:
 					mIntent = new Intent(FunctionSetActivity.this,
 							UnitConvertActivity.class);
-					mIntent.putExtra("UnitType", UnitConvertUtil.Length);
+					mIntent.putExtra("UnitType", UnitConvertUtil.LENGTH);
 					break;
 				case 3:
 					mIntent = new Intent(FunctionSetActivity.this,
 							UnitConvertActivity.class);
-					mIntent.putExtra("UnitType", UnitConvertUtil.Area);
+					mIntent.putExtra("UnitType", UnitConvertUtil.AREA);
 					break;
 				case 4:
 					mIntent = new Intent(FunctionSetActivity.this,
 							UnitConvertActivity.class);
-					mIntent.putExtra("UnitType", UnitConvertUtil.Volume);
+					mIntent.putExtra("UnitType", UnitConvertUtil.VOLUME);
 					break;
 				case 5:
 					mIntent = new Intent(FunctionSetActivity.this,
 							UnitConvertActivity.class);
-					mIntent.putExtra("UnitType", UnitConvertUtil.Temperature);
+					mIntent.putExtra("UnitType", UnitConvertUtil.TEMPERATURE);
 					break;
 				case 6:
 					mIntent = new Intent(FunctionSetActivity.this,
 							UnitConvertActivity.class);
-					mIntent.putExtra("UnitType", UnitConvertUtil.Speed);
+					mIntent.putExtra("UnitType", UnitConvertUtil.SPEED);
 					break;
 				case 7:
 					mIntent = new Intent(FunctionSetActivity.this,
 							UnitConvertActivity.class);
-					mIntent.putExtra("UnitType", UnitConvertUtil.Time);
+					mIntent.putExtra("UnitType", UnitConvertUtil.TIME);
 					break;
 				case 8:
 					mIntent = new Intent(FunctionSetActivity.this,
 							UnitConvertActivity.class);
-					mIntent.putExtra("UnitType", UnitConvertUtil.Mass);
+					mIntent.putExtra("UnitType", UnitConvertUtil.MASS);
 					break;
 
 				default:
@@ -98,85 +100,30 @@ public class FunctionSetActivity extends FragmentActivity {
 		mGridView.setAdapter(mAdapter);
 	}
 
-	private void setStatusBar() {
-		// TODO Auto-generated method stub
-		// 首先使 ChildView 不预留空间
-		Window window = this.getWindow();
-		ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
-		View mChildView = mContentView.getChildAt(0);
-		if (mChildView != null) {
-			ViewCompat.setFitsSystemWindows(mChildView, false);
-		}
-
-		int statusBarHeight = getStatusBarHeight();
-		// 需要设置这个 flag 才能设置状态栏
-		window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-		// 避免多次调用该方法时,多次移除了 View
-		if (mChildView != null && mChildView.getLayoutParams() != null
-				&& mChildView.getLayoutParams().height == statusBarHeight) {
-			// 移除假的 View.
-			mContentView.removeView(mChildView);
-			mChildView = mContentView.getChildAt(0);
-		}
-		if (mChildView != null) {
-			FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) mChildView
-					.getLayoutParams();
-			// 清除 ChildView 的 marginTop 属性
-			if (lp != null && lp.topMargin >= statusBarHeight) {
-				lp.topMargin -= statusBarHeight;
-				mChildView.setLayoutParams(lp);
-			}
-		}
-	}
-
-	public int getStatusBarHeight() {
-	    int result = 0;
-	    int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-	    if (resourceId > 0) {
-	        result = getResources().getDimensionPixelSize(resourceId);
-	    }
-	    return result;
-	}
-
 	private void init() {
 		// TODO Auto-generated method stub
-		FunctionItem mFunction1 = new FunctionItem(
-				getString(R.string.capital_text), R.drawable.capital_convert);
-		mList.add(mFunction1);
-		FunctionItem mFunction2 = new FunctionItem(
-				getString(R.string.science_text), R.drawable.science_convert);
-		mList.add(mFunction2);
-		FunctionItem mFunction3 = new FunctionItem(
-				getString(R.string.length_text), R.drawable.length_convert);
-		mList.add(mFunction3);
-		FunctionItem mFunction4 = new FunctionItem(
-				getString(R.string.area_text), R.drawable.area_convert);
-		mList.add(mFunction4);
-		FunctionItem mFunction5 = new FunctionItem(
-				getString(R.string.volume_text), R.drawable.volume_convert);
-		mList.add(mFunction5);
-		FunctionItem mFunction6 = new FunctionItem(
-				getString(R.string.temperature_text),
-				R.drawable.temperature_convert);
-		mList.add(mFunction6);
-		FunctionItem mFunction7 = new FunctionItem(
-				getString(R.string.speed_text), R.drawable.speed_convert);
-		mList.add(mFunction7);
-		FunctionItem mFunction8 = new FunctionItem(
-				getString(R.string.time_text), R.drawable.time_convert);
-		mList.add(mFunction8);
-		FunctionItem mFunction9 = new FunctionItem(
-				getString(R.string.mass_text), R.drawable.mass_convert);
-		mList.add(mFunction9);
+		String[] convertTexts = getResources().getStringArray(
+				R.array.convert_texts);
+		TypedArray typedArray = getResources().obtainTypedArray(
+				R.array.convert_icons);
+		for (int index = 0; index < typedArray.length(); index++) {
+			int resId = typedArray.getResourceId(index, 0);
+			FunctionItem mFunction = new FunctionItem(convertTexts[index],
+					resId);
+			mList.add(mFunction);
+		}
+		typedArray.recycle();
 	}
 
 	class CustomAdapter extends ArrayAdapter<FunctionItem> {
 		private int resourceId;
+		GridView mm;
 
 		public CustomAdapter(Context context, int resource,
-				List<FunctionItem> objects) {
+				List<FunctionItem> objects, GridView gridView) {
 			super(context, resource, objects);
 			resourceId = resource;
+			mm = gridView;
 			// TODO Auto-generated constructor stub
 		}
 
@@ -188,10 +135,15 @@ public class FunctionSetActivity extends FragmentActivity {
 			LayoutInflater mInflater = LayoutInflater.from(getContext());
 			View view = mInflater.inflate(resourceId, null);
 			TextView mTextView = (TextView) view.findViewById(R.id.function_tv);
+			View mView = (View) view.findViewById(R.id.item_rel);
 			ImageView mImageView = (ImageView) view
 					.findViewById(R.id.function_iv);
 			mTextView.setText(functionName);
 			mImageView.setImageResource(pictureSrc);
+			Log.e("gridviewheight", "" + mm.getHeight());
+			LayoutParams mLayoutParams = mView.getLayoutParams();
+			mLayoutParams.height = (int) ((mm.getHeight() - DensityUtil.dip2px(
+					FunctionSetActivity.this, 4.0f)) / 3);
 			return view;
 		}
 	}

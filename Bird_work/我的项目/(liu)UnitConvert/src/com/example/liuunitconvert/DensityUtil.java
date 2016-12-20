@@ -1,7 +1,6 @@
 package com.example.liuunitconvert;
 
 import android.content.Context;
-import android.util.Log;
 
 public class DensityUtil {  
 	  
@@ -20,4 +19,5 @@ public class DensityUtil {
         final float scale = context.getResources().getDisplayMetrics().density;  
         return pxValue / scale;  
     }  
+    
 }  

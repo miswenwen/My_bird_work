@@ -27,13 +27,13 @@ public class UnitConvertUtil {
 	 * (4)由于计算了两次，公式问题。可能会导致1s=1000 000.00000001us这种情况。
 	 * 针对这类情况，暂时能想到的只能当成两两配对的当特殊情况给出公式。
 	 */
-	public static final int Length = 0;
-	public static final int Area = 1;
-	public static final int Volume = 2;
-	public static final int Temperature = 3;
-	public static final int Speed = 4;
-	public static final int Time = 5;
-	public static final int Mass = 6;
+	public static final int LENGTH = 0;
+	public static final int AREA = 1;
+	public static final int VOLUME = 2;
+	public static final int TEMPERATURE = 3;
+	public static final int SPEED = 4;
+	public static final int TIME = 5;
+	public static final int MASS = 6;
 
 	// 长度
 	public static String computeConvertResult(String inputNum, int preUnit,
@@ -50,7 +50,7 @@ public class UnitConvertUtil {
 			result = inputNum;
 		} else {
 			switch (type) {
-			case Length:
+			case LENGTH:
 				if (Double.valueOf(inputNum) > 1) {
 					mid = computeLength(inputNum, preUnit, true);
 				} else {
@@ -66,7 +66,7 @@ public class UnitConvertUtil {
 					result = Arith.mul(result, Arith.getScientificIndex(mid));
 				}
 				break;
-			case Area:
+			case AREA:
 				if (Double.valueOf(inputNum) > 1) {
 					mid = computeArea(inputNum, preUnit, true);
 				} else {
@@ -82,7 +82,7 @@ public class UnitConvertUtil {
 					result = Arith.mul(result, Arith.getScientificIndex(mid));
 				}
 				break;
-			case Volume:
+			case VOLUME:
 				if (Double.valueOf(inputNum) > 1) {
 					mid = computeVolume(inputNum, preUnit, true);
 				} else {
@@ -98,12 +98,12 @@ public class UnitConvertUtil {
 					result = Arith.mul(result, Arith.getScientificIndex(mid));
 				}
 				break;
-			case Temperature:
+			case TEMPERATURE:
 				//由于温度不仅仅是乘除，故不像其它方式过多处理。
 				mid = computeTemperature(inputNum, preUnit, true);
 				result = computeTemperature(mid, aftUnit, false);
 				break;
-			case Speed:
+			case SPEED:
 				if (Double.valueOf(inputNum) > 1) {
 					mid = computeSpeed(inputNum, preUnit, true);
 				} else {
@@ -119,7 +119,7 @@ public class UnitConvertUtil {
 					result = Arith.mul(result, Arith.getScientificIndex(mid));
 				}
 				break;
-			case Time:
+			case TIME:
 				if (Double.valueOf(inputNum) > 1) {
 					mid = computeTime(inputNum, preUnit, true);
 				} else {
@@ -135,7 +135,7 @@ public class UnitConvertUtil {
 					result = Arith.mul(result, Arith.getScientificIndex(mid));
 				}
 				break;
-			case Mass:
+			case MASS:
 				if (Double.valueOf(inputNum) > 1) {
 					mid = computeMass(inputNum, preUnit, true);
 				} else {

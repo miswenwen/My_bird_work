@@ -1,6 +1,7 @@
 package com.example.liuunitconvert;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 
 import android.app.Activity;
@@ -12,12 +13,15 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
+import android.util.DisplayMetrics;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -63,6 +67,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 	private String result;
 	private Resources mResources;
 	private boolean dotNeverClick = true;
+	AlertDialog myAlertDialog;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -73,39 +78,8 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		mIntent = getIntent();
 		nowUnitType = mIntent.getIntExtra("UnitType", 0);
 		mResources = getResources();
-		setStatusBar();
+		StatusBarUtil.setStatusBar(this);
 		init();
-	}
-
-	private void setStatusBar() {
-		// TODO Auto-generated method stub
-		// 首先使 ChildView 不预留空间
-		Window window = this.getWindow();
-		ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
-		View mChildView = mContentView.getChildAt(0);
-		if (mChildView != null) {
-			ViewCompat.setFitsSystemWindows(mChildView, false);
-		}
-
-		int statusBarHeight = getStatusBarHeight();
-		// 需要设置这个 flag 才能设置状态栏
-		window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-		// 避免多次调用该方法时,多次移除了 View
-		if (mChildView != null && mChildView.getLayoutParams() != null
-				&& mChildView.getLayoutParams().height == statusBarHeight) {
-			// 移除假的 View.
-			mContentView.removeView(mChildView);
-			mChildView = mContentView.getChildAt(0);
-		}
-		if (mChildView != null) {
-			FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) mChildView
-					.getLayoutParams();
-			// 清除 ChildView 的 marginTop 属性
-			if (lp != null && lp.topMargin >= statusBarHeight) {
-				lp.topMargin -= statusBarHeight;
-				mChildView.setLayoutParams(lp);
-			}
-		}
 	}
 
 	private void init() {
@@ -121,6 +95,8 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		mPreUnitShortView = (TextView) findViewById(R.id.pre_unit_short_tv);
 		mGoalUnitShortView = (TextView) findViewById(R.id.goal_unit_short_tv);
 		mInputText = (TextView) findViewById(R.id.input_num_tv);
+		mInputText.setVisibility(View.INVISIBLE);
+		mInputText.setVisibility(View.VISIBLE);
 		mResultText = (TextView) findViewById(R.id.result_num_tv);
 		mUnitPickerView = (PickerView) findViewById(R.id.unit_set_pick);
 		mSwitchButton = (ImageButton) findViewById(R.id.switch_btn);
@@ -172,7 +148,6 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 				finish();
 			}
 		});
-
 		final TypedArray convertButtons = mResources
 				.obtainTypedArray(R.array.unit_convert_buttons);
 		for (int i = 0; i < convertButtons.length(); i++) {
@@ -186,36 +161,36 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 	private void setPreUnitIndexAndGoalUnitIndex(int type) {
 		// TODO Auto-generated method stub
 		switch (type) {
-		case UnitConvertUtil.Length:
+		case UnitConvertUtil.LENGTH:
 			mPreUnitIndex = PRE_LENGTH_DEF;
 			mGoalUnitIndex = GOAL_LENGTH_DEF;
 			break;
-		case UnitConvertUtil.Area:
+		case UnitConvertUtil.AREA:
 			mPreUnitIndex = PRE_AREA_DEF;
 			mGoalUnitIndex = GOAL_AREA_DEF;
 			break;
 
-		case UnitConvertUtil.Volume:
+		case UnitConvertUtil.VOLUME:
 			mPreUnitIndex = PRE_VOLUME_DEF;
 			mGoalUnitIndex = GOAL_VOLUME_DEF;
 			break;
 
-		case UnitConvertUtil.Temperature:
+		case UnitConvertUtil.TEMPERATURE:
 			mPreUnitIndex = PRE_TEMPERATURE_DEF;
 			mGoalUnitIndex = GOAL_TEMPERATURE_DEF;
 			break;
 
-		case UnitConvertUtil.Speed:
+		case UnitConvertUtil.SPEED:
 			mPreUnitIndex = PRE_SPEED_DEF;
 			mGoalUnitIndex = GOAL_SPEED_DEF;
 			break;
 
-		case UnitConvertUtil.Time:
+		case UnitConvertUtil.TIME:
 			mPreUnitIndex = PRE_TIME_DEF;
 			mGoalUnitIndex = GOAL_TIME_DEF;
 			break;
 
-		case UnitConvertUtil.Mass:
+		case UnitConvertUtil.MASS:
 			mPreUnitIndex = PRE_MASS_DEF;
 			mGoalUnitIndex = GOAL_MASS_DEF;
 			break;
@@ -227,66 +202,80 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 
 	private void initUnitSetAndUnitShortSet(int type) {
 		// TODO Auto-generated method stub
+		String[] shit;
 		switch (type) {
-		case UnitConvertUtil.Length:
+		case UnitConvertUtil.LENGTH:
 			// UnitSet初始化
-			UnitSet.add(getString(R.string.km_length));
-			UnitSet.add(getString(R.string.m_length));
-			UnitSet.add(getString(R.string.dm_length));
-			UnitSet.add(getString(R.string.cm_length));
-			UnitSet.add(getString(R.string.mm_length));
-			UnitSet.add(getString(R.string.um_length));
-			UnitSet.add(getString(R.string.nm_length));
-			UnitSet.add(getString(R.string.pm_length));
-			UnitSet.add(getString(R.string.nmi_length));
-			UnitSet.add(getString(R.string.mi_length));
-			UnitSet.add(getString(R.string.fur_length));
-			UnitSet.add(getString(R.string.fm_length));
-			UnitSet.add(getString(R.string.yd_length));
-			UnitSet.add(getString(R.string.ft_length));
-			UnitSet.add(getString(R.string.in_length));
-			UnitSet.add(getString(R.string.gongli_length));
-			UnitSet.add(getString(R.string.li_length));
-			UnitSet.add(getString(R.string.zhang_length));
-			UnitSet.add(getString(R.string.chi_length));
-			UnitSet.add(getString(R.string.cun_length));
-			UnitSet.add(getString(R.string.fen_length));
-			UnitSet.add(getString(R.string.li_new_length));
-			UnitSet.add(getString(R.string.hao_length));
-			UnitSet.add(getString(R.string.pc_length));
-			UnitSet.add(getString(R.string.ld_length));
-			UnitSet.add(getString(R.string.tianwen_length));
-			UnitSet.add(getString(R.string.ly_length));
+			shit = mResources.getStringArray(R.array.length_convert);
+			for (int i = 0; i < shit.length; i++) {
+				UnitSet.add(shit[i]);
+			}
+
+			/*
+			 * UnitSet.add(getString(R.string.km_length));
+			 * UnitSet.add(getString(R.string.m_length));
+			 * UnitSet.add(getString(R.string.dm_length));
+			 * UnitSet.add(getString(R.string.cm_length));
+			 * UnitSet.add(getString(R.string.mm_length));
+			 * UnitSet.add(getString(R.string.um_length));
+			 * UnitSet.add(getString(R.string.nm_length));
+			 * UnitSet.add(getString(R.string.pm_length));
+			 * UnitSet.add(getString(R.string.nmi_length));
+			 * UnitSet.add(getString(R.string.mi_length));
+			 * UnitSet.add(getString(R.string.fur_length));
+			 * UnitSet.add(getString(R.string.fm_length));
+			 * UnitSet.add(getString(R.string.yd_length));
+			 * UnitSet.add(getString(R.string.ft_length));
+			 * UnitSet.add(getString(R.string.in_length));
+			 * UnitSet.add(getString(R.string.gongli_length));
+			 * UnitSet.add(getString(R.string.li_length));
+			 * UnitSet.add(getString(R.string.zhang_length));
+			 * UnitSet.add(getString(R.string.chi_length));
+			 * UnitSet.add(getString(R.string.cun_length));
+			 * UnitSet.add(getString(R.string.fen_length));
+			 * UnitSet.add(getString(R.string.li_new_length));
+			 * UnitSet.add(getString(R.string.hao_length));
+			 * UnitSet.add(getString(R.string.pc_length));
+			 * UnitSet.add(getString(R.string.ld_length));
+			 * UnitSet.add(getString(R.string.tianwen_length));
+			 * UnitSet.add(getString(R.string.ly_length));
+			 */
 			// UnitShortSet初始化
-			UnitShortSet.add(getString(R.string.km_length_short));
-			UnitShortSet.add(getString(R.string.m_length_short));
-			UnitShortSet.add(getString(R.string.dm_length_short));
-			UnitShortSet.add(getString(R.string.cm_length_short));
-			UnitShortSet.add(getString(R.string.mm_length_short));
-			UnitShortSet.add(getString(R.string.um_length_short));
-			UnitShortSet.add(getString(R.string.nm_length_short));
-			UnitShortSet.add(getString(R.string.pm_length_short));
-			UnitShortSet.add(getString(R.string.nmi_length_short));
-			UnitShortSet.add(getString(R.string.mi_length_short));
-			UnitShortSet.add(getString(R.string.fur_length_short));
-			UnitShortSet.add(getString(R.string.fm_length_short));
-			UnitShortSet.add(getString(R.string.yd_length_short));
-			UnitShortSet.add(getString(R.string.ft_length_short));
-			UnitShortSet.add(getString(R.string.in_length_short));
-			UnitShortSet.add(getString(R.string.gongli_length_short));
-			UnitShortSet.add(getString(R.string.li_length_short));
-			UnitShortSet.add(getString(R.string.zhang_length_short));
-			UnitShortSet.add(getString(R.string.chi_length_short));
-			UnitShortSet.add(getString(R.string.cun_length_short));
-			UnitShortSet.add(getString(R.string.fen_length_short));
-			UnitShortSet.add(getString(R.string.li_new_length_short));
-			UnitShortSet.add(getString(R.string.hao_length_short));
-			UnitShortSet.add(getString(R.string.pc_length_short));
-			UnitShortSet.add(getString(R.string.ld_length_short));
-			UnitShortSet.add(getString(R.string.tianwen_length_short));
-			UnitShortSet.add(getString(R.string.ly_length_short));
+			shit = mResources.getStringArray(R.array.length_convert_short);
+			for (int i = 0; i < shit.length; i++) {
+				UnitShortSet.add(shit[i]);
+			}
+			/*
+			 * UnitShortSet.add(getString(R.string.km_length_short));
+			 * UnitShortSet.add(getString(R.string.m_length_short));
+			 * UnitShortSet.add(getString(R.string.dm_length_short));
+			 * UnitShortSet.add(getString(R.string.cm_length_short));
+			 * UnitShortSet.add(getString(R.string.mm_length_short));
+			 * UnitShortSet.add(getString(R.string.um_length_short));
+			 * UnitShortSet.add(getString(R.string.nm_length_short));
+			 * UnitShortSet.add(getString(R.string.pm_length_short));
+			 * UnitShortSet.add(getString(R.string.nmi_length_short));
+			 * UnitShortSet.add(getString(R.string.mi_length_short));
+			 * UnitShortSet.add(getString(R.string.fur_length_short));
+			 * UnitShortSet.add(getString(R.string.fm_length_short));
+			 * UnitShortSet.add(getString(R.string.yd_length_short));
+			 * UnitShortSet.add(getString(R.string.ft_length_short));
+			 * UnitShortSet.add(getString(R.string.in_length_short));
+			 * UnitShortSet.add(getString(R.string.gongli_length_short));
+			 * UnitShortSet.add(getString(R.string.li_length_short));
+			 * UnitShortSet.add(getString(R.string.zhang_length_short));
+			 * UnitShortSet.add(getString(R.string.chi_length_short));
+			 * UnitShortSet.add(getString(R.string.cun_length_short));
+			 * UnitShortSet.add(getString(R.string.fen_length_short));
+			 * UnitShortSet.add(getString(R.string.li_new_length_short));
+			 * UnitShortSet.add(getString(R.string.hao_length_short));
+			 * UnitShortSet.add(getString(R.string.pc_length_short));
+			 * UnitShortSet.add(getString(R.string.ld_length_short));
+			 * UnitShortSet.add(getString(R.string.tianwen_length_short));
+			 * UnitShortSet.add(getString(R.string.ly_length_short));
+			 */
 			break;
-		case UnitConvertUtil.Area:
+		case UnitConvertUtil.AREA:
 			// UnitSet初始化
 			UnitSet.add(getString(R.string.km2_area));
 			UnitSet.add(getString(R.string.ha_area));
@@ -329,7 +318,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			UnitShortSet.add(getString(R.string.gongli2_area_short));
 			break;
 
-		case UnitConvertUtil.Volume:
+		case UnitConvertUtil.VOLUME:
 			// UnitSet初始化
 			UnitSet.add(getString(R.string.m3_volume));
 			UnitSet.add(getString(R.string.dm3_volume));
@@ -360,7 +349,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			UnitShortSet.add(getString(R.string.af3_volume_short));
 			break;
 
-		case UnitConvertUtil.Temperature:
+		case UnitConvertUtil.TEMPERATURE:
 			// UnitSet初始化
 			UnitSet.add(getString(R.string.c_temperature));
 			UnitSet.add(getString(R.string.f_temperature));
@@ -375,7 +364,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			UnitShortSet.add(getString(R.string.re_temperature_short));
 			break;
 
-		case UnitConvertUtil.Speed:
+		case UnitConvertUtil.SPEED:
 			// UnitSet初始化
 			UnitSet.add(getString(R.string.c_speed));
 			UnitSet.add(getString(R.string.ma_speed));
@@ -398,7 +387,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			UnitShortSet.add(getString(R.string.ips_speed_short));
 			break;
 
-		case UnitConvertUtil.Time:
+		case UnitConvertUtil.TIME:
 			// UnitSet初始化
 			UnitSet.add(getString(R.string.yr_time));
 			UnitSet.add(getString(R.string.wk_time));
@@ -421,7 +410,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			UnitShortSet.add(getString(R.string.ps_time_short));
 			break;
 
-		case UnitConvertUtil.Mass:
+		case UnitConvertUtil.MASS:
 			// UnitSet初始化
 			UnitSet.add(getString(R.string.t_mass));
 			UnitSet.add(getString(R.string.kg_mass));
@@ -475,30 +464,30 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		String mGoalUnitShortText = null;
 		switch (type) {
-		case UnitConvertUtil.Length:
+		case UnitConvertUtil.LENGTH:
 			mGoalUnitShortText = UnitShortSet.get(GOAL_LENGTH_DEF);
 			break;
-		case UnitConvertUtil.Area:
+		case UnitConvertUtil.AREA:
 			mGoalUnitShortText = UnitShortSet.get(GOAL_AREA_DEF);
 			break;
 
-		case UnitConvertUtil.Volume:
+		case UnitConvertUtil.VOLUME:
 			mGoalUnitShortText = UnitShortSet.get(GOAL_VOLUME_DEF);
 			break;
 
-		case UnitConvertUtil.Temperature:
+		case UnitConvertUtil.TEMPERATURE:
 			mGoalUnitShortText = UnitShortSet.get(GOAL_TEMPERATURE_DEF);
 			break;
 
-		case UnitConvertUtil.Speed:
+		case UnitConvertUtil.SPEED:
 			mGoalUnitShortText = UnitShortSet.get(GOAL_SPEED_DEF);
 			break;
 
-		case UnitConvertUtil.Time:
+		case UnitConvertUtil.TIME:
 			mGoalUnitShortText = UnitShortSet.get(GOAL_TIME_DEF);
 			break;
 
-		case UnitConvertUtil.Mass:
+		case UnitConvertUtil.MASS:
 			mGoalUnitShortText = UnitShortSet.get(GOAL_MASS_DEF);
 			break;
 
@@ -512,30 +501,30 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		String mPreUnitShort = null;
 		switch (type) {
-		case UnitConvertUtil.Length:
+		case UnitConvertUtil.LENGTH:
 			mPreUnitShort = UnitShortSet.get(PRE_LENGTH_DEF);
 			break;
-		case UnitConvertUtil.Area:
+		case UnitConvertUtil.AREA:
 			mPreUnitShort = UnitShortSet.get(PRE_AREA_DEF);
 			break;
 
-		case UnitConvertUtil.Volume:
+		case UnitConvertUtil.VOLUME:
 			mPreUnitShort = UnitShortSet.get(PRE_VOLUME_DEF);
 			break;
 
-		case UnitConvertUtil.Temperature:
+		case UnitConvertUtil.TEMPERATURE:
 			mPreUnitShort = UnitShortSet.get(PRE_TEMPERATURE_DEF);
 			break;
 
-		case UnitConvertUtil.Speed:
+		case UnitConvertUtil.SPEED:
 			mPreUnitShort = UnitShortSet.get(PRE_SPEED_DEF);
 			break;
 
-		case UnitConvertUtil.Time:
+		case UnitConvertUtil.TIME:
 			mPreUnitShort = UnitShortSet.get(PRE_TIME_DEF);
 			break;
 
-		case UnitConvertUtil.Mass:
+		case UnitConvertUtil.MASS:
 			mPreUnitShort = UnitShortSet.get(PRE_MASS_DEF);
 			break;
 
@@ -549,30 +538,30 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		String mGoalUnit = null;
 		switch (type) {
-		case UnitConvertUtil.Length:
+		case UnitConvertUtil.LENGTH:
 			mGoalUnit = UnitSet.get(GOAL_LENGTH_DEF);
 			break;
-		case UnitConvertUtil.Area:
+		case UnitConvertUtil.AREA:
 			mGoalUnit = UnitSet.get(GOAL_AREA_DEF);
 			break;
 
-		case UnitConvertUtil.Volume:
+		case UnitConvertUtil.VOLUME:
 			mGoalUnit = UnitSet.get(GOAL_VOLUME_DEF);
 			break;
 
-		case UnitConvertUtil.Temperature:
+		case UnitConvertUtil.TEMPERATURE:
 			mGoalUnit = UnitSet.get(GOAL_TEMPERATURE_DEF);
 			break;
 
-		case UnitConvertUtil.Speed:
+		case UnitConvertUtil.SPEED:
 			mGoalUnit = UnitSet.get(GOAL_SPEED_DEF);
 			break;
 
-		case UnitConvertUtil.Time:
+		case UnitConvertUtil.TIME:
 			mGoalUnit = UnitSet.get(GOAL_TIME_DEF);
 			break;
 
-		case UnitConvertUtil.Mass:
+		case UnitConvertUtil.MASS:
 			mGoalUnit = UnitSet.get(GOAL_MASS_DEF);
 			break;
 
@@ -586,30 +575,30 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		String mPreUnit = null;
 		switch (type) {
-		case UnitConvertUtil.Length:
+		case UnitConvertUtil.LENGTH:
 			mPreUnit = UnitSet.get(PRE_LENGTH_DEF);
 			break;
-		case UnitConvertUtil.Area:
+		case UnitConvertUtil.AREA:
 			mPreUnit = UnitSet.get(PRE_AREA_DEF);
 			break;
 
-		case UnitConvertUtil.Volume:
+		case UnitConvertUtil.VOLUME:
 			mPreUnit = UnitSet.get(PRE_VOLUME_DEF);
 			break;
 
-		case UnitConvertUtil.Temperature:
+		case UnitConvertUtil.TEMPERATURE:
 			mPreUnit = UnitSet.get(PRE_TEMPERATURE_DEF);
 			break;
 
-		case UnitConvertUtil.Speed:
+		case UnitConvertUtil.SPEED:
 			mPreUnit = UnitSet.get(PRE_SPEED_DEF);
 			break;
 
-		case UnitConvertUtil.Time:
+		case UnitConvertUtil.TIME:
 			mPreUnit = UnitSet.get(PRE_TIME_DEF);
 			break;
 
-		case UnitConvertUtil.Mass:
+		case UnitConvertUtil.MASS:
 			mPreUnit = UnitSet.get(PRE_MASS_DEF);
 			break;
 
@@ -623,30 +612,30 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		String mTitleText = null;
 		switch (type) {
-		case UnitConvertUtil.Length:
+		case UnitConvertUtil.LENGTH:
 			mTitleText = getString(R.string.length_title);
 			break;
-		case UnitConvertUtil.Area:
+		case UnitConvertUtil.AREA:
 			mTitleText = getString(R.string.area_title);
 			break;
 
-		case UnitConvertUtil.Volume:
+		case UnitConvertUtil.VOLUME:
 			mTitleText = getString(R.string.volume_title);
 			break;
 
-		case UnitConvertUtil.Temperature:
+		case UnitConvertUtil.TEMPERATURE:
 			mTitleText = getString(R.string.temperature_title);
 			break;
 
-		case UnitConvertUtil.Speed:
+		case UnitConvertUtil.SPEED:
 			mTitleText = getString(R.string.speed_title);
 			break;
 
-		case UnitConvertUtil.Time:
+		case UnitConvertUtil.TIME:
 			mTitleText = getString(R.string.time_title);
 			break;
 
-		case UnitConvertUtil.Mass:
+		case UnitConvertUtil.MASS:
 			mTitleText = getString(R.string.mass_title);
 			break;
 
@@ -657,17 +646,24 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 	}
 
 	private void showPickerDialog(final int preOrGoal) {
-		AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-		// 自定义dialog的title，居中。不用setTitle。　因为setTitle默认文字靠左，不能居中。
-		TextView title = new TextView(this);
-		title.setText(getString(R.string.choose_unit));
-		title.setTextSize(24);
-		title.setHeight(200);
-		title.setGravity(android.view.Gravity.CENTER);
-		dialog.setCustomTitle(title);
-		LayoutInflater mInflater = LayoutInflater.from(this);
-		View mView = mInflater.inflate(R.layout.pick_data_view, null);
-		mUnitPickerView = (PickerView) mView.findViewById(R.id.unit_set_pick);
+		myAlertDialog = new AlertDialog.Builder(this).create();
+		Window w = myAlertDialog.getWindow();
+		WindowManager.LayoutParams lp = w.getAttributes();
+		// lp.y =(int) mResources.getDimension(R.dimen.custom_dialog_margin);
+		// lp.y=200;
+		// lp.verticalMargin=1000;
+		lp.gravity = Gravity.BOTTOM;
+		DisplayMetrics metric = mResources.getDisplayMetrics();
+		myAlertDialog.show();
+		// w.setLayout(333, 333);
+		w.setAttributes(lp);
+		// myAlertDialog.setCancelable(false);
+		myAlertDialog.setCanceledOnTouchOutside(false);
+		myAlertDialog.getWindow().setContentView(R.layout.fuck);
+		// LayoutInflater mInflater = LayoutInflater.from(this);
+		// View mView = mInflater.inflate(R.layout.fuck, null);
+		mUnitPickerView = (PickerView) myAlertDialog
+				.findViewById(R.id.unit_set_pick);
 		mUnitPickerView.setData(mPickerData);
 		// 设置当前选中位置与mPreUnitView一致
 		switch (preOrGoal) {
@@ -680,69 +676,60 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 		default:
 			break;
 		}
-		dialog.setView(mView);
-		dialog.setNegativeButton(getString(R.string.pick_cancel),
-				new DialogInterface.OnClickListener() {
+		Button cancelButton = (Button) myAlertDialog
+				.findViewById(R.id.cancel_btn);
+		Button commitButton = (Button) myAlertDialog
+				.findViewById(R.id.commit_btn);
+		cancelButton.setOnClickListener(new OnClickListener() {
 
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				myAlertDialog.dismiss();
+			}
+		});
+		commitButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				switch (preOrGoal) {
+				case isFromPreUnitView:
+					mPreUnitIndex = mUnitPickerView.getCurrentPosition();
+					if (Locale.getDefault().getLanguage().endsWith("zh")) {
+						mPreUnitView.setText(UnitSet.get(mPreUnitIndex));
+						mPreUnitShortView.setText(UnitShortSet
+								.get(mPreUnitIndex));
+					} else {
+						mPreUnitShortView.setText(UnitSet.get(mPreUnitIndex));
+						mPreUnitView.setText(UnitShortSet.get(mPreUnitIndex));
 					}
-				});
-		dialog.setPositiveButton(getString(R.string.pick_commit),
-				new DialogInterface.OnClickListener() {
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						switch (preOrGoal) {
-						case isFromPreUnitView:
-							mPreUnitIndex = mUnitPickerView
-									.getCurrentPosition();
-							if (Locale.getDefault().getLanguage()
-									.endsWith("zh")) {
-								mPreUnitView.setText(UnitSet.get(mPreUnitIndex));
-								mPreUnitShortView.setText(UnitShortSet
-										.get(mPreUnitIndex));
-							} else {
-								mPreUnitShortView.setText(UnitSet
-										.get(mPreUnitIndex));
-								mPreUnitView.setText(UnitShortSet
-										.get(mPreUnitIndex));
-							}
-							// mPreUnitView.setTextColor(getResources().getColor(
-							// R.color.text_def));
-							break;
-						case isFromGoalUnitView:
-							mGoalUnitIndex = mUnitPickerView
-									.getCurrentPosition();
-							if (Locale.getDefault().getLanguage()
-									.endsWith("zh")) {
-								mGoalUnitView.setText(UnitSet
-										.get(mGoalUnitIndex));
-								mGoalUnitShortView.setText(UnitShortSet
-										.get(mGoalUnitIndex));
-							} else {
-								mGoalUnitShortView.setText(UnitSet
-										.get(mGoalUnitIndex));
-								mGoalUnitView.setText(UnitShortSet
-										.get(mGoalUnitIndex));
-							}
-							// mGoalUnitView.setTextColor(getResources().getColor(
-							// R.color.text_def));
-							break;
-						default:
-							break;
-						}
-						// 进行一次计算
-						if (inputNum.equals("")) {
-							inputNum = "1";
-						}
-						result = UnitConvertUtil.computeConvertResult(inputNum,
-								mPreUnitIndex, mGoalUnitIndex, nowUnitType);
-						mResultText.setText(String.valueOf(result));
+					break;
+				case isFromGoalUnitView:
+					mGoalUnitIndex = mUnitPickerView.getCurrentPosition();
+					if (Locale.getDefault().getLanguage().endsWith("zh")) {
+						mGoalUnitView.setText(UnitSet.get(mGoalUnitIndex));
+						mGoalUnitShortView.setText(UnitShortSet
+								.get(mGoalUnitIndex));
+					} else {
+						mGoalUnitShortView.setText(UnitSet.get(mGoalUnitIndex));
+						mGoalUnitView.setText(UnitShortSet.get(mGoalUnitIndex));
 					}
-				});
-		dialog.setOnDismissListener(new OnDismissListener() {
+					break;
+				default:
+					break;
+				}
+				// 进行一次计算
+				if (inputNum.equals("")) {
+					inputNum = "1";
+				}
+				result = UnitConvertUtil.computeConvertResult(inputNum,
+						mPreUnitIndex, mGoalUnitIndex, nowUnitType);
+				mResultText.setText(String.valueOf(result));
+				myAlertDialog.dismiss();
+			}
+		});
+		myAlertDialog.setOnDismissListener(new OnDismissListener() {
 
 			@Override
 			public void onDismiss(DialogInterface dialog) {
@@ -761,7 +748,7 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 				}
 			}
 		});
-		dialog.show();
+		// myAlertDialog.getWindow().setContentView(mView);
 	}
 
 	@Override
@@ -841,15 +828,5 @@ public class UnitConvertActivity extends Activity implements OnClickListener {
 			mResultText.setText("Error");
 		}
 
-	}
-
-	public int getStatusBarHeight() {
-		int result = 0;
-		int resourceId = getResources().getIdentifier("status_bar_height",
-				"dimen", "android");
-		if (resourceId > 0) {
-			result = getResources().getDimensionPixelSize(resourceId);
-		}
-		return result;
 	}
 }

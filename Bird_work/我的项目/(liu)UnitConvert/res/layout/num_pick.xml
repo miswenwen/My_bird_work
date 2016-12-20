@@ -140,8 +140,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:src="@drawable/calculator_btn_0_normal"
-                    android:text="0" />
+                    android:src="@drawable/calculator_btn_0_normal" />
 
                 <ImageButton
                     android:id="@+id/digit_dot"
@@ -149,8 +148,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/calculator_btn_decimal_normal"
-                    android:text="." />
+                    android:src="@drawable/calculator_btn_decimal_normal" />
             </LinearLayout>
         </LinearLayout>
 

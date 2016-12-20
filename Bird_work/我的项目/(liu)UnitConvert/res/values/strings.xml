@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">计算器</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -14,8 +15,8 @@
     <string name="capital_title">Traditional Characters</string>
     <string name="choose_unit">Select unit</string>
     <string name="pick_commit">OK</string>
-     <string name=" pick_cancel">Cancel</string> 
-         <!-- FunctionSet显示 -->
+    <string name="pick_cancel">Cancel</string>
+    <!-- FunctionSet显示 -->
     <string name="length_text">Length</string>
     <string name="area_text">Area</string>
     <string name="volume_text">Volume</string>
@@ -156,8 +157,8 @@
     <string name="r_temperature">Rankine</string>
     <string name="re_temperature">Reaumur</string>
     <!-- 温度单位集合 缩写 -->
-    <string name="c_temperature_short">℃</string>
-    <string name="f_temperature_short">℉</string>
+    <string name="c_temperature_short">°C</string>
+    <string name="f_temperature_short">°F</string>
     <string name="k_temperature_short">K</string>
     <string name="r_temperature_short">°R</string>
     <string name="re_temperature_short">°Re</string>
@@ -228,7 +229,7 @@
     <string name="g_mass_short">g</string>
     <string name="mg_mass_short">mg</string>
     <string name="ug_mass_short">ug</string>
-        <string name="q_mass_short">q</string>
+    <string name="q_mass_short">q</string>
     <string name="lb_mass_short">lb</string>
     <string name="oz_mass_short">oz</string>
     <string name="ct_mass_short">ct</string>
@@ -243,5 +244,9 @@
     <string name="jin_mass_short">jin</string>
     <string name="qian_mass_short">qian</string>
     <string name="liang_mass_short">liang</string>
+    <!-- 大写转换 -->
+    <string name="cn_full">整</string>
+    <string name="cn_negative">负</string>
+    <string name="cn_zero_full">零元</string>
 
 </resources>

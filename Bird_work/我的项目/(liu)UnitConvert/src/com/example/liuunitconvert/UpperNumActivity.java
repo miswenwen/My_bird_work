@@ -34,14 +34,14 @@ public class UpperNumActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.capital_convert);
 		mResources = getResources();
 		// 设置沉浸式状态栏
-		setStatusBar();
+		StatusBarUtil.setStatusBar(this);
 		// 获取控件实例
 		mSwitchButton = (ImageButton) findViewById(R.id.switch_btn);
 		mInputText = (TextView) findViewById(R.id.input_num_tv);
 		mResultText = (TextView) findViewById(R.id.result_num_tv);
 		mInputText.setText(inputNum);
 		BigDecimal numberOfMoney = new BigDecimal(inputNum);
-		result = NumberToCn.number2CNMontrayUnit(numberOfMoney);
+		result =number2CNMontrayUnit(numberOfMoney);
 		mResultText.setText(result);
 		final TypedArray convertButtons = mResources
 				.obtainTypedArray(R.array.unit_convert_buttons);
@@ -60,49 +60,6 @@ public class UpperNumActivity extends Activity implements OnClickListener {
 			}
 		});
 	}
-
-	private void setStatusBar() {
-		// TODO Auto-generated method stub
-		// 首先使 ChildView 不预留空间
-		Window window = this.getWindow();
-		ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
-		View mChildView = mContentView.getChildAt(0);
-		if (mChildView != null) {
-			ViewCompat.setFitsSystemWindows(mChildView, false);
-		}
-
-		int statusBarHeight = getStatusBarHeight();
-		// 需要设置这个 flag 才能设置状态栏
-		window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-		// 避免多次调用该方法时,多次移除了 View
-		if (mChildView != null && mChildView.getLayoutParams() != null
-				&& mChildView.getLayoutParams().height == statusBarHeight) {
-			// 移除假的 View.
-			mContentView.removeView(mChildView);
-			mChildView = mContentView.getChildAt(0);
-		}
-		if (mChildView != null) {
-			FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) mChildView
-					.getLayoutParams();
-			// 清除 ChildView 的 marginTop 属性
-			if (lp != null && lp.topMargin >= statusBarHeight) {
-				lp.topMargin -= statusBarHeight;
-				mChildView.setLayoutParams(lp);
-			}
-		}
-	}
-
-	public int getStatusBarHeight() {
-		int result = 0;
-		int resourceId = getResources().getIdentifier("status_bar_height",
-				"dimen", "android");
-		if (resourceId > 0) {
-			result = getResources().getDimensionPixelSize(resourceId);
-		}
-		return result;
-
-	}
-
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
@@ -185,11 +142,111 @@ public class UpperNumActivity extends Activity implements OnClickListener {
 		mInputText.setText(inputNum);
 		BigDecimal numberOfMoney = new BigDecimal(inputNum);
 		try {
-			result = NumberToCn.number2CNMontrayUnit(numberOfMoney);
+			result = number2CNMontrayUnit(numberOfMoney);
 			mResultText.setText(result);
 		} catch (Exception e) {
 			mResultText.setText("Error");
 		}
 
+	}
+
+	private String number2CNMontrayUnit(BigDecimal numberOfMoney) {
+		// TODO Auto-generated method stub
+		 /**
+	     * 汉语中数字大写
+	     */
+	    final String[] CN_UPPER_NUMBER = mResources.getStringArray(R.array.cn_upper_num);
+	    /**
+	     * 汉语中货币单位大写，这样的设计类似于占位符
+	     */
+	    final String[] CN_UPPER_MONETRAY_UNIT = mResources.getStringArray(R.array.cn_upper_monetray_unit);
+	    /**
+	     * 特殊字符：整
+	     */
+	    final String CN_FULL = mResources.getString(R.string.cn_full);
+	    /**
+	     * 特殊字符：负
+	     */
+	    final String CN_NEGATIVE =mResources.getString(R.string.cn_negative);
+	    /**
+	     * 金额的精度，默认值为2
+	     */
+	    final int MONEY_PRECISION = 2;
+	    /**
+	     * 特殊字符：零元整
+	     */
+	    final String CN_ZEOR_FULL = mResources.getString(R.string.cn_zero_full)+ CN_FULL;
+	    StringBuffer sb = new StringBuffer();
+        // -1, 0, or 1 as the value of this BigDecimal is negative, zero, or
+        // positive.
+        int signum = numberOfMoney.signum();
+        // 零元整的情况
+        if (signum == 0) {
+            return CN_ZEOR_FULL;
+        }
+        //这里会进行金额的四舍五入
+        long number = numberOfMoney.movePointRight(MONEY_PRECISION)
+                .setScale(0, 4).abs().longValue();
+        // 得到小数点后两位值
+        long scale = number % 100;
+        int numUnit = 0;
+        int numIndex = 0;
+        boolean getZero = false;
+        // 判断最后两位数，一共有四中情况：00 = 0, 01 = 1, 10, 11
+        if (!(scale > 0)) {
+            numIndex = 2;
+            number = number / 100;
+            getZero = true;
+        }
+        if ((scale > 0) && (!(scale % 10 > 0))) {
+            numIndex = 1;
+            number = number / 10;
+            getZero = true;
+        }
+        int zeroSize = 0;
+        while (true) {
+            if (number <= 0) {
+                break;
+            }
+            // 每次获取到最后一个数
+            numUnit = (int) (number % 10);
+            if (numUnit > 0) {
+                if ((numIndex == 9) && (zeroSize >= 3)) {
+                    sb.insert(0, CN_UPPER_MONETRAY_UNIT[6]);
+                }
+                if ((numIndex == 13) && (zeroSize >= 3)) {
+                    sb.insert(0, CN_UPPER_MONETRAY_UNIT[10]);
+                }
+                sb.insert(0, CN_UPPER_MONETRAY_UNIT[numIndex]);
+                sb.insert(0, CN_UPPER_NUMBER[numUnit]);
+                getZero = false;
+                zeroSize = 0;
+            } else {
+                ++zeroSize;
+                if (!(getZero)) {
+                    sb.insert(0, CN_UPPER_NUMBER[numUnit]);
+                }
+                if (numIndex == 2) {
+                    if (number > 0) {
+                        sb.insert(0, CN_UPPER_MONETRAY_UNIT[numIndex]);
+                    }
+                } else if (((numIndex - 2) % 4 == 0) && (number % 1000 > 0)) {
+                    sb.insert(0, CN_UPPER_MONETRAY_UNIT[numIndex]);
+                }
+                getZero = true;
+            }
+            // 让number每次都去掉最后一个数
+            number = number / 10;
+            ++numIndex;
+        }
+        // 如果signum == -1，则说明输入的数字为负数，就在最前面追加特殊字符：负
+        if (signum == -1) {
+            sb.insert(0, CN_NEGATIVE);
+        }
+        // 输入的数字小数点后两位为"00"的情况，则要在最后追加特殊字符：整
+        if (!(scale > 0)) {
+            sb.append(CN_FULL);
+        }
+        return sb.toString();
 	}
 }

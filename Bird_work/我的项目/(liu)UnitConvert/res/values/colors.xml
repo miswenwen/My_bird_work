@@ -7,5 +7,9 @@
     <color name="unit_convert_bg">#f1f3f2</color>
     <color name="function_choose_text">#7f7a74</color>
     <color name="gridview_bg">#5e5653</color>
-
+    <color name="picker_center_text">#3aa8fc</color>
+      <color name="picker_other_parts">#989898</color>
+       <color name="picker_line_color">#cecece</color>
+        <color name="picker_bg_color">#f7f7f7</color>
+       
 </resources>

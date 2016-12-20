@@ -32,7 +32,7 @@ public class PickerView extends View {
 	private int centerTextColor = Color.BLUE;// 选中框的文字颜色
 	private int otherPartColor = Color.WHITE;// 其他部分的颜色
 	private int lineColor = Color.BLACK;// 分割线颜色
-	private int speed = 1;// 手指抬起后是继续前进还是回退的速度
+	private float speed = 0.5f;// 手指抬起后是继续前进还是回退的速度
 	private float devideLineLength = 300;// 设置分割线长度，2×devideLineLength
 	// 成员变量
 	double zz;
@@ -68,21 +68,24 @@ public class PickerView extends View {
 
 	public PickerView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		strings.add("liu0");
-		strings.add("liu1");
-		strings.add("liu2");
-		strings.add("liu3");
-		strings.add("liu4");
-		strings.add("liu5");
-		strings.add("liu6");
-		strings.add("liu7");
-		strings.add("liu8");
-		strings.add("liu9");
-		strings.add("liu10");
-		// Collections.reverse(strings);
-		minTextSize = DensityUtil.dip2px(context,7);
-		maxTextSize =  DensityUtil.dip2px(context, 40);
+//		strings.add("liu0");
+//		strings.add("liu1");
+//		strings.add("liu2");
+//		strings.add("liu3");
+//		strings.add("liu4");
+//		strings.add("liu5");
+//		strings.add("liu6");
+//		strings.add("liu7");
+//		strings.add("liu8");
+//		strings.add("liu9");
+//		strings.add("liu10");
+//		// Collections.reverse(strings);
+		minTextSize = DensityUtil.dip2px(context,9);
+		maxTextSize =  DensityUtil.dip2px(context, 18);
 		devideLineLength = DensityUtil.dip2px(context,100);
+		centerTextColor=context.getResources().getColor(R.color.picker_center_text);
+		otherPartColor=context.getResources().getColor(R.color.picker_other_parts);
+		lineColor=context.getResources().getColor(R.color.picker_line_color);
 		/**
 		 * 总个数为奇数:显示中间一个，比如总数3个，3/2=1。list.get(1)实际对应的第二个元素，所以在中间
 		 * 总个数为偶数:上部分要比下部分多显示一个
@@ -138,30 +141,46 @@ public class PickerView extends View {
 		mCurrentLocation = midStringNum + offset / itemHeight;
 		mPaint.setTextAlign(Align.CENTER);
 		mPaint.setColor(lineColor);
+		mPaint.setStrokeWidth(3);
 		// 画两根线
-		canvas.drawLine(viewWidth / 2 - devideLineLength, viewHeight / 2
-				- itemHeight / 2, viewWidth / 2 + devideLineLength, viewHeight
+		this.setBackgroundColor(getResources().getColor(R.color.picker_bg_color));
+		canvas.drawLine(0, viewHeight / 2
+				- itemHeight / 2, viewWidth, viewHeight
 				/ 2 - itemHeight / 2, mPaint);
-		canvas.drawLine(viewWidth / 2 - devideLineLength, viewHeight / 2
-				+ itemHeight / 2, viewWidth / 2 + devideLineLength, viewHeight
+		canvas.drawLine(0, viewHeight / 2
+				+ itemHeight / 2, viewWidth, viewHeight
 				/ 2 + itemHeight / 2, mPaint);
+		mPaint.setColor(Color.WHITE);
+		canvas.drawRect(0, viewHeight
+				/ 2 - itemHeight / 2,  viewWidth, viewHeight
+				/ 2+ itemHeight / 2, mPaint);
 		/**
 		 * 画文字 计算字体颜色 计算字体大小
 		 */
+		float colorMult;
+		float changeSpeed=1.5f;
 		for (int i = 0; i <= strings.size() - 1; i++) {
 			evaluator = new ArgbEvaluator();
 			if (strings.size() % 2 == 0) {
 				positionOffset = (float) (1 / (Math.pow(
 						Math.abs(strings.size() - i - mCurrentLocation), 2) + 1));
+				colorMult=1-changeSpeed*Math.abs(strings.size() - i - mCurrentLocation);
 			} else {
 				positionOffset = (float) (1 / (Math.pow(
 						Math.abs(strings.size() - 1 - i - mCurrentLocation), 2) + 1));
+				colorMult=1-changeSpeed*Math.abs(strings.size() - 1-i - mCurrentLocation);
 			}
-			varibleTextColor = (Integer) evaluator.evaluate(positionOffset,
-					otherPartColor, centerTextColor);
+			if (i==mCurrentPosition) {
+				varibleTextColor = (Integer) evaluator.evaluate(colorMult,
+						otherPartColor, centerTextColor);
+			}
+			else{
+				varibleTextColor=otherPartColor;
+			}
 			mPaint.setColor(varibleTextColor);
 			varibleTextSize = (float) (minTextSize + (maxTextSize - minTextSize)
 					* positionOffset);
+			mPaint.setAlpha((int) (255*positionOffset));
 			mPaint.setTextSize(varibleTextSize);
 			FontMetricsInt newfmi = mPaint.getFontMetricsInt();
 			float newbaseline = (float) (viewHeight / 2 - (newfmi.bottom / 2.0 + newfmi.top / 2.0));

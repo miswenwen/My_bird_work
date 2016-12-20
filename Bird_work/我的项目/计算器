@@ -1,0 +1,217 @@
+//英语字符串：
+FunctionSet所有的。
+大写转换Financial characters 
+科学计算器 Scientific
+Length Volume Temperature Time  Mass Speed Calculator 
+Length converter
+Select unit Cancel OK
+//doov挚爱
+宽1080高1920屏幕密度3.0dpi480
+//小米单位
+Currency Mortgage Taxes Area Financial characters Volume Length Scientific Temperature Time Mass Speed Calculator
+//长度： 默认千米1 厘米 Length converter 27个 ok
+千米 km  Kilometer km
+米 m Meter m
+分米  dm Decimeter dm
+厘米 cm Centimeter cm
+毫米 mm Millimeter mm
+微米 um MicroMeter um
+纳米 nm Nanometer nm
+皮米 pm Picometer pm
+海里 nmi Nautical mile nmi
+英里 mi Mile mi
+弗隆 fur Femara fur
+英寻 fm Fathom fm
+码 yd Yard yd 
+英尺 ft Foot ft
+英寸 in Inch in
+公里 gongli Kilometer
+里 li Li li
+丈 zhang Zhang zhang 
+尺 chi Chi chi
+寸 cun Cun cun
+分 fen Fen fen
+厘 li Li li
+毫 hao Hao hao
+秒差距 pc Parsec pc
+月球距离 ld Lunar distance ld
+天文单位 符号(见手机图片) Astronomical unit 符号
+光年单位 ly Light year ly
+
+//面积： 平方公里1 平方厘米 Area converter 19个 ok
+平方千米 km2 Square kilometer
+公顷 ha Hectare
+公亩 are Are
+平方米 m2 Square meter
+平方分米 dm2 Square decimeter
+平方厘米 cm2 Square centimeter
+平方毫米 mm2 Square millimeter
+平方微米 um2 Square micron
+英亩 acre Acre
+平方英里 mile2 Square mile
+平方码 yd2 Square yard 
+平方英尺 ft2 Square foot
+平方英寸 in2 Square inch
+平方竿 rd2 Square rod
+顷 qing Qing
+亩 mu Mu
+平方尺 chi2 Square chi
+平方寸 cun2 Square cun
+平方公里 gongli2 Square kilometer
+//体积 立方米1 立方厘米 Volume converter 13个
+立方米 m3 Cubic meter
+立方分米 dm3 Cubic decimeter
+立方厘米 cm3 Cubic centimeter
+立方毫米 mm3	Cubic millimeter
+公石 hl3 Hectoliter
+升 l Liter
+分升 dl Deciliter
+厘升 cl Centiliter
+毫升 ml Milliter
+立方英尺 ft3	Cubic foot
+立方英寸 ln3	Cubic inch
+立方码 yd3	Cubic yard
+亩英尺 af3 Acre foot
+//温度 默认 摄氏度 华氏度 Temperature converter 5个 ok
+摄氏度 ℃ Celsius
+华氏度 ℉ Fahrenheit
+开尔文 K Kelvin
+兰氏度 °R Rankine
+列氏度 °Re Reaumur
+//速度 默认 米/秒 千米/秒  Speed converter 9个 ok
+光速 c Lightspeed
+马赫Ma Mach
+米/秒 m/s Meter pre second
+千米/小时 km/h Kilometer per hour
+千米/秒 km/s Kilometer per second
+海里/小时 kn Knot
+英里/小时 mph Mile per hour
+英尺/秒 fps Foot per second
+英寸/秒 ips Inch per second
+//时间 默认 分钟 秒 Time converter 9个 ok 
+年 yr Year
+周 wk Week
+天 day Day
+小时 h Hour
+分钟 min Minute
+秒 s Second
+毫秒 ms Millisecond
+微妙 us Microsecond
+皮秒 ps Picosecond
+//重量  默认 千克 克 Mass converter 20个 ok
+吨 t Tonne
+千克 kg Kilogram
+克 g Gram
+毫克 mg Milligram
+微克 ug Microgram
+公担 q Quintal
+磅 lb Pound
+盎司 oz Ounce
+克拉 ct Carat
+格令 gr Grain
+长吨 l.t Long
+短吨 sh.t Short ton
+英担 cwt UK hundredweight
+美担 cwt Us hundredweight
+英石 uk.st Stone
+打兰 dr Dram
+担 dan Dan
+斤 jin Jin
+钱 qian Qian
+两 liang Liang
+
+//注意点：
+数字输入最大位数。
+calculator_panel.xml这个布局文件有两个，分别在res/layout, res/layout-854x480
+simple_pad.xmle也有两个
+
+layout-854x480 修改这个文件夹才生效，搞清楚原因。
+
+
+class CalculatorUtil{
+//长度
+public static double lengthConvert(double befNum,int befUnit,int aftUnit){
+	ArrayList<int> lengthUnitSet=new ArrayList<int>();//也可以写成二维数组的形式，第一个int类型表示单位类型，第二个单位表示单位类型到标准单位的乘数
+	double  midMultiplier;//到标准单位的乘数
+	double  lastMultiplier;//标准单位到aftUnit的乘数
+	double result;
+	midMultiplier=getMidMultiplier(befUnit,"length");
+	lastMultiplier=getLastMultiplier(aftUnit,"length");
+	result=midMultiplier*lastMultiplier*befNum;//用BigDecimal类来结算，别用这种算数符，会有精度丢失。
+	return result;
+}
+//平方
+public static double squareConvert(double befNum,int befUnit,int aftUnit){}
+//立方
+public static double cubeConvert(double befNum,int befUnit,int aftUnit){}
+//温度temperature
+public static double tempConvert(double befNum,int befUnit,int aftUnit){}
+//速度velocity
+public static double velConvert(double befNum,int befUnit,int aftUnit){}
+//时间time
+public static double timeConvert(double befNum,int befUnit,int aftUnit){}
+//重量
+public static double weightConvert(double befNum,int befUnit,int aftUnit){}
+
+public static double getMidMultiplier(int befUnit,String type){
+	double mult=0;
+	if(type.equals("lenght")){
+		switch (befUnit) {
+			case 1:
+				mult=1;
+				break;
+
+			case 2:
+				mult=1;
+				break;
+
+			case 3:
+				mult=1;
+				break;
+
+			case 4:
+				mult=1;
+				break;
+
+			case 5:
+				mult=1;
+				break;
+
+			case 6:
+				mult=1;
+				break;
+
+			case 7:
+				mult=1;
+				break;
+
+			case 8:
+				mult=1;
+				break;
+
+				
+			case 9:
+				mult=1;	
+				break;
+
+
+			default:
+				break;
+		}
+	return mult;	
+	}
+}
+public static double getLastMultiplier(int aftUnit,String type){
+	double mult=0;
+	mult=1/getMidMultiplier(aftUnit,type);//用BigDecimal类的方法计算
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string-array name="unit_convert_buttons">
+    <string-array name="unit_convert_buttons">
         <item>@+id/digit_0</item>
         <item>@+id/digit_1</item>
         <item>@+id/digit_2</item>
@@ -16,20 +16,291 @@
         <item>@+id/func_del</item>
         <item>@+id/func_clear</item>
     </string-array>
-<!--   加不加加号都可以，实测      <string-array name="unit_convert_buttons">
-        <item>@id/digit_0</item>
-        <item>@id/digit_1</item>
-        <item>@id/digit_2</item>
-        <item>@id/digit_3</item>
-        <item>@id/digit_4</item>
-        <item>@id/digit_5</item>
-        <item>@id/digit_6</item>
-        <item>@id/digit_7</item>
-        <item>@id/digit_8</item>
-        <item>@id/digit_9</item>
-        <item>@id/digit_dot</item>
-        <item>@id/func_del</item>
-        <item>@id/func_clear</item>
-    </string-array> -->
+    <string-array name="cn_upper_num">
+        <item>零</item>
+        <item>壹</item>
+        <item>贰</item>
+        <item>叁</item>
+        <item>肆</item>
+        <item>伍</item>
+        <item>陆</item>
+        <item>柒</item>
+        <item>捌</item>
+        <item>玖</item>
+    </string-array>
+    <string-array name="cn_upper_monetray_unit">
+        <item>分</item>
+        <item>角</item>
+        <item>元</item>
+        <item>拾</item>
+        <item>佰</item>
+        <item>仟</item>
+        <item>万</item>
+        <item>拾</item>
+        <item>佰</item>
+        <item>仟</item>
+        <item>亿</item>
+        <item>拾</item>
+        <item>佰</item>
+        <item>仟</item>
+        <item>兆</item>
+        <item>拾</item>
+        <item>佰</item>
+        <item>仟</item>
+    </string-array>
+    <string-array name="convert_icons">
+        <item>@drawable/capital_convert</item>
+        <item>@drawable/science_convert</item>
+        <item>@drawable/length_convert</item>
+        <item>@drawable/area_convert</item>
+        <item>@drawable/volume_convert</item>
+        <item>@drawable/temperature_convert</item>
+        <item>@drawable/speed_convert</item>
+        <item>@drawable/time_convert</item>
+        <item>@drawable/mass_convert</item>
+    </string-array>
+    <string-array name="convert_texts">
+        <item>@string/capital_text</item>
+        <item>@string/science_text</item>
+        <item>@string/length_text</item>
+        <item>@string/area_text</item>
+        <item>@string/volume_text</item>
+        <item>@string/temperature_text</item>
+        <item>@string/speed_text</item>
+        <item>@string/time_text</item>
+        <item>@string/mass_text</item>
+    </string-array>
+    <string-array name="length_convert">
+        <item>@string/km_length</item>
+        <item>@string/m_length</item>
+        <item>@string/dm_length</item>
+        <item>@string/cm_length</item>
+        <item>@string/mm_length</item>
+        <item>@string/um_length</item>
+        <item>@string/nm_length</item>
+        <item>@string/pm_length</item>
+        <item>@string/nmi_length</item>
+        <item>@string/mi_length</item>
+        <item>@string/fur_length</item>
+        <item>@string/fm_length</item>
+        <item>@string/yd_length</item>
+        <item>@string/ft_length</item>
+        <item>@string/in_length</item>
+        <item>@string/gongli_length</item>
+        <item>@string/li_length</item>
+        <item>@string/zhang_length</item>
+        <item>@string/chi_length</item>
+        <item>@string/cun_length</item>
+        <item>@string/fen_length</item>
+        <item>@string/li_new_length</item>
+        <item>@string/hao_length</item>
+        <item>@string/pc_length</item>
+        <item>@string/ld_length</item>
+        <item>@string/tianwen_length</item>
+        <item>@string/ly_length</item>
+    </string-array>
+    <string-array name="length_convert_short">
+        <item>@string/km_length_short</item>
+        <item>@string/m_length_short</item>
+        <item>@string/dm_length_short</item>
+        <item>@string/cm_length_short</item>
+        <item>@string/mm_length_short</item>
+        <item>@string/um_length_short</item>
+        <item>@string/nm_length_short</item>
+        <item>@string/pm_length_short</item>
+        <item>@string/nmi_length_short</item>
+        <item>@string/mi_length_short</item>
+        <item>@string/fur_length_short</item>
+        <item>@string/fm_length_short</item>
+        <item>@string/yd_length_short</item>
+        <item>@string/ft_length_short</item>
+        <item>@string/in_length_short</item>
+        <item>@string/gongli_length_short</item>
+        <item>@string/li_length_short</item>
+        <item>@string/zhang_length_short</item>
+        <item>@string/chi_length_short</item>
+        <item>@string/cun_length_short</item>
+        <item>@string/fen_length_short</item>
+        <item>@string/li_new_length_short</item>
+        <item>@string/hao_length_short</item>
+        <item>@string/pc_length_short</item>
+        <item>@string/ld_length_short</item>
+        <item>@string/tianwen_length_short</item>
+        <item>@string/ly_length_short</item>
+    </string-array>
+    <string-array name="area_convert">
+        <item>@string/km2_area</item>
+        <item>@string/ha_area</item>
+        <item>@string/are_area</item>
+        <item>@string/m2_area</item>
+        <item>@string/dm2_area</item>
+        <item>@string/cm2_area</item>
+        <item>@string/mm2_area</item>
+        <item>@string/um2_area</item>
+        <item>@string/acre_area</item>
+        <item>@string/mile2_area</item>
+        <item>@string/yd2_area</item>
+        <item>@string/ft2_area</item>
+        <item>@string/in2_area</item>
+        <item>@string/rd2_area</item>
+        <item>@string/qing_area</item>
+        <item>@string/mu_area</item>
+        <item>@string/chi2_area</item>
+        <item>@string/cun2_area</item>
+        <item>@string/gongli2_area</item>
+    </string-array>
+    <string-array name="area_convert_short">
+        <item>@string/km2_area_short</item>
+        <item>@string/ha_area_short</item>
+        <item>@string/are_area_short</item>
+        <item>@string/m2_area_short</item>
+        <item>@string/dm2_area_short</item>
+        <item>@string/cm2_area_short</item>
+        <item>@string/mm2_area_short</item>
+        <item>@string/um2_area_short</item>
+        <item>@string/acre_area_short</item>
+        <item>@string/mile2_area_short</item>
+        <item>@string/yd2_area_short</item>
+        <item>@string/ft2_area_short</item>
+        <item>@string/in2_area_short</item>
+        <item>@string/rd2_area_short</item>
+        <item>@string/qing_area_short</item>
+        <item>@string/mu_area_short</item>
+        <item>@string/chi2_area_short</item>
+        <item>@string/cun2_area_short</item>
+        <item>@string/gongli2_area_short</item>
+    </string-array>
+    <string-array name="volume_convert">
+        <item>@string/m3_volume</item>
+        <item>@string/dm3_volume</item>
+        <item>@string/cm3_volume</item>
+        <item>@string/mm3_volume</item>
+        <item>@string/hl3_volume</item>
+        <item>@string/l_volume</item>
+        <item>@string/dl_volume</item>
+        <item>@string/cl_volume</item>
+        <item>@string/ml_volume</item>
+        <item>@string/ft3_volume</item>
+        <item>@string/ln3_volume</item>
+        <item>@string/yd3_volume</item>
+        <item>@string/af3_volume</item>
+    </string-array>
+    <string-array name="volume_convert_short">
+        <item>@string/m3_volume_short</item>
+        <item>@string/dm3_volume_short</item>
+        <item>@string/cm3_volume_short</item>
+        <item>@string/mm3_volume_short</item>
+        <item>@string/hl3_volume_short</item>
+        <item>@string/l_volume_short</item>
+        <item>@string/dl_volume_short</item>
+        <item>@string/cl_volume_short</item>
+        <item>@string/ml_volume_short</item>
+        <item>@string/ft3_volume_short</item>
+        <item>@string/ln3_volume_short</item>
+        <item>@string/yd3_volume_short</item>
+        <item>@string/af3_volume_short</item>
+    </string-array>
+    <string-array name="temperature_convert">
+        <item>@string/c_temperature</item>
+        <item>@string/f_temperature</item>
+        <item>@string/k_temperature</item>
+        <item>@string/r_temperature</item>
+        <item>@string/re_temperature</item>
+    </string-array>
+    <string-array name="temperature_convert_short">
+        <item>@string/c_temperature_short</item>
+        <item>@string/f_temperature_short</item>
+        <item>@string/k_temperature_short</item>
+        <item>@string/r_temperature_short</item>
+        <item>@string/re_temperature_short</item>
+    </string-array>
+    <string-array name="speed_convert">
+        <item>@string/c_speed</item>
+        <item>@string/ma_speed</item>
+        <item>@string/m_s_speed</item>
+        <item>@string/km_h_speed</item>
+        <item>@string/km_s_speed</item>
+        <item>@string/kn_speed</item>
+        <item>@string/mph_speed</item>
+        <item>@string/fps_speed</item>
+        <item>@string/ips_speed</item>
+    </string-array>
+    <string-array name="speed_convert_short">
+        <item>@string/c_speed_short</item>
+        <item>@string/ma_speed_short</item>
+        <item>@string/m_s_speed_short</item>
+        <item>@string/km_h_speed_short</item>
+        <item>@string/km_s_speed_short</item>
+        <item>@string/kn_speed_short</item>
+        <item>@string/mph_speed_short</item>
+        <item>@string/fps_speed_short</item>
+        <item>@string/ips_speed_short</item>
+    </string-array>
+    <string-array name="time_convert">
+        <item>@string/yr_time</item>
+        <item>@string/wk_time</item>
+        <item>@string/day_time</item>
+        <item>@string/h_time</item>
+        <item>@string/min_time</item>
+        <item>@string/s_time</item>
+        <item>@string/ms_time</item>
+        <item>@string/us_time</item>
+        <item>@string/ps_time</item>
+    </string-array>
+    <string-array name="time_convert_short">
+        <item>@string/yr_time_short</item>
+        <item>@string/wk_time_short</item>
+        <item>@string/day_time_short</item>
+        <item>@string/h_time_short</item>
+        <item>@string/min_time_short</item>
+        <item>@string/s_time_short</item>
+        <item>@string/ms_time_short</item>
+        <item>@string/us_time_short</item>
+        <item>@string/ps_time_short</item>
+    </string-array>
+    <string-array name="mass_convert">
+        <item>@string/t_mass</item>
+        <item>@string/kg_mass</item>
+        <item>@string/g_mass</item>
+        <item>@string/mg_mass</item>
+        <item>@string/ug_mass</item>
+        <item>@string/q_mass</item>
+        <item>@string/lb_mass</item>
+        <item>@string/oz_mass</item>
+        <item>@string/ct_mass</item>
+        <item>@string/gr_mass</item>
+        <item>@string/l_t_mass</item>
+        <item>@string/sh_t_mass</item>
+        <item>@string/cwt_uk_mass</item>
+        <item>@string/cwt_us_mass</item>
+        <item>@string/uk_st_mass</item>
+        <item>@string/dr_mass</item>
+        <item>@string/dan_mass</item>
+        <item>@string/jin_mass</item>
+        <item>@string/qian_mass</item>
+        <item>@string/liang_mass</item>
+    </string-array>
+    <string-array name="mass_convert_short">
+        <item>@string/t_mass_short</item>
+        <item>@string/kg_mass_short</item>
+        <item>@string/g_mass_short</item>
+        <item>@string/mg_mass_short</item>
+        <item>@string/ug_mass_short</item>
+        <item>@string/q_mass_short</item>
+        <item>@string/lb_mass_short</item>
+        <item>@string/oz_mass_short</item>
+        <item>@string/ct_mass_short</item>
+        <item>@string/gr_mass_short</item>
+        <item>@string/l_t_mass_short</item>
+        <item>@string/sh_t_mass_short</item>
+        <item>@string/cwt_uk_mass_short</item>
+        <item>@string/cwt_us_mass_short</item>
+        <item>@string/uk_st_mass_short</item>
+        <item>@string/dr_mass_short</item>
+        <item>@string/dan_mass_short</item>
+        <item>@string/jin_mass_short</item>
+        <item>@string/qian_mass_short</item>
+        <item>@string/liang_mass_short</item>
+    </string-array>
 
 </resources>

@@ -5,6 +5,7 @@
     android:layout_height="match_parent" >
 
     <RelativeLayout
+        android:id="@+id/item_rel"
         android:layout_width="@dimen/gridview_item_width"
         android:layout_height="@dimen/gridview_item_height"
         android:layout_centerInParent="true"
@@ -24,6 +25,7 @@
 
             <TextView
                 android:id="@+id/function_tv"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
