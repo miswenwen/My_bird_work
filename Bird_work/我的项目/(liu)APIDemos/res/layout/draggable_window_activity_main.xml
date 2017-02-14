@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liudraggablewindow.DraggableWindowMainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="#33ff0000"
+        android:text="1.获取WindowManager对象.\n2.manager.addView放一个view,自己配置好WindowManager.LayoutParams的各个字段.\n3.view设置setOnTouchListener,MotionEvent.ACTION_MOVE中设置manager.updateViewLayout.\n4.现在有个问题，就是返回键失效了，这个还没研究怎么解决。如果flag添加上FLAG_NOT_FOCUSABLE可行，Button能响应事件，但是没点击效果了。" />
+
+</RelativeLayout>

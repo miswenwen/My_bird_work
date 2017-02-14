@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.liualphatestviewandviewgroup.AlphaTestMainActivity" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33ff0000"
+        android:id="@+id/tv1"
+        android:text="A1与A2同在一个透明度为0.5的容器里，然后设置A2透明度为0.5.设置B1透明度为0.25.结果A2与B1透明度一致。说明子控件实际透明度是要乘以一层层的父控件的透明度的。0.5x0.5=0.25"/>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_below="@id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.5" >
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff00"
+            android:text="A1" />
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx1"
+            android:alpha="0.5"
+            android:background="#00ff00"
+            android:text="A2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:alpha="0.25"
+        android:background="#00ff00"
+        android:text="B1" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33ff0000"
+    android:text="装应用后，第一次点击会创建表，以后再点击不会创建，因为已经创建了"/>
+<Button
+android:id="@+id/create_database"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Create database"
+/>
+</LinearLayout>

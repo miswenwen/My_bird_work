@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liuapidemos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.liuapidemos.custombutton.CustomButtonMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.alarmclock.AlarmClockMainActivity" >
+        </activity>
+
+        <receiver
+            android:name="com.example.liuapidemos.alarmclock.AlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+
+        <activity android:name="com.example.liuapidemos.broadcast.BroadcastSecondActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.broadcast.BroadcastMainActivity" >
+        </activity>
+
+        <receiver android:name="com.example.liuapidemos.broadcast.MyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="shit" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.liuapidemos.packagemanager.PackageManagerMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.frameanim.FrameAnimMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.canvaschange.CanvasChangeMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.drawlinebypath.DrawLineByPathMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.drawlinecanvasdrawline.DrawLineCanvasDrawLineMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.frameanimcustomview.FrameAnimCustomViewMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.matrix.MatrixMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.smallball.SmallBallMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.viewpager.ViewPagerMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.database.DatabaseMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.handler.HandlerMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.asynctask.AsyncTaskMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.checkboxtogglebtnswitchdefault.CheckBoxToggleBtnSwitchDefaultMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.packagemanagersec.PackageManagerSecMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.timerpicker.TimerPickerMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.activitylog.ActivityLogMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.draggablewindow.DraggableWindowMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.valueanimator.ValueAnimatorMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.alphatest.AlphaTestMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.custombuttonsec.CustomButtonSecMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.delayfinishact.DelayFinishActMainActivity" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.delayfinishact.DelayFinishActSecAct" >
+        </activity>
+        <activity android:name="com.example.liuapidemos.digitalclock.DigitalClockMainActivity" >
+        </activity>
+    </application>
+
+</manifest>

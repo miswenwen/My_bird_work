@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33ff0000"
+    android:text="自定义view中，一张长图片(Bitmap对象)，每次截取一部分显示（canvas.clipRect）"/>
+    <com.example.liuapidemos.frameanimcustomview.FrameAnimCustomView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/shit"
+       />
+    <com.example.liuapidemos.frameanimcustomview.FrameAnimCustomView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shit1"
+       />
+</LinearLayout>

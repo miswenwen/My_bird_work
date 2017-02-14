@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33ff0000"
+    android:text="Matrix类,setRotate,postScale.最后mImageView1.setImageMatrix(matrix1);实现图片的旋转，平移，缩放，透明度等效果"/>
+    <ImageView
+       android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:src="@drawable/matrix_pic2" 
+       android:scaleType="matrix"
+       />
+     <ImageView
+       android:id="@+id/imageview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:src="@drawable/matrix_pic1" 
+        android:scaleType="matrix"
+       />
+    
+
+</LinearLayout>

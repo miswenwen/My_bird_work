@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liuviewoverride.SmallBallMainActivity" >
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33ff0000"
+    android:text="自定义View,Activitiy中开定时器定时刷新view,onDraw方法中修改小球位置"/>
+    <com.example.liuapidemos.smallball.SmallBallView
+        android:id="@+id/shit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    </LinearLayout>

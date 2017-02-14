@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liudelayfinishact.DelayFinishActMainActivity" >
+<TextView 
+    android:background="#33ff0000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="1.没延时\n3.点击Btn后Btn停留在点击的效果\n4.推荐的做法,注意postDelay是运行在主线程的，所以别放耗时程序\n方法2,4,5多次点击Btn会创建多个线程，多个Act2\n方法2,4,5都可以.推荐4"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.Intent直接跳转" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.开子线程，停子线程" />
+        <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.停主线程" />
+            <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.new Handler().postDelay(Runnable,long)" />
+                <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.new Timer.schedual()" />
+</LinearLayout>
