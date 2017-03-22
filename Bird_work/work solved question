@@ -1,9 +1,24 @@
+http://www.cnblogs.com/benhero/p/4287252.html
+xx123xx4567
+xiaohao qq:3544170783
 1498169196 mtk打开文档密码
 mtk 账号密码
 xujun.lu@nbbsw.com
-mtk2015
+mtk2016
 mtk eservice账号密码
-XUJUN_LU_BIRD mtk2015
+XUJUN_LU_BIRD mtk2016
+腾讯企业邮箱
+liuqipeng@bird-oversea.com
+10214068Lw
+215 disk3 方隆祥
+206 disk1 刘启鹏
+228\Disk2\zhaotingting 赵婷婷
+140 disk1 刘更更
+151 disk1 梅芳婷
+151 disk2 秦智峰
+151 disk3 李乘风
+尚美科技密码：
+83444999
 
 
 1.gms文件修改包名。
@@ -11,7 +26,8 @@ XUJUN_LU_BIRD mtk2015
 4.设置浏览器默认权限
 5.videoplayer targetsdk更改为23
 
-
+看ip地址
+ifconfig
 
 连接服务器
 用户名为root
@@ -29,5 +45,44 @@ bird.mk
 阿里项目在 
 /home/disk1/ali_project/6115UO_SHINE_AY_20160913/device/mediatek/mt6755/bird.mk
 对应MTK项目的common.mk
-在alps\bird\device\common.mk
+在alps\bird\device\common.mk 这是35项目的路径
+37项目的路径
+/alps/device/mediatek/mt6735/bird.mk
+相当于MTK项目的common.mk
+上面说的都是我们自己公司添加宏控的时候的地方。
+想ｍｔｋ自己配置宏控是在/alps/device/mediatek/common/device.mk配置的。
+针对ali平台的，上传代码的时候除了上传该应用下的代码，还要记得上传bird.mk or common.mk文件。
+上传代码步骤
+1.cd 到对应git路径
+2.git checkout到正确的分支
+3.git pull　分支的更新
+4.开始修改
+5.git add -A
+6.git commit -m ""
+7.git push
+注意，千万不能忘记2,3步　而且执行顺序不要错。
+
+
+编译工程：
+
+./birdCopy 6115UO_SHINE_AY eng
+
+./mk_aliphone.sh bird_6750_c66_m eng adb new true
+
+拉工程
+ssh://DH_Bird-A@120.27.161.43:29418/repo/pbase/platform -b mtk6750_pb5.1.0_BirdA_new
+
+
+系统的源码位置
+alps/frameworks/base/core/java
+比如alps/frameworks/base/core/java/android/os/SystemProperties.java
+
+
+<!--@ {bird: modified by xxx 20160728 -->
+
+    <string name="keep_screen_on">aaaaa</string>
+<!--@ }bird: modified by xxx 20160728 -->
+<!--@ {bird: modified by liuqipeng 20161101 -->
+
+
 
