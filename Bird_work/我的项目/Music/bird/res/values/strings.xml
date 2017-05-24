@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="share_menu">Share</string>
+	<string name="send_file">Send file</string>
+	<!--@ {bird:add by fanglongxiang}-->
+    <string name="scan_music">Scan Music</string>
+</resources>
+

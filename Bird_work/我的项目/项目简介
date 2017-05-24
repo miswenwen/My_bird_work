@@ -8,4 +8,4 @@ apk文件都在项目下的bin目录里。可以取出直接安装
 (1)自定义AlertDialog,自定义Button,自定义CheckBox,BaseAdapter,GridView配对6个自定义Button.
 5.AliDeskClock:增加大量滑动页面时的动画
 (1)Drawable对象以及Bitmap对象加载的图片在自定义view中位置的改变，大小的改变，以及裁剪。旋转canvas坐标轴。
-
+Music:实现了裁剪音乐封面，并实现了旋转的逻辑。
