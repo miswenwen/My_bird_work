@@ -8,4 +8,14 @@ apk文件都在项目下的bin目录里。可以取出直接安装
 (1)自定义AlertDialog,自定义Button,自定义CheckBox,BaseAdapter,GridView配对6个自定义Button.
 5.AliDeskClock:增加大量滑动页面时的动画
 (1)Drawable对象以及Bitmap对象加载的图片在自定义view中位置的改变，大小的改变，以及裁剪。旋转canvas坐标轴。
-Music:实现了裁剪音乐封面，并实现了旋转的逻辑。
+6.Music:实现了裁剪音乐封面，并实现了旋转的逻辑。
+7.Calculator:功能机的计算器，主要处理了实体按键的相关事件和逻辑。
+8.BirdSalesStatistics:销量统计
+在用户第一次连接互联网（WIFI或者流量）时，该软件自动请求某个网络路径（由后台提供），将设备信息发送到该地址。后台会返回请求状态，如果状态显示为成功，则后续不再发送，如果状态失败，则在下一次连接互联网时，重新请求，直至成功。
+需要预制。否则有静态广播收不到的问题。
+情况1：新装的app，再没有运行第一次前，注册的静态广播是收不到的。
+情况2：打开app，可以收到静态广播了。然后按home键，杀掉进程，静态广播又收不到了。
+情况3：新装的app，但是没有注册activity,比如只有一个BroadcastReceiver和Service.
+解决方案： 1. 将app做成系统应用，直接安装在 system/app 目录下 2. 通过第三方应用，发送带 FLAG_INCLUDE_STOPPED_PACKAGES 的广播给stop状态的自己
+9.(liu)APIDemos:日常的一些小demo练习汇总。方便使用时查阅。
+
