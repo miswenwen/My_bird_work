@@ -35,3 +35,4 @@ onFocusChanged()
 onWindowFocusChanged()
 onWindowVisibilityChanged()
 8.StatusBarUtil　获取状态栏高度，设置沉浸式状态栏。暂时没有改变状态栏文字颜色的功能。
+9.CtTool-debug 看所有app包名类名
