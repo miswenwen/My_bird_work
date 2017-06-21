@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_00" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_01" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_02" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_03" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_04" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_05" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_06" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_07" />
+    <item android:duration="200" android:drawable="@drawable/enrolling_scroll_08" />
+</animation-list>

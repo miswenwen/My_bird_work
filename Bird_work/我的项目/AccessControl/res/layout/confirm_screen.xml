@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/finger_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@anim/finger_normal"  />
+    <TextView
+        android:id="@+id/finger_show_info"
+        android:textAppearance="?android:textAppearanceMedium" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"          
+        android:layout_below="@id/finger_show"
+        />
+    <TextView
+        android:id="@+id/password_show_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"        
+        android:layout_marginBottom="30dip"
+        android:background="#33000000"
+        android:textAppearance="?android:textAppearanceMedium" 
+        android:gravity="center"
+        android:text="@string/entry_by_password"
+        />    
+</RelativeLayout>

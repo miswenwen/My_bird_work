@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_lock_modify_arrays">
+        <item>删除指纹数据</item>
+        <item>重新采集指纹</item>
+    </string-array>
+</resources>

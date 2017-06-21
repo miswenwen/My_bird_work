@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_lock_modify_arrays">
+        <item>Delete fingerprint data</item>
+        <item>Enrol new fingerprint</item>
+    </string-array>
+</resources>

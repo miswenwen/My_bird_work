@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView 
+    	android:textAppearance="?android:textAppearanceMedium" 
+    	android:textSize="@dimen/enrol_start_prompt_text_size" 
+    	android:textColor="@color/select_finger_title_text_color" 
+    	android:id="@+id/enrol_start_prompt" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginLeft="@dimen/enrol_start_prompt_margin_left" 
+    	android:layout_marginTop="@dimen/enrol_start_prompt_margin_top" 
+    	android:layout_marginRight="@dimen/enrol_start_prompt_margin_left" 
+    	android:text="@string/enrol_start_prompt_text" 
+    	android:lineSpacingExtra="@dimen/enrol_start_prompt_line_dis" />
+    <FrameLayout 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+        <ImageView 
+        	android:layout_gravity="center" 
+        	android:id="@+id/enrol_start_image" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:layout_marginTop="@dimen/enrol_start_prompt_img_margin_top" 
+        	android:src="@anim/finger_slide" 
+        	android:contentDescription="@null" />
+        <RelativeLayout 
+        	android:id="@+id/enrolling_layout" 
+        	android:visibility="gone" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content" 
+        	android:layout_marginTop="@dimen/enrolling_prompt_img_margin_top">
+            <ImageView 
+            	android:id="@+id/enrolling_image" 
+            	android:background="@drawable/finger_bg" 
+            	android:layout_width="wrap_content" 
+            	android:layout_height="wrap_content" 
+            	android:layout_centerHorizontal="true" 
+            	android:contentDescription="@null" />
+            <ImageView 
+            	android:id="@+id/enrolling_scroll" 
+            	android:layout_width="wrap_content" 
+            	android:layout_height="wrap_content" 
+            	android:layout_centerHorizontal="true" 
+            	android:layout_marginTop="@dimen/enrolling_scroll_margin_top" 
+            	android:background="@anim/finger_normal" 
+            	android:contentDescription="@null" />
+            <TextView 
+            	android:textAppearance="?android:textAppearanceMedium" 
+            	android:textSize="@dimen/enrolling_textView_text_size" 
+            	android:textColor="@color/enrol_start_prompt_text_color"
+            	android:id="@+id/enrolling_textView" 
+            	android:layout_width="wrap_content" 
+            	android:layout_height="wrap_content" 
+            	android:layout_marginTop="@dimen/enrolling_textView_margin_top" 
+            	android:text="@string/enrolling_fingerprint" 
+            	android:layout_below="@+id/enrolling_image" 
+            	android:layout_centerHorizontal="true" 
+            	android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

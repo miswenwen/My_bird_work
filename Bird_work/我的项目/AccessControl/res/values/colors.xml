@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="info_gradient_top">#007db1</color>
+    <color name="info_gradient_bottom">#00b4ff</color>
+    <color name="observe_gradient_top">#b13200</color>
+    <color name="observe_gradient_bottom">#fe4e00</color>
+    <color name="background_gradient_top">#262626</color>
+    <color name="background_gradient_bottom">#0D0D0D</color>
+    <color name="top_bar_gradient_bottom">#191919</color>
+    <color name="top_bar_gradient_top">#313030</color>
+
+    <item type="color" name="select_finger_title_text_color">@*android:color/black</item>
+    <color name="select_finger_prompt_text_color">#ff419e3a</color>
+    <item type="color" name="enrol_start_title_text_color">@*android:color/black</item>
+    <color name="enrol_start_prompt_text_color">#ff00c6ff</color>
+    <item type="color" name="button_textcolor_pressed">@*android:color/black</item>
+    <color name="button_textcolor_normal">#ff24a9da</color>
+    <color name="application_list_prompt_bg_color">#ff1b1d20</color>
+</resources>
+

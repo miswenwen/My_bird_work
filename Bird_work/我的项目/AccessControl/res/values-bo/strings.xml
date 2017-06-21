@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author:Wang Lei --><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">"འདྲི་གཏུག་ཚོད་འཛིན།"</string>
+	<string name="enable_access_control">"འདྲི་གཏུག་ཚོད་འཛིན་གྱི་སྒུལ་སློང་།"</string>
+	<string name="protect_applicationgs">"ཉེར་སྤྱོད་སྲུང་སྐྱོང་།"</string>
+	<string name="protect_guarded_mode">"འདྲི་གཏུག་སྲུང་སྐྱོང་རྣམ་པ།"</string>
+	<string name="make_pattern_visible">"པར་རིས་མཐོང་ཐུབ།"</string>
+	<string name="vibrate_on_touch">"རེག་སྐབས་འདར།"</string>
+	<string name="lockpassword_choose_your_pattern_sub_title">"ཐིག་རིས་བྲིས་ནས་གསང་ཨང་གསར་འཛུགས་སྒྲོག"</string>
+	<string name="lockpassword_confirm_your_pattern_sub_title">"སྒྲོག་སེལ་གསང་ཨང་ནང་འཇུག་བྱེད་རོགས།"</string>
+	<string name="lockpassword_confirm_your_pattern_sub_title_2">"སྲུང་སྐྱོང་བྱས་ཟིན།\n"</string>
+	<string name="lockpassword_choose_your_pattern_header">"ཁྱེད་ཀྱི་པར་རིས་འདམ།"</string>
+	<string name="lockpassword_confirm_your_pattern_header">"ཁྱེད་ཀྱི་པར་རིས་འཁེལ་ལེན་བྱེད།"</string>
+	<string name="lockpattern_need_to_unlock_wrong">"སླར་ཚོད་ལྟ་བྱེད་རོགས།"</string>
+	<string name="lockpattern_recording_inprogress">"ལེགས་འགྲུབ་བྱུང་རྗེས་མཛུབ་མོ་ལེན་རོགས།"</string>
+	<string name="lockpattern_recording_incorrect_too_short">"ཉུང་མཐར་ཡང་ཚེག་<xliff:g id="number">%d</xliff:g>སྦྲེལ་དགོས། སླར་ཚོད་ལྟ་བྱེད་རོགས།"</string>
+	<string name="lockpattern_pattern_entered_header">"པར་རིས་ཟིན་ཐོར་བཀོད་ཟིན།"</string>
+	<string name="lockpattern_need_to_confirm">"སླར་པར་རིས་བཀོད་ནས་འཁེལ་ལེན་བྱེད་རོགས།"</string>
+	<string name="lockpattern_pattern_confirmed_header">"ཁྱེད་ཀྱི་སྒྲོག་སེལ་པར་རིས་གསར་བ།"</string>
+	<string name="lockpattern_confirm_button_text">"ཁོ་ཐག་ཡིན།"</string>
+	<string name="lockpattern_restart_button_text">"སླར་འགོད།"</string>
+	<string name="lockpattern_retry_button_text">"སླར་ཚོད་ལྟ་བྱེད།"</string>
+	<string name="lockpattern_continue_button_text">"མུ་མཐུད།"</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author:Wang Lei -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">應用鎖</string>
+	<string name="enable_access_control">啓用應用鎖</string>
+	<string name="protect_applicationgs">密碼保護應用</string>
+	<string name="protect_guarded_mode">密碼保護訪客模式</string>
+	<string name="make_pattern_visible">使圖案可見</string>
+	<string name="vibrate_on_touch">觸摸時振動</string>
+	<string name="lockpassword_choose_your_pattern_sub_title">繪製圖案設置訪問限制密碼</string>
+	<string name="lockpassword_confirm_your_pattern_sub_title">請輸入訪問限制密碼</string>
+	<string name="lockpassword_confirm_your_pattern_sub_title_2">已被密碼保護\n</string>
+	<string name="lockpassword_choose_your_pattern_header">選擇圖形</string>
+	<string name="lockpassword_confirm_your_pattern_header">確認圖形</string>
+	<string name="lockpattern_need_to_unlock_wrong">請重新嘗試：</string>
+	<string name="lockpattern_recording_inprogress">完成後請將手指抬起</string>
+	<string name="lockpattern_recording_incorrect_too_short">必須至少連起<xliff:g id="number">%d</xliff:g> 個點，請重新嘗試：</string>
+	<string name="lockpattern_pattern_entered_header">圖形紀錄完成!</string>
+	<string name="lockpattern_need_to_confirm">請再次畫出圖形進行確認：</string>
+	<string name="lockpattern_pattern_confirmed_header">新的解鎖圖形：</string>
+	<string name="lockpattern_confirm_button_text">確認</string>  
+	<string name="lockpattern_restart_button_text">重新畫圖</string>  
+	<string name="lockpattern_retry_button_text">重試</string>  
+	<string name="lockpattern_continue_button_text">繼續</string>  
+	<string name="fingerprint_protect_applicationgs">"指紋保護應用"</string>
+  <!--lvhuaiyi add begin-->
+	<string name="select_applicationgs">"選擇上鎖應用"</string>
+	<string name="password_protect">"密碼保護"</string>
+	<string name="fingerprint_protect">"指紋保護"</string>	
+	<string name="select_summary">"從應用列表中選擇您要加鎖保護的應用"</string>
+	<string name="password_protect_summary">"錄入保護應用的密碼"</string>
+	<string name="fingerprint_protect_summary">"錄入保護應用的指紋"</string>	
+	<string name="password_modify_summary">"密碼已錄入，更新保護應用的密碼"</string>
+	<string name="fingerprint_modify_summary">"指紋已錄入，更新保護應用的指紋"</string>	
+	
+	<string name="private_password_modified_title">修改隱私密碼</string>
+  <string name="app_lock_set_pwd_title">設置密碼</string>
+  <string name="app_lock_confirm_password">確認密碼</string>
+  <string name="app_lock_pwd_missmatch">密碼為空或錯誤，請重新輸入。</string>
+  <string name="app_lock_login_title">輸入密碼</string>
+  <string name="app_lock_input_password">密碼</string>
+  <string name="app_lock_dispaly_password">顯示密碼</string>
+  <string name="app_lock_ok">確定</string>
+  <string name="app_lock_cancel">取消</string>
+  <string name="app_lock_pwd_wrong">密碼錯誤</string>
+  <string name="app_lock_errort_title">錯誤提示</string>
+  <string name="app_lock_input_cur_password">舊密碼：</string>
+  <string name="app_lock_input_new_password">新密碼：</string>
+  <string name="app_lock_confirm_new_password">確認新密碼：</string>
+  <string name="app_lock_pwd_empty">密碼不能為空，請重新輸入。</string>
+  <string name="app_lock_reset_password_same_error">您輸入的新舊密碼不一致，請重新輸入。</string>
+  <string name="app_lock_reset_pwd_succeed">密碼修改成功</string>
+  <string name="app_lock_chang_password_error1">輸入的舊密碼錯誤。</string>
+  <string name="app_lock_chang_password_error2">新密碼和確認密碼不一致。</string>	
+  <string name="app_lock_chang_password_error3">密碼和確認密碼不一致。</string>		
+  
+  <string name="enrol_activity">"指紋錄入"</string>
+  <string name="verify_activity">"指紋匹配"</string>
+  <string name="enrol_string">"請點擊註冊鍵，錄入指紋"</string>
+  <string name="enrol_start_prompt_text">如圖所示：請將手指放在指紋識別器上，從上向下滑動手指\n\n注意：請保證手指和指紋識別器清潔，滑動手指時應用力向下按壓</string>    
+  <string name="enrol_starting_prompt_text">請重複手指滑過指紋識別器的操作\n\n注意：請保證手指和指紋識別器清潔，滑動手指時應用力向下按壓</string>     
+  <string name="enrol_verify_modify_title">校驗成功，您可以：</string>
+  <string name="enrol_succeed_title">錄入成功</string>
+  <string name="enrol_succeed_message">此次錄入的指紋將用於應用鎖。</string>   
+  <string name="entry_by_password">驗證密碼登錄</string>
+  <string name="entry_by_fingerPrint">已設置指紋\n請使用指紋感應器進行校驗</string>    
+  <string name="entry_by_fingerPrint_error">指紋匹配失敗\n 再試一次或通過驗證密碼進入應用</string>
+  <string name="verifying_fingerprint">正在校驗指紋信息...</string>    
+  <string name="entry_by_fingerPrint_succeed">指紋校驗成功</string>
+  <string name="fingerPrint_no_enroled">指紋未錄入\n 只能通過驗證密碼進入此應用</string>
+  <string name="verify_password">校驗密碼</string>
+  <string name="overflow_finger_verify_max">"已超出指紋驗證的最大次數，請驗證密碼，以進入此應用！"</string>  
+  <!--lvhuaiyi add end-->		
+</resources>

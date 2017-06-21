@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author:Wang Lei -->
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+	<CheckBoxPreference 
+		android:title="@string/enable_access_control" 
+		android:key="enable_access_control" 
+		android:defaultValue="false"/>
+	<Preference 
+		android:title="@string/protect_applicationgs" 
+		android:key="protect_applicationgs"/>		
+	<CheckBoxPreference 
+		android:title="@string/protect_guarded_mode" 
+		android:key="protect_guarded_mode" 
+		android:defaultValue="false" />
+	<CheckBoxPreference 
+		android:title="@string/make_pattern_visible" 
+		android:key="make_pattern_visible" 
+		android:defaultValue="false" />
+	<CheckBoxPreference 
+		android:title="@string/vibrate_on_touch" 
+		android:key="vibrate_on_touch" 
+		android:defaultValue="false" />
+        <!--lvhuaiyi add begin-->
+	<CheckBoxPreference 
+		android:title="@string/enable_access_control" 
+		android:key="enable_access_control_password" 
+		android:defaultValue="false"/>		
+	<Preference 
+		android:title="@string/select_applicationgs" 
+		android:key="select_protect_applications"
+		android:summary="@string/select_summary"/>	
+	<Preference 
+		android:title="@string/password_protect" 
+		android:key="password_protect_applicationgs"
+		android:summary="@string/password_protect_summary"/>		
+	<Preference 
+		android:title="@string/fingerprint_protect" 
+		android:key="fingerprint_protect_applicationgs"
+		android:summary="@string/fingerprint_protect_summary"/>	
+        <!--lvhuaiyi add end-->
+</PreferenceScreen>

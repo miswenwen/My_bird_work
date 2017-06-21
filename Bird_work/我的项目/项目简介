@@ -17,5 +17,6 @@ apk文件都在项目下的bin目录里。可以取出直接安装
 情况2：打开app，可以收到静态广播了。然后按home键，杀掉进程，静态广播又收不到了。
 情况3：新装的app，但是没有注册activity,比如只有一个BroadcastReceiver和Service.
 解决方案： 1. 将app做成系统应用，直接安装在 system/app 目录下 2. 通过第三方应用，发送带 FLAG_INCLUDE_STOPPED_PACKAGES 的广播给stop状态的自己
-9.(liu)APIDemos:日常的一些小demo练习汇总。方便使用时查阅。
+9.(liu)APIDemos:日常的一些小demo练习汇总。方便使用时查阅。1
+10.AccessControl:应用锁学习移植，之前的获取栈顶activity的api失效了，在stackoverflow找到了新的方法。
 

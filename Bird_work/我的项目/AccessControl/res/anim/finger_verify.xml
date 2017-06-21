@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/scanning0_0" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_1" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_2" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_3" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_4" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_5" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_6" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_7" />
+    <item android:duration="50" android:drawable="@drawable/scanned0_8" />  
+    <item android:duration="50" android:drawable="@drawable/scanned2_1" />
+    <item android:duration="50" android:drawable="@drawable/scanned2_2" />
+    <item android:duration="50" android:drawable="@drawable/scanned2_3" />
+    <item android:duration="50" android:drawable="@drawable/scanned2_4" />
+    <item android:duration="50" android:drawable="@drawable/scanned2_5" />
+    <item android:duration="50" android:drawable="@drawable/scanned2_6" />  
+    <item android:duration="50" android:drawable="@drawable/scanned3_1" />
+    <item android:duration="50" android:drawable="@drawable/scanned3_2" />
+    <item android:duration="50" android:drawable="@drawable/scanned3_4" />
+    <item android:duration="50" android:drawable="@drawable/scanned3_5" />
+    <item android:duration="50" android:drawable="@drawable/scanned3_6" />
+    <item android:duration="50" android:drawable="@drawable/scann" />
+</animation-list>

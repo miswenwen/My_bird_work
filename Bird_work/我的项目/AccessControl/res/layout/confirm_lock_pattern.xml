@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author:Wang Lei -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/topLayout"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent">
+	<TextView
+		android:id="@+id/headerText"
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1.0"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:text="@string/lockpassword_confirm_your_pattern_sub_title"/>
+	<View
+		android:background="@drawable/code_lock_top"
+		android:layout_width="match_parent"
+		android:layout_height="2dip"/>
+	<com.bird.ninekeylock.NineKeyLockView
+		android:id="@+id/lockPattern"
+		android:layout_width="match_parent"
+		android:layout_height="290dip"/>
+	<View
+		android:background="@drawable/code_lock_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="8dip"/>
+	<TextView
+		android:id="@+id/footerText"
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1.0"
+		android:gravity="center"
+		android:textSize="14sp"/>
+</LinearLayout>
